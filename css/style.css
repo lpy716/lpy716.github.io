@@ -430,7 +430,7 @@ code {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 0px solid rgba(255,255,255,0.06);
 }
 .nav-container #main-nav-toggle:before {
   content: "\f0c9";
@@ -482,7 +482,7 @@ code {
   overflow: hidden;
   position: absolute;
   width: 180px;
-  background: rgba(255,255,255,0) url("images/opacity-10.png") repeat;
+  background: rgba(255,255,255,0) url("images/opacity-1.png") repeat;
 }
 .nav-container .nav-container-inner #main-nav .main-nav-list-item .main-nav-list-child li {
   -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.06);
