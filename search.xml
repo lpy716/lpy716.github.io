@@ -485,43 +485,18 @@
       </tags>
   </entry>
   <entry>
-    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：李朋远）</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
-<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
-<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
-<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
-<p>​                                                  </p>
-<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
-<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
-<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2021/01/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>因 icarus 此前升级主题时，将其源码从 ejs 代码变成 了jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
-<p>首先声明，以下操作是在 icarus 的<code>4.1.1</code>版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
-<p>1、将需要置顶的文章的 front-matter 中添加<code>top</code>属性，并设置为 true：</p>
+    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 代码变成 了jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
+<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
-<p>2、打开个人站点在本地根目录下的<code>node_modules\hexo-generator-index\lib\generator.js</code>文件，将其修改为：</p>
+<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> config = <span class="built_in">this</span>.config;</span><br><span class="line">  <span class="keyword">var</span> posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"></span><br><span class="line">  posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">          <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">  <span class="keyword">var</span> path = config.index_generator.path || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">    format: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>其中第 9 至 21 行为实现高亮而添加的代码段。</p>
-<p>3、打开同一根目录下的<code>themes\icarus\layout\common\article.ejs</code>文件，先找到代码段：</p>
+<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.ejs</code> 文件，先找到代码段：</p>
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>在第3和4行中间下方插入以下代码段：</p>
+<p>在第 3 和 4 行中间下方插入以下代码段：</p>
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment">/* Top */</span>&#125;</span><br><span class="line">&#123;page.top ? <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;level-item tag is-danger&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background-color: #3273dc;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">    &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span> : <span class="literal">null</span>&#125;</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Top */&#125;</span><br><span class="line">            &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span><br><span class="line">                &#123;&#x27;TOP&#x27;&#125; </span><br><span class="line">            &lt;/span&gt; : null&#125;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
@@ -565,6 +540,31 @@
       </tags>
   </entry>
   <entry>
+    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：李朋远）</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
+<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
+<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
+<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
+<p>​                                                  </p>
+<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
+<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
+<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>濮阳冷知识</title>
     <url>/2020/12/14/%E6%BF%AE%E9%98%B3%E5%86%B7%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<p>本文为自己日常观察、查阅资料之笔记汇总，将不定期更新。内容仅代表个人观点。</p>
@@ -581,19 +581,18 @@
 <p>2、按照官方地图及严格定义，范县的老县城并非范县的飞地而是属于突出部，因为连通新老城区的240国道及沿线归范县管辖。范县辖区里正经的飞地是位于黄河南岸的辛庄镇苏庄村，同样被山东地界“包围”。</p>
 <p><img src="https://raw.githubusercontent.com/lpy716/site_pics/pylzs/fanxian.png"></p>
 <p>3、接上一条，苏庄由濮阳县、范县和山东省的鄄城县三县共管，为“两省三县一个村”之奇观。</p>
-<p>4、1964年豫鲁两省间交换的不仅是沿黄两县，还将原徒骇河西的山东地块和徒骇河东的河南地块进行了交换，使徒骇河成为豫鲁界河。</p>
+<p>4、东明县划入山东和范县划入河南并不是同时发生的。</p>
 <p>5、濮阳市辖区距郑州市辖区最近点超过80km，而距济南市辖区最近点不足15km。</p>
 <p>6、濮阳市的地理中心（此处算法为所有边界点坐标之和的平均）位于清丰县六塔乡主堡寨村东（115.278042,35.806919）。</p>
 <p><img src="https://raw.githubusercontent.com/lpy716/site_pics/pylzs/py_center.png"></p>
 <p>7、莘县差点就和濮清南范台五县全部接壤（与台前差不到两公里即接壤）。</p>
-<p>8、1986年濮阳市还下辖着四县二区，1987年后就变成了五县一区（郊区被改名为濮阳县）。</p>
-<p>9、三个国际友好城市——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
-<p>10、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续，今天的濮阳市是原安阳地区（Anyang prefecture）的延续。</p>
+<p>8、三个国际友好城市——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
+<p>9、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续，今天的濮阳市是原安阳地区（Anyang prefecture）的延续。</p>
 <h1 id="自然地理"><a href="#自然地理" class="headerlink" title="自然地理"></a>自然地理</h1><p>1、中原油田在濮阳一带开采的油气田与三四千万年前这里的一个盐湖有很大关系。该盐湖为后来的油气生成和储集提供了有利条件。</p>
 <p>2、接上一条，从濮阳一带开采出的油气和恐龙没啥关系。这里的恐龙指一般公众认知的，生活在中生代（三叠纪、侏罗纪、白垩纪）的恐龙。东濮凹陷仅发现有早、中三叠世的地层，且基本缺失侏罗纪、白垩纪的地层，而地球上最早的恐龙要到晚三叠世才出现。</p>
 <p>3、地处渤海湾盆地西南边缘的中原油田不过是该盆地孕育出的诸多油田之一，其他为人们熟知的油田如胜利、辽河、华北、大港等皆位于渤海湾盆地。</p>
 <p>4、“东濮凹陷”这一名词中，“东”指的不是方位，而是“东明”。</p>
-<p>5、濮阳县的黄河滩区是濮阳市的自然海拔最高点。</p>
+<p>5、濮阳县西南的黄河滩区是濮阳市的自然海拔最高点（61.8m）。</p>
 <p>6、马颊河、徒骇河都是始于濮阳境内不起眼的小河沟，但它们却奔涌近千里入海，且有各自独立的入海口。</p>
 <p>7、濮阳市主城区纬度（35°45′N）比欧洲大陆最南端（36°00′N，西班牙塔里法角）还低，但冬季（12月和1月份）日常<strong>低温</strong>和欧洲大陆最北端（71°08′N，挪威北角）同期值大致相当。</p>
 <p>8、接上一条，濮阳有气象纪录以来最低气温曾达到过-21℃（1993年11月21日）。</p>
