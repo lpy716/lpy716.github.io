@@ -510,34 +510,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【test】濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-<p>​           </p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>公交</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2021/01/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 代码变成 了jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
@@ -563,6 +535,34 @@
       </categories>
       <tags>
         <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【test】濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>​           </p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>公交</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -1433,7 +1433,7 @@
 <p>母亲的病逝，使我感到失落和凄凉。</p>
 <p>经历了父母的病逝，使我明白了人生的真谛。使我深深体会到了亲人的真实涵义。体会到了父母对儿女付出的爱，儿女们都不能如数回报。就这样，一辈辈，一代代地繁衍生息下去。</p>
 <p>两年后，我从工作岗位上退了下来。成了老人，彻底为人“父母”了。但是，每每想起我的爷爷、奶奶，想起我的父母，都会想起我的童年、少年、青年，以及我的半个多世纪的经历。我既感到幸福，感到快乐，感到欣慰，同时，心中还有一种莫名的、难于言表的伤感。</p>
-<h1 id="小学轶事"><a href="#小学轶事" class="headerlink" title="小学轶事"></a><strong>小学轶事</strong></h1><p>少年时代的我，是茫然的。说不清我是怎样上的小学。特别是一至四年级，一共换了五所学校。每转一所学校，都要适应一段时间。新环境刚刚适应，又要换学校。老是转学，转来转去，老师和同学的名字我都没有记住。我也不知道，当时父亲为什么老换地方。所以，我的学习很糟糕。尤其是算术课，升五年级考试加减乘除混合运算，我都不知道，应该先乘除、后加减。老师不给辅导，我也不知道问。父亲从来不过问我的学习。我的作业本上除了少有的“√”号，剩下的全是“×”号。</p>
+<h1 id="小学轶事"><a href="#小学轶事" class="headerlink" title="小学轶事"></a><strong>小学轶事</strong></h1><p>少年时代的我，是茫然的。说不清我是怎样上的小学。特别是一至四年级，一共换了五所学校。每转一所学校，都要适应一段时间。新环境刚刚适应，又要换学校。老是转学，转来转去，老师和同学的名字我都没有记住。我也不知道，当时父亲为什么老换地方。所以，我的学习很糟糕。尤其是算术课，升五年级考试加减乘除混合运算，我都不知道，应该先乘除、后加减。老师不给辅导，我也不知道问。父亲从来不过问我的学习。我的作业本上除了少有的“✔”号，剩下的全是“❌”号。</p>
 <p>1958 年的夏天，由于黄河泛滥，整个黄河滩区的人都搬迁到了大堤西岸。治水，是父亲的本职工作。当时，父亲忙得顾不上我们了。于是，让爷爷把我们接回南乐老家。</p>
 <p>黄河发水之前，我与母亲、三妹仨人，在长垣县南岳集居住。一天下午，村里的干部强令所有的人搬迁。天黑之前，必须全部搬走，一个人都不许留。那时我和母亲已经好多天没有见到父亲了。当时也无法与父亲取得联系，所以，只好随村里群众一起转移到大堤西岸的铁路村暂住。由于匆忙，只带了主要的轻便贵重的东西。其他，什么也没顾上拿。如鸡、蛋、油、面、菜、馍等食品。第二天上午，一晌安然无事（黄河水没有出槽）。</p>
 <p>下午，几个小伙伴约我，一起回南岳集家里拿东西。我们几个人谁也没告诉家长，就偷偷地跑了回去。我到家以后，转了一圈，看了看，也不知道拿什么东西好。到厨房拿了两根菜瓜，就和同伴说说笑笑、高高兴兴地往回走。全然不知道危险的存在。来回十几里的路程，一点儿也不觉得累。回来时，大约下午五点左右，天气晴朗炎热。我们每个人都是满头大汗，湿透了衣衫。当快到黄河大堤的时候，远远看见大堤的下边桥头处，由解放军战士围成了一道人墙。挡住了大堤上的人，不让大堤上的人上桥。堤上的人向前涌着，招着手。解放军一次次地将他们拦回大堤。我们听不见他们的喊声，也不知道发生了什么事。还是照样走着玩着，更不知道母亲也在人群中。</p>
@@ -1613,10 +1613,10 @@
 <p>二姑：李曾环，生于 1924 年，嫁于山东省莘县谢庄，逝于 2012 年 7 月 28 日（农历六月初十），享年 88 岁。</p>
 <p>（2013 年 4 月 24 日）</p>
 <hr>
-<p><code>v 1.0 手写初版完成于 2008 年 8 月</code></p>
-<p><code>v 1.1 手写版第一次修订于 2013 年 4 月 24 日</code></p>
-<p><code>v 2.0 初次整理电子版于 2014 年 1 月 25 日</code></p>
-<p><code>v 2.1 二次修订电子版于 2019 年 7 月 10 日</code></p>
+<p><code>v1.0 手写初版完成于 2008 年 8 月</code></p>
+<p><code>v1.1 手写版第一次修订于 2013 年 4 月 24 日</code></p>
+<p><code>v2.0 初次整理电子版于 2014 年 1 月 25 日</code></p>
+<p><code>v2.1 二次修订电子版于 2019 年 7 月 10 日</code></p>
 ]]></content>
       <categories>
         <category>家族记忆</category>
