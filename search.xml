@@ -529,7 +529,7 @@
 <li>引入 DPlayer 视频播放插件</li>
 </ul>
 <p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为三个环节：</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
 <h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
 <p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
 <article class="message message-immersive is-warning">
