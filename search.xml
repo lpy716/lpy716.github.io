@@ -579,15 +579,16 @@
     <title>云卷云舒</title>
     <url>/2021/01/24/%E3%80%90SNL%E3%80%91%E5%90%8D%E4%BA%BA%E7%AD%94%E9%A2%98cut---%E8%80%81%E4%B8%8D%E6%AD%A3%E7%BB%8F%E7%9A%84007/</url>
     <content><![CDATA[<p>【测试DPlayer】</p>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"video":{"url":"https://github.com/lpy716/site_vid/blob/main/200812/playlist.m3u8"},"danmaku":{"id":"someid","api":"https://api.prprpr.me/dplayer/","addition":["/some.json"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);player.on("loadstart",function(){console.log("loadstart")})})()</script>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"video":{"url":"https://cdn.jsdelivr.net/gh/lpy716/site_vid/20200812/playlist.m3u8"},"danmaku":{"id":"someid","api":"https://api.prprpr.me/dplayer/","addition":["/some.json"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);player.on("loadstart",function(){console.log("loadstart")})})()</script>
 
 
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
 <p>【拍摄时间】2020 年 8 月 12 日，17:00-19:30</p>
 <p>【BGM】Receives–Keith Kenniff</p>
 <iframe src="//player.bilibili.com/player.html?aid=797836997&bvid=BV1Wy4y167Un&cid=255603371&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-作为前最长卡司记录保持者（14季，现已被Kenan打破），Darrell从2014年S40开播以来一直负责报幕配音工作。而从1975年S1开播至2014年S39结束的39年里，该项工作一直由Don Pardo担任，长达38年之久（断掉的一年为S7，因该季SNL创作理念调整而被辞掉）
 
+
+<p>作为前最长卡司记录保持者（14季，现已被Kenan打破），Darrell从2014年S40开播以来一直负责报幕配音工作。而从1975年S1开播至2014年S39结束的39年里，该项工作一直由Don Pardo担任，长达38年之久（断掉的一年为S7，因该季SNL创作理念调整而被辞掉）</p>
 <p>可见，片头报幕的确是现场直播的！</p>
 ]]></content>
       <categories>
