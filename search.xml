@@ -519,6 +519,39 @@
       </tags>
   </entry>
   <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E6%92%AD%E6%94%BE%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为三个环节：</p>
+<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fa-exclamation-circle mr-2"></i>视频 <code>.mp4</code> 文件务必要保证是 <code>h264</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>2、打开</p>
+<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2021/01/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 代码变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
@@ -577,7 +610,7 @@
   </entry>
   <entry>
     <title>云卷云舒</title>
-    <url>/2021/01/26/%E3%80%90SNL%E3%80%91%E5%90%8D%E4%BA%BA%E7%AD%94%E9%A2%98cut---%E8%80%81%E4%B8%8D%E6%AD%A3%E7%BB%8F%E7%9A%84007/</url>
+    <url>/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/</url>
     <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
@@ -608,11 +641,12 @@
 
 <a id="more"></a>
 
+<hr>
 <p>【BGM】 Receives–Keith Kenniff</p>
 <p>【拍摄时间】 2020 年 8 月 12 日，17:00-19:30</p>
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
-<p>（观看时若觉得屏幕脏那就对了，其实那是我拍摄时隔着的窗户玻璃脏2333）</p>
+<p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
 ]]></content>
       <categories>
         <category>摄影</category>
