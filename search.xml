@@ -534,11 +534,12 @@
 <p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
 <article class="message message-immersive is-warning">
 <div class="message-body">
-<i class="fa-exclamation-circle mr-2"></i>视频 <code>.mp4</code> 文件务必要保证是 <code>h264</code> 格式的，否则在后续环节中可能会报错。
+<i class="fab fa-exclamation-circle mr-2"></i>视频 <code>.mp4</code> 文件务必要保证是 <code>h264</code> 格式的，否则在后续环节中可能会报错。
 </div>
 </article>
 
 <p>2、打开</p>
+<p>3、</p>
 <p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
 <hr>
 <p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
@@ -643,7 +644,7 @@
 
 <hr>
 <p>【BGM】 Receives–Keith Kenniff</p>
-<p>【拍摄时间】 2020 年 8 月 12 日，17:00-19:30</p>
+<p>【拍摄时间】2020 年 8 月 12 日，17:00-19:30</p>
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
 <p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
