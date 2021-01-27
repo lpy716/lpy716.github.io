@@ -594,7 +594,7 @@
   </entry>
   <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
-    <url>/2021/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
+    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 代码变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
 <p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
 <p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
