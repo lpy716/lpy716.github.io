@@ -679,7 +679,7 @@
     <title>濮阳冷知识</title>
     <url>/2020/12/14/%E6%BF%AE%E9%98%B3%E5%86%B7%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<p>本文为自己日常观察、查阅资料之笔记汇总，将不定期更新。内容仅代表个人观点。</p>
-<script src=”https://cdn.jsdelivr.net/npm/lg-fullscreen@1.3.0/dist/lg-zoom.min.js”></script>
+<script src=”https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js”></script>
 <script src=”https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js”></script>
 <script type=”text/javascript”>
 $(document).ready(function() {
