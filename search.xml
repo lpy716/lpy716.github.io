@@ -592,7 +592,7 @@
       </tags>
   </entry>
   <entry>
-    <title>icarus主题下拓展图片展示的模式</title>
+    <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>自从更换 icarus 主题后，发现点开文章图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
 <p>在研究了 lightgallery 的说明文件后，发现原因很简单：就是在 lightgallery 里，涉及到的诸如图片缩放、旋转、自动放映等功能，都被单独拎出来作为子插件。若要使用则需额外引入相应的 <code>.js</code> 文件。现有集成于 inferno 模块下的 lightgallery 只是一个最基础的版本，并没有涉及这些额外功能。</p>
