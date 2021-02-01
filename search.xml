@@ -572,7 +572,7 @@
 <p>保存并执行常规的更新操作。这样就实现了站点的图片缩放和全屏播放功能。用类似的方法还可实现其他一系列功能，如图片旋转、自动播放，乃至图片分享、视频放映，等等，下表为对应的子插件名和 <code>.js</code> 文件地址。更多操作可参考 lightgallery 的说明文档。</p>
 <style>
 table th:first-of-type {
-    width: 8em;
+    width: 6em;
 }
 table th:nth-of-type(2) {
     width: auto
