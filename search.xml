@@ -641,7 +641,7 @@ table th:nth-of-type(3) {
 <hr>
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
 <p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;”Woman in Blue Dress Sitting on the Shore”, by Anastasia Shuraeva</a></p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;”Woman in Blue Dress Sitting on the Shore”, by<br>Anastasia Shuraeva</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
