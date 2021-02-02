@@ -11366,7 +11366,7 @@ figure.highlight .section {
 .donate .qrcode {
   display: none;
   position: absolute;
-  z-index: 99;
+  z-index: 99999;
   bottom: 2.5em;
   line-height: 0;
   overflow: hidden;
@@ -11374,7 +11374,7 @@ figure.highlight .section {
   border-radius: 4px;
 }
 .donate .qrcode img {
-  max-width: 120px;
+  max-width: 280px;
 }
 .donate:hover .qrcode {
   display: block;
@@ -11658,6 +11658,7 @@ figure.highlight .section {
 }
 body.night {
   background: #0e1225;
+  transition: background-color 0.5s ease;
 }
 body.night .hljs {
   display: block;
@@ -12007,6 +12008,7 @@ body.night .twikoo code {
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
+    transition: background-color 0.5s ease;
   }
   body:not(.light) .hljs {
     display: block;
