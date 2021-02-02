@@ -7,6 +7,7 @@
 }
 body.night {
   background: #0e1225;
+  transition: background-color 0.5s ease;
 }
 body.night .hljs {
   display: block;
@@ -356,6 +357,7 @@ body.night .twikoo code {
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
+    transition: background-color 0.5s ease;
   }
   body:not(.light) .hljs {
     display: block;
