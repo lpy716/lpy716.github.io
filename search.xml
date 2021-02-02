@@ -112,52 +112,31 @@
 </div>
 
 <hr>
-<nav class="tabs is-boxed">
-<div class="container">
-<ul>
-<li class="tab is-active" onclick="openTab(event,'WebDev')"><a >Web Development</a></li>
-<li class="tab" onclick="openTab(event,'WebAud')"><a >Website Audit</a></li>
-<li class="tab" onclick="openTab(event,'Support')"><a >Support</a></li>
-</ul>
-</div>
-</nav>
-
-<div class="container section">
-    <div id="WebDev" class="content-tab" >
-      <p>
-        test1<br>
-      Overview Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-    <div id="WebAud" class="content-tab" style="display:none">
-        <p>
-          test2<br>
-        Details Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
-    <div id="Support" class="content-tab" style="display:none">
-       <p>
-         test3 <br>  
-       Specification Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
+<div id="tabs-with-content">
+  <div class="tabs is-centered is-boxed">
+    <ul>
+      <li><a>Pictures</a></li>
+      <li><a>Music</a></li>
+      <li><a>Videos</a></li>
+      <li><a>Documents</a></li>
+    </ul>
+  </div>
+  <div>
+    <section class="tab-content">Pictures content</section>
+    <section class="tab-content">Music content</section>
+    <section class="tab-content">Videos content</section>
+    <section class="tab-content">Documents content</section>
+  </div>
 </div>
 
-<script>
-    $(function openTab(evt, tabName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("content-tab");
-      for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tab");
-      for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " is-active";
-    })
-</script>
-
-
-
+<p>let tabsWithContent = (function () {<br>  let tabs = document.querySelectorAll(‘.tabs li’);<br>  let tabsContent = document.querySelectorAll(‘.tab-content’);</p>
+<p>  let deactvateAllTabs = function () {<br>    tabs.forEach(function (tab) {<br>      tab.classList.remove(‘is-active’);<br>    });<br>  };</p>
+<p>  let hideTabsContent = function () {<br>    tabsContent.forEach(function (tabContent) {<br>      tabContent.classList.remove(‘is-active’);<br>    });<br>  };</p>
+<p>  let activateTabsContent = function (tab) {<br>    tabsContent[getIndex(tab)].classList.add(‘is-active’);<br>  };</p>
+<p>  let getIndex = function (el) {<br>    return […el.parentElement.children].indexOf(el);<br>  };</p>
+<p>  tabs.forEach(function (tab) {<br>    tab.addEventListener(‘click’, function () {<br>      deactvateAllTabs();<br>      hideTabsContent();<br>      tab.classList.add(‘is-active’);<br>      activateTabsContent(tab);<br>    });<br>  })</p>
+<p>  tabs[0].click();<br>})();</p>
+<hr>
 <h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
 <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
