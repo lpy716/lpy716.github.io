@@ -717,7 +717,7 @@ body.night .twikoo code {
   }
   .navbar-menu {
     background-color: rgba(255,255,255,0);
-    box-shadow: 0 8px 16px rgba(10,10,10,0.1);
+    box-shadow: 0 8px 16px rgba(10,10,10,0);
     padding: 0.5rem 0;
   }
   .navbar-menu.is-active {
