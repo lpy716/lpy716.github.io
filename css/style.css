@@ -11372,10 +11372,9 @@ figure.highlight .section {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
   border-radius: 4px;
-  transition: width 2s ease;
 }
 .donate .qrcode img {
-  max-width: 150px;
+  max-width: 120px;
 }
 .donate:hover .qrcode {
   display: block;
