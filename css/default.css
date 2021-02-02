@@ -12354,7 +12354,7 @@ body.night .twikoo code {
     background-color: #373d48;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1087px) {
   .navbar > .container {
     display: block;
   }
