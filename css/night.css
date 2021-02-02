@@ -109,13 +109,13 @@ body.night .navbar-logo .logo-img-dark,
 body.night .footer-logo .logo-img-dark {
   display: inline-block;
 }
-body.night .navbar-main .navbar-item:hover,
-body.night .navbar-main .navbar-item:focus {
+body.night .navbar-main .navbar-menu .navbar-item {
+  background-color: rgba(40,44,52,0);
+}
+body.night .navbar-main .navbar-menu .navbar-item:hover,
+body.night .navbar-main .navbar-menu .navbar-item:focus {
   color: #fff;
   background-color: #373d48;
-}
-body.night .navbar-menu {
-  background-color: rgba(40,44,52,0);
 }
 body.night .navbar,
 body.night .card {
@@ -461,13 +461,13 @@ body.night .twikoo code {
   body:not(.light) .footer-logo .logo-img-dark {
     display: inline-block;
   }
-  body:not(.light) .navbar-main .navbar-item:hover,
-  body:not(.light) .navbar-main .navbar-item:focus {
+  body:not(.light) .navbar-main .navbar-menu .navbar-item {
+    background-color: rgba(40,44,52,0);
+  }
+  body:not(.light) .navbar-main .navbar-menu .navbar-item:hover,
+  body:not(.light) .navbar-main .navbar-menu .navbar-item:focus {
     color: #fff;
     background-color: #373d48;
-  }
-  body:not(.light) .navbar-menu {
-    background-color: rgba(40,44,52,0);
   }
   body:not(.light) .navbar,
   body:not(.light) .card {
