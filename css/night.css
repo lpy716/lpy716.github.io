@@ -109,9 +109,6 @@ body.night .navbar-logo .logo-img-dark,
 body.night .footer-logo .logo-img-dark {
   display: inline-block;
 }
-body.night .navbar-main .navbar-menu .navbar-item {
-  background-color: rgba(40,44,52,0);
-}
 body.night .navbar-main .navbar-menu .navbar-item:hover,
 body.night .navbar-main .navbar-menu .navbar-item:focus {
   color: #fff;
@@ -460,9 +457,6 @@ body.night .twikoo code {
   body:not(.light) .navbar-logo .logo-img-dark,
   body:not(.light) .footer-logo .logo-img-dark {
     display: inline-block;
-  }
-  body:not(.light) .navbar-main .navbar-menu .navbar-item {
-    background-color: rgba(40,44,52,0);
   }
   body:not(.light) .navbar-main .navbar-menu .navbar-item:hover,
   body:not(.light) .navbar-main .navbar-menu .navbar-item:focus {
