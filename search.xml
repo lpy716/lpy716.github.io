@@ -21,13 +21,9 @@
 <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
-
 <div id="thumbnials1">
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoulou.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoulou.jpg" alt="延寿楼"/>
-  </a>
-  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/hutong.JPG">
-    <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_hutong.jpg" alt="延寿楼外"/>
   </a>
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoujie.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoujie.jpg" alt="延寿街"/>
@@ -52,20 +48,17 @@
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner3.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_dinner3.jpg" alt="欢迎晚宴3"/>
   </a>
-  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/prof_wang.jpg">
-    <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_prof_wang.jpg" alt="汪前进教授"/>
-  </a>
-  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner4_jpg">
+  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner4.jpg">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_dinner4.jpg" alt="欢迎晚宴4"/>
   </a>
-  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner5_JPG">
+  <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner5.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_dinner5.jpg" alt="欢迎晚宴5"/>
   </a>
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/gm_qian.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_gm_qian.jpg" alt="钱总"/>
   </a>
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/gm_qian2.JPG">
-    <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_gm_qian.jpg" alt="钱总讲话"/>
+    <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_gm_qian2.jpg" alt="钱总讲话"/>
   </a>
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/prof_wang2.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_prof_wang2.jpg" alt="汪教授讲话"/>
@@ -79,14 +72,13 @@
 </div>
 
 <script type="text/javascript">
-  $('#aniimated-thumbnials').lightGallery({
+  $('#thumbnials1').lightGallery({
     thumbnail:true
-    galleryId: aniimated-thumbnials1
+    galleryId: 1
   }); 
-
-$('#aniimated-thumbnials').lightGallery({
+$('#thumbnials2').lightGallery({
     thumbnail:true
-    galleryId: aniimated-thumbnials2
+    galleryId: 2
   }); 
 </script>
 
