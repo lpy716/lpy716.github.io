@@ -73,11 +73,11 @@
 
 <script type="text/javascript">
   $('#thumbnials1').lightGallery({
-    thumbnail:true
+    thumbnail:true,
     galleryId: 1
   }); 
 $('#thumbnials2').lightGallery({
-    thumbnail:true
+    thumbnail:true,
     galleryId: 2
   }); 
 </script>
