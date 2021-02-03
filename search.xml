@@ -114,102 +114,78 @@
 <hr>
 
 <style type="text/css">
-  #tab-content p {
+  #tabs-with-content .tabs:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  #tabs-with-content .tab-content {
+    padding: 1rem;
     display: none;
   }
 
-  #tab-content p.is-active {
+  #tabs-with-content .tab-content.is-active {
     display: block;
   }
 </style>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet" />
-<div class="tabs is-toggle is-fullwidth" id="tabs">
-  <ul>
-    <li class="is-active" data-tab="1">
-      <a>
-        <span class="icon is-small"><i class="fa fa-image"></i></span>
-        <span>Pictures</span>
-      </a>
-    </li>
-    <li data-tab="2">
-      <a>
-        <span class="icon is-small"><i class="fa fa-music"></i></span>
-        <span>Music</span>
-      </a>
-    </li>
-    <li data-tab="3">
-      <a>
-        <span class="icon is-small"><i class="fa fa-film"></i></span>
-        <span>Videos</span>
-      </a>
-    </li>
-    <li data-tab="4">
-      <a>
-        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
-        <span>Documents</span>
-      </a>
-    </li>
-  </ul>
-</div>
-<div id="tab-content">
-  <p class="is-active" data-content="1">
-    Pictures
-  </p>
-  <p data-content="2">
-    Music
-  </p>
-  <p data-content="3">
-    Videos
-  </p>
-  <p data-content="4">
-    Documents
-  </p>
+<div id="tabs-with-content">
+  <div class="tabs is-centered">
+    <ul>
+      <li><a>Pictures</a></li>
+      <li><a>Music</a></li>
+      <li><a>Videos</a></li>
+      <li><a>Documents</a></li>
+    </ul>
+  </div>
+  <div>
+    <section class="tab-content">Pictures content</section>
+    <section class="tab-content">Music content</section>
+    <section class="tab-content">Videos content</section>
+    <section class="tab-content">Documents content</section>
+  </div>
 </div>
 
 <script type="text/javascript" language="javascript">
-  const TABS = [...document.querySelectorAll('#tabs li')];
-  const CONTENT = [...document.querySelectorAll('#tab-content p')];
-  const ACTIVE_CLASS = 'is-active';
+  let tabsWithContent = (function () {
+    let tabs = document.querySelectorAll('.tabs li');
+    let tabsContent = document.querySelectorAll('.tab-content');
 
-  function initTabs() {
-      TABS.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
-          let selected = tab.getAttribute('data-tab');
-          updateActiveTab(tab);
-          updateActiveContent(selected);
-        })
-      })
-  }
+    let deactvateAllTabs = function () {
+      tabs.forEach(function (tab) {
+        tab.classList.remove('is-active');
+      });
+    };
 
-  function updateActiveTab(selected) {
-    TABS.forEach((tab) => {
-      if (tab && tab.classList.contains(ACTIVE_CLASS)) {
-        tab.classList.remove(ACTIVE_CLASS);
-      }
-    });
-    selected.classList.add(ACTIVE_CLASS);
-  }
+    let hideTabsContent = function () {
+      tabsContent.forEach(function (tabContent) {
+        tabContent.classList.remove('is-active');
+      });
+    };
 
-  function updateActiveContent(selected) {
-    CONTENT.forEach((item) => {
-      if (item && item.classList.contains(ACTIVE_CLASS)) {
-        item.classList.remove(ACTIVE_CLASS);
-      }
-      let data = item.getAttribute('data-content');
-      if (data === selected) {
-        item.classList.add(ACTIVE_CLASS);
-      }
-    });
-  }
+    let activateTabsContent = function (tab) {
+      tabsContent[getIndex(tab)].classList.add('is-active');
+    };
 
-  initTabs();
+    let getIndex = function (el) {
+      return [...el.parentElement.children].indexOf(el);
+    };
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        deactvateAllTabs();
+        hideTabsContent();
+        tab.classList.add('is-active');
+        activateTabsContent(tab);
+      });
+    })
+
+    tabs[0].click();
+  })();
 </script>
 
 
 <hr>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
+<h2 id="志愿者反馈123"><a href="#志愿者反馈123" class="headerlink" title="志愿者反馈123"></a>志愿者反馈123</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
 <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
 <hr>
@@ -496,6 +472,34 @@
       </tags>
   </entry>
   <entry>
+    <title>2019 北京助学助教夏令营—— 7.26 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：王国权）</li>
+<li>志愿者反馈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
+<p>上午八点三十分，所有营员都已坐好，等待着上张嘉民老师的《音乐基础知识普及》课程，每位营员都紧跟老师的思路一步一步走，先学节拍，在学发声，最后连贯成一首歌。</p>
+<p>用完午餐过后，大家都陆续上车准备前往科技馆，一睹科技的魅力，到达科技馆后第一件事就是去看即将看场的3D科普纪律片《海洋：蓝色星球》，海洋是陆地的2.7倍，占地球总表面积71％，海洋中所生存的生物种类繁多；《海洋：蓝色星球》带我们启程前往世界各地，去看奇异海洋生物不为人知的故事，有聪敏的鱼类，也有笨拙的海象，亦有萌哒哒的海豚，看了南极洲的冰山，看了热带水域的珊瑚礁，还看了大洋更远处的波澜壮阔与海洋的浩瀚。电影结束后就排队进入展厅，有的营员喜好古代劳动人民的“科技”，也有的喜欢现代科技的结晶。</p>
+<p>展厅逛完后再科技馆大门口合了影就乘车前往吃饭地点——到《全聚德》吃烤鸭。</p>
+<p>晚上是甘甜老师《环保培训》，这是每一个人类都应该做到的本能，不分种族，性别，老少，看了一条环保宣传片最让我刻骨铭心的一句话是–“大自然不需要人类；人类需要大自然”，是啊，地球已经存在亿万年，在人类为出现在地球上的时候就已经存在了亿万年，又怎么能说大自然需要人类呢，人类只不过是大自然的衍生品，附着于大自然而生，保护环境就是保护我们自己。</p>
+<p>杨志明老师《如何培养孩子》，其中讲到家长应多角度和孩子沟通，四川组的老师康文波也发表了他自己对于如何教育孩子的一些看法和想法。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
+<p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_726cover.jpg"></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2019 北京助学助教夏令营—— 7.25 日报</title>
     <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.25%20%E6%97%A5%E6%8A%A5/</url>
     <content><![CDATA[<ul>
@@ -579,34 +583,6 @@
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>晚会这块儿总体还可以，如果能再早一天准备就好了，各方面能更加地顺利。话筒还是要至少找到两只，最好能有投影仪效果会更好些。有时间的话可以先预演一下会更好！</p>
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_725cover.jpg"></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019 北京助学助教夏令营—— 7.26 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：王国权）</li>
-<li>志愿者反馈</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
-<p>上午八点三十分，所有营员都已坐好，等待着上张嘉民老师的《音乐基础知识普及》课程，每位营员都紧跟老师的思路一步一步走，先学节拍，在学发声，最后连贯成一首歌。</p>
-<p>用完午餐过后，大家都陆续上车准备前往科技馆，一睹科技的魅力，到达科技馆后第一件事就是去看即将看场的3D科普纪律片《海洋：蓝色星球》，海洋是陆地的2.7倍，占地球总表面积71％，海洋中所生存的生物种类繁多；《海洋：蓝色星球》带我们启程前往世界各地，去看奇异海洋生物不为人知的故事，有聪敏的鱼类，也有笨拙的海象，亦有萌哒哒的海豚，看了南极洲的冰山，看了热带水域的珊瑚礁，还看了大洋更远处的波澜壮阔与海洋的浩瀚。电影结束后就排队进入展厅，有的营员喜好古代劳动人民的“科技”，也有的喜欢现代科技的结晶。</p>
-<p>展厅逛完后再科技馆大门口合了影就乘车前往吃饭地点——到《全聚德》吃烤鸭。</p>
-<p>晚上是甘甜老师《环保培训》，这是每一个人类都应该做到的本能，不分种族，性别，老少，看了一条环保宣传片最让我刻骨铭心的一句话是–“大自然不需要人类；人类需要大自然”，是啊，地球已经存在亿万年，在人类为出现在地球上的时候就已经存在了亿万年，又怎么能说大自然需要人类呢，人类只不过是大自然的衍生品，附着于大自然而生，保护环境就是保护我们自己。</p>
-<p>杨志明老师《如何培养孩子》，其中讲到家长应多角度和孩子沟通，四川组的老师康文波也发表了他自己对于如何教育孩子的一些看法和想法。</p>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
-<p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_726cover.jpg"></p>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -838,6 +814,40 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+<hr>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>公交</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>云卷云舒</title>
     <url>/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/</url>
     <content><![CDATA[<article class="message message-immersive is-warning">
@@ -888,42 +898,8 @@ table th:nth-of-type(3) {
         <category>摄影</category>
       </categories>
       <tags>
+        <tag>濮阳</tag>
         <tag>拍摄</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-<hr>
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>濮阳</tag>
-        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
