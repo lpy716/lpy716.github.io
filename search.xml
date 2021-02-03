@@ -20,7 +20,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script>
-<div id="aniimated-thumbnials">
+
+<div id="aniimated-thumbnials1">
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoulou.JPG">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoulou.jpg" alt="延寿楼"/>
   </a>
@@ -40,7 +41,7 @@
 
 
 <p>晚上7点，由琉璃厂钱总筹办的夏令营欢迎晚宴在延寿楼一楼庭院举行。由隆鉴清老师主持，钱总、汪前进教授、周连生大校依次致辞，对本次夏令营及社团情况进行了介绍，寄语营员在夏令营中能够有学有所获、玩有所乐，开阔视野、满载而归。随后，除甘肃组当时尚未抵达外，其他各组营员依次作了自我介绍，并通过自荐、推荐结合的方式选出四川组唐前国为本次夏令营班长。各位志愿者也分别进行了自我介绍。</p>
-<div id="aniimated-thumbnials">
+<div id="aniimated-thumbnials2">
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner1.jpg">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_dinner1.jpg" alt="欢迎晚宴1"/>
   </a>
@@ -79,6 +80,12 @@
 <script type="text/javascript">
   $('#aniimated-thumbnials').lightGallery({
     thumbnail:true
+    galleryId: aniimated-thumbnials1
+  }); 
+
+$('#aniimated-thumbnials').lightGallery({
+    thumbnail:true
+    galleryId: aniimated-thumbnials2
   }); 
 </script>
 
@@ -592,35 +599,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本icarus主题下实现文章首页置顶</title>
-    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
-<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
-<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> config = <span class="built_in">this</span>.config;</span><br><span class="line">  <span class="keyword">var</span> posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"></span><br><span class="line">  posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">          <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">  <span class="keyword">var</span> path = config.index_generator.path || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">    format: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>其中第 9 至 21 行为实现高亮而添加的代码段。</p>
-<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，先找到代码段：</p>
-<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>在第 3 和 4 行中间下方插入以下代码段：</p>
-<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment">/* Top */</span>&#125;</span><br><span class="line">&#123;page.top ? <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;level-item tag is-danger&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background-color: #3273dc;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">    &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span> : <span class="literal">null</span>&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Top */&#125;</span><br><span class="line">            &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span><br><span class="line">                &#123;&#x27;TOP&#x27;&#125; </span><br><span class="line">            &lt;/span&gt; : null&#125;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
-<hr>
-<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -778,6 +756,35 @@ table th:nth-of-type(3) {
 <p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
 <p> （完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版本icarus主题下实现文章首页置顶</title>
+    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
+<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> pagination = <span class="built_in">require</span>(<span class="string">&#x27;hexo-pagination&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> config = <span class="built_in">this</span>.config;</span><br><span class="line">  <span class="keyword">var</span> posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"></span><br><span class="line">  posts.data = posts.data.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">if</span>(a.top == b.top) <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">          <span class="keyword">else</span> <span class="keyword">return</span> b.top - a.top;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(a.top &amp;&amp; !b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">if</span>(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">          <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">return</span> b.date - a.date;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> paginationDir = config.pagination_dir || <span class="string">&#x27;page&#x27;</span>;</span><br><span class="line">  <span class="keyword">var</span> path = config.index_generator.path || <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [<span class="string">&#x27;index&#x27;</span>, <span class="string">&#x27;archive&#x27;</span>],</span><br><span class="line">    format: paginationDir + <span class="string">&#x27;/%d/&#x27;</span>,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>其中第 9 至 21 行为实现高亮而添加的代码段。</p>
+<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，先找到代码段：</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>在第 3 和 4 行中间下方插入以下代码段：</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&#123;<span class="comment">/* Top */</span>&#125;</span><br><span class="line">&#123;page.top ? <span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;level-item tag is-danger&quot;</span> <span class="attr">style</span>=<span class="string">&quot;background-color: #3273dc;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">    &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span> : <span class="literal">null</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line">&lt;article <span class="class"><span class="keyword">class</span></span>=&#123;<span class="string">`card-content article<span class="subst">$&#123;<span class="string">&#x27;direction&#x27;</span> <span class="keyword">in</span> page ? <span class="string">&#x27; &#x27;</span> + page.direction : <span class="string">&#x27;&#x27;</span>&#125;</span>`</span>&#125; role=<span class="string">&quot;article&quot;</span>&gt;</span><br><span class="line">    &#123;page.layout !== <span class="string">&#x27;page&#x27;</span> ? <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;</span>&gt;</span></span></span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line">            &#123;/* Top */&#125;</span><br><span class="line">            &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span><br><span class="line">                &#123;&#x27;TOP&#x27;&#125; </span><br><span class="line">            &lt;/span&gt; : null&#125;</span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
