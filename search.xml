@@ -114,64 +114,102 @@
 <hr>
 
 <style type="text/css">
-  .tabs {
-      display: flex;
-      flex-direction: column;
+  #tab-content p {
+    display: none;
   }
 
-  .tab-content div {
-      display: none;
-  }
-
-  .tab-content div:first-child {
-      display: block;
-  }
-  .tab-content {
-    padding:1em;
+  #tab-content p.is-active {
+    display: block;
   }
 </style>
 
-<div class="tabs">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet" />
+<div class="tabs is-toggle is-fullwidth" id="tabs">
   <ul>
-    <li class="is-active"><a>Pictures</a></li>
-    <li><a>Music</a></li>
+    <li class="is-active" data-tab="1">
+      <a>
+        <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li data-tab="2">
+      <a>
+        <span class="icon is-small"><i class="fa fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li data-tab="3">
+      <a>
+        <span class="icon is-small"><i class="fa fa-film"></i></span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li data-tab="4">
+      <a>
+        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
+        <span>Documents</span>
+      </a>
+    </li>
   </ul>
-  <div class="tab-content">
-    <div>Tab Pictures</div>
-    <div>Tab Music</div>
-  </div>
+</div>
+<div id="tab-content">
+  <p class="is-active" data-content="1">
+    Pictures
+  </p>
+  <p data-content="2">
+    Music
+  </p>
+  <p data-content="3">
+    Videos
+  </p>
+  <p data-content="4">
+    Documents
+  </p>
 </div>
 
 <script type="text/javascript" language="javascript">
-  document.addEventListener("DOMContentLoaded", () => {
-    const e = document.querySelectorAll(".tabs");
-    void 0 !== e && e.forEach(e => {
-        e.children[0].addEventListener("click", e => {
-            
-            var node = e.target;
-            var nodename = '';
-            while(node.localName!="ul"){
-                if(node.localName=="a")nodename=node.innerText;
-                node=node.parentNode;
-            }
-            console.log(node);
-            var a=0;
-            Array.from(node.children).forEach(function (n) {
-                n.classList.remove("is-active"), 
-                a++, 
-                node.parentNode.children[1].children[a - 1].style.display = "none", 
-                nodename == n.children[0].innerText && (n.classList.add("is-active"), 
-                node.parentNode.children[1].children[a - 1].style.display = "block")
-            })
+  const TABS = [...document.querySelectorAll('#tabs li')];
+  const CONTENT = [...document.querySelectorAll('#tab-content p')];
+  const ACTIVE_CLASS = 'is-active';
 
+  function initTabs() {
+      TABS.forEach((tab) => {
+        tab.addEventListener('click', (e) => {
+          let selected = tab.getAttribute('data-tab');
+          updateActiveTab(tab);
+          updateActiveContent(selected);
         })
-    })
-  });
+      })
+  }
+
+  function updateActiveTab(selected) {
+    TABS.forEach((tab) => {
+      if (tab && tab.classList.contains(ACTIVE_CLASS)) {
+        tab.classList.remove(ACTIVE_CLASS);
+      }
+    });
+    selected.classList.add(ACTIVE_CLASS);
+  }
+
+  function updateActiveContent(selected) {
+    CONTENT.forEach((item) => {
+      if (item && item.classList.contains(ACTIVE_CLASS)) {
+        item.classList.remove(ACTIVE_CLASS);
+      }
+      let data = item.getAttribute('data-content');
+      if (data === selected) {
+        item.classList.add(ACTIVE_CLASS);
+      }
+    });
+  }
+
+  initTabs();
 </script>
 
 
 <hr>
-<h2 id="志愿者反馈xx"><a href="#志愿者反馈xx" class="headerlink" title="志愿者反馈xx"></a>志愿者反馈xx</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
 <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
 <hr>
@@ -800,40 +838,6 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-<hr>
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>公交</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>云卷云舒</title>
     <url>/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/</url>
     <content><![CDATA[<article class="message message-immersive is-warning">
@@ -884,8 +888,42 @@ table th:nth-of-type(3) {
         <category>摄影</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
         <tag>拍摄</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+<hr>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
