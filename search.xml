@@ -112,48 +112,75 @@
 </div>
 
 <hr>
-<div class="column is-12 tabs is-medium">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="tabs is-toggle is-fullwidth" id="tabs">
   <ul>
-    <li class="is-active"><a>Tab 1</a></li>
-    <li><a>Tab 2</a></li>
+    <li class="is-active" data-tab="1">
+      <a>
+        <span class="icon is-small"><i class="fa fa-image"></i></span>
+        <span>Pictures</span>
+      </a>
+    </li>
+    <li data-tab="2">
+      <a>
+        <span class="icon is-small"><i class="fa fa-music"></i></span>
+        <span>Music</span>
+      </a>
+    </li>
+    <li data-tab="3">
+      <a>
+        <span class="icon is-small"><i class="fa fa-film"></i></span>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li data-tab="4">
+      <a>
+        <span class="icon is-small"><i class="fa fa-file-text-o"></i></span>
+        <span>Documents</span>
+      </a>
+    </li>
   </ul>
 </div>
-<div class="column is-12 tabs-content">
-  <div class="tab-content is-active">
-    <p>Content 1</p>
-  </div>
-  <div class="tab-content">
-    <p>Content 2</p>
-  </div>
+<div id="tab-content">
+  <p class="is-active" data-content="1">
+    Pictures
+  </p>
+  <p data-content="2">
+    Music
+  </p>
+  <p data-content="3">
+    Videos
+  </p>
+  <p data-content="4">
+    Documents
+  </p>
 </div>
 <script>
-   $('.tabs').each(function(index) {
-    var $tabParent = $(this);
-    var $tabs = $tabParent.find('li');
-    var $contents = $tabParent.next('.tabs-content').find('.tab-content');
+  $(document).ready(function() {
+    $('#tabs li').on('click', function() {
+      var tab = $(this).data('tab');
 
-<pre><code>$tabs.click(function() &#123;
-  var curIndex = $(this).index();
-  // toggle tabs
-  $tabs.removeClass(&#39;is-active&#39;);
-  $tabs.eq(curIndex).addClass(&#39;is-active&#39;);
-  // toggle contents
-  $contents.removeClass(&#39;is-active&#39;);
-  $contents.eq(curIndex).addClass(&#39;is-active&#39;);
+<pre><code>  $(&#39;#tabs li&#39;).removeClass(&#39;is-active&#39;);
+  $(this).addClass(&#39;is-active&#39;);
+
+  $(&#39;#tab-content p&#39;).removeClass(&#39;is-active&#39;);
+  $(&#39;p[data-content=&quot;&#39; + tab + &#39;&quot;]&#39;).addClass(&#39;is-active&#39;);
 &#125;);</code></pre>
 <p>  });<br></script></p>
 <style>
-  .tab-content {
+  #tab-content p {
     display: none;
+  }
 
-    &.is-active {
-      display: block;
-    }
+  #tab-content p.is-active {
+    display: block;
   }
 </style>
 
 <hr>
-<h2 id="志愿者反馈1"><a href="#志愿者反馈1" class="headerlink" title="志愿者反馈1"></a>志愿者反馈1</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
+<h2 id="志愿者反馈11"><a href="#志愿者反馈11" class="headerlink" title="志愿者反馈11"></a>志愿者反馈11</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
 <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
 <hr>
