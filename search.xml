@@ -15,53 +15,74 @@
 <p>按照日程安排，7月19日全天围绕接站这一项任务展开。全天从早上8点到晚上10点，在6名志愿者的带领下，34名营员分7批次陆续安全地抵达延寿楼。</p>
 <p>晚上7点，由琉璃厂钱总筹办的夏令营欢迎晚宴在延寿楼一楼庭院举行。由隆鉴清老师主持，钱总、汪前进教授、周连生大校依次致辞，对本次夏令营及社团情况进行了介绍，寄语营员在夏令营中能够有学有所获、玩有所乐，开阔视野、满载而归。随后，除甘肃组当时尚未抵达外，其他各组营员依次作了自我介绍，并通过自荐、推荐结合的方式选出四川组唐前国为本次夏令营班长。各位志愿者也分别进行了自我介绍。</p>
 <p>晚上9点半，欢迎晚宴圆满结束。各位志愿者组织营员洗漱、就寝，为第二天观看广场升旗做准备。2019北京助学助教夏令营正式拉开帷幕。</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.3.0/dist/lg-zoom.min.js"></script>
 <div id="aniimated-thumbnials">
   <a href="https://picsum.photos/601">
-    <img src="http://placehold.it/100x100" />
+    <img src="http://placehold.it/100x100" alt="pic1"/>
   </a>
   <a href="https://picsum.photos/602">
-    <img src="http://placehold.it/100x100" />
+    <img src="http://placehold.it/100x100" alt="pic2"/>
   </a>
   <a href="https://picsum.photos/603">
-    <img src="http://placehold.it/100x100" />
+    <img src="http://placehold.it/100x100" alt="pic3"/>
   </a>
 </div>
+
+<script type="text/javascript">
+  $('#aniimated-thumbnials').lightGallery({
+    thumbnail:true
+  }); 
 <script>
-    $('#aniimated-thumbnials').lightGallery({
-        thumbnail:true
-    }); 
-</script>
 
 
-<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
-<li><p><strong><em>董存霞–甘肃组</em></strong></p>
-<blockquote>
-<p>今天，又经历了人生中的一个重要的第一次——第一次乘飞机去北京。 从陆地到天空，从晴天到雨天，从兰州到北京。这一天感觉自己又长了不少见识，也接触到了很多。<br>夜幕降临，天空蒙上了一层薄薄的细纱，划过机翼边缘，是那一轮夕阳，想不到啊，在天上竟也可以一览王维“大漠孤烟直，长河落日圆。”的壮景。云层似乎比大漠更加壮观，恢宏，令人无限遐思。<br>而后，穿梭在北京的街头，想起了赵雷的《理想》“一个人住在这城市 为了填饱肚子就已精疲力尽 还谈什么理想 那是我们的美梦 梦醒后 还是依然奔波在风雨的街头 有时候想哭就把泪<br>咽进一腔热血的胸口 公车上我睡过了车站 一路上我望着霓虹的北京 我的理想把我丢在这个拥挤的人潮”。北京，有着大都市繁华，当我穿梭在霓虹中，我依然幻想着以后我在北京可以有一席之地。<br>当然啦，也感谢帅气亲民的张老师的照顾。 期待接下来的研学，讲座。希望可以与其他的伙伴好好交流一下，希望可以交到新的朋友们，与他们一起谈天南地北，抒胸中情怀。</p>
-</blockquote>
-</li>
-<li><p><strong><em>张小君–甘肃组</em></strong></p>
-<blockquote>
-<p>今天从学校集体出发了，满怀研学旅游的心情，来自全国各地的朋友相聚北京，想一想都很开心，由于火车票买不到，为了不耽误行程，学校阳光爱心社为我们购了飞机票，到了北京南苑机场，乘坐机场大巴到前门，社团志愿者在前门接站，安排我们晚饭、住宿等，细致的关照着实令我感动，教育是最伟大的慈善，社团爱心助学是精准扶贫有效措施之一，感谢社团助学行动，感谢资助人，我们因爱相聚，大爱无疆，有你真好，有爱走遍天下！</p>
-</blockquote>
-</li>
-<li><p><strong><em>闫芳–甘肃组</em></strong></p>
-<blockquote>
-<p>今天是个很重要，很重要的日子，我坐着飞机来到了北京，我实现了想飞上天的理想，一路上遥望窗外的云彩，像一涌清泉在流动，看得我心里舒爽；北京的天很热，下车时感觉走进了火炉，这是第一次对北京的亲身体验，很开心也很感动，期待接下来的这几天。</p>
-</blockquote>
-</li>
-<li><p><strong><em>罗巧花–甘肃组</em></strong></p>
-<blockquote>
-<p>自出发那一刻开始，心里是紧张多余兴奋的，从未坐过飞机的我迎来了首次做飞机的机会，从未出过甘肃省的我也要前往首都北京。飞机徐徐移动，然后飞上云天，心情也由忐忑趋向了平静。从飞机窗户向下望，望到的是千沟万壑的黄土高原，我对黄土高原“千沟万壑”的认知是停留在地理课本上的，如今却真正目睹了，忽然之间感觉在这浩瀚的天地之间，我们每个人都只是倏忽渺小的夏虫井蛙。飞机穿过柔软的云层，从午后到傍晚，终于抵达目的地。温暖的风吹过脸颊，望着这个既熟悉又陌生的城市，不禁想到在我们会在这里发生什么样的故事呢？</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。</p>
-<p>最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。</p>
-<p>安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。</p>
-<h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_719cover.jpg"></p>
-]]></content>
+
+## 营员感想摘录2
+
+### 甘肃组
+
+- ***董存霞--甘肃组***
+
+  > 今天，又经历了人生中的一个重要的第一次------第一次乘飞机去北京。 从陆地到天空，从晴天到雨天，从兰州到北京。这一天感觉自己又长了不少见识，也接触到了很多。
+  > 夜幕降临，天空蒙上了一层薄薄的细纱，划过机翼边缘，是那一轮夕阳，想不到啊，在天上竟也可以一览王维“大漠孤烟直，长河落日圆。”的壮景。云层似乎比大漠更加壮观，恢宏，令人无限遐思。
+  > 而后，穿梭在北京的街头，想起了赵雷的《理想》“一个人住在这城市 为了填饱肚子就已精疲力尽 还谈什么理想 那是我们的美梦 梦醒后 还是依然奔波在风雨的街头 有时候想哭就把泪
+  > 咽进一腔热血的胸口 公车上我睡过了车站 一路上我望着霓虹的北京 我的理想把我丢在这个拥挤的人潮”。北京，有着大都市繁华，当我穿梭在霓虹中，我依然幻想着以后我在北京可以有一席之地。
+  > 当然啦，也感谢帅气亲民的张老师的照顾。 期待接下来的研学，讲座。希望可以与其他的伙伴好好交流一下，希望可以交到新的朋友们，与他们一起谈天南地北，抒胸中情怀。
+
+- ***张小君--甘肃组***
+
+  > 今天从学校集体出发了，满怀研学旅游的心情，来自全国各地的朋友相聚北京，想一想都很开心，由于火车票买不到，为了不耽误行程，学校阳光爱心社为我们购了飞机票，到了北京南苑机场，乘坐机场大巴到前门，社团志愿者在前门接站，安排我们晚饭、住宿等，细致的关照着实令我感动，教育是最伟大的慈善，社团爱心助学是精准扶贫有效措施之一，感谢社团助学行动，感谢资助人，我们因爱相聚，大爱无疆，有你真好，有爱走遍天下！
+
+- ***闫芳--甘肃组***
+
+  > 今天是个很重要，很重要的日子，我坐着飞机来到了北京，我实现了想飞上天的理想，一路上遥望窗外的云彩，像一涌清泉在流动，看得我心里舒爽；北京的天很热，下车时感觉走进了火炉，这是第一次对北京的亲身体验，很开心也很感动，期待接下来的这几天。
+
+- ***罗巧花--甘肃组***
+
+  > 自出发那一刻开始，心里是紧张多余兴奋的，从未坐过飞机的我迎来了首次做飞机的机会，从未出过甘肃省的我也要前往首都北京。飞机徐徐移动，然后飞上云天，心情也由忐忑趋向了平静。从飞机窗户向下望，望到的是千沟万壑的黄土高原，我对黄土高原“千沟万壑”的认知是停留在地理课本上的，如今却真正目睹了，忽然之间感觉在这浩瀚的天地之间，我们每个人都只是倏忽渺小的夏虫井蛙。飞机穿过柔软的云层，从午后到傍晚，终于抵达目的地。温暖的风吹过脸颊，望着这个既熟悉又陌生的城市，不禁想到在我们会在这里发生什么样的故事呢？
+
+## 志愿者反馈
+
+### 穆建超
+
+作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。
+
+最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。
+
+安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。
+
+### 李朋远
+
+今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。
+
+---
+
+![](https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_719cover.jpg)]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -395,34 +416,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2019 北京助学助教夏令营—— 7.26 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：王国权）</li>
-<li>志愿者反馈</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
-<p>上午八点三十分，所有营员都已坐好，等待着上张嘉民老师的《音乐基础知识普及》课程，每位营员都紧跟老师的思路一步一步走，先学节拍，在学发声，最后连贯成一首歌。</p>
-<p>用完午餐过后，大家都陆续上车准备前往科技馆，一睹科技的魅力，到达科技馆后第一件事就是去看即将看场的3D科普纪律片《海洋：蓝色星球》，海洋是陆地的2.7倍，占地球总表面积71％，海洋中所生存的生物种类繁多；《海洋：蓝色星球》带我们启程前往世界各地，去看奇异海洋生物不为人知的故事，有聪敏的鱼类，也有笨拙的海象，亦有萌哒哒的海豚，看了南极洲的冰山，看了热带水域的珊瑚礁，还看了大洋更远处的波澜壮阔与海洋的浩瀚。电影结束后就排队进入展厅，有的营员喜好古代劳动人民的“科技”，也有的喜欢现代科技的结晶。</p>
-<p>展厅逛完后再科技馆大门口合了影就乘车前往吃饭地点——到《全聚德》吃烤鸭。</p>
-<p>晚上是甘甜老师《环保培训》，这是每一个人类都应该做到的本能，不分种族，性别，老少，看了一条环保宣传片最让我刻骨铭心的一句话是–“大自然不需要人类；人类需要大自然”，是啊，地球已经存在亿万年，在人类为出现在地球上的时候就已经存在了亿万年，又怎么能说大自然需要人类呢，人类只不过是大自然的衍生品，附着于大自然而生，保护环境就是保护我们自己。</p>
-<p>杨志明老师《如何培养孩子》，其中讲到家长应多角度和孩子沟通，四川组的老师康文波也发表了他自己对于如何教育孩子的一些看法和想法。</p>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
-<p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_726cover.jpg"></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019 北京助学助教夏令营—— 7.25 日报</title>
     <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.25%20%E6%97%A5%E6%8A%A5/</url>
     <content><![CDATA[<ul>
@@ -516,6 +509,34 @@
       </tags>
   </entry>
   <entry>
+    <title>2019 北京助学助教夏令营—— 7.26 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：王国权）</li>
+<li>志愿者反馈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
+<p>上午八点三十分，所有营员都已坐好，等待着上张嘉民老师的《音乐基础知识普及》课程，每位营员都紧跟老师的思路一步一步走，先学节拍，在学发声，最后连贯成一首歌。</p>
+<p>用完午餐过后，大家都陆续上车准备前往科技馆，一睹科技的魅力，到达科技馆后第一件事就是去看即将看场的3D科普纪律片《海洋：蓝色星球》，海洋是陆地的2.7倍，占地球总表面积71％，海洋中所生存的生物种类繁多；《海洋：蓝色星球》带我们启程前往世界各地，去看奇异海洋生物不为人知的故事，有聪敏的鱼类，也有笨拙的海象，亦有萌哒哒的海豚，看了南极洲的冰山，看了热带水域的珊瑚礁，还看了大洋更远处的波澜壮阔与海洋的浩瀚。电影结束后就排队进入展厅，有的营员喜好古代劳动人民的“科技”，也有的喜欢现代科技的结晶。</p>
+<p>展厅逛完后再科技馆大门口合了影就乘车前往吃饭地点——到《全聚德》吃烤鸭。</p>
+<p>晚上是甘甜老师《环保培训》，这是每一个人类都应该做到的本能，不分种族，性别，老少，看了一条环保宣传片最让我刻骨铭心的一句话是–“大自然不需要人类；人类需要大自然”，是啊，地球已经存在亿万年，在人类为出现在地球上的时候就已经存在了亿万年，又怎么能说大自然需要人类呢，人类只不过是大自然的衍生品，附着于大自然而生，保护环境就是保护我们自己。</p>
+<p>杨志明老师《如何培养孩子》，其中讲到家长应多角度和孩子沟通，四川组的老师康文波也发表了他自己对于如何教育孩子的一些看法和想法。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
+<p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_726cover.jpg"></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2019 北京助学助教夏令营—— 7.27 日报</title>
     <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
     <content><![CDATA[<ul>
@@ -562,52 +583,6 @@
 <p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr>
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -710,6 +685,52 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
@@ -734,6 +755,40 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+<hr>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>公交</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -787,42 +842,8 @@ table th:nth-of-type(3) {
         <category>摄影</category>
       </categories>
       <tags>
+        <tag>濮阳</tag>
         <tag>拍摄</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-<hr>
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>濮阳</tag>
-        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
