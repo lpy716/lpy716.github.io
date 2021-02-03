@@ -112,57 +112,36 @@
 </div>
 
 <hr>
-<template>
-    <section>
-        <div class="block">
-            <b-button label="Set Music" @click="activeTab = 1" />
-        </div>
-        <div class="block">
-            <b-switch v-model="showBooks"> Show Books item </b-switch>
-        </div>
-        <b-tabs v-model="activeTab">
-            <b-tab-item label="Pictures">
-                Lorem ipsum dolor sit amet.
-            </b-tab-item>
-
-<pre><code>        &lt;b-tab-item label=&quot;Music&quot;&gt;
-            Lorem &lt;br&gt;
-            ipsum &lt;br&gt;
-            dolor &lt;br&gt;
-            sit &lt;br&gt;
-            amet.
-        &lt;/b-tab-item&gt;
-
-        &lt;b-tab-item :visible=&quot;showBooks&quot; label=&quot;Books&quot;&gt;
-            What light is light, if Silvia be not seen? &lt;br&gt;
-            What joy is joy, if Silvia be not by— &lt;br&gt;
-            Unless it be to think that she is by &lt;br&gt;
-            And feed upon the shadow of perfection? &lt;br&gt;
-            Except I be by Silvia in the night, &lt;br&gt;
-            There is no music in the nightingale.
-        &lt;/b-tab-item&gt;
-
-        &lt;b-tab-item label=&quot;Videos&quot; disabled&gt;
-            Nunc nec velit nec libero vestibulum eleifend.
-            Curabitur pulvinar congue luctus.
-            Nullam hendrerit iaculis augue vitae ornare.
-            Maecenas vehicula pulvinar tellus, id sodales felis lobortis eget.
-        &lt;/b-tab-item&gt;
-    &lt;/b-tabs&gt;
-&lt;/section&gt;</code></pre>
-</template>
-
+<div class="column is-12 tabs is-medium">
+  <ul>
+    <li class="is-active"><a>Tab 1</a></li>
+    <li><a>Tab 2</a></li>
+  </ul>
+</div>
+<div class="column is-12 tabs-content">
+  <div class="tab-content is-active">
+    <p>Content 1</p>
+  </div>
+  <div class="tab-content">
+    <p>Content 2</p>
+  </div>
+</div>
 <script>
-    export default {
-        data() {
-            return {
-                activeTab: 0,
-                showBooks: false
-            }
-        }
-    }
-</script>
+   $('.tabs').each(function(index) {
+    var $tabParent = $(this);
+    var $tabs = $tabParent.find('li');
+    var $contents = $tabParent.next('.tabs-content').find('.tab-content');
 
+<pre><code>$tabs.click(function() &#123;
+  var curIndex = $(this).index();
+  // toggle tabs
+  $tabs.removeClass(&#39;is-active&#39;);
+  $tabs.eq(curIndex).addClass(&#39;is-active&#39;);
+  // toggle contents
+  $contents.removeClass(&#39;is-active&#39;);
+  $contents.eq(curIndex).addClass(&#39;is-active&#39;);
+&#125;);</code></pre>
+<p>  });<br></script></p>
 <hr>
 <h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
 <h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
@@ -627,6 +606,52 @@
       </tags>
   </entry>
   <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -720,65 +745,20 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr>
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题增加夜晚模式</title>
+    <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/tree/night2">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/tree/night3">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/tree/night4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
 <p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免日后主题更新需再修改时自己给忘了。</p>
 <p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
 <h1 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h1><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者也在其他 issue 的回复中表示暂无解决方案。</p>
 <p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里copy下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\js\imaegoonight.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.navbar</span> &gt; <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-brand</span> <span class="selector-class">.navbar-item</span>,</span><br><span class="line">  <span class="selector-class">.navbar-tabs</span> <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-link</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff0</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0.5rem</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span><span class="selector-class">.is-active</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">30</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span><span class="selector-class">.has-shadow</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> -<span class="number">2px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top</span> <span class="selector-class">.navbar-menu</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">    <span class="attribute">max-height</span>: <span class="built_in">calc</span>(<span class="number">100vh</span> - <span class="number">3.25rem</span>);</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-top-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>修改的两个地方在第14行那里 <code>background-color: #fff0;</code> 和15行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现已有大佬解决了这一问题：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个 issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
 <figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 120px</code> 改为 <code>$donate-qrcode-max-width ?= 280px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<p>不过该大佬说，此修改只支持 chrome 系（即 webkit）浏览器，Firefox 不支持，IE 什么的就更不用说了，hhh。</p>
+<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
 <hr>
 <p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
 <p> （完）</p>
@@ -789,36 +769,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【test】濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
----
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>公交</tag>
-        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -872,8 +822,42 @@ table th:nth-of-type(3) {
         <category>摄影</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
         <tag>拍摄</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+<hr>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
