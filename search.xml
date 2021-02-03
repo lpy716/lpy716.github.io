@@ -38,20 +38,8 @@
   </a>
 </div>
 
-<script type="text/javascript">
-  $('#aniimated-thumbnials').lightGallery({
-    thumbnail:true
-  }); 
-</script>
 
 <p>晚上7点，由琉璃厂钱总筹办的夏令营欢迎晚宴在延寿楼一楼庭院举行。由隆鉴清老师主持，钱总、汪前进教授、周连生大校依次致辞，对本次夏令营及社团情况进行了介绍，寄语营员在夏令营中能够有学有所获、玩有所乐，开阔视野、满载而归。随后，除甘肃组当时尚未抵达外，其他各组营员依次作了自我介绍，并通过自荐、推荐结合的方式选出四川组唐前国为本次夏令营班长。各位志愿者也分别进行了自我介绍。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script><script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script>
 <div id="aniimated-thumbnials">
   <a href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/dinner1.jpg">
     <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_dinner1.jpg" alt="欢迎晚宴1"/>
