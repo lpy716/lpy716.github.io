@@ -47,12 +47,11 @@
 </div>
 
 
-
 <p>晚上7点，由琉璃厂钱总筹办的夏令营欢迎晚宴在延寿楼一楼庭院举行。由隆鉴清老师主持，钱总、汪前进教授、周连生大校依次致辞，对本次夏令营及社团情况进行了介绍，寄语营员在夏令营中能够有学有所获、玩有所乐，开阔视野、满载而归。随后，除甘肃组当时尚未抵达外，其他各组营员依次作了自我介绍，并通过自荐、推荐结合的方式选出四川组唐前国为本次夏令营班长。各位志愿者也分别进行了自我介绍。</p>
 <div class="demo-gallery mrb20">
     <div id="aniimated-thumbnials2" class="list-unstyled justified-gallery">
         <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/dinner1.jpg" data-sub-html="欢迎晚宴1">
-            <img class="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_dinner1.jpg">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_dinner1.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
@@ -96,13 +95,13 @@
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/scol_zhou.jpg">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_scol_zhou.jpg" data-sub-html="周大校讲话">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/scol_zhou.jpg" data-sub-html="周大校讲话">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_scol_zhou.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/dinner6.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_dinner6.jpg" data-sub-html="欢迎晚宴6">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/dinner6.JPG" data-sub-html="欢迎晚宴6">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/19sc0719/0_dinner6.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
@@ -117,29 +116,27 @@
 <script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/tools/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript">
-  var $animThumb = $("#aniimated-thumbnials1");
-  if ($animThumb.length) {
-    $animThumb
+  var $animThumb1 = $("#aniimated-thumbnials1");
+  if ($animThumb1.length) {
+    $animThumb1
       .justifiedGallery({
         border: 6,
       })
       .on("jg.complete", function () {
-        $animThumb.lightGallery({
+        $animThumb1.lightGallery({
           thumbnail: true,
-          galleryId: 1
         });
       });
   }
-  var $animThumb = $("#aniimated-thumbnials2");
-  if ($animThumb.length) {
-    $animThumb
+  var $animThumb2 = $("#aniimated-thumbnials2");
+  if ($animThumb2.length) {
+    $animThumb2
       .justifiedGallery({
         border: 6,
       })
       .on("jg.complete", function () {
-        $animThumb.lightGallery({
+        $animThumb2.lightGallery({
           thumbnail: true,
-          galleryId: 2
         });
       });
   }
