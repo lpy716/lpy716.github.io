@@ -130,17 +130,13 @@ $('#thumbnials2').lightGallery({
 </ul>
 <a id="more"></a>
 
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
+<h2 id="每日足迹2"><a href="#每日足迹2" class="headerlink" title="每日足迹2"></a>每日足迹2</h2><p><strong><em>记录人：穆建超</em></strong></p>
 <p>7 月 20 日凌晨 2 点半，夜已深且伴有小雨，为了观看升国旗仪式，夏令营营员全体依然按计划集合，在志愿者杨雨欣和穆建超的带领下，从延寿楼出发前往天安门广场。这个时候<br>的前门大街安静无声，大家轻声细语迅速赶往天安门东，3点钟就到达了天安门附近，此时观看仪式的观众已排起长队，大家耐心等候。5点钟，升国旗仪式正式开始，在大家的注目下，国旗冉冉升起，天色渐明，淅沥沥的小雨掩盖不了大家激动的心情。升国旗仪式结束后，大家在人民英雄纪念碑前合影留念，随即返回延寿楼修整，准备上午的学习活动。（图一：安静的广场；图二：等候的人群；图三：合影1；图四：合影2）</p>
 <p>王福乐老师的《国画》讲座于8点半准时开始，营员们提前10分钟便到凝烟阁等待了。王福乐老师是著名的国画大师，虽年岁已高，但是老而弥坚，绘画造诣很高，从中西方绘画的对比入手，总结了国画的特色，并为大家悉心讲解了文房四宝，为了让营员对国画的技艺和理念有更深的理解，王老师胸有成竹，当场作画两幅，“接天莲叶无穷碧，映日荷花别样红”一幅莲花图信手捏来，“唯有牡丹真国色，花开时节动京城”一幅牡丹图引人赞叹！王福乐老师为大家上了一堂别开生面的国画课，让在场的每位听众都印象深刻。（图五：王福乐老师；图六：授课过程；图七：画作；图八：合影）</p>
 <link href="http://sachinchoolur.github.io/lightGallery/static/css/main.css" rel="stylesheet">
 <link href="http://sachinchoolur.github.io/lightGallery/static/css/justifiedGallery.min.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
 <link href="http://sachinchoolur.github.io/lightGallery/lightgallery/css/lightgallery.css" rel="stylesheet">
-<link rel="shortcut icon" href="http://sachinchoolur.github.io/lightGallery/favicon.ico" type="image/x-icon">
-<link rel="icon" href="http://sachinchoolur.github.io/lightGallery/favicon.ico" type="image/x-icon">
-
-
 
 <div class="demo-gallery mrb50">
     <div id="aniimated-thumbnials" class="list-unstyled justified-gallery" style="height: 520px;">
@@ -149,15 +145,13 @@ $('#thumbnials2').lightGallery({
             <div class="demo-gallery-poster">
                 <img src="http://sachinchoolur.github.io/lightGallery/static/img/zoom.png">
             </div>
+        </a>
+        <a class="jg-entry" href="http://sachinchoolur.github.io/lightGallery/static/img/15.jpg" data-sub-html="sdsdsd" style="width: 186px; height: 126.144px; top: 260.287px; left: 758px; opacity: 1;">
 
-<pre><code>    &lt;/a&gt;
-    &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/15.jpg&quot; data-sub-html=&quot;sdsdsd&quot; style=&quot;width: 186px; height: 126.144px; top: 260.287px; left: 758px; opacity: 1;&quot;&gt;
-
-        &lt;img class=&quot;img-responsive&quot; src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/thumb-15.jpg&quot; style=&quot;width: 186px; height: 127px; margin-left: -93px; margin-top: -63.5px;&quot;&gt;
+<pre><code>        &lt;img class=&quot;img-responsive&quot; src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/thumb-15.jpg&quot; style=&quot;width: 186px; height: 127px; margin-left: -93px; margin-top: -63.5px;&quot;&gt;
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
     &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/16.jpg&quot; style=&quot;width: 187px; height: 126.144px; top: 387.431px; left: 6px; opacity: 1;&quot;&gt;
 
@@ -165,7 +159,6 @@ $('#thumbnials2').lightGallery({
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
     &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/17.jpg&quot; style=&quot;width: 187px; height: 126.144px; top: 387.431px; left: 194px; opacity: 1;&quot;&gt;
 
@@ -173,7 +166,6 @@ $('#thumbnials2').lightGallery({
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
     &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/18.jpg&quot; style=&quot;width: 187px; height: 126.144px; top: 387.431px; left: 382px; opacity: 1;&quot;&gt;
 
@@ -181,7 +173,6 @@ $('#thumbnials2').lightGallery({
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
     &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/19.jpg&quot; data-sub-html=&quot;sdsdsd&quot; style=&quot;width: 187px; height: 126.144px; top: 387.431px; left: 570px; opacity: 1;&quot;&gt;
 
@@ -189,7 +180,6 @@ $('#thumbnials2').lightGallery({
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
     &lt;a class=&quot;jg-entry&quot; href=&quot;http://sachinchoolur.github.io/lightGallery/static/img/20.jpg&quot; style=&quot;width: 186px; height: 126.144px; top: 387.431px; left: 758px; opacity: 1;&quot;&gt;
 
@@ -197,12 +187,9 @@ $('#thumbnials2').lightGallery({
         &lt;div class=&quot;demo-gallery-poster&quot;&gt;
             &lt;img src=&quot;http://sachinchoolur.github.io/lightGallery/static/img/zoom.png&quot;&gt;
         &lt;/div&gt;
-
     &lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
-
-
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
