@@ -121,123 +121,6 @@ $('#thumbnials2').lightGallery({
       </tags>
   </entry>
   <entry>
-    <title>2019 北京助学助教夏令营—— 7.20 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.20%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：穆建超）</li>
-<li>营员感想摘录</li>
-<li>志愿者反馈</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
-<p>7 月 20 日凌晨 2 点半，夜已深且伴有小雨，为了观看升国旗仪式，夏令营营员全体依然按计划集合，在志愿者杨雨欣和穆建超的带领下，从延寿楼出发前往天安门广场。这个时候<br>的前门大街安静无声，大家轻声细语迅速赶往天安门东，3点钟就到达了天安门附近，此时观看仪式的观众已排起长队，大家耐心等候。5点钟，升国旗仪式正式开始，在大家的注目下，国旗冉冉升起，天色渐明，淅沥沥的小雨掩盖不了大家激动的心情。升国旗仪式结束后，大家在人民英雄纪念碑前合影留念，随即返回延寿楼修整，准备上午的学习活动。（图一：安静的广场；图二：等候的人群；图三：合影1；图四：合影2）</p>
-<p>王福乐老师的《国画》讲座于8点半准时开始，营员们提前10分钟便到凝烟阁等待了。王福乐老师是著名的国画大师，虽年岁已高，但是老而弥坚，绘画造诣很高，从中西方绘画的对比入手，总结了国画的特色，并为大家悉心讲解了文房四宝，为了让营员对国画的技艺和理念有更深的理解，王老师胸有成竹，当场作画两幅，“接天莲叶无穷碧，映日荷花别样红”一幅莲花图信手捏来，“唯有牡丹真国色，花开时节动京城”一幅牡丹图引人赞叹！王福乐老师为大家上了一堂别开生面的国画课，让在场的每位听众都印象深刻。（图五：王福乐老师；图六：授课过程；图七：画作；图八：合影）</p>
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/css/main.css" rel="stylesheet"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
-<div class="demo-gallery mrb50">
-    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoulou.JPG" data-sub-html="延寿楼">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoulou.jpg">
-            <div class="demo-gallery-poster">
-                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoujie.JPG" data-sub-html="延寿街">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoujie.jpg">
-            <div class="demo-gallery-poster">
-                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/hutong.JPG" data-sub-html="延寿楼周边">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_hutong.jpg">
-            <div class="demo-gallery-poster">
-                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/noon2.JPG" data-sub-html="湖南组报道">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_noon2.jpg">
-            <div class="demo-gallery-poster">
-                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/noon.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_noon.jpg" data-sub-html="志愿者">
-            <div class="demo-gallery-poster">
-                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
-            </div>
-        </a>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/js/jquery.justifiedGallery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-  var $animThumb = $("#aniimated-thumbnials1");
-  if ($animThumb.length) {
-    $animThumb
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb.lightGallery({
-          thumbnail: true,
-          galleryId: 1
-        });
-      });
-  }
-</script>
-
-
-<br>
-
-
-<p>上午的《国画》讲座让人难忘，下午营员们继续参观活动，前往人民大会堂和国家博物馆参观，下午1点半，以小组为单位，在组长的带领下，开始参观人民大会堂，作为召开全国人民代表大会和重要会议的会场，人民大会堂庄严肃穆又颇感亲切；结束了大会堂的参观，接下来去往天安门广场东侧的国家博物馆，在这里，有祖国悠久的历史和灿烂的文化，营员们深受鼓舞，获益匪浅。（图九：国博合影；图十：各小组合影）</p>
-<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
-<li><p><strong><em>董存霞–甘肃组</em></strong></p>
-<blockquote>
-<p>讲座刚开始，一位慈祥和蔼的老人站上了讲台，简单的自我介绍，我只能从中提取到一个信息——中国科学院大学教授，75岁。耄耋之年，在讲课过程中，他神采奕奕，条理清晰，好多时候，竟也忘记他的年龄。教授先生分享了它的经历、见闻、以及他与名人大家之间的故事，有的时候，他的故事会把我们带到七八十年代的中国，领略那个时候中国的风采，沉浸在中国的故事中。更为珍贵的是，这些故事 ，永远不可能在报道中了解到。</p>
-</blockquote>
-</li>
-<li><p><strong><em>闫芳–甘肃组</em></strong></p>
-<blockquote>
-<p>他们为何能成为科学大家？是的，今天郭教授讲的就是这个，他循序渐进，每个对应的品德都举出了相应的例子，不时还会说句英语，很厉害一个人啊，他还是个很有爱心的人，即使下午要去出差，他也在百忙之中抽出时间来给我们做讲座，真的很感谢教授。晚上上的讲座是关于历史的，这让我们对中国的历史有了进一步了解。</p>
-</blockquote>
-</li>
-<li><p><strong><em>张小君–甘肃组</em></strong></p>
-<blockquote>
-<p>今天是素质教育培训活动的第二天聆听了中科院大学党委书记郭传杰大家的《如何成为大科学家》的主题报告，郭老师从聪敏、热爱、好奇心、质疑、创新，勤奋、团队精神等方面，通过例举自己身边的实实在在的大科学家的例子，深入浅出的将大科学家身上的那种特质讲的淋漓尽致，让我受益匪浅，首先郭老师的这一讲座是一节很好的示范课，他从问题导入，通过讲述大科学家的故事表明自己的观点，有图有视频，课堂氛围浓厚，不愧是大家，令我佩服，这对我的课堂教学具有指导意义，郭老师在讲到以上大科学家所具备的优秀品格的内容，也对我们教师培养什么样的人，如何培养人的问题作了回答，谈到热爱、兴趣，我们要加大学科活动、研学旅游、社会实践等活动开展，激发学生学习兴趣；通过学习合作小组，同伴互助学习策略助力团队精神，诚实方面要加强学生诚信教育，希望我们的学生早日成为国之栋梁。下午我们去了国家动物博物馆，领略了我国物种多样丰富。晚上聆听了</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
-<li><p><strong><em>唐思博–湖南组</em></strong></p>
-<blockquote>
-<p>清晨我们早早地起了床，来到了天安门广场观看壮观而又神圣的升国旗仪式。虽然在仪式中下起了大雨，可这并没有打动来自全世界各地人民看升国旗的决心。他们一个个笔直地站立在原地，看着祖国旗冉冉升起。下午，我们又去观看了国家大剧院的音乐会。台上一分钟，台下十年功。他们80多人弹奏出来的音乐是如此的美妙.动听。这无不彰显出了他们的无比团结，这更让我感悟良多。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
-<p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_720cover.jpg"></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019 北京助学助教夏令营—— 7.23 日报</title>
     <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.23%20%E6%97%A5%E6%8A%A5/</url>
     <content><![CDATA[<ul>
@@ -982,8 +865,8 @@ table th:nth-of-type(3) {
 <p>8、濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非客运班线），<strong>实现跨地市的公交联乘出行</strong>：始邢台-【邯郸】-【安阳】-鹤壁止，始【新乡】-郑州-开封止，始【聊城】-济南-淄博-潍坊止，始滨州-东营-淄博-莱芜-【泰安】止，始【菏泽】-【济宁】-枣庄-徐州-宿州止（亦可自邹城曲阜北上至济南潍坊东营。山东和皖苏北部城市间有多条联运线路可选择，此处不细罗列）</p>
 <p>9、濮阳不仅是铁路、公交黑洞，还是<strong>航空黑洞</strong>。对比毗邻七市，仅濮阳境内没有任何机场设施（军用/民用，含正在施工的项目）</p>
 <p>10、正常情况下，在搭乘民航客机时，只可能从濮阳市区的西部向东俯望整个城区。</p>
-<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971汤濮窄轨延长线）。</p>
-<p>12、濮聊高速作为与濮鹤高速同期计划建设的两条线路之一，在二十多年后的今天仍不见其踪影。</p>
+<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971年汤濮窄轨延长线）。</p>
+<p>12、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
 <p>13、郑济高铁濮阳车站除在市域范围内有四个方位选项外，在确定设站濮东后亦有三个子方案。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_pydz.jpg"></p>
 <h1 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h1><p>1、“石油化工”作为濮阳的城市性质之一，其地位在历版城市总规中被不断后移，而在最新一版（2015-2030）城市总规中已经消失。</p>
@@ -1336,6 +1219,1242 @@ table th:nth-of-type(3) {
 <h3 id="王国权"><a href="#王国权" class="headerlink" title="王国权"></a>王国权</h3><p>今天上午在李继祖老师那儿做了心里辅导和团队心里辅导，还做了沙盘实验，感觉四川组的学员挺活泼的，挺会带动集体的气氛，晚上杨晓奇老师《思维导图》课程，学员们也都踊跃回答问题并且认真听讲并跟着老师的思维走做好记录，参加小活动。</p>
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_722cover.jpg"></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019 北京助学助教夏令营—— 7.20 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.20%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：穆建超）</li>
+<li>营员感想摘录</li>
+<li>志愿者反馈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
+<p>7 月 20 日凌晨 2 点半，夜已深且伴有小雨，为了观看升国旗仪式，夏令营营员全体依然按计划集合，在志愿者杨雨欣和穆建超的带领下，从延寿楼出发前往天安门广场。这个时候<br>的前门大街安静无声，大家轻声细语迅速赶往天安门东，3点钟就到达了天安门附近，此时观看仪式的观众已排起长队，大家耐心等候。5点钟，升国旗仪式正式开始，在大家的注目下，国旗冉冉升起，天色渐明，淅沥沥的小雨掩盖不了大家激动的心情。升国旗仪式结束后，大家在人民英雄纪念碑前合影留念，随即返回延寿楼修整，准备上午的学习活动。（图一：安静的广场；图二：等候的人群；图三：合影1；图四：合影2）</p>
+<p>王福乐老师的《国画》讲座于8点半准时开始，营员们提前10分钟便到凝烟阁等待了。王福乐老师是著名的国画大师，虽年岁已高，但是老而弥坚，绘画造诣很高，从中西方绘画的对比入手，总结了国画的特色，并为大家悉心讲解了文房四宝，为了让营员对国画的技艺和理念有更深的理解，王老师胸有成竹，当场作画两幅，“接天莲叶无穷碧，映日荷花别样红”一幅莲花图信手捏来，“唯有牡丹真国色，花开时节动京城”一幅牡丹图引人赞叹！王福乐老师为大家上了一堂别开生面的国画课，让在场的每位听众都印象深刻。（图五：王福乐老师；图六：授课过程；图七：画作；图八：合影）</p>
+<!-- <link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/css/main.css" rel="stylesheet"/> -->
+<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
+<div class="demo-gallery mrb50">
+    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoulou.JPG" data-sub-html="延寿楼">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoulou.jpg">
+            <div class="demo-gallery-poster">
+                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/yanshoujie.JPG" data-sub-html="延寿街">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_yanshoujie.jpg">
+            <div class="demo-gallery-poster">
+                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/hutong.JPG" data-sub-html="延寿楼周边">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_hutong.jpg">
+            <div class="demo-gallery-poster">
+                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/noon2.JPG" data-sub-html="湖南组报道">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_noon2.jpg">
+            <div class="demo-gallery-poster">
+                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/noon.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.4/19sc0719/0_noon.jpg" data-sub-html="志愿者">
+            <div class="demo-gallery-poster">
+                <img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/zoom.png">
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/js/jquery.justifiedGallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-fullscreen@1.2.1/dist/lg-fullscreen.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.5/tools/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+  var $animThumb = $("#aniimated-thumbnials1");
+  if ($animThumb.length) {
+    $animThumb
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb.lightGallery({
+          thumbnail: true,
+          galleryId: 1
+        });
+      });
+  }
+</script>
+<style type="text/css">
+    /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+    /*@import "modals.less";
+    @import "tooltip.less";
+    @import "popovers.less";
+    @import "carousel.less";*/
+    .clearfix:before,
+    .clearfix:after,
+    .dl-horizontal dd:before,
+    .dl-horizontal dd:after,
+    .container:before,
+    .container:after,
+    .container-fluid:before,
+    .container-fluid:after,
+    .row:before,
+    .row:after,
+    .nav:before,
+    .nav:after,
+    .navbar:before,
+    .navbar:after,
+    .navbar-header:before,
+    .navbar-header:after,
+    .navbar-collapse:before,
+    .navbar-collapse:after {
+      content: " ";
+      display: table;
+    }
+    .clearfix:after,
+    .dl-horizontal dd:after,
+    .container:after,
+    .container-fluid:after,
+    .row:after,
+    .nav:after,
+    .navbar:after,
+    .navbar-header:after,
+    .navbar-collapse:after {
+      clear: both;
+    }
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pull-right {
+      float: right !important;
+    }
+    .pull-left {
+      float: left !important;
+    }
+    .hide {
+      display: none !important;
+    }
+    .show {
+      display: block !important;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+    .text-hide {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+    }
+    .hidden {
+      display: none !important;
+    }
+    .affix {
+      position: fixed;
+    }
+    .visible-xs,
+    .visible-sm,
+    .visible-md,
+    .visible-lg {
+      display: none !important;
+    }
+    .visible-xs-block,
+    .visible-xs-inline,
+    .visible-xs-inline-block,
+    .visible-sm-block,
+    .visible-sm-inline,
+    .visible-sm-inline-block,
+    .visible-md-block,
+    .visible-md-inline,
+    .visible-md-inline-block,
+    .visible-lg-block,
+    .visible-lg-inline,
+    .visible-lg-inline-block {
+      display: none !important;
+    }
+    @media (max-width: 767px) {
+      .visible-xs {
+        display: block !important;
+      }
+      table.visible-xs {
+        display: table !important;
+      }
+      tr.visible-xs {
+        display: table-row !important;
+      }
+      th.visible-xs,
+      td.visible-xs {
+        display: table-cell !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .visible-xs-block {
+        display: block !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .visible-xs-inline {
+        display: inline !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .visible-xs-inline-block {
+        display: inline-block !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .visible-sm {
+        display: block !important;
+      }
+      table.visible-sm {
+        display: table !important;
+      }
+      tr.visible-sm {
+        display: table-row !important;
+      }
+      th.visible-sm,
+      td.visible-sm {
+        display: table-cell !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .visible-sm-block {
+        display: block !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .visible-sm-inline {
+        display: inline !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .visible-sm-inline-block {
+        display: inline-block !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .visible-md {
+        display: block !important;
+      }
+      table.visible-md {
+        display: table !important;
+      }
+      tr.visible-md {
+        display: table-row !important;
+      }
+      th.visible-md,
+      td.visible-md {
+        display: table-cell !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .visible-md-block {
+        display: block !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .visible-md-inline {
+        display: inline !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .visible-md-inline-block {
+        display: inline-block !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .visible-lg {
+        display: block !important;
+      }
+      table.visible-lg {
+        display: table !important;
+      }
+      tr.visible-lg {
+        display: table-row !important;
+      }
+      th.visible-lg,
+      td.visible-lg {
+        display: table-cell !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .visible-lg-block {
+        display: block !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .visible-lg-inline {
+        display: inline !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .visible-lg-inline-block {
+        display: inline-block !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .hidden-xs {
+        display: none !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .hidden-sm {
+        display: none !important;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .hidden-md {
+        display: none !important;
+      }
+    }
+    @media (min-width: 1200px) {
+      .hidden-lg {
+        display: none !important;
+      }
+    }
+    .visible-print {
+      display: none !important;
+    }
+    @media print {
+      .visible-print {
+        display: block !important;
+      }
+      table.visible-print {
+        display: table !important;
+      }
+      tr.visible-print {
+        display: table-row !important;
+      }
+      th.visible-print,
+      td.visible-print {
+        display: table-cell !important;
+      }
+    }
+    .visible-print-block {
+      display: none !important;
+    }
+    @media print {
+      .visible-print-block {
+        display: block !important;
+      }
+    }
+    .visible-print-inline {
+      display: none !important;
+    }
+    @media print {
+      .visible-print-inline {
+        display: inline !important;
+      }
+    }
+    .visible-print-inline-block {
+      display: none !important;
+    }
+    @media print {
+      .visible-print-inline-block {
+        display: inline-block !important;
+      }
+    }
+    @media print {
+      .hidden-print {
+        display: none !important;
+      }
+    }
+    .mrb0 {
+      margin-bottom: 0px !important;
+    }
+    .mrb10 {
+      margin-bottom: 10px !important;
+    }
+    .mrb15 {
+      margin-bottom: 15px !important;
+    }
+    .mrb20 {
+      margin-bottom: 20px !important;
+    }
+    .mrb30 {
+      margin-bottom: 30px !important;
+    }
+    .mrb35 {
+      margin-bottom: 35px !important;
+    }
+    .mrb50 {
+      margin-bottom: 50px !important;
+    }
+    .mrb40 {
+      margin-bottom: 40px !important;
+    }
+    .mrb60 {
+      margin-bottom: 50px !important;
+    }
+    .pdt0 {
+      padding-top: 0 !important;
+    }
+    .pdb0 {
+      padding-bottom: 0 !important;
+    }
+    .page-header {
+      margin-bottom: 0;
+    }
+    .hero {
+      background-color: #152836;
+      color: #EEE;
+      min-height: 540px;
+    }
+    .hero .btn-primary {
+      color: #EEE;
+      border-color: #EEE;
+      transition: color 0.10s ease 0s, background-color 0.15s ease 0s;
+    }
+    .hero .btn-primary:hover {
+      background-color: #fff;
+      color: #152836;
+    }
+    .hero .lg-ad {
+      background-color: rgba(0, 0, 0, 0.45);
+      border: 3px solid #fff;
+      border-radius: 3px;
+      padding: 10px 0 6px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .section {
+      padding: 50px 0 40px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .section.highlight {
+      background-color: #FAFAFA;
+    }
+    .section .section-header h1,
+    .section .section-header h2 {
+      text-align: left;
+    }
+    .section .section-header .section-title {
+      text-align: left;
+    }
+    .section .section-header.has-desc p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .section .border {
+      background-color: #152836;
+      display: block;
+      height: 3px;
+      margin: 5px 0 0;
+      width: 80px;
+    }
+    .demo-links .btn {
+      margin-bottom: 20px;
+      width: 100%;
+      overflow: hidden;
+      background-color: transparent;
+      border-width: 2px;
+      color: #152836;
+      border-color: #152836;
+      transition: color 0.10s ease 0s, background-color 0.15s ease 0s;
+    }
+    .demo-links .btn:hover {
+      background-color: #152836;
+      color: white;
+    }
+    .other-projects .btn {
+      width: 100%;
+      margin-bottom: 20px;
+      transition: color 0.10s ease 0s, background-color 0.15s ease 0s;
+    }
+    .features .icon {
+      background-color: #152836;
+      border-radius: 60%;
+      padding: 10px;
+      text-align: center;
+      width: 80px;
+      height: 80px;
+      float: left;
+    }
+    .features .icon img {
+      width: 60px;
+    }
+    .features .media {
+      margin-bottom: 60px;
+    }
+    .features .desc {
+      margin-left: 100px;
+      text-align: left;
+    }
+    .features .section-title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .lead {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .lead {
+        font-size: 16px;
+      }
+    }
+    .page-head {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .page-head .lead {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      margin-bottom: 60px;
+    }
+    @media (min-width: 768px) {
+      .page-head .lead {
+        font-size: 18px;
+      }
+    }
+    .page-head h1 {
+      font-size: 42px;
+      margin: 0 0 25px;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+    }
+    .page-head h1 .version {
+      border-radius: 2px;
+      bottom: 6px;
+      overflow: hidden;
+      position: absolute;
+      right: -86px;
+    }
+    @media (max-width: 480px) {
+      .page-head h1 .version {
+        right: 0;
+      }
+    }
+    .page-head h1 .version img {
+      left: -36px;
+      max-width: 85%;
+      position: relative;
+    }
+    .demo-gallery > ul {
+      margin-bottom: 0;
+    }
+    .demo-gallery > ul > li {
+      margin-bottom: 15px;
+    }
+    .demo-gallery > ul > li a {
+      border: 3px solid #fff;
+      border-radius: 3px;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      float: left;
+    }
+    .demo-gallery > ul > li a > img {
+      transition: transform 0.15s ease 0s;
+      transform: scale3d(1, 1, 1);
+      width: 100%;
+    }
+    .demo-gallery > ul > li a:hover > img {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+      opacity: 1;
+    }
+    .demo-gallery > ul > li a .demo-gallery-poster {
+      background-color: rgba(0, 0, 0, 0.1);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: background-color 0.15s ease 0s;
+    }
+    .demo-gallery > ul > li a .demo-gallery-poster > img {
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -10px;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      transition: opacity 0.3s ease 0s;
+    }
+    .demo-gallery > ul > li a:hover .demo-gallery-poster {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .demo-gallery .justified-gallery > a > img {
+      transition: transform 0.15s ease 0s;
+      transform: scale3d(1, 1, 1);
+      height: 100%;
+      width: 100%;
+    }
+    .demo-gallery .justified-gallery > a:hover > img {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+      opacity: 1;
+    }
+    .demo-gallery .justified-gallery > a .demo-gallery-poster {
+      background-color: rgba(0, 0, 0, 0.1);
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: background-color 0.15s ease 0s;
+    }
+    .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -10px;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      transition: opacity 0.3s ease 0s;
+    }
+    .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .demo-gallery .video .demo-gallery-poster img {
+      height: 48px;
+      margin-left: -24px;
+      margin-top: -24px;
+      opacity: 0.8;
+      width: 48px;
+    }
+    .demo-gallery.dark > ul > li a {
+      border: 3px solid #04070a;
+    }
+    .home .demo-gallery {
+      padding-bottom: 80px;
+    }
+    #aniimated-thumbnials .demo-gallery a {
+      width: 190px;
+      height: 132px;
+    }
+    .sample-code {
+      text-align: left;
+    }
+    .bs-callout {
+      padding: 20px;
+      margin: 0px;
+      border: 1px solid #f1f1f1;
+      background-color: #FAFAFA;
+      border-left-width: 5px;
+      border-radius: 3px;
+      text-align: left;
+    }
+    .bs-callout h4 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+      margin-bottom: 0;
+    }
+    .bs-callout code {
+      border-radius: 3px;
+    }
+    .bs-callout + .bs-callout {
+      margin-top: -5px;
+    }
+    .bs-callout-danger {
+      border-left-color: #ce4844;
+    }
+    .bs-callout-danger h4 {
+      color: #ce4844;
+    }
+    .bs-callout-warning {
+      border-left-color: #aa6708;
+    }
+    .bs-callout-warning h4 {
+      color: #aa6708;
+    }
+    .bs-callout-info {
+      border-left-color: #1b809e;
+    }
+    .bs-callout-info h4 {
+      color: #1b809e;
+    }
+    .docs .section {
+      text-align: left;
+      border-bottom: none;
+    }
+    .docs .doc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #555;
+    }
+    .docs .side-nav .nav > li.active > a {
+      font-weight: bold;
+    }
+    .docs .side-nav .nav > li a {
+      color: #152836;
+    }
+    .docs .side-nav .nav > li a:hover {
+      background-color: transparent;
+    }
+    .docs .side-nav .nav .active .nav {
+      font-size: 13px;
+      padding-left: 20px;
+      display: block;
+    }
+    .docs .side-nav .nav .active .nav a {
+      padding-bottom: 6px;
+      padding-top: 6px;
+    }
+    .docs .side-nav .nav .nav {
+      display: none;
+    }
+    .docs .demo-container {
+      padding-top: 50px;
+    }
+    .docs .affix {
+      top: 20px;
+    }
+    @media (max-width: 991px) {
+      .docs .affix {
+        position: relative;
+        top: 0;
+      }
+    }
+    .anchor-title {
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+    }
+    .anchor-title a {
+      color: #444;
+      position: relative;
+      text-decoration: none;
+    }
+    .anchor-title a.no-content:before {
+      content: "";
+    }
+    .anchor-title a:before {
+      color: #ddd;
+      content: "#";
+      display: block;
+      font-size: 22px;
+      left: -20px;
+      padding-right: 5px;
+      position: absolute;
+      top: 4px;
+      opacity: 0;
+    }
+    .anchor-title a:hover:before {
+      opacity: 1;
+    }
+    .anchor-title span {
+      color: rgba(34, 34, 34, 0.2);
+      font-size: 0.75em;
+    }
+    h3.anchor-title {
+      font-size: 18px;
+    }
+    h3.anchor-title a:before {
+      font-size: 18px;
+      left: -16px;
+      top: 4px;
+    }
+    .fixed-size.lg-outer .lg-inner {
+      background-color: #fff;
+    }
+    .fixed-size.lg-outer .lg-sub-html {
+      position: absolute;
+      text-align: left;
+    }
+    .fixed-size.lg-outer .lg-toolbar {
+      background-color: transparent;
+      height: 0;
+    }
+    .fixed-size.lg-outer .lg-toolbar .lg-icon {
+      color: #fff;
+    }
+    .fixed-size.lg-outer .lg-img-wrap {
+      padding: 12px;
+    }
+    .share {
+      background-color: #152836;
+      color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .share > h3 {
+      margin: 0 0 50px;
+    }
+    .sharrre .box {
+      height: 40px;
+      width: 40px;
+    }
+    #twitter .box {
+      background-image: url("../img/social/twitter-icon.svg");
+      background-size: contain;
+    }
+    #facebook .box {
+      background-image: url("../img/social/facebook-icon.svg");
+      background-size: contain;
+    }
+    .sharrre {
+      padding: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 30px;
+      transition: transform 0.2s ease 0s;
+      transform: scale(1);
+    }
+    .sharrre:hover {
+      transform: scale(1.2);
+    }
+    .sharrre .count {
+      display: none;
+    }
+    .sharrre#twitter {
+      background-color: #00acee;
+    }
+    .sharrre#facebook {
+      background-color: #3b5998;
+    }
+    .sharrre#googleplus {
+      background-color: #dd4b39;
+    }
+    #googleplus.sharrre::after,
+    #twitter.sharrre::after {
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 40px;
+      width: 40px;
+    }
+    #googleplus.sharrre::after {
+      background-image: url("../img/social/googleplus-icon.svg");
+    }
+    #twitter.sharrre::after {
+      background-image: url("../img/social/twitter-icon.svg");
+    }
+    footer {
+      background-color: #152836;
+      text-align: center;
+      padding: 15px 0px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    footer a {
+      color: #fff;
+      font-size: 16px;
+    }
+    footer a:first-child {
+      margin-right: 5px;
+    }
+    footer a:hover,
+    footer a:focus {
+      color: #f1f1f1;
+      opacity: 0.9;
+      text-decoration: none;
+    }
+    body {
+      min-height: 720px;
+      position: relative;
+      padding-bottom: 63px;
+    }
+    body.home .main-cont #hero > .container-fluid,
+    body.home .main-cont #hero > .navbar {
+      opacity: 0;
+      transition: opacity 0.5s ease 0s;
+    }
+    body.home .main-cont.abs {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    body.home .page-loading {
+      background-color: #000;
+      height: 100%;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      transition: opacity 0.5s ease 0s;
+    }
+    body.home .page-load-inner {
+      transition: transform 0.5s ease 0s;
+      left: 50%;
+      margin-left: -35px;
+      margin-top: -12px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+    }
+    body.loaded .page-loading {
+      opacity: 0;
+    }
+    body.loaded .page-load-inner {
+      transform: translate3d(0px, -100px, 0px);
+    }
+    body.home.in .main-cont #hero > .container-fluid,
+    body.home.in .main-cont #hero > .navbar {
+      opacity: 1;
+    }
+    .sk-three-bounce {
+      width: 70px;
+    }
+    .sk-three-bounce .sk-child {
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      border-radius: 100%;
+      display: inline-block;
+      animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    }
+    .sk-three-bounce .sk-bounce1 {
+      animation-delay: -0.32s;
+    }
+    .sk-three-bounce .sk-bounce2 {
+      animation-delay: -0.16s;
+    }
+    @keyframes sk-three-bounce {
+      0%,
+      80%,
+      100% {
+        transform: scale(0);
+      }
+      40% {
+        transform: scale(1);
+      }
+    }
+    .lg-ad {
+      border: 3px solid #152836;
+      border-radius: 3px;
+      padding: 10px 10px 4px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .lg-ad.light {
+      background-color: #f1f1f1;
+      border: 1px solid #e6e6e6;
+      text-align: center;
+    }
+    .docs-ad {
+      border-bottom: 1px solid #eee;
+      border-top: 1px solid #eee;
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    .hero-select-wrap {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .hero-select-wrap span {
+      color: #fff;
+      margin-right: 10px;
+    }
+    @media (min-width: 768px) {
+      .hero-select-wrap .select-mode {
+        float: left;
+      }
+    }
+    .hero-select-wrap .select-ease {
+      margin-top: 20px;
+      width: 100%;
+    }
+    @media (min-width: 768px) {
+      .hero-select-wrap .select-ease {
+        float: right;
+        margin-top: 0px;
+        width: auto;
+      }
+    }
+    .license-outer {
+      border: 2px solid #152836;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s ease 0s;
+    }
+    .license-outer:hover {
+      border-color: #e02c2c;
+    }
+    .license-outer:hover .price {
+      background-color: #e02c2c !important;
+    }
+    .license-outer:hover .license {
+      color: #e02c2c;
+    }
+    .license-outer .license {
+      padding: 20px 20px 0;
+      color: #333;
+      text-align: center;
+      transition: color 0.15s ease 0s;
+    }
+    .license-outer .license:hover,
+    .license-outer .license:active,
+    .license-outer .license:focus {
+      text-decoration: none;
+      outline: none;
+    }
+    .license-outer .license small {
+      display: block;
+      font-size: 13px;
+    }
+    .license-outer .license > h2 {
+      margin: 4px;
+      line-height: 1;
+      text-align: center !important;
+    }
+    .license-outer .license .price {
+      background-color: #152836;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: -26px;
+      margin-top: 20px;
+      padding: 7px 0;
+      transition: background-color 0.15s ease 0s;
+    }
+    .license-outer .license .plan {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .select-plugin {
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+    .select-plugin > select {
+      min-width: 200px;
+      padding: 5px;
+    }
+    .select-plugin .label {
+      margin-right: 20px;
+    }
+    .promo_bar {
+      background: #ff5b5d none repeat scroll 0 0;
+      height: 3.8em;
+      padding: 1em 1.25em;
+      position: relative;
+    }
+    .contain {
+      margin: 0 auto;
+      max-width: 77.8125em;
+      position: relative;
+    }
+    .promo_bar p {
+      color: white;
+      font-size: 15px;
+      font-weight: 400;
+      margin: 0;
+      text-align: center;
+    }
+    .promo_bar .promo_close {
+      color: #fff;
+      font-weight: bold;
+      position: absolute;
+      right: 20px;
+      top: 16px;
+    }
+    .license-points h3 {
+      font-size: 18px;
+      margin: 0 0 7px 0;
+    }
+    .license-points p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      color: #8e8e8e;
+    }
+    .license-points p + h3 {
+      margin-top: 29px;
+    }
+    .license-points p + p {
+      margin-top: 5px;
+    }
+    .license-points {
+      margin-top: -20px;
+    }
+    .license-outer .license .plan {
+      font-size: 15px;
+      margin-top: 25px;
+      color: #666;
+      line-height: 1.4;
+    }
+    .license-outer .license .plan + .plan {
+      margin-top: 7px;
+    }
+    .license-outer .license small {
+      color: #999;
+    }
+    .lg-ad {
+      border: 3px solid #152836;
+      border-radius: 3px;
+      padding: 10px 10px 4px;
+      text-align: center;
+      overflow: hidden;
+      color: #eee;
+    }
+    .lg-ad.light {
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: #555;
+      padding: 0;
+    }
+    .hero .lg-ad {
+      border: 3px solid #fff;
+      border-radius: 3px;
+      padding: 10px 10px 6px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .docs-ad {
+      border-bottom: 1px solid #eee;
+      border-top: 1px solid #eee;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    #carbonads {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    #carbonads {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+    #carbonads > span {
+      position: relative;
+      display: block;
+    }
+    #carbonads a {
+      color: inherit;
+      text-decoration: none;
+    }
+    #carbonads a:hover {
+      color: inherit;
+    }
+    .carbon-wrap {
+      display: flex;
+      align-items: center;
+    }
+    .carbon-img {
+      display: block;
+      margin: 0;
+      line-height: 1;
+    }
+    .carbon-img img {
+      display: block;
+    }
+    .carbon-text {
+      position: relative;
+      display: flex;
+      margin-bottom: 12px;
+      padding: 8px 1em;
+      max-width: 500px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.4;
+      align-items: center;
+    }
+    .carbon-text:after {
+      display: table;
+      margin-left: 20px;
+      padding: 12px 16px;
+      border-radius: 3px;
+      background-color: hsl(204, 46%, 30%);
+      color: #ffffff;
+      content: "Learn More";
+      white-space: nowrap;
+      font-size: 14px;
+      line-height: 1;
+      transition: all 0.2s ease;
+    }
+    .carbon-text:hover:after {
+      background-color: white;
+      color: #152936;
+    }
+    .lg-ad.light .carbon-text:hover:after {
+      background-color: hsl(204, 46%, 16%);
+      color: #fff;
+    }
+    .carbon-poweredby {
+      position: absolute;
+      bottom: 0;
+      left: 146px;
+      color: #999 !important;
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      font-size: 10px;
+    }
+    @media only screen and (min-width: 320px) and (max-width: 759px) {
+      .carbon-text:after {
+        display: none;
+      }
+    }
+</style>
+
+
+
+
+
+
+
+<p>上午的《国画》讲座让人难忘，下午营员们继续参观活动，前往人民大会堂和国家博物馆参观，下午1点半，以小组为单位，在组长的带领下，开始参观人民大会堂，作为召开全国人民代表大会和重要会议的会场，人民大会堂庄严肃穆又颇感亲切；结束了大会堂的参观，接下来去往天安门广场东侧的国家博物馆，在这里，有祖国悠久的历史和灿烂的文化，营员们深受鼓舞，获益匪浅。（图九：国博合影；图十：各小组合影）</p>
+<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
+<li><p><strong><em>董存霞–甘肃组</em></strong></p>
+<blockquote>
+<p>讲座刚开始，一位慈祥和蔼的老人站上了讲台，简单的自我介绍，我只能从中提取到一个信息——中国科学院大学教授，75岁。耄耋之年，在讲课过程中，他神采奕奕，条理清晰，好多时候，竟也忘记他的年龄。教授先生分享了它的经历、见闻、以及他与名人大家之间的故事，有的时候，他的故事会把我们带到七八十年代的中国，领略那个时候中国的风采，沉浸在中国的故事中。更为珍贵的是，这些故事 ，永远不可能在报道中了解到。</p>
+</blockquote>
+</li>
+<li><p><strong><em>闫芳–甘肃组</em></strong></p>
+<blockquote>
+<p>他们为何能成为科学大家？是的，今天郭教授讲的就是这个，他循序渐进，每个对应的品德都举出了相应的例子，不时还会说句英语，很厉害一个人啊，他还是个很有爱心的人，即使下午要去出差，他也在百忙之中抽出时间来给我们做讲座，真的很感谢教授。晚上上的讲座是关于历史的，这让我们对中国的历史有了进一步了解。</p>
+</blockquote>
+</li>
+<li><p><strong><em>张小君–甘肃组</em></strong></p>
+<blockquote>
+<p>今天是素质教育培训活动的第二天聆听了中科院大学党委书记郭传杰大家的《如何成为大科学家》的主题报告，郭老师从聪敏、热爱、好奇心、质疑、创新，勤奋、团队精神等方面，通过例举自己身边的实实在在的大科学家的例子，深入浅出的将大科学家身上的那种特质讲的淋漓尽致，让我受益匪浅，首先郭老师的这一讲座是一节很好的示范课，他从问题导入，通过讲述大科学家的故事表明自己的观点，有图有视频，课堂氛围浓厚，不愧是大家，令我佩服，这对我的课堂教学具有指导意义，郭老师在讲到以上大科学家所具备的优秀品格的内容，也对我们教师培养什么样的人，如何培养人的问题作了回答，谈到热爱、兴趣，我们要加大学科活动、研学旅游、社会实践等活动开展，激发学生学习兴趣；通过学习合作小组，同伴互助学习策略助力团队精神，诚实方面要加强学生诚信教育，希望我们的学生早日成为国之栋梁。下午我们去了国家动物博物馆，领略了我国物种多样丰富。晚上聆听了</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
+<li><p><strong><em>唐思博–湖南组</em></strong></p>
+<blockquote>
+<p>清晨我们早早地起了床，来到了天安门广场观看壮观而又神圣的升国旗仪式。虽然在仪式中下起了大雨，可这并没有打动来自全世界各地人民看升国旗的决心。他们一个个笔直地站立在原地，看着祖国旗冉冉升起。下午，我们又去观看了国家大剧院的音乐会。台上一分钟，台下十年功。他们80多人弹奏出来的音乐是如此的美妙.动听。这无不彰显出了他们的无比团结，这更让我感悟良多。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
+<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
+<p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_720cover.jpg"></p>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
