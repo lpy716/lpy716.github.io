@@ -13,7 +13,7 @@
 <h2 id="今日足迹"><a href="#今日足迹" class="headerlink" title="今日足迹"></a>今日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
 <p>不到早上7点，负责湖南组接站的志愿者李朋远便已出发前往北京西站，而负责检查报到营员证件和发放营员卡证的志愿者赵翔鹏、穆建超也已准备动身前往延寿楼。2019年助学助教夏令营拉开序幕。</p>
 <p>按照日程安排，7月19日全天围绕接站这一项任务展开。全天从早上8点到晚上10点，在6名志愿者的带领下，34名营员分7批次陆续安全地抵达延寿楼。</p>
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/tools/css/main.css" />
+<link type="text/css" rel="stylesheet" href="E:/GitHub/pic_CDN/tools/css/main.css" />
 <link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.6/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
 <link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
 <div class="demo-gallery mrb20">
@@ -723,6 +723,33 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免日后主题更新需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h1 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h1><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者也在其他 issue 的回复中表示暂无解决方案。</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里copy下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\js\imaegoonight.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.navbar</span> &gt; <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-brand</span> <span class="selector-class">.navbar-item</span>,</span><br><span class="line">  <span class="selector-class">.navbar-tabs</span> <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-link</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff0</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0.5rem</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span><span class="selector-class">.is-active</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">30</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span><span class="selector-class">.has-shadow</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> -<span class="number">2px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top</span> <span class="selector-class">.navbar-menu</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">    <span class="attribute">max-height</span>: <span class="built_in">calc</span>(<span class="number">100vh</span> - <span class="number">3.25rem</span>);</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-top-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在第14行那里 <code>background-color: #fff0;</code> 和15行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个 issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 chrome 系（即 webkit）浏览器，Firefox 不支持，IE 什么的就更不用说了，hhh。</p>
+<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<hr>
+<p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
@@ -766,67 +793,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免日后主题更新需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h1 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h1><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者也在其他 issue 的回复中表示暂无解决方案。</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里copy下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\js\imaegoonight.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.navbar</span> &gt; <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-brand</span> <span class="selector-class">.navbar-item</span>,</span><br><span class="line">  <span class="selector-class">.navbar-tabs</span> <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-link</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff0</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0.5rem</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span><span class="selector-class">.is-active</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">30</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span><span class="selector-class">.has-shadow</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> -<span class="number">2px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top</span> <span class="selector-class">.navbar-menu</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">    <span class="attribute">max-height</span>: <span class="built_in">calc</span>(<span class="number">100vh</span> - <span class="number">3.25rem</span>);</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-top-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在第14行那里 <code>background-color: #fff0;</code> 和15行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个 issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 chrome 系（即 webkit）浏览器，Firefox 不支持，IE 什么的就更不用说了，hhh。</p>
-<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<hr>
-<p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-
-
-<hr>
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>公交</tag>
-        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -880,8 +846,42 @@ table th:nth-of-type(3) {
         <category>摄影</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
         <tag>拍摄</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+<hr>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
