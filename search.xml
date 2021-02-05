@@ -1652,7 +1652,7 @@ table th:nth-of-type(3) {
         });
       });
   }
-  var $animThumb3 = $("#aniimated-thumbnials2");
+  var $animThumb3 = $("#aniimated-thumbnials3");
   if ($animThumb3.length) {
     $animThumb3
       .justifiedGallery({
