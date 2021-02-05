@@ -168,159 +168,46 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。</p>
-<p>最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。</p>
-<p>安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。</p>
-<h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="穆建超" class="tab-content">
+    <p>作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。</p>
+    <p>最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。</p>
+    <p>安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。</p>
+</div>
+<div id="李朋远" class="tab-content">
+    今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_719cover.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019 北京助学助教夏令营—— 7.23 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.23%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：穆建超）</li>
-<li>营员感想摘录</li>
-<li>志愿者反馈</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
-<p>7月23日是夏令营的第五天，夏令营日程将过半，上午和晚上为营员安排了讲座，下午是到鲁迅博物馆参观，全体的学习任务和参观安排相对较为宽松。</p>
-<p>在西北风味食堂用过早餐后，学员在提前赶到综合楼305教室准备课程的学习。胡志强老师为大家带来《哲学浅谈》的课程，胡老师平易近人，循循善诱，思维敏捷，知识渊博，把晦涩难懂的哲学问题简单化，把哲学思想放在日常生活中，将研究哲学与“讲道理”结合起来，指出研究哲学就是要“讲道理”，这个“道理”不以人的意志为前提，它讲究客观证据和客观规律，启发和升华了大家对哲学思想的认识和理解；接下来王昭琪老师为大家带来了《礼仪培训》，良好的形象、高雅的举止和合适的礼仪在待人接物中颇具感染力，营员们认真学习，积极与老师互动，课堂气氛活跃。</p>
-<p>骄阳似火，顶着烈日，下午1点半营员们到达鲁迅博物馆，开始了参观活动；讲解员细致地为大家介绍，介绍了鲁迅的生平及博物馆的历史，大家对那个课本上的那个“横眉冷对千夫指，俯首甘为孺子牛”的鲁迅先生有了更直观更深刻的了解，对鲁迅弃医从文的选择有个更深的感受，在鲁迅生活的年代，仅仅救治国民的身体，难以挽救国家，更重要的是救治国民精神。鲁迅的作品和他的人生深深影响了那其所在年代的人民，在今天及未来必将影响更多的人。（图5：讲解；图6：合影）</p>
-<p>结束了鲁迅博物馆的参观，大家返回学校，晚上6点半继续晚上的讲座。营员分为了学生和教师两组，学生在305教室参加韩庆雷老师的《情绪管理》课程，老师在304教室参加李荐老师的《友善用脑》课程，韩老师的讲解以及课堂活动，让学生们敞开心扉，把自己的面临的情绪问题说出来并给出解决办法，学生们最后都放下了心理包袱，露出了更开心又轻松的笑容；李荐老师将国外的教学经验以及国内教学的新要求和新标准带到了课堂，各位老师们听的津津有味，收获颇丰，必将影响老师们以后的教学培养方式。</p>
-<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
-<li><p><strong><em>闫芳–甘肃组</em></strong></p>
-<blockquote>
-<p>礼仪也是中华名族美德之一，今天的礼仪课讲的是如何社交，上完这节课后，我们又学到了一些社交新技能，这有利于我们今后的为人处世，对我们的学习也有很大帮助；鲁迅博物馆则让我们了解了鲁迅生活的那个年代和他生平，让我们感受到了他的名族魂；晚上的《情绪管理》课则让我们更深入的了解了他的起因以及如何控制自己的情绪，课堂的活动也让我们充分发挥了自己的才能。</p>
-</blockquote>
-</li>
-<li><p><strong><em>罗巧花–甘肃组</em></strong></p>
-<blockquote>
-<p>生活处处有哲学，听了胡教授的课之后，更加深刻的理解了哲学的含义，而且知道了它与具体学科的区别。中国自古以来就是礼仪之邦，礼仪培训课让我明白了生活中为人处世的基本礼仪准则，收获颇多。观伟人之人生历程，悟中华之国魂，看着近在眼前的鲁迅，不禁想这是多么伟大的人物，以笔代枪，唤醒国人沉睡的灵魂，有的人死了，他还活着，鲁迅先生就是这样的存在，他永远活在中国人的心中。韩老师的情绪管理课，将理论与实践结合，课上内容内化于心，让我学会了如何更好的管理自己的情绪。每一堂课都对我影响深远</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="四川组"><a href="#四川组" class="headerlink" title="四川组"></a>四川组</h3><ul>
-<li><p><strong><em>康文波–四川组</em></strong></p>
-<blockquote>
-<p>每天都有新收获，今天收获特别多。上午学习了礼仪课，知道了自信优雅的人更容易成功。下午参观了鲁迅纪念馆，感叹于大文豪的博学，勤奋，上进，关心劳苦大众。最重要的是，他弃医从文的勇气和睿智令人佩服。晚上学习了李荐老师的学习科学，受益良多，满满的干货啊。也只有在这儿才能听见这么好的，这么前沿的教育科学。谢谢可爱可亲的协会会员和志愿者们，你们考虑的太周到全面了，道一声辛苦了，祝你们万事如意，天天开心。</p>
-</blockquote>
-</li>
-<li><p><strong><em>肖均–四川组</em></strong></p>
-<blockquote>
-<p>不虚此行！获益良多！去了鲁迅故居，一篇篇曾经学习的文章以原稿的形式重现。我想，要是在学之前能看到鲁迅的这一些介绍，我当年学习起来很生涩的文章会不会学的更深入？！有机会一定要在儿子读高中前来参观一下。晚上，听李荐教授的友善用脑引发了对学习科学的思考。我们学校正在进行的教学结构改革工作中碰到的很多问题、疑惑都能找到答案。李荐教授脱稿授课，足足三个小时的内容，他能条理清晰的生动讲解令人佩服！课后迅速联系他的助手，希望今后能得到一些教育教学改革工作的指点。李教授欣然答应给了他的邮箱地址。在我们信息相对欠缺的地方，这样一位教改大师的指点何其珍贵啊！这是到目前为止最大的收获。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="冀辽组"><a href="#冀辽组" class="headerlink" title="冀辽组"></a>冀辽组</h3><ul>
-<li><p><strong><em>隋丽荣–冀辽组</em></strong></p>
-<blockquote>
-<p>李荐老师学习科学课带给我全新体验，从国际，国内到我们该怎样领会国家教育精神，实践中教师们究竟如何开展教学育人工作，醍醐灌顶的感觉找到了。如何上好一节课呢？倡导以学生为本的课堂，每节课明确教学目标，设计活动，规则具体，让学生通过小组合作研究解决问题，展示汇报成果，冥想反思课堂所学，落实形成性评价，在创设情境中学生充分体验理解知识，做到学以致用。另外科学排座位的指导更是亮点，最大化扩大教学受益，总之，久旱逢甘露，只待试锋芒！</p>
-</blockquote>
-</li>
-<li><p><strong><em>王涔骁–冀辽组</em></strong></p>
-<blockquote>
-<p>今天晚上，我们上了一节很有趣的一节课，这节课讲的是情绪管理，其中，让我印象最深的是自己排话剧然后自己演。这个活动主要就是团队合作和即兴表演，其实表演并不可怕，可怕的是我们不敢上去表演。一个人，只要放开自我，其实就会觉得和平常没什么两样。如果所有人都放开自我，那么，我们的世界就会变得更加美妙。</p>
-</blockquote>
-</li>
-<li><p><strong><em>隋晴晴–冀辽组</em></strong></p>
-<blockquote>
-<p>今天，有幸听了韩庆雷老师的《情绪管理》。课上的轻松气氛使大家都活跃了起来，也学到了很多。应该多多管理自己的情绪，对待同一件事情，如果态度不同，所得的结果也不同。为了能提高自己，我应该好好地控制情绪、增加自信，就可以多多鼓励自己或者在必要情况下换一个环境。所以只有控制好自己的情绪了，才能更好地学习、做事，才有可能获得成功。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="广西组"><a href="#广西组" class="headerlink" title="广西组"></a>广西组</h3><ul>
-<li><p><strong><em>韩潘儒–广西组</em></strong></p>
-<blockquote>
-<p>今天早上听了胡志强老师给我们带来的《哲学浅谈》，我感觉收获非常多！由于人性中的懒惰，我常常在面对事情的时候懒于追究它背后的原因或者逻辑，导致到现在想要探寻的时候也不知道怎么下手。胡老师通过几个生动的例子教会我们怎样合理提出问题，怎样去追究，让我感觉贯通了任督二脉（举个例子）。这堂课给我启迪了新的思想，让我知道了很多与传统思想不一样的有趣想法。我觉得讲得好的课就是让学生感到思想上的洗礼，上完课后会觉得浑身上下都舒服得很！非常感谢老师的课，让我变得更充实！</p>
-</blockquote>
-</li>
-<li><p><strong><em>李彤彤–广西组</em></strong></p>
-<blockquote>
-<p>今天的课十分有趣，不论是哲学浅谈还是礼仪培训都令我印象深刻，学到了很多。原来在生活中还有许多地方都存在着社交礼仪，我们也需要用正确的社交礼仪来示人^O^还有就是鲁迅博物馆让我感受到了文化底蕴，让我十分敬佩。最后就是情绪管理，同学们的互动让我知道了自己的不足，同时也让我了解了自己的优势，最后的小剧场更是十分有趣，让我有了一种新奇的感受，让我有了一种当主角的感觉，真的十分有趣(<em>^ω^</em>)</p>
-</blockquote>
-</li>
-<li><p><strong><em>钟金徐–广西组</em></strong></p>
-<blockquote>
-<p>今天感觉挺好的，懂得了如何做一个优雅，自信的人。也学会如何控制自己的情绪，知道了情绪是人际交往的信息通道，同时也知道了消极情绪的危害，所以感觉挺好的。</p>
-</blockquote>
-</li>
-<li><p><strong><em>王嘉仪–广西组</em></strong></p>
-<blockquote>
-<p>今天的天气非常好，而今天的活动也很棒。首先是王昭琪老师的礼仪培训，这让我懂得了为人处世的道理，以及如何与人相处，对我本人的帮助非常大。下午去了鲁迅博物馆，里面收藏了鲁迅先生生前留下来的东西，泛黄的纸张中透着那个年代的战争气息，我很是感触。晚上的课最有意思。老师为我们做了常见的心理分析，还一一地指导，我也亲身体会了上台表演的感觉。所以我希望可以在剩下几天里多体会一下这种丰富的生活。</p>
-</blockquote>
-</li>
-<li><p><strong><em>梁汉莲–广西组</em></strong></p>
-<blockquote>
-<p>今天早上，我们听了胡志强教授给我们上的一节生动的课《哲学浅谈》，以及王昭琪老师给我们上的课《礼仪培训》。给我印象最深的还是王老师给我们上的礼仪课。这让我们懂得了，我们在平时的日常生活中，怎样做，才是有礼仪，才是自信的，才是得体的。这对子我们来说，真的是收获非常大的。其次，就是今天晚上，李荐老师给我们上的《友善用脑》。这对于我们平时在教学过程中起到非常广泛的指导作用。</p>
-</blockquote>
-</li>
-<li><p><strong><em>潘桂兰–广西组</em></strong></p>
-<blockquote>
-<p>今天上午，我们听了胡志强教授给我们上的一节生动的课《哲学浅谈》，以及王昭琪老师给我们上的课《礼仪培训》。给我印象最深的还是王老师给我们上的礼仪课。这让我们懂得了，我们在平时的日常生活中，怎样做，应该怎样注意礼仪细节，怎样做才是得体的。这对子我们来说，真的是收获非常大的。其次，就是今天晚上，李荐老师给我们上的《友善用脑》。这对于我们平时在教学过程中起到非常广泛的指导作用。</p>
-</blockquote>
-</li>
-<li><p><strong><em>陆伯贤–广西组</em></strong></p>
-<blockquote>
-<p>胡志强老师的哲学论给我启发很大，任何的事情都有它的多面性，我们从不同的面可以看到不一样的风景。所以在对待学生的一些认为可笑的，不可取的回答时应理性对待。而不是一味的否定。</p>
-</blockquote>
-</li>
-<li><p><strong><em>李彩丽–广西组</em></strong></p>
-<blockquote>
-<p>今天又是收获满满的一天。胡老师的哲学浅谈让我知道了任何事情都要讲道理，不一定都是对或者错的，要辩证的去分析。同时老师说视金钱如粪土，朋友值千金这句话说，一个湖南初二的学生说那不是说朋友就是粪土了吗？当时我很佩服这位老师的同时也佩服学生的逻辑思维能力，为他点赞！到了晚上的时候，我听了另外一个老师的课，这次我这几天来唯一一节从来到尾都非常认真听的课，他讲了有关教育教学相关的知识，同时教我们怎样活跃课堂气氛，“四中心三发现”等观点都教我们在以后教学中应该怎么做，真的感激这位李荐老师上了这么精彩的一课！</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
-<li><p><strong><em>谢东海–湖南组</em></strong></p>
-<blockquote>
-<p>胡志强教授的哲学浅谈，用非常严密的论证，对生活中人们的一些似是而非的观点进行评判，用讲道理的方式让我们对某些观点有了新的看法。也使我认识到哲学思维这种工具的强大。晚上李荐老师的友善用脑，结合我们教学中存在的各种问题，结合人脑的各种特点，提出全新的解决办法，提高课堂的实效，让我有了一种急于实践的期待！</p>
-</blockquote>
-</li>
-<li><p><strong><em>曾菲菲–湖南组</em></strong></p>
-<blockquote>
-<p>今天上午安排了两堂课，胡教授的《浅谈哲学》教我们生活中为什么要讲道理，怎样辩证的讲道理，美女老师教我们怎样做一个优雅、自信的人，满满的鸡汤喝饱后匆匆吃过午饭，来到鲁迅博物馆，感受了一代文豪不平凡的一生。即使有点小累，到了晚上的课程，大家又个个打满了鸡血，生怕错过教授的任何一句话。</p>
-</blockquote>
-</li>
-<li><p><strong><em>刘慧敏–湖南组</em></strong></p>
-<blockquote>
-<p>今天上午上了两节课，一节是关于哲学道理的，胡老师告诉我们做什么事都是要讲道理的，向我们介绍了议论文的各种论证方法，来论证了我们做事要讲道理，另外一节是王老师给我们上的礼仪课，讲述我们应做到的基本素养，让我们学会了基本的礼仪。下午去鲁迅博物馆，讲解员讲述了鲁迅的一生的跌宕起伏，以及鲁迅的相关事件、作品和地位。了解了鲁迅的一生，不得不感叹他的生活之精彩而又艰苦。晚上李老师给我们上了情绪管理这一课程，他和我们做了许多小游戏，这节课从紧张与想睡变为轻松愉快，整个气氛就上来了，而且这位老师看起来开朗，并不严肃，所以我们这些孩子还是蛮喜欢他的。虽然说今天上了许多节课，虽累但开心。</p>
-</blockquote>
-</li>
-<li><p><strong><em>王泰宏–湖南组</em></strong></p>
-<blockquote>
-<p>今天去了鲁迅纪念馆，拍了很多照片。在鲁迅纪念馆，我参观了伟人的生平，越发崇拜鲁迅。晚上我们在教室听心理老师讲了如何控制情绪，并做了与之相关的小游戏。一天的学习使我受益匪浅。</p>
-</blockquote>
-</li>
-<li><p><strong><em>唐思博–湖南组</em></strong></p>
-<blockquote>
-<p>今天中午，我们来到了伟人故居，鲁迅博物馆。这儿芳草鲜美，落英缤纷，让我分外感叹。首先我发现鲁迅先生十分热爱学习，俗话说的好，活到老，学到老。我认为我也应像鲁迅先生一样热爱学习。</p>
-</blockquote>
-</li>
-<li><p><strong><em>喻苗–湖南组</em></strong></p>
-<blockquote>
-<p>今天天气晴有一点热。上午我们上的是胡志强的哲学浅谈和王昭奇的礼仪培训。胡老师的课教会了我们学会了讲道理，王老师的课让我们学会自信，还有礼仪。下午我们去鲁迅纪念馆参观，通过导游的讲解让我们了解到了有了更多的鲁迅的故事。接下来是晚上，朝庆雷的情绪管理课。他让我们娱快的放心情一起玩一样的上课，这是我这几天数轻松的一节课了。这是愉快的一天。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="隆鉴清"><a href="#隆鉴清" class="headerlink" title="隆鉴清"></a>隆鉴清</h3><p>胡志强老师《哲学》讲座，非常好很重要，这次时间短了，明年安排完整的一个上午。</p>
-<h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天晚上自己课前没能提前去304占教室，导致教室内有一些自习学生，他们的一些书本设备也拉在了教室里；此外，老师的笔记本电脑也出现问题，鼓捣还一会才在讲台电脑上正常播放。因此，以后上课的时候，要提前一晌在黑板上写上教室占用，并找老师确认是否使用笔记本，若是用笔记本也让老师在u盘备好ppt，以免笔记本出现故障打不开。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是上午陪同营员上课，开始上课前准备好投影仪并测试ppt能否正常播放，接老师到课堂后要介绍老师（提前准备好介绍信及感谢信和报酬并放在信封里），拍照（最后合照以及课堂上老师讲课，学生听课。师生互动的场面），给老师准备两瓶矿泉水，及时续杯。</p>
-<p>下午参观鲁迅博物馆，注意联系博物馆确认参观人数和时间，鲁迅博物馆可预约讲解员，全程50分钟。</p>
-<p>晚上继续陪同营员上课。</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_723cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
 ]]></content>
       <categories>
@@ -440,12 +327,51 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="王国权"><a href="#王国权" class="headerlink" title="王国权"></a>王国权</h3><p>今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
-<p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
-<p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
-<p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p>
-<h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>王国权</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="王国权" class="tab-content">
+    今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。
+</div>
+<div id="穆建超" class="tab-content">
+    <p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
+    <p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
+    <p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
+    <p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p>
+</div>
+<div id="李朋远" class="tab-content">
+    已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_724cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
@@ -538,8 +464,42 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天主要负责晚会布置和现场设备调试工作，由于考虑不周、经验不足，产生了不少差错。会前我认为只要摆好桌椅、接好音响、贴好彩纸、分发食物就可以了，但实际活动开展时，包括节目调换、演员变动、话筒和音响问题、集体合唱对歌曲不熟等一系列状况，让我认识做好预案的重要性。希望能好好从中吸取这次的经验教训。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>晚会这块儿总体还可以，如果能再早一天准备就好了，各方面能更加地顺利。话筒还是要至少找到两只，最好能有投影仪效果会更好些。有时间的话可以先预演一下会更好！</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="李朋远" class="tab-content">
+    今天主要负责晚会布置和现场设备调试工作，由于考虑不周、经验不足，产生了不少差错。会前我认为只要摆好桌椅、接好音响、贴好彩纸、分发食物就可以了，但实际活动开展时，包括节目调换、演员变动、话筒和音响问题、集体合唱对歌曲不熟等一系列状况，让我认识做好预案的重要性。希望能好好从中吸取这次的经验教训。
+</div>
+<div id="穆建超" class="tab-content">
+    晚会这块儿总体还可以，如果能再早一天准备就好了，各方面能更加地顺利。话筒还是要至少找到两只，最好能有投影仪效果会更好些。有时间的话可以先预演一下会更好！
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_725cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
@@ -567,8 +527,34 @@
 <p>展厅逛完后再科技馆大门口合了影就乘车前往吃饭地点——到《全聚德》吃烤鸭。</p>
 <p>晚上是甘甜老师《环保培训》，这是每一个人类都应该做到的本能，不分种族，性别，老少，看了一条环保宣传片最让我刻骨铭心的一句话是–“大自然不需要人类；人类需要大自然”，是啊，地球已经存在亿万年，在人类为出现在地球上的时候就已经存在了亿万年，又怎么能说大自然需要人类呢，人类只不过是大自然的衍生品，附着于大自然而生，保护环境就是保护我们自己。</p>
 <p>杨志明老师《如何培养孩子》，其中讲到家长应多角度和孩子沟通，四川组的老师康文波也发表了他自己对于如何教育孩子的一些看法和想法。</p>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
-<p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="李朋远" class="tab-content">
+    <p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
+    <p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_726cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
@@ -629,52 +615,6 @@
 <p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr>
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -768,6 +708,52 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Anastasia Shuraeva</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h1 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h1><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h1 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h1><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h1 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h1><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h1 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h1><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h1><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -1217,7 +1203,7 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<div class="tabs is-boxed">
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
     <ul>
         <li class="is-active">
             <a onclick="onTabClick(event)">
@@ -1284,9 +1270,43 @@ table th:nth-of-type(3) {
 
 
 
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
-<p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
+<h2 id="志愿者反馈-1"><a href="#志愿者反馈-1" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="穆建超" class="tab-content">
+    <p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
+    <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
+</div>
+<div id="李朋远" class="tab-content">
+    白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_720cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
@@ -1445,26 +1465,251 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><p>今天我只跟了晚上的上课。从课堂效果上看，营员们都表现地很积极，参与度很高，在交流环节中，我感受到了营员们对我们活动的支持，他们确实认真参与到其中。我负责摄影，将一些好的画面记录了下来。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><ol>
-<li><p>做事情一定要本着做学生的态度，但是办事得成熟高效。</p>
-</li>
-<li><p>注意感恩、尊重、体谅，掌握有效的沟通方式。</p>
-</li>
-<li><p>注意倾听同伴的建议，合理分工。</p>
-</li>
-<li><p>不仅仅要做好分配给自己的任务，还要留意其它人的任务及活动总体流程，保证整个培训活动顺利开展。</p>
-</li>
-<li><p>遇到问题要冷静，谨慎思考后再行动。</p>
-</li>
-<li><p>多站在他人的角度看问题。</p>
-</li>
-<li><p>要有一定的医疗保障，防暑晕车药要带一点，还有葡萄糖。</p>
-</li>
-</ol>
-<h3 id="王国权"><a href="#王国权" class="headerlink" title="王国权"></a>王国权</h3><p>今天上午在李继祖老师那儿做了心里辅导和团队心里辅导，还做了沙盘实验，感觉四川组的学员挺活泼的，挺会带动集体的气氛，晚上杨晓奇老师《思维导图》课程，学员们也都踊跃回答问题并且认真听讲并跟着老师的思维走做好记录，参加小活动。</p>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>王国权</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="李朋远" class="tab-content">
+    白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。
+</div>
+<div id="穆建超" class="tab-content">
+    <ol>
+        <li><p>做事情一定要本着做学生的态度，但是办事得成熟高效。</p>
+        </li>
+        <li><p>注意感恩、尊重、体谅，掌握有效的沟通方式。</p>
+        </li>
+        <li><p>注意倾听同伴的建议，合理分工。</p>
+        </li>
+        <li><p>不仅仅要做好分配给自己的任务，还要留意其它人的任务及活动总体流程，保证整个培训活动顺利开展。</p>
+        </li>
+        <li><p>遇到问题要冷静，谨慎思考后再行动。</p>
+        </li>
+        <li><p>多站在他人的角度看问题。</p>
+        </li>
+        <li><p>要有一定的医疗保障，防暑晕车药要带一点，还有葡萄糖。</p>
+        </li>
+    </ol>
+</div>
+<div id="王国权" class="tab-content">
+    今天上午在李继祖老师那儿做了心里辅导和团队心里辅导，还做了沙盘实验，感觉四川组的学员挺活泼的，挺会带动集体的气氛，晚上杨晓奇老师《思维导图》课程，学员们也都踊跃回答问题并且认真听讲并跟着老师的思维走做好记录，参加小活动。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_722cover.jpg"></p>
+<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019 北京助学助教夏令营—— 7.23 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.23%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：穆建超）</li>
+<li>营员感想摘录</li>
+<li>志愿者反馈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
+<p>7月23日是夏令营的第五天，夏令营日程将过半，上午和晚上为营员安排了讲座，下午是到鲁迅博物馆参观，全体的学习任务和参观安排相对较为宽松。</p>
+<p>在西北风味食堂用过早餐后，学员在提前赶到综合楼305教室准备课程的学习。胡志强老师为大家带来《哲学浅谈》的课程，胡老师平易近人，循循善诱，思维敏捷，知识渊博，把晦涩难懂的哲学问题简单化，把哲学思想放在日常生活中，将研究哲学与“讲道理”结合起来，指出研究哲学就是要“讲道理”，这个“道理”不以人的意志为前提，它讲究客观证据和客观规律，启发和升华了大家对哲学思想的认识和理解；接下来王昭琪老师为大家带来了《礼仪培训》，良好的形象、高雅的举止和合适的礼仪在待人接物中颇具感染力，营员们认真学习，积极与老师互动，课堂气氛活跃。</p>
+<p>骄阳似火，顶着烈日，下午1点半营员们到达鲁迅博物馆，开始了参观活动；讲解员细致地为大家介绍，介绍了鲁迅的生平及博物馆的历史，大家对那个课本上的那个“横眉冷对千夫指，俯首甘为孺子牛”的鲁迅先生有了更直观更深刻的了解，对鲁迅弃医从文的选择有个更深的感受，在鲁迅生活的年代，仅仅救治国民的身体，难以挽救国家，更重要的是救治国民精神。鲁迅的作品和他的人生深深影响了那其所在年代的人民，在今天及未来必将影响更多的人。（图5：讲解；图6：合影）</p>
+<p>结束了鲁迅博物馆的参观，大家返回学校，晚上6点半继续晚上的讲座。营员分为了学生和教师两组，学生在305教室参加韩庆雷老师的《情绪管理》课程，老师在304教室参加李荐老师的《友善用脑》课程，韩老师的讲解以及课堂活动，让学生们敞开心扉，把自己的面临的情绪问题说出来并给出解决办法，学生们最后都放下了心理包袱，露出了更开心又轻松的笑容；李荐老师将国外的教学经验以及国内教学的新要求和新标准带到了课堂，各位老师们听的津津有味，收获颇丰，必将影响老师们以后的教学培养方式。</p>
+<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
+<li><p><strong><em>闫芳–甘肃组</em></strong></p>
+<blockquote>
+<p>礼仪也是中华名族美德之一，今天的礼仪课讲的是如何社交，上完这节课后，我们又学到了一些社交新技能，这有利于我们今后的为人处世，对我们的学习也有很大帮助；鲁迅博物馆则让我们了解了鲁迅生活的那个年代和他生平，让我们感受到了他的名族魂；晚上的《情绪管理》课则让我们更深入的了解了他的起因以及如何控制自己的情绪，课堂的活动也让我们充分发挥了自己的才能。</p>
+</blockquote>
+</li>
+<li><p><strong><em>罗巧花–甘肃组</em></strong></p>
+<blockquote>
+<p>生活处处有哲学，听了胡教授的课之后，更加深刻的理解了哲学的含义，而且知道了它与具体学科的区别。中国自古以来就是礼仪之邦，礼仪培训课让我明白了生活中为人处世的基本礼仪准则，收获颇多。观伟人之人生历程，悟中华之国魂，看着近在眼前的鲁迅，不禁想这是多么伟大的人物，以笔代枪，唤醒国人沉睡的灵魂，有的人死了，他还活着，鲁迅先生就是这样的存在，他永远活在中国人的心中。韩老师的情绪管理课，将理论与实践结合，课上内容内化于心，让我学会了如何更好的管理自己的情绪。每一堂课都对我影响深远</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="四川组"><a href="#四川组" class="headerlink" title="四川组"></a>四川组</h3><ul>
+<li><p><strong><em>康文波–四川组</em></strong></p>
+<blockquote>
+<p>每天都有新收获，今天收获特别多。上午学习了礼仪课，知道了自信优雅的人更容易成功。下午参观了鲁迅纪念馆，感叹于大文豪的博学，勤奋，上进，关心劳苦大众。最重要的是，他弃医从文的勇气和睿智令人佩服。晚上学习了李荐老师的学习科学，受益良多，满满的干货啊。也只有在这儿才能听见这么好的，这么前沿的教育科学。谢谢可爱可亲的协会会员和志愿者们，你们考虑的太周到全面了，道一声辛苦了，祝你们万事如意，天天开心。</p>
+</blockquote>
+</li>
+<li><p><strong><em>肖均–四川组</em></strong></p>
+<blockquote>
+<p>不虚此行！获益良多！去了鲁迅故居，一篇篇曾经学习的文章以原稿的形式重现。我想，要是在学之前能看到鲁迅的这一些介绍，我当年学习起来很生涩的文章会不会学的更深入？！有机会一定要在儿子读高中前来参观一下。晚上，听李荐教授的友善用脑引发了对学习科学的思考。我们学校正在进行的教学结构改革工作中碰到的很多问题、疑惑都能找到答案。李荐教授脱稿授课，足足三个小时的内容，他能条理清晰的生动讲解令人佩服！课后迅速联系他的助手，希望今后能得到一些教育教学改革工作的指点。李教授欣然答应给了他的邮箱地址。在我们信息相对欠缺的地方，这样一位教改大师的指点何其珍贵啊！这是到目前为止最大的收获。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="冀辽组"><a href="#冀辽组" class="headerlink" title="冀辽组"></a>冀辽组</h3><ul>
+<li><p><strong><em>隋丽荣–冀辽组</em></strong></p>
+<blockquote>
+<p>李荐老师学习科学课带给我全新体验，从国际，国内到我们该怎样领会国家教育精神，实践中教师们究竟如何开展教学育人工作，醍醐灌顶的感觉找到了。如何上好一节课呢？倡导以学生为本的课堂，每节课明确教学目标，设计活动，规则具体，让学生通过小组合作研究解决问题，展示汇报成果，冥想反思课堂所学，落实形成性评价，在创设情境中学生充分体验理解知识，做到学以致用。另外科学排座位的指导更是亮点，最大化扩大教学受益，总之，久旱逢甘露，只待试锋芒！</p>
+</blockquote>
+</li>
+<li><p><strong><em>王涔骁–冀辽组</em></strong></p>
+<blockquote>
+<p>今天晚上，我们上了一节很有趣的一节课，这节课讲的是情绪管理，其中，让我印象最深的是自己排话剧然后自己演。这个活动主要就是团队合作和即兴表演，其实表演并不可怕，可怕的是我们不敢上去表演。一个人，只要放开自我，其实就会觉得和平常没什么两样。如果所有人都放开自我，那么，我们的世界就会变得更加美妙。</p>
+</blockquote>
+</li>
+<li><p><strong><em>隋晴晴–冀辽组</em></strong></p>
+<blockquote>
+<p>今天，有幸听了韩庆雷老师的《情绪管理》。课上的轻松气氛使大家都活跃了起来，也学到了很多。应该多多管理自己的情绪，对待同一件事情，如果态度不同，所得的结果也不同。为了能提高自己，我应该好好地控制情绪、增加自信，就可以多多鼓励自己或者在必要情况下换一个环境。所以只有控制好自己的情绪了，才能更好地学习、做事，才有可能获得成功。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="广西组"><a href="#广西组" class="headerlink" title="广西组"></a>广西组</h3><ul>
+<li><p><strong><em>韩潘儒–广西组</em></strong></p>
+<blockquote>
+<p>今天早上听了胡志强老师给我们带来的《哲学浅谈》，我感觉收获非常多！由于人性中的懒惰，我常常在面对事情的时候懒于追究它背后的原因或者逻辑，导致到现在想要探寻的时候也不知道怎么下手。胡老师通过几个生动的例子教会我们怎样合理提出问题，怎样去追究，让我感觉贯通了任督二脉（举个例子）。这堂课给我启迪了新的思想，让我知道了很多与传统思想不一样的有趣想法。我觉得讲得好的课就是让学生感到思想上的洗礼，上完课后会觉得浑身上下都舒服得很！非常感谢老师的课，让我变得更充实！</p>
+</blockquote>
+</li>
+<li><p><strong><em>李彤彤–广西组</em></strong></p>
+<blockquote>
+<p>今天的课十分有趣，不论是哲学浅谈还是礼仪培训都令我印象深刻，学到了很多。原来在生活中还有许多地方都存在着社交礼仪，我们也需要用正确的社交礼仪来示人^O^还有就是鲁迅博物馆让我感受到了文化底蕴，让我十分敬佩。最后就是情绪管理，同学们的互动让我知道了自己的不足，同时也让我了解了自己的优势，最后的小剧场更是十分有趣，让我有了一种新奇的感受，让我有了一种当主角的感觉，真的十分有趣(<em>^ω^</em>)</p>
+</blockquote>
+</li>
+<li><p><strong><em>钟金徐–广西组</em></strong></p>
+<blockquote>
+<p>今天感觉挺好的，懂得了如何做一个优雅，自信的人。也学会如何控制自己的情绪，知道了情绪是人际交往的信息通道，同时也知道了消极情绪的危害，所以感觉挺好的。</p>
+</blockquote>
+</li>
+<li><p><strong><em>王嘉仪–广西组</em></strong></p>
+<blockquote>
+<p>今天的天气非常好，而今天的活动也很棒。首先是王昭琪老师的礼仪培训，这让我懂得了为人处世的道理，以及如何与人相处，对我本人的帮助非常大。下午去了鲁迅博物馆，里面收藏了鲁迅先生生前留下来的东西，泛黄的纸张中透着那个年代的战争气息，我很是感触。晚上的课最有意思。老师为我们做了常见的心理分析，还一一地指导，我也亲身体会了上台表演的感觉。所以我希望可以在剩下几天里多体会一下这种丰富的生活。</p>
+</blockquote>
+</li>
+<li><p><strong><em>梁汉莲–广西组</em></strong></p>
+<blockquote>
+<p>今天早上，我们听了胡志强教授给我们上的一节生动的课《哲学浅谈》，以及王昭琪老师给我们上的课《礼仪培训》。给我印象最深的还是王老师给我们上的礼仪课。这让我们懂得了，我们在平时的日常生活中，怎样做，才是有礼仪，才是自信的，才是得体的。这对子我们来说，真的是收获非常大的。其次，就是今天晚上，李荐老师给我们上的《友善用脑》。这对于我们平时在教学过程中起到非常广泛的指导作用。</p>
+</blockquote>
+</li>
+<li><p><strong><em>潘桂兰–广西组</em></strong></p>
+<blockquote>
+<p>今天上午，我们听了胡志强教授给我们上的一节生动的课《哲学浅谈》，以及王昭琪老师给我们上的课《礼仪培训》。给我印象最深的还是王老师给我们上的礼仪课。这让我们懂得了，我们在平时的日常生活中，怎样做，应该怎样注意礼仪细节，怎样做才是得体的。这对子我们来说，真的是收获非常大的。其次，就是今天晚上，李荐老师给我们上的《友善用脑》。这对于我们平时在教学过程中起到非常广泛的指导作用。</p>
+</blockquote>
+</li>
+<li><p><strong><em>陆伯贤–广西组</em></strong></p>
+<blockquote>
+<p>胡志强老师的哲学论给我启发很大，任何的事情都有它的多面性，我们从不同的面可以看到不一样的风景。所以在对待学生的一些认为可笑的，不可取的回答时应理性对待。而不是一味的否定。</p>
+</blockquote>
+</li>
+<li><p><strong><em>李彩丽–广西组</em></strong></p>
+<blockquote>
+<p>今天又是收获满满的一天。胡老师的哲学浅谈让我知道了任何事情都要讲道理，不一定都是对或者错的，要辩证的去分析。同时老师说视金钱如粪土，朋友值千金这句话说，一个湖南初二的学生说那不是说朋友就是粪土了吗？当时我很佩服这位老师的同时也佩服学生的逻辑思维能力，为他点赞！到了晚上的时候，我听了另外一个老师的课，这次我这几天来唯一一节从来到尾都非常认真听的课，他讲了有关教育教学相关的知识，同时教我们怎样活跃课堂气氛，“四中心三发现”等观点都教我们在以后教学中应该怎么做，真的感激这位李荐老师上了这么精彩的一课！</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
+<li><p><strong><em>谢东海–湖南组</em></strong></p>
+<blockquote>
+<p>胡志强教授的哲学浅谈，用非常严密的论证，对生活中人们的一些似是而非的观点进行评判，用讲道理的方式让我们对某些观点有了新的看法。也使我认识到哲学思维这种工具的强大。晚上李荐老师的友善用脑，结合我们教学中存在的各种问题，结合人脑的各种特点，提出全新的解决办法，提高课堂的实效，让我有了一种急于实践的期待！</p>
+</blockquote>
+</li>
+<li><p><strong><em>曾菲菲–湖南组</em></strong></p>
+<blockquote>
+<p>今天上午安排了两堂课，胡教授的《浅谈哲学》教我们生活中为什么要讲道理，怎样辩证的讲道理，美女老师教我们怎样做一个优雅、自信的人，满满的鸡汤喝饱后匆匆吃过午饭，来到鲁迅博物馆，感受了一代文豪不平凡的一生。即使有点小累，到了晚上的课程，大家又个个打满了鸡血，生怕错过教授的任何一句话。</p>
+</blockquote>
+</li>
+<li><p><strong><em>刘慧敏–湖南组</em></strong></p>
+<blockquote>
+<p>今天上午上了两节课，一节是关于哲学道理的，胡老师告诉我们做什么事都是要讲道理的，向我们介绍了议论文的各种论证方法，来论证了我们做事要讲道理，另外一节是王老师给我们上的礼仪课，讲述我们应做到的基本素养，让我们学会了基本的礼仪。下午去鲁迅博物馆，讲解员讲述了鲁迅的一生的跌宕起伏，以及鲁迅的相关事件、作品和地位。了解了鲁迅的一生，不得不感叹他的生活之精彩而又艰苦。晚上李老师给我们上了情绪管理这一课程，他和我们做了许多小游戏，这节课从紧张与想睡变为轻松愉快，整个气氛就上来了，而且这位老师看起来开朗，并不严肃，所以我们这些孩子还是蛮喜欢他的。虽然说今天上了许多节课，虽累但开心。</p>
+</blockquote>
+</li>
+<li><p><strong><em>王泰宏–湖南组</em></strong></p>
+<blockquote>
+<p>今天去了鲁迅纪念馆，拍了很多照片。在鲁迅纪念馆，我参观了伟人的生平，越发崇拜鲁迅。晚上我们在教室听心理老师讲了如何控制情绪，并做了与之相关的小游戏。一天的学习使我受益匪浅。</p>
+</blockquote>
+</li>
+<li><p><strong><em>唐思博–湖南组</em></strong></p>
+<blockquote>
+<p>今天中午，我们来到了伟人故居，鲁迅博物馆。这儿芳草鲜美，落英缤纷，让我分外感叹。首先我发现鲁迅先生十分热爱学习，俗话说的好，活到老，学到老。我认为我也应像鲁迅先生一样热爱学习。</p>
+</blockquote>
+</li>
+<li><p><strong><em>喻苗–湖南组</em></strong></p>
+<blockquote>
+<p>今天天气晴有一点热。上午我们上的是胡志强的哲学浅谈和王昭奇的礼仪培训。胡老师的课教会了我们学会了讲道理，王老师的课让我们学会自信，还有礼仪。下午我们去鲁迅纪念馆参观，通过导游的讲解让我们了解到了有了更多的鲁迅的故事。接下来是晚上，朝庆雷的情绪管理课。他让我们娱快的放心情一起玩一样的上课，这是我这几天数轻松的一节课了。这是愉快的一天。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>隆鉴清</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="隆鉴清" class="tab-content">
+    胡志强老师《哲学》讲座，非常好很重要，这次时间短了，明年安排完整的一个上午。
+</div>
+<div id="李朋远" class="tab-content">
+    今天晚上自己课前没能提前去304占教室，导致教室内有一些自习学生，他们的一些书本设备也拉在了教室里；此外，老师的笔记本电脑也出现问题，鼓捣还一会才在讲台电脑上正常播放。因此，以后上课的时候，要提前一晌在黑板上写上教室占用，并找老师确认是否使用笔记本，若是用笔记本也让老师在u盘备好ppt，以免笔记本出现故障打不开。
+</div>
+<div id="穆建超" class="tab-content">
+    <p>我的任务是上午陪同营员上课，开始上课前准备好投影仪并测试ppt能否正常播放，接老师到课堂后要介绍老师（提前准备好介绍信及感谢信和报酬并放在信封里），拍照（最后合照以及课堂上老师讲课，学生听课。师生互动的场面），给老师准备两瓶矿泉水，及时续杯。</p>
+    <p>下午参观鲁迅博物馆，注意联系博物馆确认参观人数和时间，鲁迅博物馆可预约讲解员，全程50分钟。</p>
+    <p>晚上继续陪同营员上课。</p>
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_723cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
 ]]></content>
       <categories>
@@ -1880,14 +2125,62 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><h3 id="隆鉴清"><a href="#隆鉴清" class="headerlink" title="隆鉴清"></a>隆鉴清</h3><p>广西一位男生，又高叉瘦身体很弱。出行时让他坐前面。王国权带点士力架巧克力酸奶等在身上，重点关照一下他。</p>
-<h3 id="穆建超"><a href="#穆建超" class="headerlink" title="穆建超"></a>穆建超</h3><p>活动于玉泉路校区开展，早上要带营员熟悉食堂和教室位置；其他要注意解决一些小问题，水卡不会充值等。</p>
-<h3 id="王国权"><a href="#王国权" class="headerlink" title="王国权"></a>王国权</h3><p>今日感觉啥都没干就给学员买那些洗漱用品和床上用品了，不知道是哪一环节出现问题，导致缺少这些东西，还有今天晚上回了的时候看见一个学员身子不舒服，隆老师说他体质比较弱。以后就把他多个照看一下，防止发生意外</p>
-<h3 id="李朋远"><a href="#李朋远" class="headerlink" title="李朋远"></a>李朋远</h3><ol>
-<li>志愿者彼此有些分工不明；</li>
-<li>需要对组员进一步强调集体意识，在参观动物馆的时候，一部分组员不嫩紧跟大部队聆听讲解，导致队伍有些松散；</li>
-<li>提高观察意识，注意营员身体、心理动向，对身体不适营员及时帮助。有不止一位营员问过我药房在哪，但貌似他们也没有什么身体不适，可能只是想备一些药。</li>
-</ol>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li class="is-active">
+            <a onclick="onTabClick(event)">
+                <span>隆鉴清</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>王国权</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="隆鉴清" class="tab-content" style="display: block;">
+    广西一位男生，又高又瘦身体很弱。出行时让他坐前面。王国权带点士力架巧克力酸奶等在身上，重点关照一下他。
+</div>
+<div id="穆建超" class="tab-content">
+    活动于玉泉路校区开展，早上要带营员熟悉食堂和教室位置；其他要注意解决一些小问题，水卡不会充值等。
+</div>
+<div id="王国权" class="tab-content">
+    今日感觉啥都没干就给学员买那些洗漱用品和床上用品了，不知道是哪一环节出现问题，导致缺少这些东西，还有今天晚上回了的时候看见一个学员身子不舒服，隆老师说他体质比较弱。以后就把他多个照看一下，防止发生意外
+</div>
+<div id="李朋远" class="tab-content">
+    <ol>
+        <li>志愿者彼此有些分工不明；</li>
+        <li>需要对组员进一步强调集体意识，在参观动物馆的时候，一部分组员不能紧跟大部队聆听讲解，导致队伍有些松散；</li>
+        <li>提高观察意识，注意营员身体、心理动向，对身体不适营员及时帮助。有不止一位营员问过我药房在哪，但貌似他们也没有什么身体不适，可能只是想备一些药。</li>
+    </ol>
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+
+
 <hr>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_721cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></a></p>
