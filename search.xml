@@ -182,7 +182,7 @@
         </li>
     </ul>
 </div>
-<div id="穆建超" class="tab-content">
+<div id="穆建超" class="tab-content" style="display: block;">
     <p>作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。</p>
     <p>最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。</p>
     <p>安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。</p>
@@ -346,7 +346,7 @@
         </li>
     </ul>
 </div>
-<div id="王国权" class="tab-content">
+<div id="王国权" class="tab-content" style="display: block;">
     今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。
 </div>
 <div id="穆建超" class="tab-content">
@@ -478,7 +478,7 @@
         </li>
     </ul>
 </div>
-<div id="李朋远" class="tab-content">
+<div id="李朋远" class="tab-content" style="display: block;">
     今天主要负责晚会布置和现场设备调试工作，由于考虑不周、经验不足，产生了不少差错。会前我认为只要摆好桌椅、接好音响、贴好彩纸、分发食物就可以了，但实际活动开展时，包括节目调换、演员变动、话筒和音响问题、集体合唱对歌曲不熟等一系列状况，让我认识做好预案的重要性。希望能好好从中吸取这次的经验教训。
 </div>
 <div id="穆建超" class="tab-content">
@@ -536,7 +536,7 @@
         </li>
     </ul>
 </div>
-<div id="李朋远" class="tab-content">
+<div id="李朋远" class="tab-content" style="display: block;">
     <p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
     <p>考虑到现在的实验室人员太繁杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
 <style type="text/css">
@@ -717,6 +717,33 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免日后主题更新需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h1 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h1><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者也在其他 issue 的回复中表示暂无解决方案。</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\js\imaegoonight.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.navbar</span> &gt; <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-brand</span> <span class="selector-class">.navbar-item</span>,</span><br><span class="line">  <span class="selector-class">.navbar-tabs</span> <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-link</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff0</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0.5rem</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span><span class="selector-class">.is-active</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">30</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span><span class="selector-class">.has-shadow</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> -<span class="number">2px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top</span> <span class="selector-class">.navbar-menu</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">    <span class="attribute">max-height</span>: <span class="built_in">calc</span>(<span class="number">100vh</span> - <span class="number">3.25rem</span>);</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-top-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个 issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持，IE 什么的就更不用说了，hhh。</p>
+<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<hr>
+<p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
@@ -754,33 +781,6 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">icarus2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">icarus3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">icarus4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免日后主题更新需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h1 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h1><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者也在其他 issue 的回复中表示暂无解决方案。</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\js\imaegoonight.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width:</span> <span class="number">1087px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.navbar</span> &gt; <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-brand</span> <span class="selector-class">.navbar-item</span>,</span><br><span class="line">  <span class="selector-class">.navbar-tabs</span> <span class="selector-class">.navbar-item</span> &#123;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-link</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff0</span>;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">8px</span> <span class="number">16px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0</span>);</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0.5rem</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar-menu</span><span class="selector-class">.is-active</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">30</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-bottom-touch</span><span class="selector-class">.has-shadow</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> -<span class="number">2px</span> <span class="number">3px</span> <span class="built_in">rgba</span>(<span class="number">10</span>,<span class="number">10</span>,<span class="number">10</span>,<span class="number">0.1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top</span> <span class="selector-class">.navbar-menu</span>,</span><br><span class="line">  <span class="selector-class">.navbar</span><span class="selector-class">.is-fixed-top-touch</span> <span class="selector-class">.navbar-menu</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-overflow-scrolling</span>: touch;</span><br><span class="line">    <span class="attribute">max-height</span>: <span class="built_in">calc</span>(<span class="number">100vh</span> - <span class="number">3.25rem</span>);</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-top-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-top-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-top</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">html</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span>,</span><br><span class="line">  <span class="selector-tag">body</span><span class="selector-class">.has-navbar-fixed-bottom-touch</span> &#123;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">3.25rem</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个 issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h1 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h1><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持，IE 什么的就更不用说了，hhh。</p>
-<h1 id="捐赠二维码优化"><a href="#捐赠二维码优化" class="headerlink" title="捐赠二维码优化"></a>捐赠二维码优化</h1><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<hr>
-<p>参考：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -1203,7 +1203,42 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+<h2 id=""><a href="#" class="headerlink" title=""></a><div class="tabs is-boxed"></h2><pre><code>&lt;ul&gt;
+    &lt;li class=&quot;is-active&quot;&gt;
+        &lt;a onclick=&quot;onTabClick(event)&quot;&gt;
+            &lt;span&gt;穆建超&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a onclick=&quot;onTabClick(event)&quot;&gt;
+            &lt;span&gt;李朋远&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+<div id="穆建超" class="tab-content" style="display: block;">
+    <p>作为延寿楼值班志愿者，主要任务是A查验营员的保险单据和承诺书；B收回地铁卡并登记；C给营员发放相关材料，包括夏令营营员卡，校园临时一卡通（每人签字）【换水费密码000000】，通讯录，行程表，营员手册，营服每人两套。</p>
+    <p>最好每人的材料提前分好装文件袋；如果是酒店住宿要提前对接好，如果在学校接待收发材料后及时安排营员住宿。</p>
+    <p>安排妥当后，召开开营仪式后，要选出班长，同时要直接明确班长的责任，包括每次出行清点人数，问题反馈以及联欢晚会的协调；明确组长的责任，配合班长，每次活动要照顾好每位组员。接站志愿者最好提前1-2天联系组长，加入其所在组的内部群，可以提前解答大家的问题。</p>
+</div>
+<div id="李朋远" class="tab-content">
+    今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+<div class="tabs is-boxed">
     <ul>
         <li class="is-active">
             <a onclick="onTabClick(event)">
@@ -1217,7 +1252,7 @@ table th:nth-of-type(3) {
         </li>
     </ul>
 </div>
-<div id="穆建超" class="tab-content">
+<div id="穆建超" class="tab-content" style="display: block;">
     <p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
     <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
 </div>
@@ -1450,7 +1485,7 @@ table th:nth-of-type(3) {
         </li>
     </ul>
 </div>
-<div id="李朋远" class="tab-content">
+<div id="李朋远" class="tab-content" style="display: block;">
     白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。
 </div>
 <div id="穆建超" class="tab-content">
@@ -1649,7 +1684,7 @@ table th:nth-of-type(3) {
         </li>
     </ul>
 </div>
-<div id="隆鉴清" class="tab-content">
+<div id="隆鉴清" class="tab-content" style="display: block;">
     胡志强老师《哲学》讲座，非常好很重要，这次时间短了，明年安排完整的一个上午。
 </div>
 <div id="李朋远" class="tab-content">
