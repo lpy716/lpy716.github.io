@@ -12022,6 +12022,14 @@ body.night .twikoo code {
   color: #cbba7d;
   background-color: #373d48;
 }
+body.night .tabs.is-boxed li.is-active a {
+  background-color: #262a39;
+  border-color: #dbdbdb;
+  border-bottom-color: transparent !important;
+}
+body.night .tabs.is-boxed a:hover {
+  background-color: #434a56;
+}
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
@@ -12370,6 +12378,14 @@ body.night .twikoo code {
   body:not(.light) .twikoo code {
     color: #cbba7d;
     background-color: #373d48;
+  }
+  body:not(.light) .tabs.is-boxed li.is-active a {
+    background-color: #262a39;
+    border-color: #dbdbdb;
+    border-bottom-color: transparent !important;
+  }
+  body:not(.light) .tabs.is-boxed a:hover {
+    background-color: #434a56;
   }
 }
 @media screen and (max-width: 1087px) {
