@@ -12029,6 +12029,9 @@ body.night .tabs.is-boxed li.is-active a {
 body.night .tabs.is-boxed a:hover {
   background-color: #434a56;
 }
+body.night .tabs li.is-active a {
+  color: #dbdbdb;
+}
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
@@ -12385,6 +12388,9 @@ body.night .tabs.is-boxed a:hover {
   }
   body:not(.light) .tabs.is-boxed a:hover {
     background-color: #434a56;
+  }
+  body:not(.light) .tabs li.is-active a {
+    color: #dbdbdb;
   }
 }
 @media screen and (max-width: 1087px) {
