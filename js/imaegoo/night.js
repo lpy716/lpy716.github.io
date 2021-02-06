@@ -19,7 +19,7 @@
   function findNightNav() {
       nightNav = document.getElementById('night-nav');
       if (!nightNav) {
-          setTimeout(findNightNav, 100);
+          setTimeout(findNightNav, 10000);
       } else {
           nightNav.addEventListener('click', switchNight);
       }
