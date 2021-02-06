@@ -10265,7 +10265,6 @@ html {
   -ms-background-size: cover;
 }
 body {
-  transition: background-color 0.5s ease;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -11755,13 +11754,13 @@ body.night .hljs-link {
   text-decoration: underline;
 }
 body.night .content code {
+  transition: background-color 0.5s ease;
   color: #cbba7d;
 }
 body.night #night-nav #night-icon:before {
   content: '\f0eb';
 }
 body.night #universe {
-  transition: background-color 0.5s ease;
   background: radial-gradient(1600px at 70% 120%, #212750 10%, #020409 100%);
   display: block;
   position: fixed;
@@ -12116,13 +12115,13 @@ body.night .tabs li.is-active a {
     text-decoration: underline;
   }
   body:not(.light) .content code {
+    transition: background-color 0.5s ease;
     color: #cbba7d;
   }
   body:not(.light) #night-nav #night-icon:before {
     content: '\f0eb';
   }
   body:not(.light) #universe {
-    transition: background-color 0.5s ease;
     background: radial-gradient(1600px at 70% 120%, #212750 10%, #020409 100%);
     display: block;
     position: fixed;
