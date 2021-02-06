@@ -10244,7 +10244,7 @@ fieldset[disabled] .select select:hover {
   }
 }
 .footer {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0);
   padding: 3rem 1.5rem 6rem;
 }
 html {
@@ -10264,6 +10264,7 @@ html {
   -ms-background-size: cover;
 }
 body {
+  transition: background-color 0.5s ease;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -10787,6 +10788,7 @@ body > .section {
 .card {
   overflow: visible;
   border-radius: 4px;
+  background-color: rgba(255,255,255,0.902);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -10958,6 +10960,7 @@ a.article-nav-next span {
 }
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  background-color: rgba(255,255,255,0.902);
 }
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,

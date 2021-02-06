@@ -10265,6 +10265,7 @@ html {
   -ms-background-size: cover;
 }
 body {
+  transition: background-color 0.5s ease;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -10788,6 +10789,7 @@ body > .section {
 .card {
   overflow: visible;
   border-radius: 0;
+  background-color: rgba(255,255,255,0.902);
 }
 .card + .card,
 .card + .column-right-shadow {
@@ -10959,6 +10961,7 @@ a.article-nav-next span {
 }
 .navbar-main {
   box-shadow: none;
+  background-color: rgba(255,255,255,0.902);
 }
 .navbar-main .navbar-menu,
 .navbar-main .navbar-start,
