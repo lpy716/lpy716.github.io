@@ -10839,6 +10839,9 @@ article.article .article-meta {
   overflow-x: auto;
   margin-bottom: 0.5rem;
 }
+article.article .article-more {
+  background-color: #dbdbdb;
+}
 article.article .content {
   word-wrap: break-word;
   font-size: 1.1rem;
@@ -11038,7 +11041,7 @@ footer.footer .level-end .field {
 .pagination .pagination-previous,
 .pagination .pagination-next {
   border: none;
-  background: #000;
+  background: rgba(243,244,239,0.902);
   box-shadow: none, 0 0 1px rgba(0,0,0,0.1);
 }
 .pagination .pagination-link.is-current {
