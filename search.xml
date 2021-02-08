@@ -430,33 +430,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：李朋远）</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
-<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
-<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
-<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
-<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
-<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
-<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
-<hr>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_727cover.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
@@ -483,6 +456,33 @@
       </categories>
       <tags>
         <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：李朋远）</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
+<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
+<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
+<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
+<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
+<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
+<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
+<hr>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_727cover.jpg"></p>
+<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
       </tags>
   </entry>
   <entry>
@@ -602,52 +602,6 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr>
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>濮阳公交线路查询与概览</title>
     <url>/2020/07/09/puyangbus/</url>
     <content><![CDATA[<p>测试功能：</p>
@@ -703,6 +657,52 @@ table th:nth-of-type(3) {
 <p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
 <p> （完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr>
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
