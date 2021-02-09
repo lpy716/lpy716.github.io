@@ -10790,7 +10790,8 @@ body > .section {
   background-color: rgba(243,244,239,0.902);
 }
 .card:hover {
-  background-color: rgba(248,248,248,0.902);
+  background-color: rgba(246,246,246,0.902);
+  transition: background-color 0.5s ease;
 }
 .card + .card,
 .card + .column-right-shadow {
