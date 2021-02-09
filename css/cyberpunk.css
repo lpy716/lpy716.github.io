@@ -10254,7 +10254,7 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background: url("https://www.pyli.tk/img/bg2.jpeg");
+  background: url("https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.10/bg2.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 40% 40%;
@@ -10922,7 +10922,7 @@ article.article .content .message.message-immersive .message-body {
   position: relative;
   z-index: 1;
   box-shadow: none;
-  background: #f5f5f5;
+  background: #e8e8e8;
   border-radius: 0;
   overflow: hidden;
 }
