@@ -10830,9 +10830,6 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
-article.media:last-child:after {
-  background: rgba(255,255,255,0);
-}
 article.article .article-meta,
 article.article .article-tags {
   color: #7a7a7a;
@@ -11089,7 +11086,7 @@ footer.footer .level-end .field {
   width: 0.75rem;
   top: calc(1rem + 1.5 * 0.85rem / 2 + 0.75rem / 2);
   bottom: 0;
-  background: #fff;
+  background: rgba(255,255,255,0);
 }
 .timeline .media:first-child:last-child:after {
   top: calc(1.5 * 0.85rem / 2 + 0.75rem / 2);
