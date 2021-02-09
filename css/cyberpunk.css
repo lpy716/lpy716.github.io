@@ -10831,6 +10831,9 @@ article.media .media-content .title {
   margin: 0;
   line-height: inherit;
 }
+article.media:last-child:after {
+  background: rgba(255,255,255,0);
+}
 article.article .article-meta,
 article.article .article-tags {
   color: #848484;
