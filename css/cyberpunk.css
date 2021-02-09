@@ -10790,6 +10790,9 @@ body > .section {
   border-radius: 0;
   background-color: rgba(243,244,239,0.902);
 }
+.card:hover {
+  background-color: rgba(255,255,255,0.902);
+}
 .card + .card,
 .card + .column-right-shadow {
   margin-top: 1.5rem;
@@ -11395,7 +11398,7 @@ figure.highlight .section {
   color: #121617;
 }
 .tags .tag:last-child {
-  background: #e8e8e8;
+  background: $light-grey;
   color: $white-invert;
 }
 .donate {
