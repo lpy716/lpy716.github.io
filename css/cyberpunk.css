@@ -10840,7 +10840,7 @@ article.article .article-meta {
   margin-bottom: 0.5rem;
 }
 article.article .article-more {
-  background-color: #dbdbdb;
+  background-color: #e8e8e8;
 }
 article.article .content {
   word-wrap: break-word;
@@ -11390,12 +11390,12 @@ figure.highlight .section {
   background: $light-grey;
   color: $white-invert;
 }
-.widget .tags .tag:first-child {
+.tags .tag:first-child {
   background: #fcee09;
   color: #121617;
 }
-.widget .tags .tag:last-child {
-  background: $light-grey;
+.tags .tag:last-child {
+  background: #e8e8e8;
   color: $white-invert;
 }
 .donate {
