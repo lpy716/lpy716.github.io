@@ -10869,6 +10869,9 @@ article.article .content code {
   background: transparent;
   overflow-wrap: break-word;
 }
+article.article .content blockquote {
+  background-color: #e8e8e8;
+}
 article.article .content blockquote.pullquote {
   float: right;
   max-width: 50%;
@@ -11379,6 +11382,9 @@ figure.highlight .section {
 .widget .menu-list .level .level-left,
 .widget .menu-list .level .level-right {
   align-items: flex-start;
+}
+.widget .menu-list a.is-active {
+  background-color: #ededed;
 }
 .widget .menu-list .tag {
   background: $light-grey;
