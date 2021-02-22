@@ -462,31 +462,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本icarus主题下实现文章首页置顶</title>
-    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
-<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
-<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -611,6 +586,31 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>新版本icarus主题下实现文章首页置顶</title>
+    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
+<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
@@ -658,6 +658,39 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<hr style="background-color: #e8e8e880;">
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>公交</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
@@ -689,39 +722,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-<hr style="background-color: #e8e8e880;">
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>公交</tag>
-        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -3024,7 +3024,7 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0393.jpg" data-sub-html="联欢晚会现场2">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0393.jpg" data-sub-html="联欢晚会现场2-隆鉴清老师在布置会场">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0393.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3039,17 +3039,17 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0401.jpg" data-sub-html="联欢晚会现场5">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0401.jpg" data-sub-html="联欢晚会现场5-晚会主持人">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0401.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0414.jpg" data-sub-html="联欢晚会现场6">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0414.jpg" data-sub-html="联欢晚会现场6-班长唐前国致辞">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0414.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0422.jpg" data-sub-html="联欢晚会现场7">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0422.jpg" data-sub-html="联欢晚会现场7-湖南组刘慧敏、喻苗演唱歌曲《爱》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0422.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3059,27 +3059,27 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0439.jpg" data-sub-html="联欢晚会现场9">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0439.jpg" data-sub-html="联欢晚会现场9-广西组演唱歌曲《真心英雄》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0439.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0452.jpg" data-sub-html="联欢晚会现场10">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0452.jpg" data-sub-html="联欢晚会现场10-为四川组颁发结业证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0452.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0463.jpg" data-sub-html="联欢晚会现场11">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0463.jpg" data-sub-html="联欢晚会现场11-四川组教师康文波演唱歌曲《阿刁》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0463.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0473.jpg" data-sub-html="联欢晚会现场12">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0473.jpg" data-sub-html="联欢晚会现场12-学生代表韩潘儒致辞">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0473.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0508.jpg" data-sub-html="联欢晚会现场13">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0508.jpg" data-sub-html="联欢晚会现场13-甘肃组诗朗诵《大爱之光，照耀你我》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0508.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3089,52 +3089,52 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0528.jpg" data-sub-html="联欢晚会现场15">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0528.jpg" data-sub-html="联欢晚会现场15-为广西组颁发结业证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0528.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0533.jpg" data-sub-html="联欢晚会现场16">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0533.jpg" data-sub-html="联欢晚会现场16-冀辽组演唱歌曲《朋友》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0533.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0554.jpg" data-sub-html="联欢晚会现场17">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0554.jpg" data-sub-html="联欢晚会现场17-教师代表张小君致辞">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0554.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0573.jpg" data-sub-html="联欢晚会现场18">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0573.jpg" data-sub-html="联欢晚会现场18-为每日积极反馈感想的营员颁发奖品">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0573.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0583.jpg" data-sub-html="联欢晚会现场19">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0583.jpg" data-sub-html="联欢晚会现场19-为湖南组颁发结业证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0583.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0603.jpg" data-sub-html="联欢晚会现场20">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0603.jpg" data-sub-html="联欢晚会现场20-志愿者李朋远">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0603.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0604.jpg" data-sub-html="联欢晚会现场21">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0604.jpg" data-sub-html="联欢晚会现场21-志愿者马毅梅、余慧萍">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0604.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0606.jpg" data-sub-html="联欢晚会现场22">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0606.jpg" data-sub-html="联欢晚会现场22-志愿者代表穆建超致辞">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0606.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0627.jpg" data-sub-html="联欢晚会现场23">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0627.jpg" data-sub-html="联欢晚会现场23-广西组全体与隆鉴清老师共唱歌曲《牵着梦想的手》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0627.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0631.jpg" data-sub-html="联欢晚会现场24">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0631.jpg" data-sub-html="联欢晚会现场24-广西组全体与隆鉴清老师共唱歌曲《喜欢你》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0631.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3144,12 +3144,12 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0654.jpg" data-sub-html="联欢晚会现场26">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0654.jpg" data-sub-html="联欢晚会现场26-为冀辽组颁发结业证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0654.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0664.jpg" data-sub-html="联欢晚会现场27">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0664.jpg" data-sub-html="联欢晚会现场27-为志愿者颁发证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0664.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3159,12 +3159,12 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0681.jpg" data-sub-html="联欢晚会现场29">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0681.jpg" data-sub-html="联欢晚会现场29-四川组唐玮鸿、孙天阔、秦玮俊演唱歌曲《好久不见》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0681.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0690.jpg" data-sub-html="联欢晚会现场30">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0690.jpg" data-sub-html="联欢晚会现场30-社长王焱老师致辞">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0690.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3179,7 +3179,7 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0704.jpg" data-sub-html="联欢晚会现场33">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0704.jpg" data-sub-html="联欢晚会现场33-志愿者赵翔鹏">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0704.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3199,17 +3199,17 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0732.jpg" data-sub-html="联欢晚会现场37">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0732.jpg" data-sub-html="联欢晚会现场37-刘若怡老师代表志愿者团队作诗朗诵《永远的第十一位教师》">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0732.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0743.jpg" data-sub-html="联欢晚会现场38">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0743.jpg" data-sub-html="联欢晚会现场38-为甘肃组颁发结业证书">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0743.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0773.jpg" data-sub-html="联欢晚会现场39">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0773.jpg" data-sub-html="联欢晚会现场39-2019助学助教夏令营全体参与人员合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0773.jpg">
             <div class="demo-gallery-poster">
             </div>
@@ -3219,37 +3219,37 @@ table th:nth-of-type(3) {
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0776.jpg" data-sub-html="联欢晚会现场41">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0776.jpg" data-sub-html="联欢晚会现场41-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0776.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0783.jpg" data-sub-html="联欢晚会现场42">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0783.jpg" data-sub-html="联欢晚会现场42-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0783.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0784.jpg" data-sub-html="联欢晚会现场43">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0784.jpg" data-sub-html="联欢晚会现场43-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0784.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0786.jpg" data-sub-html="联欢晚会现场44">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0786.jpg" data-sub-html="联欢晚会现场44-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0786.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0789.jpg" data-sub-html="联欢晚会现场45">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0789.jpg" data-sub-html="联欢晚会现场45-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0789.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0792.jpg" data-sub-html="联欢晚会现场46">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0792.jpg" data-sub-html="联欢晚会现场46-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0792.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0811.jpg" data-sub-html="联欢晚会现场47">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/_DSC0811.jpg" data-sub-html="联欢晚会现场47-晚会后合影">
             <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0725/0__DSC0811.jpg">
             <div class="demo-gallery-poster">
             </div>
