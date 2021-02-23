@@ -10789,10 +10789,10 @@ body > .section {
   overflow: visible;
   border-radius: 0;
   background-color: rgba(243,244,239,0.902);
+  transition: background-color 0.3s ease;
 }
 .card:hover {
   background-color: rgba(249,249,249,0.902);
-  transition: background-color 0.5s ease;
 }
 .card + .card,
 .card + .column-right-shadow {
