@@ -520,6 +520,7 @@
 
 <a id="more"></a>
 
+<p>👇</p>
 <p>积雪速度（20:10-22:50）：</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
@@ -535,7 +536,7 @@
       theme:"#42b983",
       loop:false,
       lang:"zh-cn",
-      preload:"auto",
+      preload:"false",
       volume: 0.8,
       mutex: true,
       video: {
