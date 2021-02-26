@@ -593,6 +593,39 @@
       </tags>
   </entry>
   <entry>
+    <title>icarus主题添加背景图片</title>
+    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
+    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
+<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
+<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
+<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
+<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
+<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
+<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
+<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
+<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
+<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
+<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
+<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -684,39 +717,6 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>icarus主题添加背景图片</title>
-    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
-    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
-<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
-<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
-<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
-<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
-<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
-<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
-<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
-<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
-<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
-<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
-<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
@@ -764,6 +764,39 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<hr style="background-color: #e8e8e880;">
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
@@ -795,39 +828,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-<hr style="background-color: #e8e8e880;">
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>濮阳</tag>
-        <tag>公交</tag>
       </tags>
   </entry>
   <entry>
