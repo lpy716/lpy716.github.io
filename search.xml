@@ -717,40 +717,6 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
-<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>然后正常更新就完了。</p>
-<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
-<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
-<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
@@ -789,6 +755,40 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
+<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>然后正常更新就完了。</p>
+<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
+<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
+<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -902,30 +902,32 @@ table th:nth-of-type(3) {
 </li>
 </ul>
 <p>2、“治亭”是濮阳历史上使用时间最短、最没有传承的地名，仅通行于新莽时期。</p>
-<p>3、明清民初，直隶、四川、贵州皆有“开州/开县”，该名称被今天的重庆开州区独占。之所以多地同名，或与当时政权分裂对峙或区域高度自治有一定关系——濮阳得名“开州”时正值金人统治；贵州开阳得名“开州”时属明朝贵州宣慰司（水西土司）管辖，非中央统筹之地；今重庆的“开州”始名于南北朝，自隋起沿用且一直处在“正统”政权的直接统治下；民初北洋政府清整全国县级重复地名后，这一现象依“相沿较古”（“开州”之名被川渝开州继承）、“仍还故称”（直隶开州被还旧称濮阳）、“协调变通”（今贵州开阳之名的由来）等原则而得到更正。</p>
-<p>4、1936年，国民政府曾计划当时的河南省将武安、涉县划给河北，河北省把濮阳、长垣、东明交换给河南（《国民政府公报》第1983号，民国25年2月28日，第11页）。该计划最终未被落实，否则濮阳（县）将早16年投入河南的怀抱。</p>
+<p>3、濮阳曾经也是个跨黄河发展的城市：公元918年，后唐庄宗李存勖击败后梁军，乘胜拔澶水，命李存审在德胜渡夹河筑德胜南北二城， 称夹寨，屯兵据守。此后，德胜寨成为晋梁争夺的焦点，至北宋亦成为澶渊郡治所，见证了宋辽之争、澶渊之盟。如今的濮阳县城由原来的德胜北城发展而来，隔黄河（大致对应今天的金堤河）而建的南城则在1077年毁于水患。</p>
+<p>4、明清民初，直隶、四川、贵州皆有“开州/开县”，该名称被今天的重庆开州区独占。之所以多地同名，或与当时政权分裂对峙或区域高度自治有一定关系——濮阳得名“开州”时正值金人统治；贵州开阳得名“开州”时属明朝贵州宣慰司（水西土司）管辖，非中央统筹之地；今重庆的“开州”始名于南北朝，自隋起沿用且一直处在“正统”政权的直接统治下；民初北洋政府清整全国县级重复地名后，这一现象依“相沿较古”（“开州”之名被川渝开州继承）、“仍还故称”（直隶开州被还旧称濮阳）、“协调变通”（今贵州开阳之名的由来）等原则而得到更正。</p>
+<p>5、1936年，国民政府曾计划当时的河南省将武安、涉县划给河北，河北省把濮阳、长垣、东明交换给河南（《国民政府公报》第1983号，民国25年2月28日，第11页）。该计划最终未被落实，否则濮阳（县）将早16年（即1952年平原省撤销事件）投入河南的怀抱。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_minguo.png" alt="1952年撤销平原省后，濮阳（县）才第一次并入自明清沿袭而来的河南省版图"></p>
-<p>5、不该被遗忘的另一个“四·一二”惨痛记忆：1941年4月12-20日，日伪军万余人在今濮清内滑一带发动三光扫荡，<strong>四千余同胞</strong>惨遭屠杀。</p>
-<p>6、1945年10月至1946年11月，冀鲁豫行署置濮阳县城关区为行署直辖市。此为“濮阳市”初次登上历史舞台。</p>
-<p>7、1949年末发生的“濮阳运粮事件”，令当时的平原省委书记成为新中国成立后第一位接受党中央机关报公开批评而降职的省委书记。此事件某种程度上成为了平原省撤销的导火索。</p>
-<p>8、尽管1952年后，今天的地级濮阳市才陆续并入自明清沿袭而来的河南省版图，为现豫北六市里最晚，却是豫北六市里唯一通行“河南话”（指中原官话）的地方。</p>
+<p>6、不该被遗忘的另一个“四·一二”惨痛记忆：1941年4月12-20日，日伪军万余人在今濮清内滑一带发动三光扫荡，<strong>四千余同胞</strong>惨遭屠杀。</p>
+<p>7、1945年10月至1946年11月，冀鲁豫行署置濮阳县城关区为行署直辖市。此为“濮阳市”初次登上历史舞台。</p>
+<p>8、1949年末发生的“濮阳运粮事件”，令当时的平原省委书记成为新中国成立后第一位接受党中央机关报公开批评而降职的省委书记。此事件某种程度上成为了平原省撤销的导火索。</p>
+<p>9、尽管1952年后，今天的地级濮阳市才陆续并入自明清沿袭而来的河南省版图，为现豫北六市里最晚，却是豫北六市里唯一通行“河南话”（指中原官话）的地方。</p>
 <h2 id="当代区划"><a href="#当代区划" class="headerlink" title="当代区划"></a>当代区划</h2><p>1、豫鲁两省在濮阳南侧并不是严格按照黄河划界的：濮范台三县均在黄河以南有村庄，而黄河以北也有山东的村庄。</p>
 <p>2、按照官方地图及严格定义，范县的老县城并非范县的飞地而是属于突出部，因为连通新老城区的240国道及沿线归范县管辖。范县辖区里正经的飞地是位于黄河南岸的辛庄镇苏庄村，同样被山东地界“包围”。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_fanxian.png" alt="苏庄在右图的最下边"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_fanxian.png" alt="注：苏庄在右图的最下边"></p>
 <p>3、接上一条，苏庄由濮阳县、范县和山东省的鄄城县三县共管，为“两省三县一个村”之奇观。</p>
-<p>4、东明县划入山东和范县划入河南并不是同时发生的，二者间隔了一年时间。</p>
+<p>4、东明县划入山东和范县划入河南并不是同时发生的，二者间隔了一年时间；在划入山东前，东明县是归开封专区管辖的。</p>
 <p>5、濮阳市辖区距郑州市辖区最近点超过80km，而距济南市辖区最近点不足15km。</p>
 <p>6、濮阳市的地理中心（此处算法为所有边界点坐标之和的平均）位于清丰县六塔乡主堡寨村东（115.278042, 35.806919）。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_py_center.png" alt="该结果由ArcMap自带工具计算生成"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_py_center.png" alt="注：该结果由ArcMap自带工具计算生成"></p>
 <p>7、莘县差点就和濮清南范台五县全部接壤（与台前差不到两公里即接壤）。</p>
-<p>8、三个国际友好城市——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
-<p>9、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是1983年以前原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续，今天的濮阳市则是1983年以前原安阳地区（Anyang prefecture）的转世重生。</p>
+<p>8、与濮阳到郑州、开封、德州、济南一样，濮阳市和商丘、<strong>徐州</strong>、<strong>宿州</strong>、枣庄、临沂、<strong>淄博</strong>、<strong>晋中</strong>之间也分别都<strong>只间隔了一个市</strong>（主要是菏泽、泰安、济宁、邯郸立了大功，感谢台前hhh）。</p>
+<p>9、三个国际友好城市——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
+<p>10、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是1983年以前原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续，今天的濮阳市则是1983年以前原安阳地区（Anyang prefecture）的转世重生。</p>
 <h2 id="自然地理"><a href="#自然地理" class="headerlink" title="自然地理"></a>自然地理</h2><p>1、中原油田在濮阳一带开采的油气田与三四千万年前这里的一个盐湖有很大关系。该盐湖为后来的油气生成和储集提供了有利条件。</p>
 <p>2、接上一条，从濮阳一带开采出的油气和恐龙没啥关系。 原因：</p>
 <ul>
 <li><p>东濮凹陷仅发现有早、中三叠世的地层，且基本缺失侏罗纪、白垩纪的地层；</p>
 </li>
-<li><p>就目前研究来看，恐龙最早现身于东亚是晚三叠世以后的事情；</p>
+<li><p>就目前研究来看，恐龙最早现身于东亚一带是晚三叠世以后的事情；</p>
 </li>
 <li><p>这里的恐龙指一般公众认知的，生活在中生代（三叠纪、侏罗纪、白垩纪）的恐龙。</p>
 </li>
@@ -943,12 +945,25 @@ table th:nth-of-type(3) {
 <p>5、全市公交停靠线路数量并列第一的三个站点：飞龙车站、劳动市场、长途车站，均有14条线路停靠。全市公交并列最繁忙两个运行区间：胜利路京开道口至油田总站、飞龙车站至长途车站，均有11条线路通过。</p>
 <p>6、39路、18路为濮阳市第一、第二长的两条公交线路，二者同属于城乡公交线路，前者仅比后者长4公里（33km、29km），票价却贵3元（5元、2元）。</p>
 <p>7、和毗邻七市相比（安阳、新乡、菏泽、济宁、泰安、聊城、邯郸），只有濮阳迟迟未推出公交学生卡；河南全省除信阳外，仅濮阳无公交学生卡（华中地区无公交学生卡的省辖市：濮阳、信阳、孝感、天门、湘西（吉首）、邵阳）</p>
-<p>8、濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非客运班线），<strong>实现跨地市的公交联乘出行</strong>：始邢台-【邯郸】-【安阳】-鹤壁止，始【新乡】-郑州-开封止，始【聊城】-济南-淄博-潍坊止，始滨州-东营-淄博-莱芜-【泰安】止，始【菏泽】-【济宁】-枣庄-徐州-宿州止（亦可自邹城曲阜北上至济南潍坊东营。山东和皖苏北部城市间有多条联运线路可选择，此处不细罗列）</p>
+<p>8、濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非客运班线），<strong>实现跨地市的公交联乘出行</strong>。线路不限于：</p>
+<ul>
+<li><p>河北高邑→邢台→<strong>邯郸</strong>→河南<strong>安阳</strong>→<strong>鹤壁</strong>→淇县；</p>
+</li>
+<li><p>卫辉→<strong>新乡</strong>→郑州→开封/许昌；</p>
+</li>
+<li><p>莘县→<strong>聊城</strong>→济南→淄博→潍坊；</p>
+</li>
+<li><p>东明→<strong>菏泽</strong>→<strong>济宁</strong>→<strong>泰安</strong>→济南→淄博→东营；</p>
+</li>
+<li><p>东明→<strong>菏泽</strong>→<strong>济宁</strong>→枣庄→江苏徐州→安徽宿州。</p>
+</li>
+</ul>
 <p>9、濮阳不仅是铁路、公交黑洞，还是<strong>航空黑洞</strong>。对比毗邻七市，仅濮阳境内没有任何机场设施（军用/民用，含正在施工的项目）</p>
 <p>10、正常情况下，在搭乘民航客机时，只可能从濮阳市区的西部向东俯望整个城区。</p>
-<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971年汤濮窄轨延长线）。</p>
-<p>12、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
-<p>13、郑济高铁濮阳车站除在市域范围内有四个走向与设站选项外，在确定设站濮东后亦有三个子方案。</p>
+<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971年汤濮窄轨延长线），但清丰火车站于1985年停运。</p>
+<p>12、接上一条，待郑济高铁全线通车后，清丰县将成为唯一无火车站的</p>
+<p>13、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
+<p>14、郑济高铁濮阳车站除在市域范围内有四个走向与设站选项外，在确定设站濮东后亦有三个子方案。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_pydz.jpg" alt="市域范围的4种走向与设站选择：濮阳北（马庄桥方案）、濮阳北（范辉高速南侧方案）、濮阳东、与濮阳站并站"></p>
 <h2 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h2><p>1、“石油化工”作为濮阳的城市性质之一，其地位在历版城市总规中被不断后移，而在最新一版（2015-2030）城市总规中已经消失。</p>
 <p>2、中原油田的探区（不含后来在四川内蒙等地新增探区）其实包括了一个很大的范围，跨豫北、豫东、鲁西和鲁西南约4万平方公里，截止目前只是在濮阳一带（东濮凹陷）的勘探取得了突破。</p>
@@ -1275,359 +1290,6 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_720cover.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
-      <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
-      </categories>
-      <tags>
-        <tag>夏令营日报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019 北京助学助教夏令营—— 7.24 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.24%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：王国权）</li>
-<li>营员感想摘录</li>
-<li>志愿者反馈</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
-<p>早上大家都起的特别早，在司机师傅的建议下六点就发车了，但大家都没有表露出一丝疲倦感，都对这座古老而神秘的墙充满了兴趣。</p>
-<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
-
-<div class="demo-gallery mrb20">
-    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc1.JPG" data-sub-html="游览八达岭长城1">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc1.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc2.JPG" data-sub-html="游览八达岭长城2">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc2.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc3.jpg" data-sub-html="游览八达岭长城3">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc3.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc4.jpg" data-sub-html="游览八达岭长城4">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc4.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc5.jpg" data-sub-html="游览八达岭长城5">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc5.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc6.jpg" data-sub-html="游览八达岭长城6">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc6.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc7.JPG" data-sub-html="游览八达岭长城7">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc7.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc8.JPG" data-sub-html="游览八达岭长城8">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc8.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc9.JPG" data-sub-html="游览八达岭长城9">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc9.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc10.JPG" data-sub-html="游览八达岭长城10">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc10.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc11.jpg" data-sub-html="游览八达岭长城11">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc11.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc12.jpg" data-sub-html="游览八达岭长城12">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc12.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc13.jpg" data-sub-html="游览八达岭长城13">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc13.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-    </div>
-</div>
-
-
-
-<p>登了一个半小时的长城我们就集合准备回学校吃午饭了，午饭匆匆解决紧接着赶紧坐车前往天文馆，看了科普电影《穿越寒武纪》和《奇妙的星空》。《穿越寒武纪》带大家领略了脊柱动物是如何在艰苦卓绝，与天斗，与生命斗争后存活下来。其中，寒武纪是距今约五亿年前的地球生物演化史上的新篇章，标志着现代生命的开始；《奇妙的星空》带大家认识了星星，认识了星座是如何构成的。</p>
-<div class="demo-gallery mrb20">
-    <div id="aniimated-thumbnials2" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg1.JPG" data-sub-html="游览北京天文馆1">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg1.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg2.JPG" data-sub-html="游览北京天文馆2">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg2.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg3.JPG" data-sub-html="游览北京天文馆3">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg3.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg5.JPG" data-sub-html="游览北京天文馆4">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg5.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg6.jpg" data-sub-html="游览北京天文馆5">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg6.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-    </div>
-</div>
-
-
-
-<p>晚上王慧超老师《理财培训》，大家都对这种与自身息息相关的事情表现出了更加浓厚的兴趣，财富的来源在于积累，富于投资。</p>
-<div class="demo-gallery mrb20">
-    <div id="aniimated-thumbnials3" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc1.jpg" data-sub-html="王慧超老师讲座1">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc1.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc2.jpg" data-sub-html="王慧超老师讲座2">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc2.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc3.jpg" data-sub-html="王慧超老师讲座3">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc3.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc4.jpg" data-sub-html="王慧超老师讲座4">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc4.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc5.jpg" data-sub-html="王慧超老师讲座5">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc5.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-  var $animThumb1 = $("#aniimated-thumbnials1");
-  if ($animThumb1.length) {
-    $animThumb1
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb1.lightGallery({
-          thumbnail: true,
-        });
-      });
-  }
-  var $animThumb2 = $("#aniimated-thumbnials2");
-  if ($animThumb2.length) {
-    $animThumb2
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb2.lightGallery({
-          thumbnail: true,
-        });
-      });
-  }
-  var $animThumb3 = $("#aniimated-thumbnials3");
-  if ($animThumb3.length) {
-    $animThumb3
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb3.lightGallery({
-          thumbnail: true,
-        });
-      });
-  }
-</script>
-
-
-
-<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
-<li><p><strong><em>罗巧花–甘肃</em></strong></p>
-<blockquote>
-<p>今天真正做到了俯查品类之盛，仰观宇宙之大。于长城之上，看熙熙攘攘的人群，郁郁葱葱的树木，绵延不断的长城。在天文馆内，观神奇星空，看几亿年前的寒武纪。老师晚上的理财课，为我以后如何更好的规划自己的资金提供了良好的方法，一整天都收获满满。</p>
-</blockquote>
-</li>
-<li><p><strong><em>闫芳–甘肃</em></strong></p>
-<blockquote>
-<p>我喜欢星空，喜欢天文学，今天又完成了一个小愿望，第一次清楚了天空中星座的位置，这让我更喜欢天文学了，如果未来有机会的话我想我会去接触天文学，这次天文馆参观让我受益匪浅，让我对星空有了更多的渴望，谢谢每一个你们。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="四川组"><a href="#四川组" class="headerlink" title="四川组"></a>四川组</h3><ul>
-<li><p><strong><em>肖均–四川</em></strong></p>
-<blockquote>
-<p>不到长城非好汉！即将来到雄伟的万里长城，特别兴奋！早上五点二十的闹钟居然没用上，五点自然醒。登上长城，感叹于五千年中华文明的源远流长！赞叹古人的聪明智慧。他们在条件极其艰苦的条件下，为抵御外族的侵略建起了这举世壮观的万里长城。作为一名乡村老师，走在教改的路上，固然困难重重，拿出坚韧的品质，运用集体的智慧，何愁不能做好自己的本职工作！我不也是在祖国建设当代长城、培养祖国建设接班人这个工作上添砖加瓦吗？天文博物馆，两场演出之后，我迅速在网上查在成都重庆是否有类似的教育基地，结果却令人失望。北京，国家的中心，确有其他城市没有的东西。何谈我们偏远的山区地方，我的学生们啊！你们真是要努力学习，走出大山，来到山的这边看看世界何其广大！</p>
-</blockquote>
-</li>
-<li><p><strong><em>康文波–四川</em></strong></p>
-<blockquote>
-<p>长城是全世界的建筑奇迹，是中华民族智慧的结晶，也奴隶社会人民的血泪史。登上长城的那一刻，一种自豪感油然而生。在如此险峻的山脊上，在如此复杂的地址条件下，创造了如此宏伟的工程，也只有伟大的中国人民才能做到。天气晴朗，多风，仿佛是为了大家登成特别准备的。一路上人头攒动，浩浩荡荡，沿着南北城分流而上。我们决定去南城。一边走一边拍照，觉得每个地方都值得留念。这也许就是那没见过世面的样子。当快到第四楼的时候，城楼几乎垂直而上，让人不得不扶栏攀登，人流也自动靠有上行下走，蔚为壮观。一回头，正是风景最美处。放眼望去，巍峨的群山，披着绿色的衣裳，在灿烂的阳光下是那么美，这是一幅真正的山水画。稍作停留，一手扶栏，一手拍照，然后赶紧的继续往上……</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="冀辽组"><a href="#冀辽组" class="headerlink" title="冀辽组"></a>冀辽组</h3><ul>
-<li><p><strong><em>商学香–河北</em></strong></p>
-<blockquote>
-<p>早晨睁开朦胧的双眼，一看表4点45，不能再睡了，今天去长城。我得做好准备，当我收拾好后一看表5点，怎么那么慢呢？我的眼看着表等待着6点的到来，终于等到大巴出发了。随着时间的推移，有人大喊:“到长城了！到长城了！″。我终于登上长城了，站在长城上看，真的是太美太壮观了。我终于圆了我的长城梦。</p>
-</blockquote>
-</li>
-<li><p><strong><em>靳俊芳–河北</em></strong></p>
-<blockquote>
-<p>长城，是中华民族勤劳智慧的结晶，被誉为“世界八大奇迹之一”是闻名世界的文化遗产之一。“不到长城非好汉”，今天，我们营员终于登上了八达岭长城。站在烽火台上，极目远眺，只见群山无边无际，气势雄伟，长城就像一条正在探索天际的巨龙卧在险峻的群山上，蜿蜒起伏，伸向远方，气势磅礴。望着眼前壮丽的景色，轻抚着古老的城墙，修建长城时劳动人民当时是何等的艰辛！它曾经抵御了北方匈奴，保卫这块广阔的炎黄子孙繁衍生息的土地，你是中华民族的骄傲！中国人的自豪！</p>
-</blockquote>
-</li>
-<li><p><strong><em>隋晴晴–辽宁</em></strong></p>
-<blockquote>
-<p>今天，我们一早就去了万里长城——八达岭长城。之前经常在课本里听过长城有多么宏伟，多么壮观，今天也终于见识到了它的雄伟壮观、气势磅礴。在登的过程中很累，也很磨炼人。在我累的走不动想休息的时候，环顾四周，有五六岁的小孩子，也有六十多岁的老人，他们都在尽自己最大的努力往上走，这时我就会又充满了斗志，继续前进。通过这个经历，我也懂得了应该随时都全力以赴去做事，去学习。</p>
-</blockquote>
-</li>
-<li><p><strong><em>隋丽荣–辽宁</em></strong></p>
-<blockquote>
-<p>理财这个既熟悉又陌生的话题，在王慧超老师的讲解下，似乎变得明朗了。从中我学到理财的小秘诀，把收入总额做合理分配，找准方向做适当投资。最重要的是学到了如何培养孩子的理财观念，方法具体，有操作性，让孩子做支出记录，可谓指点迷津，受益匪浅！</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="广西组"><a href="#广西组" class="headerlink" title="广西组"></a>广西组</h3><ul>
-<li><p><strong><em>韩潘儒–广西</em></strong></p>
-<blockquote>
-<p>今天晚上听了王慧超老师的《理财培训》。我认为今晚的课程十分有现实意义，对我们未来的人生的确产生了影响——如果我们从现在开始学会理财，那么到了未来我们就会有自己的财富，获得更大的利益，这对整个人生都是有利的。其次这些技巧是我们终身受用的，我觉得是一种收获。还有关于理财思想的培育，在我们这个年纪开始还不晚，所以我很庆幸听了这节课，有了新的认识！</p>
-</blockquote>
-</li>
-<li><p><strong><em>李彩丽–广西</em></strong></p>
-<blockquote>
-<p>今早五点半，我的睡意与外面的云雾也一样浓。闹钟一大早把我们叫起来，因为今天我们要去爬长城。  一路上，我激动不已，对于第一次去长城的我，心里充满了兴奋与高兴，终于到了，我们买了票，进入了长城脚下。我迫不及待的爬了起来，我把其他省份的老师同学甩了老远。终于到了第一个烽火台，一路顺着栏杆爬上去，到了第二个，第三个，第四个烽火台…… 我们很开心，一边拍照留影，一边往上爬！心中特别感概长城的巍峨，蜿蜒曲折绵绵不绝，从书上看长城是那么雄伟，那么长，就像一条巨龙，中间的山，被长城围着，那条‘中华龙’好像守护着那片绿色的山，不让它有损坏，我会永远记住第一次爬长城的心情，兴奋，激动！   从长城回来，我们吃了午饭，又匆匆的往中国天文馆出发了，那心情也是相当的激动，因为我们在4d科剧场那里观看了《穿越寒武纪》，仿佛置身在海底世界，自己也是其中的一种生物，在海底自由的穿梭，经历弱肉强食，感概时代的变迁。接着在A场馆的天象厅看了《奇妙的星空》，静静的放空自己，抬头仰望星空，各种行星的交错，各种奇幻的场景，认识了天狼星是天空中最亮最大的星星，还有角宿一，北斗七星，星云等等，特别奇妙，真想一直可以仰望星空，寻找自己眼里最亮的那颗星！今天又是收获满满的一天，感恩北京！</p>
-</blockquote>
-</li>
-<li><p><strong><em>李彤彤–广西</em></strong></p>
-<blockquote>
-<p>哇⊙??⊙！今天早上去爬长城了耶！都说不到长城非好汉，如今我也是汉子了^O^，果然站在最高处 ，看的最远。这也算是圆了长城梦了。还有今天的4D幻灯片真是让人震撼，前所未有的感觉，让我深刻的认识到祖国的发展迅速，让我有了全新的体验。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
-<li><p><strong><em>曾菲菲–湖南</em></strong></p>
-<blockquote>
-<p>今日登上长城当好汉，上去的时候还感觉时间仓促没爬的过瘾，返回下来时双腿都发抖[发抖] 了[捂脸][捂脸]刚刚好[偷笑][偷笑]由衷的感谢社团，如此热情的款待和周密的安排，志愿者们无私的服务和全程陪同，还能面对面近距离听国内顶尖教授大咖们的讲课，太幸运[呲牙][呲牙]也很开心相识了来自全国各地的不同年龄的“同学们”，不说了，参观天文馆[偷笑][偷笑]</p>
-</blockquote>
-</li>
-<li><p><strong><em>谢东海–湖南</em></strong></p>
-<blockquote>
-<p>今天登上了八达岭长城，被它的雄伟壮观深深震撼，难怪外国元首来中国，长城是首选旅游景点。据说宇航员在太空能拍到的地球上的唯一一个人工建筑就是中国的万里长城。这不由得让我们师生油然而生一种民族自豪感，在那样落后的时代，筑成世界上绝无仅有的气势磅礴的万里长城，也让我们对先人油然而生一种敬意！</p>
-</blockquote>
-</li>
-<li><p><strong><em>喻苗–湖南</em></strong></p>
-<blockquote>
-<p>今天天气晴，早上起得早，去爬长城，有点遗憾没有爬到自已想要到的长度，时间不久。但我在长城上看到一条壁虎，很漂亮。今天很开心，但下午实在有点架睡觉，于是下午的活动都是在半睡半醒完成的。晚上王老师给我们上理财课这节课， 今天晚上这节课很早就下课了。于是很早回寝室准备明天的节目。</p>
-</blockquote>
-</li>
-<li><p><strong><em>王泰宏–湖南</em></strong></p>
-<blockquote>
-<p>今天游玩了长城。这是我期待已久的事情。俗话说，不到长城非好汉。这是我出生一来第一次看长城。长城的壮观，长城的陡峭，都在我心中留下了不可磨灭的印象。</p>
-</blockquote>
-</li>
-<li><p><strong><em>唐思博–湖南</em></strong></p>
-<blockquote>
-<p>今天一大早，我们上了车来到了北京的八达岭长城。这儿风光无限，这儿虽骄阳似火。可这天法动摇我们爬长城的决心，经过九九八十一难，我终于到了长城尽头（前云在施工），喜悦更是不言而喻。然后，我们下城了。我发现一个问题：原本只要二块的水而这却要十块，害得我干着嗓子走了许久。</p>
-</blockquote>
-</li>
-<li><p><strong><em>刘慧敏–湖南</em></strong></p>
-<blockquote>
-<p>今天要爬长城，五点半就起来，迷迷糊糊的，一到车上，便又睡着了。隐隐约约到了长城，我没吃什么东西，瞬间想吐，却又吐不出，直到爬长城，我累的气喘吁吁，不像之前那样活蹦乱跳时，我便开始吃东西来补充能量，虽然累的不行，但看着手中这些优美的画卷，心想这也值了。爬到海拔将近八百处，却又要返回，心中还是不甘的，但只能服从安排。下午的天文馆参观对于我来说真的很无聊，我对天文学并不感兴趣，看又看不懂，这里边只有那个3D纪录片还令我满意些，说实话那个星空的节目，我看着看着就睡着了，感觉它像催眠曲一样。今天还是蛮有收获的，虽累，但心里舒服。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>王国权</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="王国权" class="tab-content" style="display: block;">
-    今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。
-</div>
-<div id="穆建超" class="tab-content">
-    <p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
-    <p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
-    <p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
-    <p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p>
-</div>
-<div id="李朋远" class="tab-content">
-    已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
-
-<hr style="background-color: #e8e8e880;">
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_724cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
 ]]></content>
       <categories>
@@ -2015,6 +1677,359 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_723cover.jpg"></p>
+<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
+]]></content>
+      <categories>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
+      </categories>
+      <tags>
+        <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019 北京助学助教夏令营—— 7.24 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.24%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：王国权）</li>
+<li>营员感想摘录</li>
+<li>志愿者反馈</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
+<p>早上大家都起的特别早，在司机师傅的建议下六点就发车了，但大家都没有表露出一丝疲倦感，都对这座古老而神秘的墙充满了兴趣。</p>
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
+
+<div class="demo-gallery mrb20">
+    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc1.JPG" data-sub-html="游览八达岭长城1">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc1.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc2.JPG" data-sub-html="游览八达岭长城2">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc2.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc3.jpg" data-sub-html="游览八达岭长城3">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc3.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc4.jpg" data-sub-html="游览八达岭长城4">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc4.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc5.jpg" data-sub-html="游览八达岭长城5">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc5.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc6.jpg" data-sub-html="游览八达岭长城6">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc6.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc7.JPG" data-sub-html="游览八达岭长城7">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc7.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc8.JPG" data-sub-html="游览八达岭长城8">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc8.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc9.JPG" data-sub-html="游览八达岭长城9">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc9.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc10.JPG" data-sub-html="游览八达岭长城10">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc10.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc11.jpg" data-sub-html="游览八达岭长城11">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc11.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc12.jpg" data-sub-html="游览八达岭长城12">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc12.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/cc13.jpg" data-sub-html="游览八达岭长城13">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_cc13.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+<p>登了一个半小时的长城我们就集合准备回学校吃午饭了，午饭匆匆解决紧接着赶紧坐车前往天文馆，看了科普电影《穿越寒武纪》和《奇妙的星空》。《穿越寒武纪》带大家领略了脊柱动物是如何在艰苦卓绝，与天斗，与生命斗争后存活下来。其中，寒武纪是距今约五亿年前的地球生物演化史上的新篇章，标志着现代生命的开始；《奇妙的星空》带大家认识了星星，认识了星座是如何构成的。</p>
+<div class="demo-gallery mrb20">
+    <div id="aniimated-thumbnials2" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg1.JPG" data-sub-html="游览北京天文馆1">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg1.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg2.JPG" data-sub-html="游览北京天文馆2">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg2.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg3.JPG" data-sub-html="游览北京天文馆3">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg3.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg5.JPG" data-sub-html="游览北京天文馆4">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg5.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/twg6.jpg" data-sub-html="游览北京天文馆5">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_twg6.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+<p>晚上王慧超老师《理财培训》，大家都对这种与自身息息相关的事情表现出了更加浓厚的兴趣，财富的来源在于积累，富于投资。</p>
+<div class="demo-gallery mrb20">
+    <div id="aniimated-thumbnials3" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc1.jpg" data-sub-html="王慧超老师讲座1">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc1.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc2.jpg" data-sub-html="王慧超老师讲座2">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc2.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc3.jpg" data-sub-html="王慧超老师讲座3">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc3.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc4.jpg" data-sub-html="王慧超老师讲座4">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc4.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/whc5.jpg" data-sub-html="王慧超老师讲座5">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_19sc_p2@0.0.1/19sc0724/0_whc5.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+  var $animThumb1 = $("#aniimated-thumbnials1");
+  if ($animThumb1.length) {
+    $animThumb1
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb1.lightGallery({
+          thumbnail: true,
+        });
+      });
+  }
+  var $animThumb2 = $("#aniimated-thumbnials2");
+  if ($animThumb2.length) {
+    $animThumb2
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb2.lightGallery({
+          thumbnail: true,
+        });
+      });
+  }
+  var $animThumb3 = $("#aniimated-thumbnials3");
+  if ($animThumb3.length) {
+    $animThumb3
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb3.lightGallery({
+          thumbnail: true,
+        });
+      });
+  }
+</script>
+
+
+
+<h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
+<li><p><strong><em>罗巧花–甘肃</em></strong></p>
+<blockquote>
+<p>今天真正做到了俯查品类之盛，仰观宇宙之大。于长城之上，看熙熙攘攘的人群，郁郁葱葱的树木，绵延不断的长城。在天文馆内，观神奇星空，看几亿年前的寒武纪。老师晚上的理财课，为我以后如何更好的规划自己的资金提供了良好的方法，一整天都收获满满。</p>
+</blockquote>
+</li>
+<li><p><strong><em>闫芳–甘肃</em></strong></p>
+<blockquote>
+<p>我喜欢星空，喜欢天文学，今天又完成了一个小愿望，第一次清楚了天空中星座的位置，这让我更喜欢天文学了，如果未来有机会的话我想我会去接触天文学，这次天文馆参观让我受益匪浅，让我对星空有了更多的渴望，谢谢每一个你们。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="四川组"><a href="#四川组" class="headerlink" title="四川组"></a>四川组</h3><ul>
+<li><p><strong><em>肖均–四川</em></strong></p>
+<blockquote>
+<p>不到长城非好汉！即将来到雄伟的万里长城，特别兴奋！早上五点二十的闹钟居然没用上，五点自然醒。登上长城，感叹于五千年中华文明的源远流长！赞叹古人的聪明智慧。他们在条件极其艰苦的条件下，为抵御外族的侵略建起了这举世壮观的万里长城。作为一名乡村老师，走在教改的路上，固然困难重重，拿出坚韧的品质，运用集体的智慧，何愁不能做好自己的本职工作！我不也是在祖国建设当代长城、培养祖国建设接班人这个工作上添砖加瓦吗？天文博物馆，两场演出之后，我迅速在网上查在成都重庆是否有类似的教育基地，结果却令人失望。北京，国家的中心，确有其他城市没有的东西。何谈我们偏远的山区地方，我的学生们啊！你们真是要努力学习，走出大山，来到山的这边看看世界何其广大！</p>
+</blockquote>
+</li>
+<li><p><strong><em>康文波–四川</em></strong></p>
+<blockquote>
+<p>长城是全世界的建筑奇迹，是中华民族智慧的结晶，也奴隶社会人民的血泪史。登上长城的那一刻，一种自豪感油然而生。在如此险峻的山脊上，在如此复杂的地址条件下，创造了如此宏伟的工程，也只有伟大的中国人民才能做到。天气晴朗，多风，仿佛是为了大家登成特别准备的。一路上人头攒动，浩浩荡荡，沿着南北城分流而上。我们决定去南城。一边走一边拍照，觉得每个地方都值得留念。这也许就是那没见过世面的样子。当快到第四楼的时候，城楼几乎垂直而上，让人不得不扶栏攀登，人流也自动靠有上行下走，蔚为壮观。一回头，正是风景最美处。放眼望去，巍峨的群山，披着绿色的衣裳，在灿烂的阳光下是那么美，这是一幅真正的山水画。稍作停留，一手扶栏，一手拍照，然后赶紧的继续往上……</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="冀辽组"><a href="#冀辽组" class="headerlink" title="冀辽组"></a>冀辽组</h3><ul>
+<li><p><strong><em>商学香–河北</em></strong></p>
+<blockquote>
+<p>早晨睁开朦胧的双眼，一看表4点45，不能再睡了，今天去长城。我得做好准备，当我收拾好后一看表5点，怎么那么慢呢？我的眼看着表等待着6点的到来，终于等到大巴出发了。随着时间的推移，有人大喊:“到长城了！到长城了！″。我终于登上长城了，站在长城上看，真的是太美太壮观了。我终于圆了我的长城梦。</p>
+</blockquote>
+</li>
+<li><p><strong><em>靳俊芳–河北</em></strong></p>
+<blockquote>
+<p>长城，是中华民族勤劳智慧的结晶，被誉为“世界八大奇迹之一”是闻名世界的文化遗产之一。“不到长城非好汉”，今天，我们营员终于登上了八达岭长城。站在烽火台上，极目远眺，只见群山无边无际，气势雄伟，长城就像一条正在探索天际的巨龙卧在险峻的群山上，蜿蜒起伏，伸向远方，气势磅礴。望着眼前壮丽的景色，轻抚着古老的城墙，修建长城时劳动人民当时是何等的艰辛！它曾经抵御了北方匈奴，保卫这块广阔的炎黄子孙繁衍生息的土地，你是中华民族的骄傲！中国人的自豪！</p>
+</blockquote>
+</li>
+<li><p><strong><em>隋晴晴–辽宁</em></strong></p>
+<blockquote>
+<p>今天，我们一早就去了万里长城——八达岭长城。之前经常在课本里听过长城有多么宏伟，多么壮观，今天也终于见识到了它的雄伟壮观、气势磅礴。在登的过程中很累，也很磨炼人。在我累的走不动想休息的时候，环顾四周，有五六岁的小孩子，也有六十多岁的老人，他们都在尽自己最大的努力往上走，这时我就会又充满了斗志，继续前进。通过这个经历，我也懂得了应该随时都全力以赴去做事，去学习。</p>
+</blockquote>
+</li>
+<li><p><strong><em>隋丽荣–辽宁</em></strong></p>
+<blockquote>
+<p>理财这个既熟悉又陌生的话题，在王慧超老师的讲解下，似乎变得明朗了。从中我学到理财的小秘诀，把收入总额做合理分配，找准方向做适当投资。最重要的是学到了如何培养孩子的理财观念，方法具体，有操作性，让孩子做支出记录，可谓指点迷津，受益匪浅！</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="广西组"><a href="#广西组" class="headerlink" title="广西组"></a>广西组</h3><ul>
+<li><p><strong><em>韩潘儒–广西</em></strong></p>
+<blockquote>
+<p>今天晚上听了王慧超老师的《理财培训》。我认为今晚的课程十分有现实意义，对我们未来的人生的确产生了影响——如果我们从现在开始学会理财，那么到了未来我们就会有自己的财富，获得更大的利益，这对整个人生都是有利的。其次这些技巧是我们终身受用的，我觉得是一种收获。还有关于理财思想的培育，在我们这个年纪开始还不晚，所以我很庆幸听了这节课，有了新的认识！</p>
+</blockquote>
+</li>
+<li><p><strong><em>李彩丽–广西</em></strong></p>
+<blockquote>
+<p>今早五点半，我的睡意与外面的云雾也一样浓。闹钟一大早把我们叫起来，因为今天我们要去爬长城。  一路上，我激动不已，对于第一次去长城的我，心里充满了兴奋与高兴，终于到了，我们买了票，进入了长城脚下。我迫不及待的爬了起来，我把其他省份的老师同学甩了老远。终于到了第一个烽火台，一路顺着栏杆爬上去，到了第二个，第三个，第四个烽火台…… 我们很开心，一边拍照留影，一边往上爬！心中特别感概长城的巍峨，蜿蜒曲折绵绵不绝，从书上看长城是那么雄伟，那么长，就像一条巨龙，中间的山，被长城围着，那条‘中华龙’好像守护着那片绿色的山，不让它有损坏，我会永远记住第一次爬长城的心情，兴奋，激动！   从长城回来，我们吃了午饭，又匆匆的往中国天文馆出发了，那心情也是相当的激动，因为我们在4d科剧场那里观看了《穿越寒武纪》，仿佛置身在海底世界，自己也是其中的一种生物，在海底自由的穿梭，经历弱肉强食，感概时代的变迁。接着在A场馆的天象厅看了《奇妙的星空》，静静的放空自己，抬头仰望星空，各种行星的交错，各种奇幻的场景，认识了天狼星是天空中最亮最大的星星，还有角宿一，北斗七星，星云等等，特别奇妙，真想一直可以仰望星空，寻找自己眼里最亮的那颗星！今天又是收获满满的一天，感恩北京！</p>
+</blockquote>
+</li>
+<li><p><strong><em>李彤彤–广西</em></strong></p>
+<blockquote>
+<p>哇⊙??⊙！今天早上去爬长城了耶！都说不到长城非好汉，如今我也是汉子了^O^，果然站在最高处 ，看的最远。这也算是圆了长城梦了。还有今天的4D幻灯片真是让人震撼，前所未有的感觉，让我深刻的认识到祖国的发展迅速，让我有了全新的体验。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="湖南组"><a href="#湖南组" class="headerlink" title="湖南组"></a>湖南组</h3><ul>
+<li><p><strong><em>曾菲菲–湖南</em></strong></p>
+<blockquote>
+<p>今日登上长城当好汉，上去的时候还感觉时间仓促没爬的过瘾，返回下来时双腿都发抖[发抖] 了[捂脸][捂脸]刚刚好[偷笑][偷笑]由衷的感谢社团，如此热情的款待和周密的安排，志愿者们无私的服务和全程陪同，还能面对面近距离听国内顶尖教授大咖们的讲课，太幸运[呲牙][呲牙]也很开心相识了来自全国各地的不同年龄的“同学们”，不说了，参观天文馆[偷笑][偷笑]</p>
+</blockquote>
+</li>
+<li><p><strong><em>谢东海–湖南</em></strong></p>
+<blockquote>
+<p>今天登上了八达岭长城，被它的雄伟壮观深深震撼，难怪外国元首来中国，长城是首选旅游景点。据说宇航员在太空能拍到的地球上的唯一一个人工建筑就是中国的万里长城。这不由得让我们师生油然而生一种民族自豪感，在那样落后的时代，筑成世界上绝无仅有的气势磅礴的万里长城，也让我们对先人油然而生一种敬意！</p>
+</blockquote>
+</li>
+<li><p><strong><em>喻苗–湖南</em></strong></p>
+<blockquote>
+<p>今天天气晴，早上起得早，去爬长城，有点遗憾没有爬到自已想要到的长度，时间不久。但我在长城上看到一条壁虎，很漂亮。今天很开心，但下午实在有点架睡觉，于是下午的活动都是在半睡半醒完成的。晚上王老师给我们上理财课这节课， 今天晚上这节课很早就下课了。于是很早回寝室准备明天的节目。</p>
+</blockquote>
+</li>
+<li><p><strong><em>王泰宏–湖南</em></strong></p>
+<blockquote>
+<p>今天游玩了长城。这是我期待已久的事情。俗话说，不到长城非好汉。这是我出生一来第一次看长城。长城的壮观，长城的陡峭，都在我心中留下了不可磨灭的印象。</p>
+</blockquote>
+</li>
+<li><p><strong><em>唐思博–湖南</em></strong></p>
+<blockquote>
+<p>今天一大早，我们上了车来到了北京的八达岭长城。这儿风光无限，这儿虽骄阳似火。可这天法动摇我们爬长城的决心，经过九九八十一难，我终于到了长城尽头（前云在施工），喜悦更是不言而喻。然后，我们下城了。我发现一个问题：原本只要二块的水而这却要十块，害得我干着嗓子走了许久。</p>
+</blockquote>
+</li>
+<li><p><strong><em>刘慧敏–湖南</em></strong></p>
+<blockquote>
+<p>今天要爬长城，五点半就起来，迷迷糊糊的，一到车上，便又睡着了。隐隐约约到了长城，我没吃什么东西，瞬间想吐，却又吐不出，直到爬长城，我累的气喘吁吁，不像之前那样活蹦乱跳时，我便开始吃东西来补充能量，虽然累的不行，但看着手中这些优美的画卷，心想这也值了。爬到海拔将近八百处，却又要返回，心中还是不甘的，但只能服从安排。下午的天文馆参观对于我来说真的很无聊，我对天文学并不感兴趣，看又看不懂，这里边只有那个3D纪录片还令我满意些，说实话那个星空的节目，我看着看着就睡着了，感觉它像催眠曲一样。今天还是蛮有收获的，虽累，但心里舒服。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+    <ul>
+        <li class="is-active">
+            <a onclick="onTabClick(event)">
+                <span>王国权</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>穆建超</span>
+            </a>
+        </li>
+        <li>
+            <a onclick="onTabClick(event)">
+                <span>李朋远</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="王国权" class="tab-content" style="display: block;">
+    今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。
+</div>
+<div id="穆建超" class="tab-content">
+    <p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
+    <p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
+    <p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
+    <p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p>
+</div>
+<div id="李朋远" class="tab-content">
+    已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。
+</div>
+<style type="text/css">
+    .content .tabs ul { margin: 0; }
+    .tab-content { display: none; }
+    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
+</style>
+<script>
+    function onTabClick (event) {
+        var tabTitle = $(event.currentTarget).children('span:last-child').text();
+        $('.article .content .tab-content').css('display', 'none');
+        $('.article .content .tabs li').removeClass('is-active');
+        $('#' + tabTitle).css('display', 'block');
+        $(event.currentTarget).parent().addClass('is-active');
+    }
+</script>
+
+<hr style="background-color: #e8e8e880;">
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_724cover.jpg"></p>
 <p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
 ]]></content>
       <categories>
