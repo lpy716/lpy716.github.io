@@ -568,31 +568,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本icarus主题下实现文章首页置顶</title>
-    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
-<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
-<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -944,28 +919,34 @@ table th:nth-of-type(3) {
 <p>4、25路不仅是濮阳市有史以来第一条使用双层车辆的线路，也是最后一条使用非纯电动力车辆的线路，以及最后一条使用手动变速器车型的线路，更换新车后更成为首个使用一级踏步车辆的线路。退出运营的老25路车未被报废，而是在呼和浩特市78路重新上线运营。</p>
 <p>5、全市公交停靠线路数量并列第一的三个站点：飞龙车站、劳动市场、长途车站，均有14条线路停靠。全市公交并列最繁忙两个运行区间：胜利路京开道口至油田总站、飞龙车站至长途车站，均有11条线路通过。</p>
 <p>6、39路、18路为濮阳市第一、第二长的两条公交线路，二者同属于城乡公交线路，前者仅比后者长4公里（33km、29km），票价却贵3元（5元、2元）。</p>
-<p>7、和毗邻七市相比（安阳、新乡、菏泽、济宁、泰安、聊城、邯郸），只有濮阳迟迟未推出公交学生卡；河南全省除信阳外，仅濮阳无公交学生卡（华中地区无公交学生卡的省辖市：濮阳、信阳、孝感、天门、湘西（吉首）、邵阳）</p>
-<p>8、濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非客运班线），<strong>实现跨地市的公交联乘出行</strong>。线路不限于：</p>
+<p>7、和毗邻七市（安阳、新乡、菏泽、济宁、泰安、聊城、邯郸）相比，只有濮阳迟迟未推出公交学生卡；河南全省除信阳外，仅濮阳无公交学生卡（截至2021年4月1日，华中地区48个省辖市无公交学生卡的有：濮阳、信阳、天门、吉首（湘西）、邵阳）</p>
+<p>8、濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非客运班线），<strong>实现跨地市的公交联乘出行</strong>。毗邻七市间已有的跨市联乘公交线路不限于：</p>
 <ul>
-<li><p>河北高邑→邢台→<strong>邯郸</strong>→河南<strong>安阳</strong>→<strong>鹤壁</strong>→淇县；</p>
+<li><p>（起）河北高邑→邢台→<strong>邯郸</strong>→河南<strong>安阳</strong>→<strong>鹤壁</strong>→淇县（止）；</p>
 </li>
-<li><p>卫辉→<strong>新乡</strong>→郑州→开封/许昌；</p>
+<li><p>（起）卫辉→<strong>新乡</strong>→郑州→开封/许昌（止）；</p>
 </li>
-<li><p>莘县→<strong>聊城</strong>→济南→淄博→潍坊；</p>
+<li><p>（起）莘县→<strong>聊城</strong>→济南→淄博→潍坊（止）；</p>
 </li>
-<li><p>东明→<strong>菏泽</strong>→<strong>济宁</strong>→<strong>泰安</strong>→济南→淄博→东营；</p>
+<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→<strong>泰安</strong>→济南→淄博→东营（止）；</p>
 </li>
-<li><p>东明→<strong>菏泽</strong>→<strong>济宁</strong>→枣庄→江苏徐州→安徽宿州。</p>
+<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→枣庄→江苏徐州→安徽宿州（止）。</p>
 </li>
 </ul>
 <p>9、濮阳不仅是铁路、公交黑洞，还是<strong>航空黑洞</strong>。对比毗邻七市，仅濮阳境内没有任何机场设施（军用/民用，含正在施工的项目）</p>
 <p>10、正常情况下，在搭乘民航客机时，只可能从濮阳市区的西部向东俯望整个城区。</p>
-<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971年汤濮窄轨延长线），但清丰火车站于1985年停运。</p>
-<p>12、接上一条，待郑济高铁全线通车后，清丰县将成为唯一无火车站的</p>
+<p>11、濮清南范台五县里第二个开通铁路客运的县是清丰（1971年随汤濮窄轨延长线开通），但清丰火车站于1985年停运。</p>
+<p>12、到2021年底，相比毗邻七市，将只有濮阳境内无双向六车道及以上的高速路。</p>
 <p>13、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
-<p>14、郑济高铁濮阳车站除在市域范围内有四个走向与设站选项外，在确定设站濮东后亦有三个子方案。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_pydz.jpg" alt="市域范围的4种走向与设站选择：濮阳北（马庄桥方案）、濮阳北（范辉高速南侧方案）、濮阳东、与濮阳站并站"></p>
+<p>14、郑济高铁濮阳车站除在市域范围内有四个众所周知的走向与设站选项外，在确定设站濮东后亦有三个子方案。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_pydz.jpg" alt="众所周知，郑济高铁在濮阳市域范围有4种走向与设站选择：濮阳北（马庄桥方案）、濮阳北（范辉高速南侧方案）、濮阳东、与濮阳站并站。此图为确定设站濮东后的3个线位子选项"></p>
 <h2 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h2><p>1、“石油化工”作为濮阳的城市性质之一，其地位在历版城市总规中被不断后移，而在最新一版（2015-2030）城市总规中已经消失。</p>
+<ul>
+<li>第一版城市总规（1986-1995）定义城市性质：石油、化工业为主的工业城市。</li>
+<li>第二版城市总规（1996-2005）定义城市性质：豫东北地区中心城市，以石油、化工工业为基础的综合型城市，历史文化名城。</li>
+<li>第三版城市总规（2005-2020）定义城市性质：生态园林特色突出的国家级历史文化名城，豫东北地区区域中心城市，以石油化工工业为主导的综合性城市。</li>
+<li>第四版城市总规（2015-2030）定义城市性质：豫鲁冀三省交汇处的中心城市，以绿色精细化工为导向的资源转型创新示范区，生态园林特色突出的国家级历史文化名城。</li>
+</ul>
 <p>2、中原油田的探区（不含后来在四川内蒙等地新增探区）其实包括了一个很大的范围，跨豫北、豫东、鲁西和鲁西南约4万平方公里，截止目前只是在濮阳一带（东濮凹陷）的勘探取得了突破。</p>
 <p>3、2007年8月开业的濮阳首家麦当劳，是华中地区第一家得来速店。</p>
 <p>4、按照1994年开工时的计划，现在的大联华（京开道与胜利路东南角）地块是由一栋28层百米高的招商写字楼，以及星级酒店、娱乐美食总汇、商购中心、高层住宅等配套建筑构成。</p>
@@ -4015,6 +3996,31 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>纪实</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版本icarus主题下实现文章首页置顶</title>
+    <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
+<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Aleksandar Pasaric</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
       </tags>
   </entry>
   <entry>
