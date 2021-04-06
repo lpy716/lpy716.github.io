@@ -593,6 +593,86 @@
       </tags>
   </entry>
   <entry>
+    <title>icarus主题添加背景图片</title>
+    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
+    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
+<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
+<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
+<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
+<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
+<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
+<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
+<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
+<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
+<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
+<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
+<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus%E7%94%BB%E5%BB%8A%E6%A8%A1%E5%BC%8F%E6%9B%B4%E6%94%B9/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -675,86 +755,6 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Anastasia Shuraeva</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题添加背景图片</title>
-    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
-    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
-<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
-<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
-<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
-<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
-<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
-<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
-<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
-<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
-<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
-<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
-<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -980,8 +980,10 @@ table th:nth-of-type(3) {
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pylzs_1984.png"></p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>1、繁体字“僕”被简化为“仆”，但“濮”却没有被比照简化。</p>
 <hr style="background-color: #e8e8e880;">
-**引注**
 
+
+
+<p><strong>引注</strong></p>
 <ol>
     <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">《國民政府公報》第1983號，民國25年2月28日（第11页）</a></li>
     <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2019&filename=TLHC201902021&v=8xetDBM4JjQnjp0a6ti55kojjBXC%25mmd2BnmVD4yFnzzt%25mmd2FqdIgZcAFANZy0cXXc9NmuZy">涂跃彬, 孙宝. 郑州至济南铁路濮阳站位方案研究[J]. 铁道勘察, 2019, 45(2):102-107.</a></li>
