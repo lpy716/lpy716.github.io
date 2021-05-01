@@ -273,14 +273,14 @@
 <p>积雪过程（20:10-22:50）：</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp = new DPlayer({
-      container: document.getElementById('dplayer'),
+      container: document.getElementById('dplayer1'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
@@ -1542,14 +1542,13 @@ table th:nth-of-type(3) {
 <p>《情绪管理》课堂小剧场1：【视频大小523MB】</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<script>
+<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><script>
   $(function(){ 
     const dp = new DPlayer({
-      container: document.getElementById('dplayer'),
+      container: document.getElementById('dplayer1'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
@@ -1568,8 +1567,53 @@ table th:nth-of-type(3) {
 })
 </script>
 
-<p>《情绪管理》课堂小剧场2：【视频大小424MB】1</p>
+<p>《情绪管理》课堂小剧场2：【视频大小424MB】2</p>
+<div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><script>
+  $(function(){ 
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer2'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.1/0723/2/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
 <p>《情绪管理》课堂小剧场3：【视频大小348MB】</p>
+<div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><script>
+  $(function(){ 
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer3'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.1/0723/3/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
+
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
 <li><p><strong><em>闫芳–甘肃</em></strong></p>
 <blockquote>
