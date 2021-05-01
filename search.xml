@@ -1567,7 +1567,7 @@ table th:nth-of-type(3) {
 })
 </script>
 
-<p>《情绪管理》课堂小剧场2：【视频大小424MB】2</p>
+<p>《情绪管理》课堂小剧场2：【视频大小424MB】</p>
 <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div><script>
   $(function(){ 
     const dp = new DPlayer({
@@ -1612,6 +1612,10 @@ table th:nth-of-type(3) {
   });
 })
 </script>
+
+<style type="text/css">
+    .dplayer-video dplayer dplayer-no-danmaku dplayer-paused{margin-bottom: 30px;}
+</style>
 
 
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
