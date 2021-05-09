@@ -211,109 +211,31 @@
       </tags>
   </entry>
   <entry>
-    <title>2021年第一场雪，有  点  大</title>
-    <url>/2021/02/24/20210224%E9%9B%AA/</url>
-    <content><![CDATA[<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
-<div class="demo-gallery mrb20">
-    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/4.jpg">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_4.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/5.jpg">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_5.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/2.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_2.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/1.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_1.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/3.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_3.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-  var $animThumb1 = $("#aniimated-thumbnials1");
-  if ($animThumb1.length) {
-    $animThumb1
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb1.lightGallery({
-          thumbnail: true,
-        });
-      });
-  }
-</script>
-
+    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
+    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<ul>
+<li>今日足迹（记录人：李朋远）</li>
+</ul>
 <a id="more"></a>
 
-<p>👇</p>
-<p>积雪过程（20:10-22:50）：</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
-<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<script>
-  $(function(){ 
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer1'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.4/210224/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-  });
-})
-</script>
-
-
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
+<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
+<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
+<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
+<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
+<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
+<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
 <hr style="background-color: #e8e8e880;">
 
-
-<p><strong>2.25 更新：</strong>本次积雪深度最终达到了 12cm 左右，但因气温较高快速消融，终究未超过个人记忆里最大的一场雪：即 2009 年 11 月初的那场雪（当时尚未供暖，下了整一宿最终积雪 35 cm 能没过半个轮胎，导致虽临近中考但依旧临时停课一天，真是令人难忘）</p>
-<p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_cma.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_gfs.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_727cover.jpg"></p>
+<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
 ]]></content>
       <categories>
-        <category>日常</category>
+        <category>助学夏令营</category>
+        <category>2019-夏令营</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
-        <tag>略略略</tag>
+        <tag>夏令营日报</tag>
       </tags>
   </entry>
   <entry>
@@ -540,31 +462,109 @@
       </tags>
   </entry>
   <entry>
-    <title>2019 北京助学助教夏令营—— 7.27 日报</title>
-    <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/</url>
-    <content><![CDATA[<ul>
-<li>今日足迹（记录人：李朋远）</li>
-</ul>
+    <title>2021年第一场雪，有  点  大</title>
+    <url>/2021/02/24/20210224%E9%9B%AA/</url>
+    <content><![CDATA[<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
+<div class="demo-gallery mrb20">
+    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/4.jpg">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_4.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/5.jpg">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_5.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/2.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_2.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/1.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_1.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/3.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_3.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+  var $animThumb1 = $("#aniimated-thumbnials1");
+  if ($animThumb1.length) {
+    $animThumb1
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb1.lightGallery({
+          thumbnail: true,
+        });
+      });
+  }
+</script>
+
 <a id="more"></a>
 
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
-<p>美好的时光总是过得太快，相聚的欢乐总是那样短暂。</p>
-<p>7 月 27 日，早上六点，大多数营员尚在沉睡之中，而四川组师生却已收拾好行李，准备踏上返程之路。他们悄悄地归还钥匙、证件，来不及和其他组成员说声再见，迎着晨曦率先出发。</p>
-<p>七点十分，四川组师生顺利抵达北京西站。进站检票口前，陪同送行的李朋远与他们告别；与此同时，其他组师生都已起床、洗漱完毕，并办理了退宿手续，准备迎接他们本次夏令营最后一个集体项目：游览清华园。冀辽组师生因与返程计划冲突，无法一同游览，他们在校园内登车处，和大部队成员一一道别。</p>
-<p>在穆建超、马毅梅、余慧萍三位志愿者的带领和刘若怡老师的努力下，湖南、甘肃、广西三个组成员终于在清华园里留下了他们足迹。纵使游览过程并非想象中的顺利，但终究了结了营员们的一大心愿。</p>
-<p>中午 12 点，游览结束后，大巴车直接将大部队送往北京西站。由于湖南、甘肃两组下午乘车时间相对较早，而广西组的车次晚上十点才发车，因此广西组选择暂时将行李寄存至车站，由马毅梅、余慧萍带领，再去附近的军事博物馆、中华世纪坛游览一下；而湖南、甘肃两组选择直接进站候车。熙攘人群中，三组师生彼此作别。</p>
-<p>携梦而来，筑梦而归；山高水长，有缘再会！</p>
+<p>👇</p>
+<p>积雪过程（20:10-22:50）：</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer1'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.4/210224/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
+
 <hr style="background-color: #e8e8e880;">
 
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/2019sc_727cover.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
+
+<p><strong>2.25 更新：</strong>本次积雪深度最终达到了 12cm 左右，但因气温较高快速消融，终究未超过个人记忆里最大的一场雪：即 2009 年 11 月初的那场雪（当时尚未供暖，下了整一宿最终积雪 35 cm 能没过半个轮胎，导致虽临近中考但依旧临时停课一天，真是令人难忘）</p>
+<p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_cma.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_gfs.png"></p>
 ]]></content>
       <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
+        <category>日常</category>
       </categories>
       <tags>
-        <tag>夏令营日报</tag>
+        <tag>略略略</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -684,36 +684,36 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<!--more-->
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-<hr style="background-color: #e8e8e880;">
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+    <title>icarus主题添加背景图片</title>
+    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
+    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
+<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
+<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
+<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
+<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
+<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
+<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
+<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
+<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
+<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
+<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
+<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
-        <tag>公交</tag>
+        <tag>icarus主题</tag>
       </tags>
   </entry>
   <entry>
@@ -755,6 +755,73 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<!--more-->
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<hr style="background-color: #e8e8e880;">
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Will Mu</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
+<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>然后正常更新就完了。</p>
+<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
+<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
+<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -817,8 +884,8 @@ table th:nth-of-type(3) {
         <category>日常</category>
       </categories>
       <tags>
-        <tag>濮阳</tag>
         <tag>略略略</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -937,73 +1004,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题添加背景图片</title>
-    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
-    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
-<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
-<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
-<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
-<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
-<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
-<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
-<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
-<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
-<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
-<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
-<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
-<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>然后正常更新就完了。</p>
-<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
-<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
-<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
       </tags>
   </entry>
   <entry>
