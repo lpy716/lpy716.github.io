@@ -365,10 +365,12 @@ body.night .tabs.is-boxed a:hover {
 body.night .tabs li.is-active a {
   color: #dbdbdb;
 }
-body.night article.article .content .message.message-immersive .message-body {
+body.night article.article .content,
+body.night .message.message-immersive .message-body {
   border: none;
 }
-body.night article.article .content .message.message-immersive {
+body.night article.article .content,
+body.night .message.message-immersive {
   border-radius: 0;
   margin: 0 -1.5rem 1.5rem -1.5rem;
 }
@@ -739,10 +741,12 @@ body.night .message.is-warning .message-body {
   body:not(.light) .tabs li.is-active a {
     color: #dbdbdb;
   }
-  body:not(.light) article.article .content .message.message-immersive .message-body {
+  body:not(.light) article.article .content,
+  body:not(.light) .message.message-immersive .message-body {
     border: none;
   }
-  body:not(.light) article.article .content .message.message-immersive {
+  body:not(.light) article.article .content,
+  body:not(.light) .message.message-immersive {
     border-radius: 0;
     margin: 0 -1.5rem 1.5rem -1.5rem;
   }
