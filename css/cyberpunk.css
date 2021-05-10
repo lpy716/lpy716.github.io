@@ -12062,7 +12062,7 @@ body.night .tabs li.is-active a {
   color: #dbdbdb;
 }
 body.night article.message.message-immersive.is-warning {
-  background-color: #373d48;
+  background-color: #434a56;
 }
 body.night article.message.message-immersive.is-warning .message-body {
   color: #ffdd57;
@@ -12429,7 +12429,7 @@ body.night article.message.message-immersive.is-warning .message-body {
     color: #dbdbdb;
   }
   body:not(.light) article.message.message-immersive.is-warning {
-    background-color: #373d48;
+    background-color: #434a56;
   }
   body:not(.light) article.message.message-immersive.is-warning .message-body {
     color: #ffdd57;
