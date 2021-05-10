@@ -365,7 +365,14 @@ body.night .tabs.is-boxed a:hover {
 body.night .tabs li.is-active a {
   color: #dbdbdb;
 }
-body.night .message.is-warning {
+body.night article.article .content .message.message-immersive .message-body {
+  border: none;
+}
+body.night article.article .content .message.message-immersive {
+  border-radius: 0;
+  margin: 0 -1.5rem 1.5rem -1.5rem;
+}
+body.night .card.message.is-warning {
   background-color: #373d48;
 }
 body.night .message.is-warning .message-body {
@@ -732,7 +739,14 @@ body.night .message.is-warning .message-body {
   body:not(.light) .tabs li.is-active a {
     color: #dbdbdb;
   }
-  body:not(.light) .message.is-warning {
+  body:not(.light) article.article .content .message.message-immersive .message-body {
+    border: none;
+  }
+  body:not(.light) article.article .content .message.message-immersive {
+    border-radius: 0;
+    margin: 0 -1.5rem 1.5rem -1.5rem;
+  }
+  body:not(.light) .card.message.is-warning {
     background-color: #373d48;
   }
   body:not(.light) .message.is-warning .message-body {
