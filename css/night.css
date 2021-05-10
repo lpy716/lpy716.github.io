@@ -282,7 +282,7 @@ body.night .content table th {
   border-color: #434a56;
 }
 body.night hr {
-  background-color: rgba(232,232,232,0.502);
+  background-color: #434a56;
 }
 body.night article.article .title a,
 body.night article.media .title a {
@@ -658,7 +658,7 @@ body.night .message.is-warning .message-body {
     border-color: #434a56;
   }
   body:not(.light) hr {
-    background-color: rgba(232,232,232,0.502);
+    background-color: #434a56;
   }
   body:not(.light) article.article .title a,
   body:not(.light) article.media .title a {
