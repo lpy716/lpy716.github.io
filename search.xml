@@ -781,6 +781,18 @@ table th:nth-of-type(3) {
 <h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
 <p>然后正常更新就完了。</p>
+<h2 id="页内引入的-message-消息也亮瞎眼"><a href="#页内引入的-message-消息也亮瞎眼" class="headerlink" title="页内引入的 message 消息也亮瞎眼"></a>页内引入的 message 消息也亮瞎眼</h2><p>在上一项的基础上，即在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入再以下代码:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // message.is-warning</span></span><br><span class="line"><span class="addition">+   article.message.message-immersive.is-warning</span></span><br><span class="line"><span class="addition">+       background-color: dark-primary-color-hover</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+       .message-body</span></span><br><span class="line"><span class="addition">+           color: #ffdd57</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>同正常更新就完了。</p>
+<p>（PS：这里只是针对is-warning这个样式的。其他五种样式，包括：</p>
+<ul>
+<li>is-primary</li>
+<li>is-link</li>
+<li>is-info</li>
+<li>is-success</li>
+<li>is-danger</li>
+</ul>
+<p>只需要在此代码基础上继续添加即可。）</p>
 <h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
 <p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
 <p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
@@ -831,7 +843,7 @@ table th:nth-of-type(3) {
       </tags>
   </entry>
   <entry>
-    <title>云卷云舒Q</title>
+    <title>云卷云舒</title>
     <url>/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/</url>
     <content><![CDATA[<article class="message message-immersive is-warning">
   <div class="message-body">
