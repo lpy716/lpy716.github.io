@@ -365,19 +365,10 @@ body.night .tabs.is-boxed a:hover {
 body.night .tabs li.is-active a {
   color: #dbdbdb;
 }
-body.night article.article .content,
-body.night .message.message-immersive .message-body {
-  border: none;
-}
-body.night article.article .content,
-body.night .message.message-immersive {
-  border-radius: 0;
-  margin: 0 -1.5rem 1.5rem -1.5rem;
-}
-body.night .card.message.is-warning {
+body.night article.message.message-immersive.is-warning {
   background-color: #373d48;
 }
-body.night .message.is-warning .message-body {
+body.night article.message.message-immersive.is-warning .message-body {
   color: #ffdd57;
 }
 @media (prefers-color-scheme: dark) {
@@ -741,19 +732,10 @@ body.night .message.is-warning .message-body {
   body:not(.light) .tabs li.is-active a {
     color: #dbdbdb;
   }
-  body:not(.light) article.article .content,
-  body:not(.light) .message.message-immersive .message-body {
-    border: none;
-  }
-  body:not(.light) article.article .content,
-  body:not(.light) .message.message-immersive {
-    border-radius: 0;
-    margin: 0 -1.5rem 1.5rem -1.5rem;
-  }
-  body:not(.light) .card.message.is-warning {
+  body:not(.light) article.message.message-immersive.is-warning {
     background-color: #373d48;
   }
-  body:not(.light) .message.is-warning .message-body {
+  body:not(.light) article.message.message-immersive.is-warning .message-body {
     color: #ffdd57;
   }
 }

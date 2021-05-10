@@ -12061,6 +12061,12 @@ body.night .tabs.is-boxed a:hover {
 body.night .tabs li.is-active a {
   color: #dbdbdb;
 }
+body.night article.message.message-immersive.is-warning {
+  background-color: #373d48;
+}
+body.night article.message.message-immersive.is-warning .message-body {
+  color: #ffdd57;
+}
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
@@ -12421,6 +12427,12 @@ body.night .tabs li.is-active a {
   }
   body:not(.light) .tabs li.is-active a {
     color: #dbdbdb;
+  }
+  body:not(.light) article.message.message-immersive.is-warning {
+    background-color: #373d48;
+  }
+  body:not(.light) article.message.message-immersive.is-warning .message-body {
+    color: #ffdd57;
   }
 }
 @media screen and (max-width: 1087px) {
