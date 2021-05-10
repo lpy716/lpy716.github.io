@@ -12067,6 +12067,12 @@ body.night article.message.message-immersive.is-warning {
 body.night article.message.message-immersive.is-warning .message-body {
   color: #ffdd57;
 }
+body.night article.message.message-immersive.is-success {
+  background-color: #434a56;
+}
+body.night article.message.message-immersive.is-success .message-body {
+  color: #3298dc;
+}
 @media (prefers-color-scheme: dark) {
   body:not(.light) {
     background: #0e1225;
@@ -12433,6 +12439,12 @@ body.night article.message.message-immersive.is-warning .message-body {
   }
   body:not(.light) article.message.message-immersive.is-warning .message-body {
     color: #ffdd57;
+  }
+  body:not(.light) article.message.message-immersive.is-success {
+    background-color: #434a56;
+  }
+  body:not(.light) article.message.message-immersive.is-success .message-body {
+    color: #3298dc;
   }
 }
 @media screen and (max-width: 1087px) {
