@@ -1935,6 +1935,15 @@ table th:nth-of-type(3) {
     cursor: pointer;
     display: block;
   }
+  .panel-heading {
+    background-color: #4a4a4a;
+    border-radius: 6px 6px 0 0;
+    color: #f5f5f5;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.25;
+    padding: 0.75em 1em;
+  }
   /* the magic */
   #panel-1:checked ~ .panel > .body-1,
   #panel-2:checked ~ .panel > .body-2,
@@ -1943,7 +1952,7 @@ table th:nth-of-type(3) {
   }
 </style>
 
-<p>1=====================================</p>
+<p>12=====================================</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
