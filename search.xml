@@ -1905,59 +1905,29 @@ table th:nth-of-type(3) {
 
 
 <p>《情绪管理》课堂小剧场1👇【视频大小523MB】</p>
-<div id="accordion_first">
-    <article class="message">
-        <div class="message-header">
-            <p>Question 1 <a href="#collapsible-message-accordion-1" data-action="collapse">Collapse/Expand</a></p>
-        </div>
-        <div id="collapsible-message-accordion-1" class="message-body is-collapsible" data-parent="accordion_first">
-            <div class="message-body-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-                sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
-                sem eget, facilisis sodales sem.
-            </div>
-        </div>
-    </article>
-    <article class="message">
-        <div class="message-header">
-            <p>Question 2 <a href="#collapsible-message-accordion-2" data-action="collapse">Collapse/Expand</a></p>
-        </div>
-        <div id="collapsible-message-accordion-2" class="message-body is-collapsible" data-parent="accordion_first">
-            <div class="message-body-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-                sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
-                sem eget, facilisis sodales sem.
-            </div>
-        </div>
-    </article>
-    <article class="message">
-        <div class="message-header">
-            <p>Question 3 <a href="#collapsible-message-accordion-3" data-action="collapse">Collapse/Expand</a></p>
-        </div>
-        <div id="collapsible-message-accordion-3" class="message-body is-collapsible" data-parent="accordion_first">
-            <div class="message-body-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
-                placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-                <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-                sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
-                sem eget, facilisis sodales sem.
-            </div>
-        </div>
-    </article>
+<input type="radio" id="panel-1" name="accordion-select">
+<input type="radio" id="panel-2" name="accordion-select">
+<input type="radio" id="panel-3" name="accordion-select">
+<div class="panel">
+  <label class="panel-heading" for="panel-1">Title #1</label>
+  <div class="panel-block body-1">
+    <p>Vivamus velit ipsum, eleifend nec mollis dictum, imperdiet in felis. Fusce at auctor justo, eleifend varius orci. Proin pretium nunc massa. Ut sollicitudin cursus odio eu ultrices. Mauris maximus nunc nulla, eu porta quam maximus rhoncus. Suspendisse id massa pellentesque, cursus neque venenatis, vulputate lectus. Quisque semper blandit metus. Ut sit amet lacus augue. Aliquam et neque tincidunt, viverra elit quis, fermentum ante. Suspendisse malesuada iaculis elit, sed vestibulum elit bibendum consectetur. Nulla velit lacus, imperdiet at nibh sit amet, egestas ultricies ligula. Duis nisi turpis, dapibus vitae enim in, commodo imperdiet magna. Mauris elit odio, finibus ut gravida et, lacinia et enim. Donec id nunc a est malesuada gravida non at turpis.</p>
+  </div>
 </div>
-<script type="text/javascript" src="https://raw.githubusercontent.com/CreativeBulma/bulma-collapsible/master/dist/js/bulma-collapsible.min.js"></script>
-<script>
-    $(function(){
-        const bulmaCollapsibleElement = new bulmaCollapsible('accordion_first');
-        const bulmaCollapsibleInstances = bulmaCollapsibleElement.attach('.is-collapsible');
-    }
-</script>
+<div class="panel">
+  <label class="panel-heading" for="panel-2">Title #2</label>
+  <div class="panel-block body-2">
+    Content Body #2
+  </div>
+</div>
+<div class="panel">
+  <label class="panel-heading" for="panel-3">Title #3</label>
+  <div class="panel-block body-3">
+    Content Body #3
+  </div>
+</div>
 
-<p>2=====================================</p>
+<p>3====================================</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
