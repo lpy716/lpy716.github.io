@@ -1952,11 +1952,19 @@ table th:nth-of-type(3) {
 <script type="text/javascript" src="https://raw.githubusercontent.com/CreativeBulma/bulma-collapsible/master/dist/js/bulma-collapsible.min.js"></script>
 <script>
     $(function(){ 
-        const bulmaCollapsibleElement = new bulmaCollapsible('accordion_first');
-    }
-</script>
+        const CollapsibleElement = document.getElementById('accordion_first');
+        if (CollapsibleElement) {
+            // Instanciate Collapsible component on the node
+            new Collapsible(CollapsibleElement);
 
-<p>=====================================</p>
+<pre><code>        // Call method directly on Collapsible instance registered on the node
+        CollapsibleElement.bulmaCollapsible().on(&#39;before:expand&#39;, (e) =&gt; &#123;
+            console.log(&#39;Before expand&#39;);
+        &#125;);
+    &#125;
+&#125;</code></pre>
+<p></script></p>
+<p>1=====================================</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
