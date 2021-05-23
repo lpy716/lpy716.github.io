@@ -1905,26 +1905,25 @@ table th:nth-of-type(3) {
 
 
 <p>《情绪管理》课堂小剧场1👇【视频大小523MB】</p>
-<!-- Based on https://siongui.github.io/2018/01/29/css-only-bulma-accordion-collapsible-content/ -->
 <input type="radio" id="panel-1" name="accordion-select">
 <input type="radio" id="panel-2" name="accordion-select">
 <input type="radio" id="panel-3" name="accordion-select">
 <div class="panel">
-  <label class="panel-heading" for="panel-1">Title #1</label>
+  <label class="panel-heading" for="panel-1">《情绪管理》课堂小剧场1👇【视频大小523MB】</label>
   <div class="panel-block body-1">
-    <p>Vivamus velit ipsum, eleifend nec mollis dictum, imperdiet in felis. Fusce at auctor justo, eleifend varius orci. Proin pretium nunc massa. Ut sollicitudin cursus odio eu ultrices. Mauris maximus nunc nulla, eu porta quam maximus rhoncus. Suspendisse id massa pellentesque, cursus neque venenatis, vulputate lectus. Quisque semper blandit metus. Ut sit amet lacus augue. Aliquam et neque tincidunt, viverra elit quis, fermentum ante. Suspendisse malesuada iaculis elit, sed vestibulum elit bibendum consectetur. Nulla velit lacus, imperdiet at nibh sit amet, egestas ultricies ligula. Duis nisi turpis, dapibus vitae enim in, commodo imperdiet magna. Mauris elit odio, finibus ut gravida et, lacinia et enim. Donec id nunc a est malesuada gravida non at turpis.</p>
+    <div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 20px;"></div>
   </div>
 </div>
 <div class="panel">
   <label class="panel-heading" for="panel-2">Title #2</label>
   <div class="panel-block body-2">
-    Content Body #2
+    <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 20px;"></div>
   </div>
 </div>
 <div class="panel">
   <label class="panel-heading" for="panel-3">Title #3</label>
   <div class="panel-block body-3">
-    Content Body #3
+    <div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 20px;"></div>
   </div>
 </div>
 <style type="text/css">
@@ -1951,16 +1950,13 @@ table th:nth-of-type(3) {
     display: flex;
   }
 </style>
-
-<p>12=====================================</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 30px;"></div><script>
+<script type="text/javascript">
   $(function(){ 
-    const dp = new DPlayer({
+    const dp1 = new DPlayer({
       container: document.getElementById('dplayer1'),
       autoplay:false,
       theme:"#42b983",
@@ -1976,14 +1972,8 @@ table th:nth-of-type(3) {
           pic: '',
           thumbnails: '',
       },
-  });
-})
-</script>
-
-<p>《情绪管理》课堂小剧场2👇【视频大小424MB】</p>
-<div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 30px;"></div><script>
-  $(function(){ 
-    const dp = new DPlayer({
+    });
+    const dp2 = new DPlayer({
       container: document.getElementById('dplayer2'),
       autoplay:false,
       theme:"#42b983",
@@ -1999,14 +1989,8 @@ table th:nth-of-type(3) {
           pic: '',
           thumbnails: '',
       },
-  });
-})
-</script>
-
-<p>《情绪管理》课堂小剧场3👇【视频大小348MB】</p>
-<div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 30px;"></div><script>
-  $(function(){ 
-    const dp = new DPlayer({
+    });
+    const dp3 = new DPlayer({
       container: document.getElementById('dplayer3'),
       autoplay:false,
       theme:"#42b983",
@@ -2022,8 +2006,8 @@ table th:nth-of-type(3) {
           pic: '',
           thumbnails: '',
       },
-  });
-})
+    });
+  })
 </script>
 
 
