@@ -1905,6 +1905,7 @@ table th:nth-of-type(3) {
 
 
 <p>《情绪管理》课堂小剧场1👇【视频大小523MB】</p>
+<!-- Based on https://siongui.github.io/2018/01/29/css-only-bulma-accordion-collapsible-content/ -->
 <input type="radio" id="panel-1" name="accordion-select">
 <input type="radio" id="panel-2" name="accordion-select">
 <input type="radio" id="panel-3" name="accordion-select">
@@ -1926,8 +1927,23 @@ table th:nth-of-type(3) {
     Content Body #3
   </div>
 </div>
+<style type="text/css">
+  input[name="accordion-select"], .panel-block {
+    display: none;
+  }
+  label.panel-heading {
+    cursor: pointer;
+    display: block;
+  }
+  /* the magic */
+  #panel-1:checked ~ .panel > .body-1,
+  #panel-2:checked ~ .panel > .body-2,
+  #panel-3:checked ~ .panel > .body-3 {
+    display: flex;
+  }
+</style>
 
-<p>3====================================</p>
+<p>1=====================================</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
