@@ -1906,20 +1906,20 @@ table th:nth-of-type(3) {
 <input type="radio" id="panel-2" name="accordion-select">
 <input type="radio" id="panel-3" name="accordion-select">
 <div class="panel">
-  <label class="panel-heading" for="panel-1"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场1【视频大小 523MB】</label>
-  <div class="panel-block body-1" style="padding-top: 20px;">
+  <label class="panel-heading" for="panel-1"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场1【视频大小 255MB】</label>
+  <div class="panel-block body-1" style="padding-top: 10px;">
     <div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
   </div>
 </div>
 <div class="panel">
-  <label class="panel-heading" for="panel-2"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场2【视频大小 424MB】</label>
-  <div class="panel-block body-2" style="padding-top: 20px;">
+  <label class="panel-heading" for="panel-2"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场2【视频大小 207MB】</label>
+  <div class="panel-block body-2" style="padding-top: 10px;">
     <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
   </div>
 </div>
 <div class="panel">
-  <label class="panel-heading" for="panel-3"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场3【视频大小 348MB】</label>
-  <div class="panel-block body-3" style="padding-top: 20px;">
+  <label class="panel-heading" for="panel-3"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场3【视频大小 170MB】</label>
+  <div class="panel-block body-3" style="padding-top: 10px;">
     <div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
   </div>
 </div>
@@ -1963,7 +1963,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.1/0723/1/playlist.m3u8',
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -1980,7 +1980,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.1/0723/2/playlist.m3u8',
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -1997,7 +1997,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.1/0723/3/playlist.m3u8',
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
