@@ -1702,6 +1702,109 @@ table th:nth-of-type(3) {
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
 <p>7月23日是夏令营的第五天，夏令营日程将过半，上午和晚上为营员安排了讲座，下午是到鲁迅博物馆参观，全体的学习任务和参观安排相对较为宽松。</p>
+<div class="container">
+  <div class="accordion-option">
+    <h3 class="title">Lorem Ipsum</h3>
+    <a href="javascript:void(0)" class="toggle-accordion active" accordion-id="#accordion"></a>
+  </div>
+  <div class="clearfix"></div>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+          on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+          raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+          on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+          raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+          on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+          raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+  body {
+    color: #6a6c6f;
+    background-color: #f1f3f6;
+    margin-top: 30px;
+  }
+
+<p>  .container {<br>    max-width: 960px;<br>  }</p>
+<p>  .panel-default&gt;.panel-heading {<br>    color: #333;<br>    background-color: #fff;<br>    border-color: #e4e5e7;<br>    padding: 0;<br>    -webkit-user-select: none;<br>    -moz-user-select: none;<br>    -ms-user-select: none;<br>    user-select: none;<br>  }</p>
+<p>  .panel-default&gt;.panel-heading a {<br>    display: block;<br>    padding: 10px 15px;<br>  }</p>
+<p>  .panel-default&gt;.panel-heading a:after {<br>    content: “”;<br>    position: relative;<br>    top: 1px;<br>    display: inline-block;<br>    font-family: ‘Glyphicons Halflings’;<br>    font-style: normal;<br>    font-weight: 400;<br>    line-height: 1;<br>    -webkit-font-smoothing: antialiased;<br>    -moz-osx-font-smoothing: grayscale;<br>    float: right;<br>    transition: transform .25s linear;<br>    -webkit-transition: -webkit-transform .25s linear;<br>  }</p>
+<p>  .panel-default&gt;.panel-heading a[aria-expanded=”true”] {<br>    background-color: #eee;<br>  }</p>
+<p>  .panel-default&gt;.panel-heading a[aria-expanded=”true”]:after {<br>    content: “\2212”;<br>    -webkit-transform: rotate(180deg);<br>    transform: rotate(180deg);<br>  }</p>
+<p>  .panel-default&gt;.panel-heading a[aria-expanded=”false”]:after {<br>    content: “\002b”;<br>    -webkit-transform: rotate(90deg);<br>    transform: rotate(90deg);<br>  }</p>
+<p>  .accordion-option {<br>    width: 100%;<br>    float: left;<br>    clear: both;<br>    margin: 15px 0;<br>  }</p>
+<p>  .accordion-option .title {<br>    font-size: 20px;<br>    font-weight: bold;<br>    float: left;<br>    padding: 0;<br>    margin: 0;<br>  }</p>
+<p>  .accordion-option .toggle-accordion {<br>    float: right;<br>    font-size: 16px;<br>    color: #6a6c6f;<br>  }</p>
+<p>  .accordion-option .toggle-accordion:before {<br>    content: “Expand All”;<br>  }</p>
+<p>  .accordion-option .toggle-accordion.active:before {<br>    content: “Collapse All”;<br>  }<br></style></p>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".toggle-accordion").on("click", function() {
+      var accordionId = $(this).attr("accordion-id"),
+        numPanelOpen = $(accordionId + ' .collapse.in').length;
+
+      $(this).toggleClass("active");
+
+      if (numPanelOpen == 0) {
+        openAllPanels(accordionId);
+      } else {
+        closeAllPanels(accordionId);
+      }
+    })
+
+    openAllPanels = function(aId) {
+      console.log("setAllPanelOpen");
+      $(aId + ' .panel-collapse:not(".in")').collapse('show');
+    }
+    closeAllPanels = function(aId) {
+      console.log("setAllPanelclose");
+      $(aId + ' .panel-collapse.in').collapse('hide');
+    }
+
+  });
+</script>
+
 <p>在西北风味食堂用过早餐后，学员在提前赶到综合楼305教室准备课程的学习。胡志强老师为大家带来《哲学浅谈》的课程，胡老师平易近人，循循善诱，思维敏捷，知识渊博，把晦涩难懂的哲学问题简单化，把哲学思想放在日常生活中，将研究哲学与“讲道理”结合起来，指出研究哲学就是要“讲道理”，这个“道理”不以人的意志为前提，它讲究客观证据和客观规律，启发和升华了大家对哲学思想的认识和理解；接下来王昭琪老师为大家带来了《礼仪培训》，良好的形象、高雅的举止和合适的礼仪在待人接物中颇具感染力，营员们认真学习，积极与老师互动，课堂气氛活跃。</p>
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 <link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
