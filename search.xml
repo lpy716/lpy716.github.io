@@ -1918,7 +1918,7 @@ table th:nth-of-type(3) {
   </div>
 </div>
 <div class="panel">
-  <label class="panel-heading" for="panel-3"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场3【视频大小 170MB】</label>
+  <label class="panel-heading" for="panel-3"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场【视频大小 170MB】</label>
   <div class="panel-block body-3" style="padding-top: 10px;">
     <div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
   </div>
@@ -1973,6 +1973,7 @@ table th:nth-of-type(3) {
           thumbnails: '',
       },
     });
+    break;
   } else if (p2.checked) {
     const dp2 = new DPlayer({
       container: document.getElementById('dplayer2'),
@@ -1991,6 +1992,7 @@ table th:nth-of-type(3) {
           thumbnails: '',
       },
     });
+    break;
   } else if (p3.checked) {
     const dp3 = new DPlayer({
       container: document.getElementById('dplayer3'),
@@ -2009,6 +2011,7 @@ table th:nth-of-type(3) {
           thumbnails: '',
       },
     });
+    break;
   }
 </script>
 
