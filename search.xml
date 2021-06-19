@@ -1912,7 +1912,9 @@ table th:nth-of-type(3) {
   </div>
 </div>
 <div class="panel">
-  <label class="panel-heading" for="panel-2"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场2【视频大小 207MB】</label>
+  <label class="panel-heading" for="panel-2"><span class="icon">
+    <i class="fas fa-video"></i></span>《情绪管理》课堂小剧场2【视频大小 207MB】
+  </label>
   <div class="panel-block body-2" style="padding-top: 10px;">
     <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
   </div>
@@ -1955,67 +1957,62 @@ table th:nth-of-type(3) {
   const p1 = document.getElementById('panel-1');
   const p2 = document.getElementById('panel-2');
   const p3 = document.getElementById('panel-3');
-  if (p1.checked) {
-    const dp1 = new DPlayer({
-      container: document.getElementById('dplayer1'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-    });
-    break;
-  } else if (p2.checked) {
-    const dp2 = new DPlayer({
-      container: document.getElementById('dplayer2'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-    });
-    break;
-  } else if (p3.checked) {
-    const dp3 = new DPlayer({
-      container: document.getElementById('dplayer3'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-    });
-    break;
-  }
-</script>
+  const dp1 = new DPlayer({
+    container: document.getElementById('dplayer1'),
+    autoplay:false,
+    theme:"#42b983",
+    loop:false,
+    lang:"zh-cn",
+    preload:"none",
+    volume: 0.8,
+    mutex: true,
+    video: {
+        url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
+        type: 'hls',
+        defaultQuality: 0,
+        pic: '',
+        thumbnails: '',
+    },
+  });
+  const dp2 = new DPlayer({
+    container: document.getElementById('dplayer2'),
+    autoplay:false,
+    theme:"#42b983",
+    loop:false,
+    lang:"zh-cn",
+    preload:"none",
+    volume: 0.8,
+    mutex: true,
+    video: {
+        url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
+        type: 'hls',
+        defaultQuality: 0,
+        pic: '',
+        thumbnails: '',
+    },
+  });
+  const dp3 = new DPlayer({
+    container: document.getElementById('dplayer3'),
+    autoplay:false,
+    theme:"#42b983",
+    loop:false,
+    lang:"zh-cn",
+    preload:"none",
+    volume: 0.8,
+    mutex: true,
+    video: {
+        url: 'https://cdn.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
+        type: 'hls',
+        defaultQuality: 0,
+        pic: '',
+        thumbnails: '',
+    },
+  });
 
-
+<p>  if (p1.checked) {</p>
+<p>  } else if (p2.checked) {</p>
+<p>  } else if (p3.checked) {</p>
+<p>  }<br></script></p>
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
 <li><p><strong><em>闫芳–甘肃</em></strong></p>
 <blockquote>
