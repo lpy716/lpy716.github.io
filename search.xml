@@ -845,7 +845,13 @@ table th:nth-of-type(3) {
   <entry>
     <title>云卷云舒</title>
     <url>/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<article class="message message-immersive is-warning">
+  <div class="message-body">
+    <i class="fas fa-exclamation-circle mr-2"></i>视频大小 119M，建议使用 WiFi 观看。
+  </div>
+</article>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -4418,6 +4424,60 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>回忆录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>黎明已至</title>
+    <url>/2021/06/01/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E9%BB%8E%E6%98%8E%E5%B7%B2%E8%87%B3/</url>
+    <content><![CDATA[<p>本稿件属于补档，素材录制于 2020 年 2 月 22 日。</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.2/210601/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
+<a id="more"></a>
+
+<hr style="background-color: #e8e8e880;">
+
+
+
+<p>【清晰度】1080P/60FPS</p>
+<p>【BGM】 Receives–Keith Kenniff</p>
+<p>【拍摄时间】2020 年 2 月 22 日，6:50-7:10</p>
+<p>【拍摄设备】HUAWEI P30</p>
+<p>【拍摄地点】濮阳市黄河路开州路口西</p>
+<p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，突然萌生记录日出的想法。</p>
+<p>当时疫情尚未完全解封，通常喧嚣的城市是如此安静。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>略略略</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
 </search>
