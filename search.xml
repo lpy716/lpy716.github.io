@@ -565,6 +565,7 @@
       <tags>
         <tag>略略略</tag>
         <tag>濮阳</tag>
+        <tag>🎥</tag>
       </tags>
   </entry>
   <entry>
@@ -897,6 +898,7 @@ table th:nth-of-type(3) {
       <tags>
         <tag>略略略</tag>
         <tag>濮阳</tag>
+        <tag>🎥</tag>
       </tags>
   </entry>
   <entry>
@@ -1828,6 +1830,7 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>夏令营日报</tag>
+        <tag>🎥</tag>
       </tags>
   </entry>
   <entry>
@@ -4448,7 +4451,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.5/210601/playlist.m3u8',
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.6/210601/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -4466,11 +4469,11 @@ table th:nth-of-type(3) {
 
 <p>【清晰度】1080P/60FPS</p>
 <p>【BGM】 Against The World–Must Save Jane!</p>
-<p>【拍摄时间】2020 年 2 月 22 日，6:50-7:10</p>
+<p>【拍摄时间】2020 年 2 月 22 日，6:48-7:08</p>
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
-<p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，突然萌生记录日出的想法。</p>
-<p>当时疫情尚未完全解封，通常喧嚣的城市是如此安静。</p>
+<p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，萌生记录日出的想法。</p>
+<p>当时疫情已有所好转但尚未完全解封，通常喧嚣的城市此刻是如此安静。</p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -4478,6 +4481,7 @@ table th:nth-of-type(3) {
       <tags>
         <tag>略略略</tag>
         <tag>濮阳</tag>
+        <tag>🎥</tag>
       </tags>
   </entry>
 </search>
