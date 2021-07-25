@@ -521,7 +521,7 @@
 <a id="more"></a>
 
 <p>👇</p>
-<p>积雪过程（20:10-22:50）：</p>
+<p>积雪过程（2020 年 2 月 24 日 20:10-22:50）：</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
@@ -853,14 +853,14 @@ table th:nth-of-type(3) {
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer'),
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
@@ -4432,14 +4432,14 @@ table th:nth-of-type(3) {
     <content><![CDATA[<p>本稿件属于补档，素材录制于 2020 年 2 月 22 日。</p>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<div id="dplayer_sr" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer'),
+    const dp_sunrise = new DPlayer({
+      container: document.getElementById('dplayer_sr'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
