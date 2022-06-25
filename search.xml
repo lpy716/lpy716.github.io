@@ -4516,6 +4516,9 @@ table th:nth-of-type(3) {
 <p>即便脑子一抽，决定动笔，却发现自己的思路咋也理不顺；十分钟过去，还是对着之前那十个字颠来倒去憋不出另外十个字。</p>
 <p>哎，还是看一下远处的雪山吧家人们！</p>
 <p>既然决心破解这个老大难，关键还是得动手写。可能写的速度不比鳖爬，但不管写啥、写成啥样，写得多了，自然能实现“量变到质变”的飞跃。</p>
+<hr style="background-color: #e8e8e880;">
+
+
 <p>回归标题。能让我啰啰嗦嗦到现在的，其实是——濮阳就要通高铁了。</p>
 <p>首先声明，接下来的内容或许不全跟郑济高铁有关，但一定和“濮阳铁路客运”这个大背景紧密相联。</p>
 <p>毕竟，濮阳不止迎来了高铁，更是建市39年来头一次真正融入全国铁路网之中。</p>
@@ -4642,7 +4645,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.6/210601/playlist.m3u8',
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@1.6.0/220624/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
