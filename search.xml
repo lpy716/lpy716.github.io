@@ -211,6 +211,132 @@
       </tags>
   </entry>
   <entry>
+    <title>2021年第一场雪，有  点  大</title>
+    <url>/2021/02/24/20210224%E9%9B%AA/</url>
+    <content><![CDATA[<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
+<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
+<div class="demo-gallery mrb20">
+    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/4.jpg">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_4.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/5.jpg">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_5.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/2.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_2.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/1.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_1.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/3.JPG">
+            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_3.jpg">
+            <div class="demo-gallery-poster">
+            </div>
+        </a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+  var $animThumb1 = $("#aniimated-thumbnials1");
+  if ($animThumb1.length) {
+    $animThumb1
+      .justifiedGallery({
+        border: 6,
+      })
+      .on("jg.complete", function () {
+        $animThumb1.lightGallery({
+          thumbnail: true,
+        });
+      });
+  }
+</script>
+
+<a id="more"></a>
+
+<p>👇</p>
+<p>积雪过程（2021 年 2 月 24 日 20:10-22:50）：</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp = new DPlayer({
+      container: document.getElementById('dplayer1'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.4/210224/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
+
+<hr style="background-color: #e8e8e880;">
+
+
+<p><strong>2.25 更新：</strong>本次积雪深度最终达到了 12cm 左右，但因气温较高快速消融，终究未超过个人记忆里最大的一场雪：即 2009 年 11 月初的那场雪（当时尚未供暖，下了整一宿最终积雪 35 cm 能没过半个轮胎，导致虽临近中考但依旧临时停课一天，真是令人难忘）</p>
+<p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_cma.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_gfs.png"></p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>略略略</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>A brief introduction to Aristotle and Politics</title>
+    <url>/2022/05/27/20220527slides_test/</url>
+    <content><![CDATA[<p>素材来源：CCPS英语课Lesson 14（2021.11.11）作业。</p>
+<!--more-->
+
+<iframe src="https://onedrive.live.com/embed?cid=086DC32FC7B13896&resid=86DC32FC7B13896%2149995&authkey=AAYH9Euw4WXGjV8&em=2" width="560" height="420" frameborder="0" scrolling="no"></iframe>
+
+<hr style="background-color: #e8e8e880;">
+
+<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Adrien Olichon</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>略略略</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2019 北京助学助教夏令营—— 7.26 日报</title>
     <url>/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/</url>
     <content><![CDATA[<ul>
@@ -462,132 +588,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2021年第一场雪，有  点  大</title>
-    <url>/2021/02/24/20210224%E9%9B%AA/</url>
-    <content><![CDATA[<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
-<link type="text/css" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
-<div class="demo-gallery mrb20">
-    <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/4.jpg">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_4.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/5.jpg">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_5.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/2.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_2.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/1.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_1.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-        <a class="jg-entry" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/3.JPG">
-            <img class="img-responsive" src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tn/0_3.jpg">
-            <div class="demo-gallery-poster">
-            </div>
-        </a>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.justifiedGallery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-zoom@1.3.0/dist/lg-zoom.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lg-hash@1.0.4/dist/lg-hash.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-  var $animThumb1 = $("#aniimated-thumbnials1");
-  if ($animThumb1.length) {
-    $animThumb1
-      .justifiedGallery({
-        border: 6,
-      })
-      .on("jg.complete", function () {
-        $animThumb1.lightGallery({
-          thumbnail: true,
-        });
-      });
-  }
-</script>
-
-<a id="more"></a>
-
-<p>👇</p>
-<p>积雪过程（2021 年 2 月 24 日 20:10-22:50）：</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
-<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<script>
-  $(function(){ 
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer1'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1.4/210224/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-  });
-})
-</script>
-
-
-<hr style="background-color: #e8e8e880;">
-
-
-<p><strong>2.25 更新：</strong>本次积雪深度最终达到了 12cm 左右，但因气温较高快速消融，终究未超过个人记忆里最大的一场雪：即 2009 年 11 月初的那场雪（当时尚未供暖，下了整一宿最终积雪 35 cm 能没过半个轮胎，导致虽临近中考但依旧临时停课一天，真是令人难忘）</p>
-<p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_cma.png"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_gfs.png"></p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>🎥</tag>
-        <tag>略略略</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>A brief introduction to Aristotle and Politics</title>
-    <url>/2022/05/27/20220527slides_test/</url>
-    <content><![CDATA[<p>素材来源：CCPS英语课Lesson 14（2021.11.11）作业。</p>
-<!--more-->
-
-<iframe src="https://onedrive.live.com/embed?cid=086DC32FC7B13896&resid=86DC32FC7B13896%2149995&authkey=AAYH9Euw4WXGjV8&em=2" width="560" height="420" frameborder="0" scrolling="no"></iframe>
-
-<hr style="background-color: #e8e8e880;">
-
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Adrien Olichon</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>略略略</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2020/11/20/icarus%E6%B7%BB%E5%8A%A0%E7%BD%AE%E9%A1%B6/</url>
     <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
@@ -695,132 +695,6 @@ table th:nth-of-type(3) {
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
 <p>（完）</p>
 <p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Anastasia Shuraeva</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题添加背景图片</title>
-    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
-    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
-<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
-<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
-<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
-<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
-<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
-<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
-<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
-<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
-<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
-<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
-<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
-</div>
-</article>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
-<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>然后正常更新就完了。</p>
-<h2 id="页内引入的-message-消息也亮瞎眼"><a href="#页内引入的-message-消息也亮瞎眼" class="headerlink" title="页内引入的 message 消息也亮瞎眼"></a>页内引入的 message 消息也亮瞎眼</h2><p>在上一项的基础上，即在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件最后部分 <code>body.night</code> 这一行上方再插入以下代码:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // message.is-warning</span></span><br><span class="line"><span class="addition">+   article.message.message-immersive.is-warning</span></span><br><span class="line"><span class="addition">+       background-color: dark-primary-color-hover</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+       .message-body</span></span><br><span class="line"><span class="addition">+           color: #ffdd57</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>同正常更新就完了。</p>
-<p>（PS：这里只是针对 is-warning 这个样式的。其他五种样式，包括：</p>
-<ul>
-<li>is-primary</li>
-<li>is-link</li>
-<li>is-info</li>
-<li>is-success</li>
-<li>is-danger</li>
-</ul>
-<p>只需要在此代码基础上继续添加即可。）</p>
-<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
-<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
-<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -973,6 +847,189 @@ table th:nth-of-type(3) {
         <tag>🎥</tag>
         <tag>略略略</tag>
         <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus%E9%BC%93%E6%8D%A3%E5%A4%9C%E9%97%B4%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
+<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>然后正常更新就完了。</p>
+<h2 id="页内引入的-message-消息也亮瞎眼"><a href="#页内引入的-message-消息也亮瞎眼" class="headerlink" title="页内引入的 message 消息也亮瞎眼"></a>页内引入的 message 消息也亮瞎眼</h2><p>在上一项的基础上，即在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件最后部分 <code>body.night</code> 这一行上方再插入以下代码:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // message.is-warning</span></span><br><span class="line"><span class="addition">+   article.message.message-immersive.is-warning</span></span><br><span class="line"><span class="addition">+       background-color: dark-primary-color-hover</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+       .message-body</span></span><br><span class="line"><span class="addition">+           color: #ffdd57</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>同正常更新就完了。</p>
+<p>（PS：这里只是针对 is-warning 这个样式的。其他五种样式，包括：</p>
+<ul>
+<li>is-primary</li>
+<li>is-link</li>
+<li>is-info</li>
+<li>is-success</li>
+<li>is-danger</li>
+</ul>
+<p>只需要在此代码基础上继续添加即可。）</p>
+<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
+<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
+<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Alex Andrews</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<article class="message message-immersive is-warning">
+<div class="message-body">
+<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+</div>
+</article>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1_%E4%BA%91%E5%8D%B7%E4%BA%91%E8%88%92/">上一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://peapix.com/bing/33653" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tim Jones/Alam</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>温故知新：停机问题与理发师悖论</title>
+    <url>/2021/11/20/%E7%90%86%E5%8F%91%E5%B8%88%E6%82%96%E8%AE%BA%E4%B8%8E%E5%81%9C%E6%9C%BA/</url>
+    <content><![CDATA[<p>头发长了。11月后疫情反复，许诺已久的校园管控放松计划不出意外地泡汤，只好再找到鑫鑫这位好邻居帮我理个发。得知他也为自己理发，和他开玩笑说自古以来的理发师悖论在他这里终结。</p>
+<p>今天在看《信息简史》时恰好翻到哥德尔、图灵和停机问题。回想起以前学习这块内容都把理发师悖论当作引子，突然意识到自己一直以来对停机问题的理解非但不深，甚至还对理发师悖论的认识有严重误区。</p>
+<p>围绕理发师悖论，把自己对停机问题的回顾和再理解记录下来。</p>
+<h2 id="停机问题诞生之前"><a href="#停机问题诞生之前" class="headerlink" title="停机问题诞生之前"></a>停机问题诞生之前</h2><p>既然打算更深入理解停机问题，自然要扒一扒问题产生的源头。翻看了研一运筹学课胡旭东老师的讲义，里面其实有几十张slides都在讲停机问题形成背后的计算理论，只是当时受课时限制没拿到课上细讲，自己没印象无非是课后没认真学习理解。</p>
+<p>（也不知道5年后自己哪来的动力，被政治政府什么的学习搞得晕头转向还有心思给自己补这一课……）</p>
+<p>停机问题由图灵于1936年提出并证明。该问题起源于图灵对“机器能否思考”的探索，最终他用一台自己构想出的机器实现论证。论证得以顺利开展的关键在于图灵对“计算”概念的把握。在那个年代，人仍然是从事各类运算工作的主体，除了大量纸上作业，更多时候靠的只是灵光一闪。简言之，当时人们对于什么是“计算”其实没有一个清晰的概念。如此模糊的认识必然无法令基于机器的自动计算乃至思考成为可能。对此，图灵指出，计算应该是一个机械的过程，或是一种<strong>算法</strong>，其本质是人在实际求解问题时所要经历的步骤。鉴于图灵对计算、算法的定义贡献，后人将图灵的提问和探索作为计算/算法理论开端。</p>
+<p>图灵开展研究受到的影响可以从根源、直接两方面认知。</p>
+<p>影响图灵的根源因素上溯至在他一个世纪之前由巴比奇发明的差分机，以及那之后逻辑学、信息学领域的研究进展。值得一提的是，图灵对于用机器实现思考的想法与巴比奇“将蒸汽应用到思考和算数上（数可代表万事万物）”的想法不谋而合，他们都致力于用机器实现数学计算。然而，图灵并未和巴比奇一样将付诸工程实践，仅将自己心中所想、被后人称为“图灵机”的机器构造进行了描述，其中停机是该机器可实现的基本运行操作之一——停机问题之“停机”即来源于此。</p>
+<p>图灵所受直接影响来自于希尔伯特1928年提出的判定问题（Entscheidungs problem）：</p>
+<blockquote>
+<p>是否存在一种有效的程序，以预先确定某个结论能不能从一组给定的假设用逻辑推演出来。</p>
+</blockquote>
+<p>希尔伯特提出这一问题的目的是希望为全部数学奠定一个坚实的逻辑基础。这位整理出“新世纪数学家应当努力解决的23个数学问题”的数学家在纠结：数学真理是否无论时间早晚都能够被证实？他曾宣称：在数学里没有“我们将来也不知道”。换言之，若希尔伯特提出的判定问题为真，则人们可以通过一套严格、分步的算法，用一种演绎推理的形式语言表示有效的推理过程，实现对（数学）问题的自动化证明。</p>
+<p>希尔伯特的提问并非空穴来风。早在他之前，便已经有数学家为构筑牢固的数学体系根基而努力，期望以形式化符号语言证得每一个数学命题真伪，比如《数学原理》的作者之一罗素。在这本和怀海特共同于1910至1913年出版的巨著前言，罗素提到他在打造完美数学的过程中，为处理一些矛盾和悖论耗费了大量精力，理发师悖论便是其中之一。</p>
+<h2 id="理发师悖论与哥德尔不完备"><a href="#理发师悖论与哥德尔不完备" class="headerlink" title="理发师悖论与哥德尔不完备"></a>理发师悖论与哥德尔不完备</h2><p>以下引用部分来自<a href="https://www.zhihu.com/question/20081359/answer/162329455">知乎回答</a>——</p>
+<blockquote>
+<p>一座小城里有位理发师，有一天他做出一项规定:</p>
+<p>  <strong>他给并且只给那些不给自己理发的人理发</strong>。</p>
+<p>理发师的这个规定似乎很有道理：既然有人自己给自己理发了，那么我就不用“多此一举”，我再给这个人理发。<br>最初，这个规定并没什么问题后来，随着这个理发师自己的头发越来越长，他发现他陷入了一个两难的境地:<strong>他该不该给自己理发</strong>？</p>
+<ul>
+<li>如果他为自己理发，那么他就成为了他规定中那个“<strong>自己给自己理发的人</strong>”，那么他就不应该为自己理发；</li>
+<li>如果他不为自己理发，那么他就规定中那个”<strong>不给自己理发的人</strong>“，那么他就应该为自己理发。</li>
+</ul>
+<p>综合以上两种情况，**”他为自己理发”当且仅当”他不为自己理发”**，这成为了一个悖论。</p>
+</blockquote>
+<p>所以，一个最基本的判断是：<u>理发师悖论并不是说简单说理发师因为一些技术原因（比如看不到自己脑后）不给自己理发，而是因为理发师自己先立了个flag——“给且只给那些不给自己理发的人理发”</u>，正是这个套娃flag使得其纠结于到底该不该给自己理发。</p>
+<p>（之前自己的确错用、滥用这一经典的悖论了，今后可得注意，呵呵）</p>
+<p>需要指出的是，包括埃庇米尼德斯悖论（克里特人说克里特人都说谎，那么克里特人到底说没说谎？——“<strong>这句话是假话</strong>”）在内，从古至今与理发师悖论类似的悖论还流传着很多。这些悖论平日里大多只停留于纸面，毕竟这个世界根本做不到始终如一、是非清白（克里特人不可能真的全部撒谎，而且就算是骗子嘴里也不可能全是假话；理发师也不会永远纠结于给不给自己理发，该理理就完了）。但对于一些人而言，这些悖论成为堵死其学术追求道路的一道墙，因为他们企图构建的正是一个严丝合缝的逻辑体系，代表人物便是罗素——他试图构建的符号主义力求借助完美严谨的符号与规则实现精确表达，最终机械地为每一个数学事实作出证明。因此，不难理解为何此类悖论令他如鲠在喉——还被后人一并归作“<a href="https://baike.baidu.com/item/%E7%BD%97%E7%B4%A0%E6%82%96%E8%AE%BA/633604?fr=aladdin"><strong>罗素悖论</strong></a>”。</p>
+<p>围绕罗素悖论，哥德尔最终证明了<strong>一个<u>自洽</u>（一致、相容，即不存在前后矛盾）的形式体系必定是<u>不完全</u>（不完备，即存在难辨是非之处）的，亦即不可能存在完全且自洽的形式体系</strong>。哥德尔于1931年公开了他这些被后人称为“哥德尔不完备定理”的研究，使世人明白数学是无法既完备又一致的。然而，即便是知道了对某个特定、封闭的形式逻辑体系（比如罗素心目中的数学体系）而言，其中必有一些命题无法从体系内部得到证实或证伪，但能否通过体系外的逻辑或规则得到判定？希尔伯特在其区分的三个问题（数学是完全的？一致的？可判定的？）中引出了“判定”这一点，图灵对停机问题思考以此作为切入点。</p>
+<h1 id="脱胎于图灵机的停机问题"><a href="#脱胎于图灵机的停机问题" class="headerlink" title="脱胎于图灵机的停机问题"></a>脱胎于图灵机的停机问题</h1><p>图灵在判定问题的基础上，提出了一个更具体的问题：“<strong>所有的数都是可计算的吗？</strong>”他的思考是：也许有些数虽可被命名和定义，但不可被计算——那些不可被计算的数，意味着无法在有限步骤内计算出其小数表达式。图灵进一步提出：如果一个数的小数表达式可以被机器写出来，它就是可计算的。不过，这样一台机器长什么样？运行方式如何？当时并无现成可供参考。图灵脑洞大开，认为一台能写出小数表达式的机器——这就是传说中的“<strong>图灵机</strong>”——基本组成应包括纸带、符号和状态，能够实现停机、移动、打印、擦除等基本操作，并可以基于此实现更复杂的过程。</p>
+<p>图灵最终证明了凡是人可计算的工作图灵机也一样能做，且一台图灵机可连同输入其中的数据一起被代码化。在此基础上，图灵进一步在大脑中构思了一台名为“<strong>通用图灵机</strong>”的机器，简称$U$。$U$不仅能接受一般意义上的图灵机所能接受的寻常数据作为输入，还能接受任何被编码的机器作为输入——也就是前文所述的对机器的代码化描述。这意味着，倘若一个问题可以被一台机器解决，那么该问题也可以拿到$U$上通过模拟该机器（的运行）而得到解决。</p>
+<p>图灵进一步延伸其思考：既然$U$能够同时接受一组数据$I$和一台模拟出来的图灵机$P$作为输入，那么它能不能判断$P$在以$I$为输入的情况下是否经有限步停机并输出“停机”，或是本身为死循环并输出为“死循环”？这便是所谓的“<strong>停机问题</strong>”。</p>
+<p>以下对于停机问题的精炼描述引用自<a href="https://www.zhihu.com/question/20081359/answer/275107187">知乎回答</a>——</p>
+<blockquote>
+<p>「停机问题」研究的是：是否存在一个「程序」，能够判断另外一个「程序」在特定的「输入」下，是会给出结果（停机），还是会无限执行下去（不停机）。</p>
+</blockquote>
+<p>（该回答作者还以伪代码的形式清晰阐述了停机问题，这里不做复制，但接下来会被我拿来作参考，用于写我对于停机问题和理发师悖论的理解）</p>
+<p>能够实现停机判断的机器是不存在的。图灵运用反证法得出了证明出这一结论：</p>
+<p>假设存在这样一个图灵机$TM(P,I)$，能判断$P$输入$I$时停机并输出“停机”，反之输出“死循环”。考虑到图灵机能够被代码化，这样的机器本身其实也可被视作程序$P_{TM}$，亦可作为输入$I_{TM}$，因此TM同样可以判断将$I_{TM}$输入$P_{TM}$时$P_{TM}$是否停机。</p>
+<p>比照TM可以设计出另一个图灵机$\bar{TM}(P,I)$，它的运行逻辑是先调用$TM(P,I)$并获取其结果，后据此输出一个相反的结果。考虑将$I_\bar{TM}$和$P_\bar{TM}$作为$TM(P,I)$的输入：若$TM(P_\bar{TM},I_\bar{TM})$输出为“停机”，则根据$TM(P,I)$的运行规则，$I_\bar{TM}$在作为$P_\bar{TM}$的输入时其输出为“停机”；然而根据$\bar{TM}(P,I)$的运行规则，既然$\bar{TM}$输出为“停机”，此时被它调用的$TM$应该是“死循环”的输出结果才对，这显然和$TM$真正的输出结果相矛盾。类似的，当$TM(P_\bar{TM},I_\bar{TM})$输出为“死循环”，则一样会出现“$TM$理论上应该是‘停机’却实际输出‘死循环’”的矛盾场景。所以说，一个能够判断“任一图灵机程序在给定输入下停机与否”的$U$并不存在，即判定问题的答案是否定的。</p>
+<p>很显然，上述这样的矛盾场景再现了“罗素悖论”，它存在那种能让罗素血压飙升的<strong>循环自指</strong>，而哥德尔在此之前已经对一问题给出了他的答案和证明。尽管图灵的工作一定程度上看起来是对哥德尔的重复，但他其实说明了当数被拿来编码机器的行为时，悖论就会现身。这样看来，图灵相比哥德尔向前迈进了一步：<strong>数学是不可判定的，其不完全性源于其不可计算性</strong>。。</p>
+<h2 id="用停机问题伪代码写理发师悖论"><a href="#用停机问题伪代码写理发师悖论" class="headerlink" title="用停机问题伪代码写理发师悖论"></a>用停机问题伪代码写理发师悖论</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 判断程序：一个人头发长了，理发师该不该去干活（是否停机）【停机判定程序】</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">toufa_gai_li_le</span>(<span class="params">lifashi, changmaoguai</span>)</span></span><br><span class="line">  result = lifashi(changmaoguai)</span><br><span class="line">  <span class="keyword">if</span> result ！= <span class="literal">None</span>:  <span class="comment"># 理发师有活干，也就是没停机</span></span><br><span class="line">    lifa = <span class="literal">True</span> <span class="comment"># （得知）ta不自我理发，判断理发师有活干，也就是没停机</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    lifa = <span class="literal">False</span> <span class="comment"># （得知）ta自我理发，判断理发师没活干，也就是停机</span></span><br><span class="line">  <span class="keyword">return</span> lifa</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发（行动）程序：一个人给不给自己理发【本质是一个循环函数、循环机】</span></span><br><span class="line"><span class="comment"># 在预设前提下（给自己理发的人）对应True，即程序会一直运行下去</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">self_can_lifa</span>():</span></span><br><span class="line">  <span class="keyword">while</span>(<span class="literal">True</span>):</span><br><span class="line">    <span class="keyword">pass</span>  <span class="comment"># 既然这个人给自己理发，那就一直让ta自个理去吧（不断循环……）</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发师（工作）程序：开工or收工？【本质是一个监测机】</span></span><br><span class="line"><span class="comment"># 函数输入变量changmaoguai即长毛怪，是我对需要理发者的定义，哈哈</span></span><br><span class="line"><span class="comment"># changmaoguai可以为1或0，分别代表着需要理发者给或不给自己理发，</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lifashi</span>(<span class="params">changmaoguai</span>):</span></span><br><span class="line">  <span class="keyword">if</span> changmaoguai == <span class="number">0</span>:</span><br><span class="line">    result = <span class="string">&#x27;理发师去给这个人理发！&#x27;</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    self_can_lifa() <span class="comment"># 不管ta，让其自个回去理（自我循环）</span></span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">  <span class="comment"># 在自得园里，鑫鑫练出了理发的手艺，即可以触发理发师程序</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">0</span>)  <span class="comment"># -&gt; True，比如当我去找鑫鑫</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">1</span>)  <span class="comment"># -&gt; False，比如当北院来的理发师去找鑫鑫（虽然不可能）</span></span><br><span class="line">  <span class="comment">#（当然，以鑫鑫的性格，搞不好也会去给师傅理，呵呵）</span></span><br><span class="line">  <span class="comment">#（话说，北院理发师一次收费30但其技术受到同学们诸多差评，好奇这手艺何以伺候北院大领导们……）</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 当鑫鑫也头发也便长了，即changmaoguai=lifashi……</span></span><br><span class="line">  toufa_gai_li_le(lifashi, lifashi) <span class="comment"># =======悖论出现=======</span></span><br><span class="line">  <span class="comment"># 鑫鑫：作为长毛怪，我到底是（该说）我给自己理发呢，还是不给自己理发呢……</span></span><br></pre></td></tr></table></figure>
+
+
+<p> （完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/person-in-black-long-sleeve-shirt-holding-gold-and-silver-beaded-bracelet-3998389/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by<br>cottonbro studio</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>学与思</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题添加背景图片</title>
+    <url>/2021/02/07/icarus%E8%83%8C%E6%99%AF%E4%B8%8E%E9%80%8F%E6%98%8E/</url>
+    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
+<p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
+<p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
+<p>（1）导航栏 navbar 的透明度：可以找到 <code>\themes\icarus\include\style\navbar.styl</code> 文件下的 <code>.navbar-main</code> 并将其样式修改为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.navbar-main</span><br><span class="line">    box-shadow: $shadow</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br></pre></td></tr></table></figure>
+<p>（2）各个卡片 card 的透明度修改，并使其在鼠标驻留时有颜色变化：找到 <code>\themes\icarus\include\style\card.styl</code> 文件下的 <code>.card</code> 并将其样式修改为为（添加 <code>background-color</code> 样式，其实是将原有继承的 100% 不透明白变成 90% 不透明白）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.card</span><br><span class="line">    overflow: visible</span><br><span class="line">    border-radius: $card-radius</span><br><span class="line"><span class="addition">+   background-color: #f3f4efe6</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+   &amp;:hover</span></span><br><span class="line"><span class="addition">+       background-color: #fafafae6</span></span><br></pre></td></tr></table></figure>
+<p>（3）页面底部的透明度修改：找到 <code>\themes\icarus\include\style\base.styl</code> 中的 <code>$footer-background-color ?= $scheme-main</code>，将 <code>$scheme-main</code>  改为 <code>#fff0</code>，其实是原色的 100% 不透明改为全透明。</p>
+<p>（4）页数及切换背景色修改：将 <code>\themes\icarus\include\style\pagination.styl</code> 文件开头的 <code>$pagination-background-color</code> 字段样式修改成所需的颜色（<code>#f3f4efe6</code>）即可。</p>
+<p>（5）文章目录栏样式修改：将 <code>\themes\icarus\include\style\widget.styl</code> 文件代码进行如下修改（添加当前浏览标题的背景样式）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.widget</span><br><span class="line">    .menu-list</span><br><span class="line">        li</span><br><span class="line">            ul</span><br><span class="line">                margin-right: 0</span><br><span class="line"></span><br><span class="line">        .level</span><br><span class="line">            margin-bottom: 0</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right, .level-item</span><br><span class="line">                flex-shrink: 1</span><br><span class="line"></span><br><span class="line">            .level-left, .level-right</span><br><span class="line">                align-items: flex-start</span><br><span class="line"></span><br><span class="line"><span class="addition">+       a.is-active</span></span><br><span class="line"><span class="addition">+           background-color: #ededed</span></span><br><span class="line"></span><br><span class="line">        .tag</span><br><span class="line">            background: $light-grey</span><br><span class="line">            color: $white-invert</span><br></pre></td></tr></table></figure>
+<p>（6）文章许可声明模块：将 <code>\themes\icarus\include\style\article.styl</code> 的 licensing 样式做以下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-licensing</span><br><span class="line">    position: relative</span><br><span class="line">    z-index: 1</span><br><span class="line">    box-shadow: none</span><br><span class="line"><span class="deletion">-   background: $white-ter</span></span><br><span class="line"><span class="addition">+   background: #e8e8e8</span></span><br><span class="line">    border-radius: $radius</span><br><span class="line">    overflow: hidden</span><br></pre></td></tr></table></figure>
+<p>（7）文章引用文段的背景色：将 <code>\themes\icarus\include\style\article.styl</code> 的 blockquote 样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">blockquote</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br><span class="line"></span><br><span class="line">    &amp;.pullquote</span><br><span class="line">        float: right</span><br><span class="line">        max-width: 50%</span><br><span class="line">        font-size: 1.15rem</span><br><span class="line">        position: relative</span><br><span class="line"></span><br><span class="line">    footer</span><br><span class="line">        strong + cite</span><br><span class="line">            margin-left: .5em</span><br></pre></td></tr></table></figure>
+<p>（8）归档页面各年份时间轴的底部白背景：将 <code>\themes\icarus\include\style\timeline.styl</code> 的 last-child 尾部样式修改如下：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&amp;:last-child:after</span><br><span class="line">    width: .75rem</span><br><span class="line">    top: calc(1rem + 1.5 * .85rem / 2 + .75rem / 2)</span><br><span class="line">    bottom: 0</span><br><span class="line"><span class="deletion">-   background: $timeline-bg-line</span></span><br><span class="line"><span class="addition">+   background: #fff0</span></span><br></pre></td></tr></table></figure>
+<p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
+<p>（完）</p>
+<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Tirachard Kumtanom</a></p>
+]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
       </tags>
   </entry>
   <entry>
@@ -4853,7 +4910,80 @@ table th:nth-of-type(3) {
 </blockquote>
 <p>用心浇灌，静待花开；不忘初心，继续前行！</p>
 <h3 id="附：2019-年夏令营期间资料存档"><a href="#附：2019-年夏令营期间资料存档" class="headerlink" title="附：2019 年夏令营期间资料存档"></a><strong>附：2019 年夏令营期间资料存档</strong></h3><p><strong>夏令营期间每日日报</strong></p>
-<p>|            | <center>每日足迹</center> | <center>记录人</center> | <center>营员感悟</center> | <center>志愿者反馈</center> |<br>| ———- | ——– | ——– | ———- |<br>| <center>7 月 19 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.19%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>李朋远</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 20 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.20%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>穆建超</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 21 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.21%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>李朋远</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 22 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.22%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>杨雨欣</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 23 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.23%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>穆建超</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 24 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.24%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>王国权</center>        | <center>✔</center>        | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 25 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.25%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>杨雨欣</center>        | <center>✔</center>       | <center>✔</center>        | <center>✔</center>          |<br>| <center>7 月 26 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>王国权</center>        | <center>✔</center>        |          | <center>✔</center>          |<br>| <center>7 月 27 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/">更多图片</a></center> | <center>李朋远</center>        | <center>✔</center>        |          |            |</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><center>每日足迹</center></th>
+<th><center>记录人</center></th>
+<th><center>营员感悟</center></th>
+<th><center>志愿者反馈</center></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><center>7 月 19 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.19%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>李朋远</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 20 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.20%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>穆建超</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 21 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.21%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>李朋远</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 22 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.22%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>杨雨欣</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 23 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.23%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>穆建超</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 24 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.24%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>王国权</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 25 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.25%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>杨雨欣</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 26 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.26%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>王国权</center></td>
+<td><center>✔</center></td>
+<td></td>
+<td><center>✔</center></td>
+</tr>
+<tr>
+<td><center>7 月 27 日<a class="tag is-success" style="margin-left:.8em" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf"><i class="fas fa-file-pdf mr-2"></i>PDF</a><a class="tag is-primary" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/12/2019%20%E5%8C%97%E4%BA%AC%E5%8A%A9%E5%AD%A6%E5%8A%A9%E6%95%99%E5%A4%8F%E4%BB%A4%E8%90%A5%E2%80%94%E2%80%94%207.27%20%E6%97%A5%E6%8A%A5/">更多图片</a></center></td>
+<td><center>李朋远</center></td>
+<td><center>✔</center></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 <p><strong>夏令营账簿</strong>（移动端可浏览完整账目）<a class="tag is-link" style="margin-left:.8em" href="https://share.sui.com/v1/snapshots/U9LB4NFZ/views?share_from=web&filter_type=timeSpanTrans">在线浏览</a></p>
 <ul>
 <li>记录人员：李朋远</li>
@@ -5136,63 +5266,6 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>回忆录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>温故知新：停机问题与理发师悖论</title>
-    <url>/2021/11/20/%E7%90%86%E5%8F%91%E5%B8%88%E6%82%96%E8%AE%BA%E4%B8%8E%E5%81%9C%E6%9C%BA/</url>
-    <content><![CDATA[<p>头发长了。11月后疫情反复，许诺已久的校园管控放松计划不出意外地泡汤，只好再找到鑫鑫这位好邻居帮我理个发。得知他也为自己理发，和他开玩笑说自古以来的理发师悖论在他这里终结。</p>
-<p>今天在看《信息简史》时恰好翻到哥德尔、图灵和停机问题。回想起以前学习这块内容都把理发师悖论当作引子，突然意识到自己一直以来对停机问题的理解非但不深，甚至还对理发师悖论的认识有严重误区。</p>
-<p>围绕理发师悖论，把自己对停机问题的回顾和再理解记录下来。</p>
-<h2 id="停机问题诞生之前"><a href="#停机问题诞生之前" class="headerlink" title="停机问题诞生之前"></a>停机问题诞生之前</h2><p>既然打算更深入理解停机问题，自然要扒一扒问题产生的源头。翻看了研一运筹学课胡旭东老师的讲义，里面其实有几十张slides都在讲停机问题形成背后的计算理论，只是当时受课时限制没拿到课上细讲，自己没印象无非是课后没认真学习理解。</p>
-<p>（也不知道5年后自己哪来的动力，被政治政府什么的学习搞得晕头转向还有心思给自己补这一课……）</p>
-<p>停机问题由图灵于1936年提出并证明。该问题起源于图灵对“机器能否思考”的探索，最终他用一台自己构想出的机器实现论证。论证得以顺利开展的关键在于图灵对“计算”概念的把握。在那个年代，人仍然是从事各类运算工作的主体，除了大量纸上作业，更多时候靠的只是灵光一闪。简言之，当时人们对于什么是“计算”其实没有一个清晰的概念。如此模糊的认识必然无法令基于机器的自动计算乃至思考成为可能。对此，图灵指出，计算应该是一个机械的过程，或是一种<strong>算法</strong>，其本质是人在实际求解问题时所要经历的步骤。鉴于图灵对计算、算法的定义贡献，后人将图灵的提问和探索作为计算/算法理论开端。</p>
-<p>图灵开展研究受到的影响可以从根源、直接两方面认知。</p>
-<p>影响图灵的根源因素上溯至在他一个世纪之前由巴比奇发明的差分机，以及那之后逻辑学、信息学领域的研究进展。值得一提的是，图灵对于用机器实现思考的想法与巴比奇“将蒸汽应用到思考和算数上（数可代表万事万物）”的想法不谋而合，他们都致力于用机器实现数学计算。然而，图灵并未和巴比奇一样将付诸工程实践，仅将自己心中所想、被后人称为“图灵机”的机器构造进行了描述，其中停机是该机器可实现的基本运行操作之一——停机问题之“停机”即来源于此。</p>
-<p>图灵所受直接影响来自于希尔伯特1928年提出的判定问题（Entscheidungs problem）：</p>
-<blockquote>
-<p>是否存在一种有效的程序，以预先确定某个结论能不能从一组给定的假设用逻辑推演出来。</p>
-</blockquote>
-<p>希尔伯特提出这一问题的目的是希望为全部数学奠定一个坚实的逻辑基础。这位整理出“新世纪数学家应当努力解决的23个数学问题”的数学家在纠结：数学真理是否无论时间早晚都能够被证实？他曾宣称：在数学里没有“我们将来也不知道”。换言之，若希尔伯特提出的判定问题为真，则人们可以通过一套严格、分步的算法，用一种演绎推理的形式语言表示有效的推理过程，实现对（数学）问题的自动化证明。</p>
-<p>希尔伯特的提问并非空穴来风。早在他之前，便已经有数学家为构筑牢固的数学体系根基而努力，期望以形式化符号语言证得每一个数学命题真伪，比如《数学原理》的作者之一罗素。在这本和怀海特共同于1910至1913年出版的巨著前言，罗素提到他在打造完美数学的过程中，为处理一些矛盾和悖论耗费了大量精力，理发师悖论便是其中之一。</p>
-<h2 id="理发师悖论与哥德尔不完备"><a href="#理发师悖论与哥德尔不完备" class="headerlink" title="理发师悖论与哥德尔不完备"></a>理发师悖论与哥德尔不完备</h2><p>以下引用部分来自<a href="https://www.zhihu.com/question/20081359/answer/162329455">知乎回答</a>——</p>
-<blockquote>
-<p>一座小城里有位理发师，有一天他做出一项规定:</p>
-<p>  <strong>他给并且只给那些不给自己理发的人理发</strong>。</p>
-<p>理发师的这个规定似乎很有道理：既然有人自己给自己理发了，那么我就不用“多此一举”，我再给这个人理发。<br>最初，这个规定并没什么问题后来，随着这个理发师自己的头发越来越长，他发现他陷入了一个两难的境地:<strong>他该不该给自己理发</strong>？</p>
-<ul>
-<li>如果他为自己理发，那么他就成为了他规定中那个“<strong>自己给自己理发的人</strong>”，那么他就不应该为自己理发；</li>
-<li>如果他不为自己理发，那么他就规定中那个”<strong>不给自己理发的人</strong>“，那么他就应该为自己理发。</li>
-</ul>
-<p>综合以上两种情况，**”他为自己理发”当且仅当”他不为自己理发”**，这成为了一个悖论。</p>
-</blockquote>
-<p>所以，一个最基本的判断是：<u>理发师悖论并不是说简单说理发师因为一些技术原因（比如看不到自己脑后）不给自己理发，而是因为理发师自己先立了个flag——“给且只给那些不给自己理发的人理发”</u>，正是这个套娃flag使得其纠结于到底该不该给自己理发。</p>
-<p>（之前自己的确错用、滥用这一经典的悖论了，今后可得注意，呵呵）</p>
-<p>需要指出的是，包括埃庇米尼德斯悖论（克里特人说克里特人都说谎，那么克里特人到底说没说谎？——“<strong>这句话是假话</strong>”）在内，从古至今与理发师悖论类似的悖论还流传着很多。这些悖论平日里大多只停留于纸面，毕竟这个世界根本做不到始终如一、是非清白（克里特人不可能真的全部撒谎，而且就算是骗子嘴里也不可能全是假话；理发师也不会永远纠结于给不给自己理发，该理理就完了）。但对于一些人而言，这些悖论成为堵死其学术追求道路的一道墙，因为他们企图构建的正是一个严丝合缝的逻辑体系，代表人物便是罗素——他试图构建的符号主义力求借助完美严谨的符号与规则实现精确表达，最终机械地为每一个数学事实作出证明。因此，不难理解为何此类悖论令他如鲠在喉——还被后人一并归作“<a href="https://baike.baidu.com/item/%E7%BD%97%E7%B4%A0%E6%82%96%E8%AE%BA/633604?fr=aladdin"><strong>罗素悖论</strong></a>”。</p>
-<p>围绕罗素悖论，哥德尔最终证明了<strong>一个<u>自洽</u>（一致、相容，即不存在前后矛盾）的形式体系必定是<u>不完全</u>（不完备，即存在难辨是非之处）的，亦即不可能存在完全且自洽的形式体系</strong>。哥德尔于1931年公开了他这些被后人称为“哥德尔不完备定理”的研究，使世人明白数学是无法既完备又一致的。然而，即便是知道了对某个特定、封闭的形式逻辑体系（比如罗素心目中的数学体系）而言，其中必有一些命题无法从体系内部得到证实或证伪，但能否通过体系外的逻辑或规则得到判定？希尔伯特在其区分的三个问题（数学是完全的？一致的？可判定的？）中引出了“判定”这一点，图灵对停机问题思考以此作为切入点。</p>
-<h1 id="脱胎于图灵机的停机问题"><a href="#脱胎于图灵机的停机问题" class="headerlink" title="脱胎于图灵机的停机问题"></a>脱胎于图灵机的停机问题</h1><p>图灵在判定问题的基础上，提出了一个更具体的问题：“<strong>所有的数都是可计算的吗？</strong>”他的思考是：也许有些数虽可被命名和定义，但不可被计算——那些不可被计算的数，意味着无法在有限步骤内计算出其小数表达式。图灵进一步提出：如果一个数的小数表达式可以被机器写出来，它就是可计算的。不过，这样一台机器长什么样？运行方式如何？当时并无现成可供参考。图灵脑洞大开，认为一台能写出小数表达式的机器——这就是传说中的“<strong>图灵机</strong>”——基本组成应包括纸带、符号和状态，能够实现停机、移动、打印、擦除等基本操作，并可以基于此实现更复杂的过程。</p>
-<p>图灵最终证明了凡是人可计算的工作图灵机也一样能做，且一台图灵机可连同输入其中的数据一起被代码化。在此基础上，图灵进一步在大脑中构思了一台名为“<strong>通用图灵机</strong>”的机器，简称$U$。$U$不仅能接受一般意义上的图灵机所能接受的寻常数据作为输入，还能接受任何被编码的机器作为输入——也就是前文所述的对机器的代码化描述。这意味着，倘若一个问题可以被一台机器解决，那么该问题也可以拿到$U$上通过模拟该机器（的运行）而得到解决。</p>
-<p>图灵进一步延伸其思考：既然$U$能够同时接受一组数据$I$和一台模拟出来的图灵机$P$作为输入，那么它能不能判断$P$在以$I$为输入的情况下是否经有限步停机并输出“停机”，或是本身为死循环并输出为“死循环”？这便是所谓的“<strong>停机问题</strong>”。</p>
-<p>以下对于停机问题的精炼描述引用自<a href="https://www.zhihu.com/question/20081359/answer/275107187">知乎回答</a>——</p>
-<blockquote>
-<p>「停机问题」研究的是：是否存在一个「程序」，能够判断另外一个「程序」在特定的「输入」下，是会给出结果（停机），还是会无限执行下去（不停机）。</p>
-</blockquote>
-<p>（该回答作者还以伪代码的形式清晰阐述了停机问题，这里不做复制，但接下来会被我拿来作参考，用于写我对于停机问题和理发师悖论的理解）</p>
-<p>能够实现停机判断的机器是不存在的。图灵运用反证法得出了证明出这一结论：</p>
-<p>假设存在这样一个图灵机$TM(P,I)$，能判断$P$输入$I$时停机并输出“停机”，反之输出“死循环”。考虑到图灵机能够被代码化，这样的机器本身其实也可被视作程序$P_{TM}$，亦可作为输入$I_{TM}$，因此TM同样可以判断将$I_{TM}$输入$P_{TM}$时$P_{TM}$是否停机。</p>
-<p>比照TM可以设计出另一个图灵机$\bar{TM}(P,I)$，它的运行逻辑是先调用$TM(P,I)$并获取其结果，后据此输出一个相反的结果。考虑将$I_\bar{TM}$和$P_\bar{TM}$作为$TM(P,I)$的输入：若$TM(P_\bar{TM},I_\bar{TM})$输出为“停机”，则根据$TM(P,I)$的运行规则，$I_\bar{TM}$在作为$P_\bar{TM}$的输入时其输出为“停机”；然而根据$\bar{TM}(P,I)$的运行规则，既然$\bar{TM}$输出为“停机”，此时被它调用的$TM$应该是“死循环”的输出结果才对，这显然和$TM$真正的输出结果相矛盾。类似的，当$TM(P_\bar{TM},I_\bar{TM})$输出为“死循环”，则一样会出现“$TM$理论上应该是‘停机’却实际输出‘死循环’”的矛盾场景。所以说，一个能够判断“任一图灵机程序在给定输入下停机与否”的$U$并不存在，即判定问题的答案是否定的。</p>
-<p>很显然，上述这样的矛盾场景再现了“罗素悖论”，它存在那种能让罗素血压飙升的<strong>循环自指</strong>，而哥德尔在此之前已经对一问题给出了他的答案和证明。尽管图灵的工作一定程度上看起来是对哥德尔的重复，但他其实说明了当数被拿来编码机器的行为时，悖论就会现身。这样看来，图灵相比哥德尔向前迈进了一步：<strong>数学是不可判定的，其不完全性源于其不可计算性</strong>。。</p>
-<h2 id="用停机问题伪代码写理发师悖论"><a href="#用停机问题伪代码写理发师悖论" class="headerlink" title="用停机问题伪代码写理发师悖论"></a>用停机问题伪代码写理发师悖论</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 判断程序：一个人头发长了，理发师该不该去干活（是否停机）【停机判定程序】</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">toufa_gai_li_le</span>(<span class="params">lifashi, changmaoguai</span>)</span></span><br><span class="line">  result = lifashi(changmaoguai)</span><br><span class="line">  <span class="keyword">if</span> result ！= <span class="literal">None</span>:  <span class="comment"># 理发师有活干，也就是没停机</span></span><br><span class="line">    lifa = <span class="literal">True</span> <span class="comment"># （得知）ta不自我理发，判断理发师有活干，也就是没停机</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    lifa = <span class="literal">False</span> <span class="comment"># （得知）ta自我理发，判断理发师没活干，也就是停机</span></span><br><span class="line">  <span class="keyword">return</span> lifa</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发（行动）程序：一个人给不给自己理发【本质是一个循环函数、循环机】</span></span><br><span class="line"><span class="comment"># 在预设前提下（给自己理发的人）对应True，即程序会一直运行下去</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">self_can_lifa</span>():</span></span><br><span class="line">  <span class="keyword">while</span>(<span class="literal">True</span>):</span><br><span class="line">    <span class="keyword">pass</span>  <span class="comment"># 既然这个人给自己理发，那就一直让ta自个理去吧（不断循环……）</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发师（工作）程序：开工or收工？【本质是一个监测机】</span></span><br><span class="line"><span class="comment"># 函数输入变量changmaoguai即长毛怪，是我对需要理发者的定义，哈哈</span></span><br><span class="line"><span class="comment"># changmaoguai可以为1或0，分别代表着需要理发者给或不给自己理发，</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lifashi</span>(<span class="params">changmaoguai</span>):</span></span><br><span class="line">  <span class="keyword">if</span> changmaoguai == <span class="number">0</span>:</span><br><span class="line">    result = <span class="string">&#x27;理发师去给这个人理发！&#x27;</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    self_can_lifa() <span class="comment"># 不管ta，让其自个回去理（自我循环）</span></span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">  <span class="comment"># 在自得园里，鑫鑫练出了理发的手艺，即可以触发理发师程序</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">0</span>)  <span class="comment"># -&gt; True，比如当我去找鑫鑫</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">1</span>)  <span class="comment"># -&gt; False，比如当北院来的理发师去找鑫鑫（虽然不可能）</span></span><br><span class="line">  <span class="comment">#（当然，以鑫鑫的性格，搞不好也会去给师傅理，呵呵）</span></span><br><span class="line">  <span class="comment">#（话说，北院理发师一次收费30但其技术受到同学们诸多差评，好奇这手艺何以伺候北院大领导们……）</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 当鑫鑫也头发也便长了，即changmaoguai=lifashi……</span></span><br><span class="line">  toufa_gai_li_le(lifashi, lifashi) <span class="comment"># =======悖论出现=======</span></span><br><span class="line">  <span class="comment"># 鑫鑫：作为长毛怪，我到底是（该说）我给自己理发呢，还是不给自己理发呢……</span></span><br></pre></td></tr></table></figure>
-
-
-<p> （完）</p>
-<p><a class="tag is-dark is-normal" href="https://www.pexels.com/photo/person-in-black-long-sleeve-shirt-holding-gold-and-silver-beaded-bracelet-3998389/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by<br>cottonbro studio</a></p>
-]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>学与思</tag>
       </tags>
   </entry>
 </search>
