@@ -4725,7 +4725,8 @@ table th:nth-of-type(3) {
 
 <hr style="background-color: #e8e8e880;">
 
-<p>&nbsp;<a class="tag is-dark is-normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" target="_blank"><span class="icon"><i class="fas fa-camera"></i></span>&nbsp;&nbsp;photo by Adrien Olichon</a></p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" 
+  title="photo by Adrien Olichon"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
