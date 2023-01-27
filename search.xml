@@ -201,40 +201,15 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="李朋远" class="tab-content" style="display: block;">
-    今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">李朋远</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>今天主要是负责接站。我接了湖南和河北两个地方的师生。通过交谈，两个地方的老师和同学都十分的朴实可爱。由于志愿者间提前沟通不畅，造成了职责重叠，办事效率有一些底下，一个人的工作不能多个人去做。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
 
 
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/YjD5OwqbHKpmLzB.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -456,8 +431,8 @@
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/6xdgt3FmZXeCzQL.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -484,8 +459,8 @@
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/sUjoHAqXpgWdOBm.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -669,7 +644,7 @@
       </tags>
   </entry>
   <entry>
-    <title>icarus主题添加背景图片</title>
+    <title>为icarus主题添加背景图片</title>
     <url>/2021/02/07/icarus_bg_transparent/</url>
     <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
 <p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
@@ -1411,49 +1386,16 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="穆建超" class="tab-content" style="display: block;">
-    <p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
-    <p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p>
-</div>
-<div id="李朋远" class="tab-content">
-    白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">穆建超</button></li><li class="tab"><button type="button" data-href="#tab1-2">李朋远</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>我的任务是带领队伍观看升国旗仪式，上午参加王福乐老师的国画讲座，下午参观人民大会堂（参观时长1小时，于人民大会堂南面售票处现场买票）和国家博物馆（参观时长2小时，提前预约走北门团体入口进入），晚上到国家大剧院听音乐会。</p>
+<p>由于升国旗那天是周六3点钟到达天安门广场时人很多大多数人没到第一排，集合时一定要说好是在人民英雄纪念碑正北方集合，整个带队过程中志愿者一前一后，早上不吃早餐，要注意准备一些糖果防止低血糖。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><p>白天我没有跟随外出活动，但是晚上10点多大部队回校后，我去迎接大部队时，在组织营员登记入住、分发糖果、带领组长查看食堂路线等问题上出现一定混乱，并在营员办理入住后又出现床上没有垫子、缺少洗漱沐浴用品等问题。这些多少反映出我们没能做好事前准备，以后在组织活动时要从中吸取教训。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
 
 
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/9TwAovlyVMJsDRH.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -1946,8 +1888,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/uekqoTLm83s6lZI.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -2300,8 +2242,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/rCLqU1zEfouxpGA.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -2774,8 +2716,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/vbDrpjC7xuFyOoe.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -3296,8 +3238,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/41bt7IXjKnFYEeO.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -3811,8 +3753,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/BVmU6kHdA2NXb9c.jpg"></p>
-<p><a class="tag is-link" style="margin-left:.8em" href="https://www.pyli.tk/2019/08/09/%E7%9B%B8%E8%81%9A%E5%8C%97%E4%BA%AC%EF%BC%8C%E9%82%82%E9%80%85%E6%9C%AA%E7%9F%A5%E7%9A%84%E8%87%AA%E5%B7%B1/"><i class="fas fa-bookmark mr-2"></i>2019 北京助学助教夏令营纪实</a></p>
-]]></content>
+<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
         <category>助学夏令营</category>
         <category>2019-夏令营</category>
@@ -3982,7 +3924,7 @@ table th:nth-of-type(3) {
 <p><strong><em>仲夏七月，齐聚北京，一次圆梦之约，一场逐梦之旅。</em></strong></p>
 <p>当广西组师生踏上开往南宁的 T289 次列车，标志着 2019 北京助学助教夏令营顺利落下帷幕。黎明时的天安门、临别前的清华园——9 天时间，营员们抛开考试与作业的压力，沉浸在更广阔知识与艺术的海洋；没有工作与学习的烦恼，只有打卡风景名胜的欢乐。</p>
 <p>从准备、开营，到课堂、参观，再到晚会、送别。难忘瞬间，点点滴滴，值得记录。</p>
-<p><img src="https://s2.loli.net/2023/01/27/axWV9P2qeitZcJX.jpg" alt="2019sc_cover.jpg"></p>
+<p><img src="https://s2.loli.net/2023/01/27/axWV9P2qeitZcJX.jpg"></p>
 <a id="more"></a>
 
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a><strong>准备</strong></h2><p>古人云：兵马未动，粮草先行。为保证活动顺利开展，本次夏令营在开始前进行了大量准备工作。</p>
@@ -3994,7 +3936,7 @@ table th:nth-of-type(3) {
     color: #999;
     margin-top: -10px;
     margin-bottom: 20px;
-    padding: 2px;"></div></center>
+    padding: 2px;">夏令营活动行程表</div></center>
 
 
 <p>按照素质提升、学游相济的原则，本次夏令营基本每天都安排有授课、讲座，集中设在上午和夜晚时段；每天下午固定为外出活动时间，带营员到著名景点、博物馆等地参观。</p>
@@ -4222,7 +4164,7 @@ table th:nth-of-type(3) {
     color: #999;
     margin-top: -10px;
     margin-bottom: 20px;
-    padding: 2px;"></div></center>
+    padding: 2px;">参观中国科学技术馆活动剪影</div></center>
 
 <h3 id="国家大剧院，一场高雅艺术之约"><a href="#国家大剧院，一场高雅艺术之约" class="headerlink" title="国家大剧院，一场高雅艺术之约"></a>国家大剧院，一场高雅艺术之约</h3><p>7 月 20 日傍晚，全体营员来到了国家大剧院。这里，有夏令营为他们精心准备的一场艺术盛宴：由庄东杰、莫泽与国家大剧院管弦乐队演奏的“莎翁情书”音乐会。</p>
 <p>作为国家表演艺术的最高殿堂、新“北京十六景”之一，营员们大都只在电视上见过这座优美的半椭球形地标建筑；如今有机会一睹其真容，并能够“打入内部”与艺术家近距离接触，大家都非常兴奋。入场前，营员集体在大剧院外合影留念。</p>
@@ -4400,7 +4342,7 @@ table th:nth-of-type(3) {
 </tr>
 </thead>
 <tbody><tr>
-<td><center>7 月 19 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf" 
+<td><center>7 月 19 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0719/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
@@ -4409,7 +4351,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 20 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf" 
+<td><center>7 月 20 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0720/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>穆建超</center></td>
@@ -4418,7 +4360,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 21 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf" 
+<td><center>7 月 21 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0721/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
@@ -4427,7 +4369,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 22 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf" 
+<td><center>7 月 22 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0722/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>杨雨欣</center></td>
@@ -4436,7 +4378,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 23 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf" 
+<td><center>7 月 23 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0723/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>穆建超</center></td>
@@ -4445,7 +4387,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 24 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf" 
+<td><center>7 月 24 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0724/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>王国权</center></td>
@@ -4454,7 +4396,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 25 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf" 
+<td><center>7 月 25 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0725/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>杨雨欣</center></td>
@@ -4463,7 +4405,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 26 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf" 
+<td><center>7 月 26 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0726/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>王国权</center></td>
@@ -4472,7 +4414,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 27 日<a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf" 
+<td><center>7 月 27 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0727/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
