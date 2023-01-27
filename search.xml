@@ -398,34 +398,8 @@
 
 
 
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="李朋远" class="tab-content" style="display: block;">
-    <p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
-    <p>考虑到现在的实验室人员太复杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p>
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
-
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">李朋远</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>今天课前，我忘记之前给老师准备的矿泉水用完了。感觉这两天，大概是疏于看照，实验室里一些人挪腾了我们的东西，包括水、给营员准备的鞋服书本。像矿泉水，本应该是够的，但估计是有人偷喝，或只是不知情拿了我们的水；昨天晚会前，发现有一包衣服放在咱们的箱子上，很可能不是我们的，但也不排除是从咱们箱子翻出来的，毕竟之前没有密封好。</p>
+<p>考虑到现在的实验室人员太复杂，以后我们最好能把夏令营物资放在一个比较稳妥的地方保管。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
 
 <hr style="background-color: #e8e8e880;">
@@ -1840,7 +1814,11 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">隆鑑清</button></li><li class="tab"><button type="button" data-href="#tab1-2">李朋远</button></li><li class="tab"><button type="button" data-href="#tab1-3">穆建超</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>胡志强老师《哲学》讲座，非常好很重要，这次时间短了，明年安排完整的一个上午。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><p>今天晚上自己课前没能提前去304占教室，导致教室内有一些自习学生，他们的一些书本设备也拉在了教室里；此外，老师的笔记本电脑也出现问题，鼓捣还一会才在讲台电脑上正常播放。因此，以后上课的时候，要提前一晌在黑板上写上教室占用，并找老师确认是否使用笔记本，若是用笔记本也让老师在u盘备好ppt，以免笔记本出现故障打不开。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-3"><p>我的任务是上午陪同营员上课，开始上课前准备好投影仪并测试ppt能否正常播放，接老师到课堂后要介绍老师（提前准备好介绍信及感谢信和报酬并放在信封里），拍照（最后合照以及课堂上老师讲课，学生听课。师生互动的场面），给老师准备两瓶矿泉水，及时续杯。</p>
+<p>下午参观鲁迅博物馆，注意联系博物馆确认参观人数和时间，鲁迅博物馆可预约讲解员，全程50分钟。</p>
+<p>晚上继续陪同营员上课。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<div class="tabs is-boxed">
     <ul>
         <li class="is-active">
             <a onclick="onTabClick(event)">
@@ -2193,51 +2171,11 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>王国权</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="王国权" class="tab-content" style="display: block;">
-    今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。
-</div>
-<div id="穆建超" class="tab-content">
-    <p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
-    <p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
-    <p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
-    <p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p>
-</div>
-<div id="李朋远" class="tab-content">
-    已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">王国权</button></li><li class="tab"><button type="button" data-href="#tab1-2">穆建超</button></li><li class="tab"><button type="button" data-href="#tab1-3">李朋远</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>今日一大早就起床坐车去爬长城，先还以为大家起不来，结果全员都兴致盎然，都对古老的“墙”，世界的奇迹充满向往，按照预定时间到达长城，有老师说感觉时间不够想多停留半小时，但给他说了实在是行程太满，一点半又得准时赶到天文馆，大家也都表示理解与支持，十点半坐上了回程大巴，十一点五十到了学校，匆匆的吃完午饭，我们十二点半又出发前往天文馆了，到达天文馆后对各组长交待了按组为单位进行参观活动，但一定谨记看科普电影的时间，两场科普电影结束后看大家也都有点累了就没继续逛了，合了张影就回了学校，晚上王慧超老师《理财培训》，大家听的都非常认真，结束后去买了明天联欢晚会的东西，总得来说这一天就是在惊吓中平稳的过了充实的一天，怎么说惊吓呢就是因为在长城脚下发车太晚担心回不了学校，一点半到不了天文馆，但总得来还没说还是有惊无险。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><p>主要任务：上午带营员到八达岭长城，然后返回玉泉路校区，下午参观北京天文馆，晚上陪同营员上课。</p>
+<p>八达岭长城步行（后山）游览需要微信购票，刷身份证进入八达岭长城，建议走北边，北八楼较为著名，北七楼至北八楼是好汉坡，如果有2个小时的游览时间则可以爬到北八楼返回也来得及，早上还是要早走，这次是6点出发的，7点10分到达后山。</p>
+<p>一天内在市里两个不同的地方活动，由于路况的不确定性，需要预留时间，这样总体时间有点紧，以后要避免；或者可以选择在外面吃午饭可以节省时间。</p>
+<p>爬长城活动：司机师傅建议如果上午下午均有参观活动，改成爬居庸关长城更合理，路上花的时间会少一些。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-3"><p>已经连续搜集了营员很多天感悟，咱们可以怎样利用这些反馈，帮助活动开展的更好？需要我们思考，大家可以多提一提建议。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
 
 <hr style="background-color: #e8e8e880;">
 
@@ -2656,61 +2594,11 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>隆鑑清</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>王国权</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="隆鑑清" class="tab-content" style="display: block;">
-    广西一位男生，又高又瘦身体很弱。出行时让他坐前面。王国权带点士力架巧克力酸奶等在身上，重点关照一下他。
-</div>
-<div id="穆建超" class="tab-content">
-    活动于玉泉路校区开展，早上要带营员熟悉食堂和教室位置；其他要注意解决一些小问题，水卡不会充值等。
-</div>
-<div id="王国权" class="tab-content">
-    今日感觉啥都没干就给学员买那些洗漱用品和床上用品了，不知道是哪一环节出现问题，导致缺少这些东西，还有今天晚上回了的时候看见一个学员身子不舒服，隆老师说他体质比较弱。以后就把他多个照看一下，防止发生意外
-</div>
-<div id="李朋远" class="tab-content">
-    <ol>
-        <li>志愿者彼此有些分工不明；</li>
-        <li>需要对组员进一步强调集体意识，在参观动物馆的时候，一部分组员不能紧跟大部队聆听讲解，导致队伍有些松散；</li>
-        <li>提高观察意识，注意营员身体、心理动向，对身体不适营员及时帮助。有不止一位营员问过我药房在哪，但貌似他们也没有什么身体不适，可能只是想备一些药。</li>
-    </ol>
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
-
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">隆鑑清</button></li><li class="tab"><button type="button" data-href="#tab1-2">穆建超</button></li><li class="tab"><button type="button" data-href="#tab1-3">王国权</button></li><li class="tab"><button type="button" data-href="#tab1-4">李朋远</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>广西一位男生，又高又瘦身体很弱。出行时让他坐前面。王国权带点士力架巧克力酸奶等在身上，重点关照一下他。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><p>活动于玉泉路校区开展，早上要带营员熟悉食堂和教室位置；其他要注意解决一些小问题，水卡不会充值等。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-3"><p>今日感觉啥都没干就给学员买那些洗漱用品和床上用品了，不知道是哪一环节出现问题，导致缺少这些东西，还有今天晚上回了的时候看见一个学员身子不舒服，隆老师说他体质比较弱。以后就把他多个照看一下，防止发生意外</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-4"><ul>
+<li>志愿者彼此有些分工不明；</li>
+<li>需要对组员进一步强调集体意识，在参观动物馆的时候，一部分组员不能紧跟大部队聆听讲解，导致队伍有些松散；</li>
+<li>提高观察意识，注意营员身体、心理动向，对身体不适营员及时帮助。有不止一位营员问过我药房在哪，但貌似他们也没有什么身体不适，可能只是想备一些药。</li>
+</ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
 
 <hr style="background-color: #e8e8e880;">
@@ -3177,63 +3065,16 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>王国权</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="李朋远" class="tab-content" style="display: block;">
-    今天我只跟了晚上的上课。从课堂效果上看，营员们都表现地很积极，参与度很高，在交流环节中，我感受到了营员们对我们活动的支持，他们确实认真参与到其中。我负责摄影，将一些好的画面记录了下来。
-</div>
-<div id="穆建超" class="tab-content">
-    <ol>
-        <li><p>做事情一定要本着做学生的态度，但是办事得成熟高效。</p>
-        </li>
-        <li><p>注意感恩、尊重、体谅，掌握有效的沟通方式。</p>
-        </li>
-        <li><p>注意倾听同伴的建议，合理分工。</p>
-        </li>
-        <li><p>不仅仅要做好分配给自己的任务，还要留意其它人的任务及活动总体流程，保证整个培训活动顺利开展。</p>
-        </li>
-        <li><p>遇到问题要冷静，谨慎思考后再行动。</p>
-        </li>
-        <li><p>多站在他人的角度看问题。</p>
-        </li>
-        <li><p>要有一定的医疗保障，防暑晕车药要带一点，还有葡萄糖。</p>
-        </li>
-    </ol>
-</div>
-<div id="王国权" class="tab-content">
-    今天上午在李继祖老师那儿做了心里辅导和团队心里辅导，还做了沙盘实验，感觉四川组的学员挺活泼的，挺会带动集体的气氛，晚上杨晓奇老师《思维导图》课程，学员们也都踊跃回答问题并且认真听讲并跟着老师的思维走做好记录，参加小活动。
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">李朋远</button></li><li class="tab"><button type="button" data-href="#tab1-2">穆建超</button></li><li class="tab"><button type="button" data-href="#tab1-3">王国权</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>今天我只跟了晚上的上课。从课堂效果上看，营员们都表现地很积极，参与度很高，在交流环节中，我感受到了营员们对我们活动的支持，他们确实认真参与到其中。我负责摄影，将一些好的画面记录了下来。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><ul>
+<li>做事情一定要本着做学生的态度，但是办事得成熟高效。</li>
+<li>注意感恩、尊重、体谅，掌握有效的沟通方式。</li>
+<li>注意倾听同伴的建议，合理分工。</li>
+<li>不仅仅要做好分配给自己的任务，还要留意其它人的任务及活动总体流程，保证整个培训活动顺利开展。</li>
+<li>遇到问题要冷静，谨慎思考后再行动。</li>
+<li>多站在他人的角度看问题。</li>
+<li>要有一定的医疗保障，防暑晕车药要带一点，还有葡萄糖。</li>
+</ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-3"><p>今天上午在李继祖老师那儿做了心里辅导和团队心里辅导，还做了沙盘实验，感觉四川组的学员挺活泼的，挺会带动集体的气氛，晚上杨晓奇老师《思维导图》课程，学员们也都踊跃回答问题并且认真听讲并跟着老师的思维走做好记录，参加小活动。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
 
 <hr style="background-color: #e8e8e880;">
 
@@ -3713,41 +3554,7 @@ table th:nth-of-type(3) {
 </blockquote>
 </li>
 </ul>
-<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs is-boxed">
-    <ul>
-        <li class="is-active">
-            <a onclick="onTabClick(event)">
-                <span>李朋远</span>
-            </a>
-        </li>
-        <li>
-            <a onclick="onTabClick(event)">
-                <span>穆建超</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="李朋远" class="tab-content" style="display: block;">
-    今天主要负责晚会布置和现场设备调试工作，由于考虑不周、经验不足，产生了不少差错。会前我认为只要摆好桌椅、接好音响、贴好彩纸、分发食物就可以了，但实际活动开展时，包括节目调换、演员变动、话筒和音响问题、集体合唱对歌曲不熟等一系列状况，让我认识做好预案的重要性。希望能好好从中吸取这次的经验教训。
-</div>
-<div id="穆建超" class="tab-content">
-    晚会这块儿总体还可以，如果能再早一天准备就好了，各方面能更加地顺利。话筒还是要至少找到两只，最好能有投影仪效果会更好些。有时间的话可以先预演一下会更好！
-</div>
-<style type="text/css">
-    .content .tabs ul { margin: 0; }
-    .tab-content { display: none; }
-    .tabs.is-boxed li.is-active a {background-color: #f9f9f9e6;}
-</style>
-<script>
-    function onTabClick (event) {
-        var tabTitle = $(event.currentTarget).children('span:last-child').text();
-        $('.article .content .tab-content').css('display', 'none');
-        $('.article .content .tabs li').removeClass('is-active');
-        $('#' + tabTitle).css('display', 'block');
-        $(event.currentTarget).parent().addClass('is-active');
-    }
-</script>
-
+<h2 id="志愿者反馈"><a href="#志愿者反馈" class="headerlink" title="志愿者反馈"></a>志愿者反馈</h2><div class="tabs" id="tab1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#tab1-1">李朋远</button></li><li class="tab"><button type="button" data-href="#tab1-2">穆建超</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="tab1-1"><p>今天主要负责晚会布置和现场设备调试工作，由于考虑不周、经验不足，产生了不少差错。会前我认为只要摆好桌椅、接好音响、贴好彩纸、分发食物就可以了，但实际活动开展时，包括节目调换、演员变动、话筒和音响问题、集体合唱对歌曲不熟等一系列状况，让我认识做好预案的重要性。希望能好好从中吸取这次的经验教训。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="tab1-2"><p>晚会这块儿总体还可以，如果能再早一天准备就好了，各方面能更加地顺利。话筒还是要至少找到两只，最好能有投影仪效果会更好些。有时间的话可以先预演一下会更好！</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 
 
 <hr style="background-color: #e8e8e880;">
@@ -4342,7 +4149,7 @@ table th:nth-of-type(3) {
 </tr>
 </thead>
 <tbody><tr>
-<td><center>7 月 19 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf" 
+<td><center><strong>7 月 19 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0719.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0719/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
@@ -4351,7 +4158,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 20 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf" 
+<td><center><strong>7 月 20 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0720.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0720/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>穆建超</center></td>
@@ -4360,7 +4167,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 21 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf" 
+<td><center><strong>7 月 21 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0721.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0721/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
@@ -4369,7 +4176,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 22 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf" 
+<td><center><strong>7 月 22 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0722.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0722/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>杨雨欣</center></td>
@@ -4378,7 +4185,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 23 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf" 
+<td><center><strong>7 月 23 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0723.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0723/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>穆建超</center></td>
@@ -4387,7 +4194,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 24 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf" 
+<td><center><strong>7 月 24 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0724.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0724/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>王国权</center></td>
@@ -4396,7 +4203,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 25 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf" 
+<td><center><strong>7 月 25 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0725.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0725/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>杨雨欣</center></td>
@@ -4405,7 +4212,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 26 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf" 
+<td><center><strong>7 月 26 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0726.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0726/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>王国权</center></td>
@@ -4414,7 +4221,7 @@ table th:nth-of-type(3) {
 <td><center>✔</center></td>
 </tr>
 <tr>
-<td><center>7 月 27 日<br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf" 
+<td><center><strong>7 月 27 日</strong><br><a class="btn-beautify green" href="https://cdn.jsdelivr.net/gh/lpy716/site_file/2019sc_dr0727.pdf" 
   title="PDF"><i class="fas fa-file-pdf mr-2"></i><span>PDF</span></a><a class="btn-beautify blue" href="https://www.pyli.tk/2019/08/12/2019_summer_camp_0727/" 
   title="更多图片"><span>更多图片</span></a></center></td>
 <td><center>李朋远</center></td>
