@@ -540,8 +540,8 @@
 <p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_cma.png"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.12/20210225/tianqi_gfs.png"></p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" 
-  title="photo by Adrien Olichon"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a>]]></content>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/774531/" 
+  title="photo by Jeffrey Czum"><i class="fas fa-camera"></i><span>photo by Jeffrey Czum</span></a>]]></content>
       <categories>
         <category>日常</category>
       </categories>
@@ -826,11 +826,8 @@ table th:nth-of-type(3) {
 <p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
 <h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
 <p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<article class="message message-immersive is-warning">
-<div class="message-body">
-<i class="fas fa-exclamation-circle mr-2"></i>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。
+<div class="note blue info modern"><p>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。</p>
 </div>
-</article>
 
 <p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
@@ -1036,13 +1033,7 @@ table th:nth-of-type(3) {
   <entry>
     <title>云卷云舒</title>
     <url>/2021/01/26/timelpase_cloud/</url>
-    <content><![CDATA[<article class="message message-immersive is-warning">
-  <div class="message-body">
-    <i class="fas fa-exclamation-circle mr-2"></i>视频大小 119M，建议使用 WiFi 观看。
-  </div>
-</article>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -1081,8 +1072,8 @@ table th:nth-of-type(3) {
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
 <p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" 
-  title="photo by Adrien Olichon"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a>]]></content>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/2114014/" 
+  title="photo by Magda Ehlers"><i class="fas fa-camera"></i><span>photo by Magda Ehlers</span></a>]]></content>
       <categories>
         <category>日常</category>
       </categories>
