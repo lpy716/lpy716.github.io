@@ -239,7 +239,7 @@ table th:nth-of-type(3) {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-api-lyart.vercel.app/',
+      envId: 'https://twikoo.pyli.tk/',
       region: 'ap-beijing',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -251,7 +251,7 @@ table th:nth-of-type(3) {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-api-lyart.vercel.app/',
+      envId: 'https://twikoo.pyli.tk/',
       region: 'ap-beijing',
       urls: [window.location.pathname],
       includeReply: false
