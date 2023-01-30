@@ -2821,14 +2821,13 @@ table th:nth-of-type(3) {
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 
-<details class="toggle" style="border: 1px solid  《情绪管理》课堂小剧场1"><summary class="toggle-button" style="background-color:  《情绪管理》课堂小剧场1;"></summary><div class="toggle-content"><div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场1</summary><div class="toggle-content"><div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 </div></details>
 
-<details class="toggle" style="border: 1px solid  《情绪管理》课堂小剧场2"><summary class="toggle-button" style="background-color:  《情绪管理》课堂小剧场2;"></summary><div class="toggle-content"><div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场2</summary><div class="toggle-content"><div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 </div></details>
 
-<details class="toggle" style="border: 1px solid  《情绪管理》课堂小剧场3"><summary class="toggle-button" style="background-color:  《情绪管理》课堂小剧场3;"></summary><div class="toggle-content"><div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场3</summary><div class="toggle-content"><div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 </div></details>
 
 <script type="text/javascript">
