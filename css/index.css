@@ -2487,6 +2487,7 @@ h1.page-title + .tag-cloud-list {
   color: var(--btn-color);
   text-align: center;
   line-height: 2.4;
+  border-radius: 6px;
 }
 #aside-content .card-info #card-info-btn:hover {
   background-color: var(--btn-hover-color);
@@ -4647,7 +4648,7 @@ blockquote.pullquote.right {
   position: relative;
   margin: 0 0 20px;
   padding: 15px;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 .note.icon-padding {
   padding-left: 3em;
