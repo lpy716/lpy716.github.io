@@ -638,429 +638,6 @@
       </tags>
   </entry>
   <entry>
-    <title>新版本icarus主题下实现文章首页置顶</title>
-    <url>/2020/11/20/icarus_top/</url>
-    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
-<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
-<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
-<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
-<p>（完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" 
-  title="photo by Aleksandar Pasaric"><i class="fas fa-camera"></i><span>photo by Aleksandar Pasaric</span></a>]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>icarus主题下实现视频播放</title>
-    <url>/2021/01/26/icarus_video/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
-<ul>
-<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
-<li>在 Github 上存储视频切片文件</li>
-<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
-<li>引入 DPlayer 视频播放插件</li>
-</ul>
-<p>而实现的视频播放功能。</p>
-<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
-<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
-<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
-<div class="note blue info modern"><p>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。</p>
-</div>
-
-<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
-<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
-<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
-<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
-<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
-<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
-<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/timelpase_cloud/">后一篇</a>就是，hhh。</p>
-<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
-<p>（完）</p>
-<a class="btn-beautify block black normal" href="https://peapix.com/bing/33653" 
-  title="photo by Tim Jones/Alam"><i class="fas fa-camera"></i><span>photo by Tim Jones/Alam</span></a>]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>🎥</tag>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳冷知识</title>
-    <url>/2020/12/14/puyang_trivia/</url>
-    <content><![CDATA[<p>本文为自己日常观察、查阅资料之笔记汇总，将不定期更新。内容仅代表个人观点。</p>
-<h2 id="历史地理"><a href="#历史地理" class="headerlink" title="历史地理"></a>历史地理</h2><p>1、濮阳一带地势平坦，却留下了不少带“丘”的地名，据不完全统计有：<strong>帝丘</strong>/<strong>商丘</strong>、<strong>铁丘</strong>、<strong>顿丘</strong>、<strong>廪丘</strong>（在今范县）、<strong>桃丘</strong>（在今台前吴坝）、<strong>瑕丘</strong>（在今五星乡）、<strong>清丘</strong>（在今习城乡）、<strong>延丘</strong>（在今八公桥镇）、<strong>襄丘</strong>（在今渠村乡）、<strong>竹丘</strong>（在今八公桥镇）、<strong>白丘</strong>（在今八公桥镇）、<strong>展丘</strong>（在今八公桥镇）、<strong>黄丘</strong>（在今庆祖镇）、<strong>安丘</strong>（在今郎中乡）、<strong>姚丘</strong>（今濮城一带)、<strong>旄丘</strong>（念máo，大致在今濮阳县西南），等等。这些地名基本产生于先秦时期，现代人分析其形成原因，包括：</p>
-<ul>
-<li><p>战国以前，黄河下游河道尚未固定，河水漫流挟带泥沙四处堆积令地面不如今天这般平坦。古人见地势突起之处，皆命名X丘；</p>
-</li>
-<li><p>“丘”为废墟、坟墓之意，X丘是后人对先人群聚生活遗址的称呼；</p>
-</li>
-<li><p>参照西周时期《周礼·地官·小司徒》所载：“乃经土地而井牧其田野，九夫为井，四井为邑，<strong>四邑为丘，四丘为甸</strong>，四甸为县，四县为都，以任地事而令贡赋，凡税敛之事”，“丘”在一定历史时期的行政体制下是作为通名而存在，X丘更类似今天的单字地名。时过境迁，如今人们已将“丘”视作专名的一部分（其他相似情形举例：<strong>辉县</strong>市、<strong>沙县</strong>区、<strong>岳村</strong>镇）。</p>
-</li>
-</ul>
-<p>2、“治亭”是濮阳历史上使用时间最短、最没有传承的地名，仅通行于新莽时期。</p>
-<p>3、濮阳曾经也是个跨黄河发展的城市：公元918年，后唐庄宗李存勖击败后梁军，乘胜拔澶水，命李存审在德胜渡夹河筑德胜南北二城， 称夹寨，屯兵据守。此后，德胜寨成为晋梁争夺的焦点，至北宋亦成为澶渊郡治所，见证了宋辽之争、澶渊之盟。如今的濮阳县城由原来的德胜北城发展而来，隔黄河（大致对应今天的金堤河）而建的南城则在1077年圮于黄水。</p>
-<p>4、明清民初，直隶、四川、贵州皆有“开州/开县”，该名称被今天的<strong>重庆市开州区</strong>独占。之所以多地同名，或与当时政权分裂对峙或区域高度自治有一定关系——<strong>濮阳</strong>得名“开州”时正值金人统治；<strong>贵州开阳</strong>得名“开州”时属明朝贵州宣慰司（水西土司）管辖，非中央统筹之地；今重庆的“开州”始名于南北朝，自隋起沿用且一直处在“正统”政权的直接统治下；民初北洋政府清整全国县级重复地名后，这一现象依“<strong>相沿较古</strong>”（“开州”之名被川渝开州继承）、“<strong>仍还故称</strong>”（直隶开州被还旧称濮阳）、“<strong>协调变通</strong>”（今贵州开阳之名的由来）等原则而得到更正。</p>
-<p>5、1936年，国民政府曾计划当时的河南省将武安、涉县划给河北，河北省把濮阳、长垣、东明交换给河南<a href="#bib1" id="bib1ref"><sup>[1]</sup></a>。该计划最终未被落实，否则濮阳（县）将早16年（即1952年平原省撤销事件）投入河南的怀抱。</p>
-<p>6、不该被遗忘的另一个“四·一二”惨痛记忆：1941年4月12-20日，日伪军万余人在今濮清内滑一带发动三光扫荡，<strong>四千余同胞</strong>惨遭屠杀。</p>
-<p>7、1945年10月至1946年11月，冀鲁豫行署置濮阳县城关区为行署直辖市。此为“濮阳市”初次登上历史舞台。</p>
-<p>8、尽管1952年后，今天的地级濮阳市才陆续并入自明清沿袭而来的河南省版图，为现豫北六市里最晚，却是豫北六市里唯一通行“河南话”（指中原官话）的地方。</p>
-<h2 id="当代区划"><a href="#当代区划" class="headerlink" title="当代区划"></a>当代区划</h2><p>1、豫鲁两省在濮阳南侧并不是严格按照黄河划界的：濮范台三县均在黄河以南有村庄，而黄河以北也有山东的村庄。</p>
-<p>2、按照<a href="http://zyghj.puyang.gov.cn/sitesources/pyblr/page_pc/xqdt/articlee1fec6ea0a51472fbe883adfd18d4979.html">官方地图</a>及严格定义，范县的老县城并非范县的飞地而是属于突出部，因为连通新老城区的240国道及沿线归范县管辖。范县辖区里正经的飞地是位于黄河南岸的辛庄镇苏庄村，同样被山东地界“包围”。</p>
-<p><img src="https://s2.loli.net/2023/01/31/ABlpG9Jxw6IqULm.jpg" alt="注：苏庄在右图的最下边"></p>
-<p>3、接上一条，苏庄由濮阳县、范县和山东省的鄄城县三县共管，为“两省三县一个村”之奇观。</p>
-<p>4、东明县划入山东和范县划入河南并不是同时发生的，二者间隔了一年时间；在划入山东前，东明县是归开封专区管辖的。</p>
-<p>5、濮阳市辖区距郑州市辖区最近点超过80km，而距济南市辖区最近点不足15km。</p>
-<p>6、濮阳市的地理中心（此处算法为所有边界点坐标之和的平均）位于清丰县六塔乡主堡寨村东（115.278042, 35.806919）。</p>
-<p><img src="https://s2.loli.net/2023/01/31/cnjeOvPDiq3EpN2.jpg" alt="注：该结果由ArcMap自带工具计算生成"></p>
-<p>7、莘县差点就和濮清南范台五县全部接壤（与台前差不到两公里即接壤）。</p>
-<p>8、与濮阳到郑州、开封、德州、济南一样，濮阳和商丘、枣庄、临沂、<strong>淄博</strong>、<strong>徐州</strong>、<strong>宿州</strong>、<strong>晋中</strong>之间实际也分别<strong>只间隔了一个市</strong>（主要是菏泽、泰安、济宁、邯郸的功劳，感谢台前hhh）。</p>
-<p>9、（截至2021.4.1）濮阳的三个<a href="http://www.puyang.gov.cn/pygk/pygk_list.asp?class=576">国际友好城市</a>——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
-<p>10、两个与濮阳主城区纬度（35°45’N）相同的国家首都：东京、德黑兰。</p>
-<p>11、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是1983年以前原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续拓展，今天的濮阳市则是1983年以前原安阳地区（Anyang prefecture）的转世重生。</p>
-<h2 id="自然地理"><a href="#自然地理" class="headerlink" title="自然地理"></a>自然地理</h2><p>1、中原油田在濮阳一带开采的油气田与三四千万年前这里的一个盐湖有很大关系。该盐湖为后来的油气生成和储集提供了有利条件。</p>
-<p>2、接上一条，从濮阳一带开采出的油气和恐龙没啥关系。 原因：</p>
-<ul>
-<li><p>东濮凹陷仅发现有早、中三叠世的地层，且基本缺失侏罗纪、白垩纪的地层；</p>
-</li>
-<li><p>就目前研究来看，恐龙最早现身于东亚一带基本是晚三叠世以后的事情；</p>
-</li>
-<li><p>这里的恐龙指一般公众认知的，生活在中生代（三叠纪、侏罗纪、白垩纪）的恐龙。</p>
-</li>
-</ul>
-<p>3、“东濮凹陷”这一名词中，“东”指的不是方位，而是“东明”。</p>
-<p>4、濮阳县西南的黄河滩区是濮阳市的自然海拔最高点（61.8m）。</p>
-<p>5、濮阳-梁山一带为全球同纬度（35°45’N）海拔最低的非沿海地区（指距海岸线大于100km），平均海拔约为40-50m。</p>
-<p>6、马颊河、徒骇河都是始于濮阳境内不起眼的小河沟，但它们却奔涌近千里入海，且有各自独立的入海口。</p>
-<p>7、濮阳市主城区纬度（35°45′N）比欧洲大陆最南端（36°00′N，西班牙塔里法角）还低，但冬季（12月和1月份）日常<strong>低温</strong>和欧洲大陆最北端（71°08′N，挪威北角）同期值大致相当。</p>
-<p>8、接上一条，濮阳有气象纪录以来最低气温曾达到过-21℃（1993年11月21日）。</p>
-<h2 id="交通建设"><a href="#交通建设" class="headerlink" title="交通建设"></a>交通建设</h2><p>1、如今路上行驶的1路始运行于1992年，但这并非1路首次开行——1984年年初1路车首次开行，当时线路从市郊区第一招待所开行至清丰县城东北角，次年即停运。</p>
-<p>2、（截至2021.4.1）排除2019和2020年新开通线路，全市目前开行的37条常规（日间）线路中，即便考虑站名变动的因素，也没有一条公交线路的首末站与其开线初期是完全一致的；只有7路行经街道与其开线初期完全一致。</p>
-<p>3、5路是濮阳市第一条无人售票公交线路。</p>
-<p>4、25路不仅是濮阳市有史以来第一条使用双层车辆的线路，也是最后一条使用非纯电动力车辆的线路，以及最后一条使用手动变速器车型的线路，更换新车后更成为首个使用一级踏步车辆的线路。退出运营的老25路车未被报废，而是在呼和浩特市78路重新上线运营。</p>
-<p>5、（截至2021.4.1）全市公交停靠线路数量并列第一的三个站点：飞龙车站、劳动市场、长途车站，均有14条线路停靠。全市公交并列最繁忙两个运行区间：胜利路京开道口至油田总站、飞龙车站至长途车站，均有11条线路通过。</p>
-<p>6、（截至2021.4.1）39路、18路为濮阳市第一、第二长的两条公交线路，二者同属于城乡公交线路，前者仅比后者长4公里（33km、29km），票价却贵3元（5元、2元）。</p>
-<p>7、（截至2021.4.1）与毗邻七市（安阳、新乡、菏泽、济宁、泰安、聊城、邯郸）相比，只有濮阳迟迟未推出公交学生卡；河南全省除信阳外，仅濮阳无公交学生卡（华中地区48个省辖市无公交学生卡的有：濮阳、信阳、天门、吉首（湘西）、邵阳）</p>
-<p>8、（截至2021.4.1）濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非一般的公路客运班线），<strong>实现跨地市的公交联乘出行</strong>。毗邻七市间已有的跨市联乘公交线路不限于：</p>
-<ul>
-<li><p>（起）河北高邑→邢台→<strong>邯郸</strong>→河南<strong>安阳</strong>→<strong>鹤壁</strong>→淇县（止）；</p>
-</li>
-<li><p>（起）卫辉→<strong>新乡</strong>→郑州→开封/许昌（止）；</p>
-</li>
-<li><p>（起）莘县→<strong>聊城</strong>→济南→淄博→潍坊（止）；</p>
-</li>
-<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→<strong>泰安</strong>→济南→淄博→东营（止）；</p>
-</li>
-<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→枣庄→江苏徐州→安徽宿州（止）。</p>
-</li>
-</ul>
-<p>9、（截至2021.4.1）濮阳不仅是铁路、公交黑洞，还是<strong>航空黑洞</strong>。对比毗邻七市，仅濮阳境内没有任何机场设施（军用/民用，含正在施工的项目）</p>
-<p>10、（截至2021.4.1）正常情况下，在搭乘民航客机时，只可能从濮阳市区的西部向东俯望整个城区。</p>
-<p>11、濮清南范台五县建设<strong>火车站</strong>的顺序是<u>濮-清-台-范-南</u>。详情如下：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th><center>建成年份</center></th>
-<th><center>经营状态<br>（截至2021.4.1）</center></th>
-<th><center>途径线路</center></th>
-<th><center>备注</center></th>
-</tr>
-</thead>
-<tbody><tr>
-<td><center>濮阳站</center></td>
-<td><center>1965</center></td>
-<td><center>正常客货运</center></td>
-<td><center>汤台线、瓦日线</center></td>
-<td><center>1987年迁至现址重建</center></td>
-</tr>
-<tr>
-<td><center>清丰站</center></td>
-<td><center>1971</center></td>
-<td><center>关闭</center></td>
-<td><center>汤濮线清丰延伸段</center></td>
-<td><center>1985年后停止运营</center></td>
-</tr>
-<tr>
-<td><center>台前站</center></td>
-<td><center>1996</center></td>
-<td><center>正常客货运</center></td>
-<td><center>京九线、汤台线</center></td>
-<td><center>归济南铁路局管辖<br>2012年曾计划更名为“濮阳东站”<a href="#bib2" id="bib2ref"><sup>[2]</sup></a></center></td>
-</tr>
-<tr>
-<td><center>范县站</center></td>
-<td><center>1997</center></td>
-<td><center>仅货运</center></td>
-<td><center>汤台线、瓦日线</center></td>
-<td></td>
-</tr>
-<tr>
-<td><center>南乐站</center></td>
-<td><center>2023（预计）</center></td>
-<td><center>建设中</center></td>
-<td><center>郑济高速线</center></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>12、（截至2021.4.1）除开封黄河大桥外，河南境内大广高速仅有的非双向四车道路段在濮阳（豫冀界至南乐段），为双向六车道。</p>
-<p>13、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
-<p>14、郑济高铁濮阳车站除在市域范围内有四个众所周知的走向与设站选项外，在确定设站濮东后亦有三个子方案<a href="#bib3" id="bib3ref"><sup>[3]</sup></a>。</p>
-<p><img src="https://s2.loli.net/2023/01/31/TDNBad4xgbscWH5.jpg" alt="众所周知，郑济高铁在濮阳市域范围有4种走向与设站选择：濮阳北（马庄桥方案）、濮阳北（范辉高速南侧方案）、濮阳东、与濮阳站并站。此图为确定设站濮东后的3个线位子选项"></p>
-<h2 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h2><p>1、“石油化工”作为濮阳的城市性质之一，其地位在历版城市总规中被不断后移，而在最新一版（2015-2030）城市总规中已经消失。</p>
-<ul>
-<li><strong>第一版城市总规（1986-1995）</strong>定义城市性质：<u>石油、化工业为主的工业城市</u>。</li>
-<li><strong>第二版城市总规（1996-2005）</strong>定义城市性质：豫东北地区中心城市，<u>以石油、化工工业为基础的综合型城市</u>，历史文化名城。</li>
-<li><strong>第三版城市总规（2005-2020）</strong>定义城市性质：生态园林特色突出的国家级历史文化名城，豫东北地区区域中心城市，<u>以石油化工工业为主导的综合性城市</u>。</li>
-<li><strong>第四版城市总规（2015-2030）</strong>定义城市性质：豫鲁冀三省交汇处的中心城市，以绿色精细化工为导向的资源转型创新示范区，生态园林特色突出的国家级历史文化名城。</li>
-</ul>
-<p>2、中原油田的探区（不含后来在四川内蒙等地新增探区）其实包括了一个很大的范围，跨豫北、豫东、鲁西和鲁西南约4万平方公里，截止目前只是在濮阳一带（东濮凹陷）的勘探取得了突破。</p>
-<p>3、2007年8月开业的濮阳首家麦当劳，是华中地区第一家得来速店。</p>
-<p>4、按照1994年开工时的计划，现在的大联华（京开道与胜利路东南角）地块是由一栋28层百米高的招商写字楼，以及星级酒店、娱乐美食总汇、商购中心、高层住宅等配套建筑构成。</p>
-<p>5、京开大道名字中的“开”不是开封，而是“开州”，尽管其前身京开公路中的“开”确实是指“开封”。</p>
-<p>6、如今的五一公社小区东侧有一段小路叫“大港路”，这个名称最早归今天的文明路所有。</p>
-<p><img src="https://s2.loli.net/2023/01/31/wHOkNpYyPBDxVGT.jpg" alt="左图截取自第一版濮阳城市总规，右图为今天大港路所在的位置"></p>
-<p>7、市三院是濮阳市区首家市立医院，1986年落成时名为市直公费医疗门诊部。</p>
-<p>8、“濮阳市第二人民医院”原本是濮阳市安阳地区医院（坐落于安阳市区）的名称，现被濮阳市眼科医院使用。</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>1、繁体字“僕”被简化为“仆”，但“濮”却没有被比照简化。有人将“洑”作为“濮”的简写，但这个字念fu而不是pu。</p>
-<hr style="background-color: #e8e8e880;">
-
-
-<p><strong>引注</strong></p>
-<span class="is-size-6">
-
-<ol>
-    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">（第11页）</a> - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/browseVolume.jsp?p=G79001163,025">政府公報資訊網</a>.</li>
-    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://www.hnxczx.cn/news_xx.asp?msg=1021">关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省扶贫办 (2012-07-26). </li>
-    <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝. 郑州至济南铁路濮阳站位方案研究[J]. 铁道勘察, 2019, 45(2):102-107. <a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
-</ol>
-</span>
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为icarus主题添加夜间模式</title>
-    <url>/2021/02/03/icarus_night_mode/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
-<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
-<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
-<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
-<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
-<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
-<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
-<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
-<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
-<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>然后正常更新就完了。</p>
-<h2 id="页内引入的-message-消息也亮瞎眼"><a href="#页内引入的-message-消息也亮瞎眼" class="headerlink" title="页内引入的 message 消息也亮瞎眼"></a>页内引入的 message 消息也亮瞎眼</h2><p>在上一项的基础上，即在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件最后部分 <code>body.night</code> 这一行上方再插入以下代码:</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // message.is-warning</span></span><br><span class="line"><span class="addition">+   article.message.message-immersive.is-warning</span></span><br><span class="line"><span class="addition">+       background-color: dark-primary-color-hover</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+       .message-body</span></span><br><span class="line"><span class="addition">+           color: #ffdd57</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
-<p>同正常更新就完了。</p>
-<p>（PS：这里只是针对 is-warning 这个样式的。其他五种样式，包括：</p>
-<ul>
-<li>is-primary</li>
-<li>is-link</li>
-<li>is-info</li>
-<li>is-success</li>
-<li>is-danger</li>
-</ul>
-<p>只需要在此代码基础上继续添加即可。）</p>
-<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
-<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
-<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
-<hr style="background-color: #e8e8e880;">
-
-<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
-<p> （完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" 
-  title="photo by Alex Andrews"><i class="fas fa-camera"></i><span>photo by Alex Andrews</span></a>]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>icarus主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>濮阳公交线路查询与概览</title>
-    <url>/2020/07/09/puyangbus/</url>
-    <content><![CDATA[<p>测试功能：</p>
-<ul>
-<li>查询单个线路</li>
-<li>查询所有日间线路</li>
-<li>查询所有夜间线路</li>
-</ul>
-<a id="more"></a>
-
-<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
-  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
-  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-
-<hr style="background-color: #e8e8e880;">
-
-
-<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" 
-  title="photo by Will Mu"><i class="fas fa-camera"></i><span>photo by Will Mu</span></a>]]></content>
-      <categories>
-        <category>瞎鼓捣</category>
-      </categories>
-      <tags>
-        <tag>濮阳</tag>
-        <tag>公交</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>云卷云舒</title>
-    <url>/2021/01/26/timelpase_cloud/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
-<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<script>
-  $(function(){ 
-    const dp_cloud = new DPlayer({
-      container: document.getElementById('dplayer_cloud'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://fastly.jsdelivr.net/gh/lpy716/site_vid@0.1.1/200812/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-  });
-})
-</script>
-<a id="more"></a>
-
-<hr style="background-color: #e8e8e880;">
-
-
-
-<p>【清晰度】1080P/60FPS</p>
-<p>【BGM】 Receives–Keith Kenniff</p>
-<p>【拍摄时间】2020 年 8 月 12 日，17:00-19:30</p>
-<p>【拍摄设备】HUAWEI P30</p>
-<p>【拍摄地点】濮阳市黄河路开州路口西</p>
-<p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/531767/" 
-  title="photo by Pixabay"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a>]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>🎥</tag>
-        <tag>略略略</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>黎明已至</title>
-    <url>/2021/06/01/timelapse_sunrise/</url>
-    <content><![CDATA[<p>本稿件属于补档，素材录制于 2020 年 2 月 22 日。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-
-<div id="dplayer_sr" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
-<script>
-  $(function(){ 
-    const dp_sunrise = new DPlayer({
-      container: document.getElementById('dplayer_sr'),
-      autoplay:false,
-      theme:"#42b983",
-      loop:false,
-      lang:"zh-cn",
-      preload:"none",
-      volume: 0.8,
-      mutex: true,
-      video: {
-          url: 'https://fastly.jsdelivr.net/gh/lpy716/site_vid@0.1.6/210601/playlist.m3u8',
-          type: 'hls',
-          defaultQuality: 0,
-          pic: '',
-          thumbnails: '',
-      },
-  });
-})
-</script>
-
-<a id="more"></a>
-
-<hr style="background-color: #e8e8e880;">
-
-
-
-<p>【清晰度】1080P/60FPS</p>
-<p>【BGM】 Against The World–Must Save Jane!</p>
-<p>【拍摄时间】2020 年 2 月 22 日，6:48-7:08</p>
-<p>【拍摄设备】HUAWEI P30</p>
-<p>【拍摄地点】濮阳市黄河路开州路口西</p>
-<p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，萌生记录日出的想法。</p>
-<p>当时疫情已有所好转但尚未完全解封，通常喧嚣的城市此刻是如此安静。</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" 
-  title="photo by Simon Berger"><i class="fas fa-camera"></i><span>photo by Simon Berger</span></a>]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-      <tags>
-        <tag>🎥</tag>
-        <tag>略略略</tag>
-        <tag>濮阳</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus_gallery/</url>
     <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -1149,6 +726,264 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为icarus主题添加夜间模式</title>
+    <url>/2021/02/03/icarus_night_mode/</url>
+    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+<p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
+<p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+<h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
+<p>对此，自己暂时摸索出一个解决方案，就是可以把这一串代码（直接从网页开发者工具栏 <code>default.css</code> 里 copy 下来的，修改了两个地方）贴至现有 <code>\themes\icarus\source\css\imaegoo\night.styl</code> 文件的最后（前提是未对主题做其他修改，特别是 navbar 这块）：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">@media screen and (max-width: 1087px) &#123;</span><br><span class="line">    .navbar &gt; .container &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-brand .navbar-item,</span><br><span class="line">    .navbar-tabs .navbar-item &#123;</span><br><span class="line">      align-items: center;</span><br><span class="line">      display: flex;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-link::after &#123;</span><br><span class="line">      display: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu &#123;</span><br><span class="line"><span class="deletion">-     background-color: #ffffff;</span></span><br><span class="line"><span class="deletion">-     box-shadow: 0 8px 16px rgba(10,10,10,0.1);</span></span><br><span class="line"><span class="addition">+     background-color: #fff0;</span></span><br><span class="line"><span class="addition">+     box-shadow: 0 8px 16px rgba(10,10,10,0);</span></span><br><span class="line">      padding: 0.5rem 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar-menu.is-active &#123;</span><br><span class="line">      display: block;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch,</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      left: 0;</span><br><span class="line">      position: fixed;</span><br><span class="line">      right: 0;</span><br><span class="line">      z-index: 30;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch &#123;</span><br><span class="line">      bottom: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-bottom-touch.has-shadow &#123;</span><br><span class="line">      box-shadow: 0 -2px 3px rgba(10,10,10,0.1);</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top-touch &#123;</span><br><span class="line">      top: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    .navbar.is-fixed-top .navbar-menu,</span><br><span class="line">    .navbar.is-fixed-top-touch .navbar-menu &#123;</span><br><span class="line">      -webkit-overflow-scrolling: touch;</span><br><span class="line">      max-height: calc(100vh - 3.25rem);</span><br><span class="line">      overflow: auto;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-top-touch,</span><br><span class="line">    body.has-navbar-fixed-top-touch &#123;</span><br><span class="line">      padding-top: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">    html.has-navbar-fixed-bottom-touch,</span><br><span class="line">    body.has-navbar-fixed-bottom-touch &#123;</span><br><span class="line">      padding-bottom: 3.25rem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>修改的两个地方在原第 14 行那里 <code>background-color: #fff0;</code> 和 15 行那里 <code>box-shadow: 0 8px 16px rgba(10,10,10,0);</code>，这样使得当窄屏模式（即宽度小于 1087px）下，导航菜单的背景为透明，且其四周也不设阴影。</p>
+<p>这波操作的灵感是来自<a href="https://github.com/ppoffice/hexo-theme-icarus/issues/710">这个issue</a>。尚未发现这么做有啥漏洞，hhh。</p>
+<h2 id="滚动条样式美化"><a href="#滚动条样式美化" class="headerlink" title="滚动条样式美化"></a>滚动条样式美化</h2><p>夜晚模式下，凡涉及到需要滚动的部分，那个丑陋的灰白色侧边长条方块让人看起来很不爽。后来发现<a href="https://github.com/ppoffice/hexo-theme-icarus/pull/767">已有大佬解决了这一问题</a>：只需将这些代码插入到 <code>\themes\icarus\include\style\base.styl</code> 文件中 <code>+desktop()</code> 一行的上方即可。</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">8px</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">8px</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-track</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.06</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">3px</span></span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.12</span>)</span><br><span class="line">    <span class="attribute">box-shadow</span>: inset <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Modify the style of the scroll bar only for -webkit browsers</span></span><br><span class="line">::-webkit-scrollbar-thumb:hover</span><br><span class="line">    <span class="attribute">background</span>: rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.24</span>)</span><br></pre></td></tr></table></figure>
+<p>不过该大佬说，此修改只支持 Chrome 系（即 webkit）浏览器，Firefox 不支持。IE 什么的就更不用说了，hhh。</p>
+<h2 id="捐赠二维码被部分遮挡"><a href="#捐赠二维码被部分遮挡" class="headerlink" title="捐赠二维码被部分遮挡"></a>捐赠二维码被部分遮挡</h2><p>捐赠板块的微信二维码此前因为太大了，夜晚模式下直接被 licensing 那个模块给遮挡了一部分。对此一开始我想尝试调整 <code>\themes\icarus\include\style</code> 文件中 <code>.qrcode</code> 里面的 <code>z-index</code> 到一个很大的值，但不知道为啥不管用。后来干脆就把 <code>.qrcode</code> 的 <code>max-width</code> 缩小，即把同一文件开头那里 <code>$donate-qrcode-max-width ?= 280px</code> 改为 <code>$donate-qrcode-max-width ?= 120px</code>，那个二维码图片直接就够不着 licensing 板块了，problem solved。</p>
+<h2 id="页内标签栏-Tabs-亮瞎眼"><a href="#页内标签栏-Tabs-亮瞎眼" class="headerlink" title="页内标签栏 Tabs 亮瞎眼"></a>页内标签栏 Tabs 亮瞎眼</h2><p>Emmm，这个问题其实和第一个问题的形式大致是一样的，但解决起来要简单很多。只需要在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件 最后部分<code>body.night</code> 这一行上方插入以下代码（需缩进一大格，即表明为<code> night</code> 大样式下的子样式）:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // tab</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed li.is-active a</span></span><br><span class="line"><span class="addition">+       background-color: #262a39</span></span><br><span class="line"><span class="addition">+       border-color: #dbdbdb</span></span><br><span class="line"><span class="addition">+       border-bottom-color: transparent !important</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs.is-boxed a:hover</span></span><br><span class="line"><span class="addition">+       background-color: #434a56</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+   .tabs li.is-active a</span></span><br><span class="line"><span class="addition">+       color: #dbdbdb</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>然后正常更新就完了。</p>
+<h2 id="页内引入的-message-消息也亮瞎眼"><a href="#页内引入的-message-消息也亮瞎眼" class="headerlink" title="页内引入的 message 消息也亮瞎眼"></a>页内引入的 message 消息也亮瞎眼</h2><p>在上一项的基础上，即在 <code>\themes\icarus\source\js\imaegoo\night.styl</code> 文件最后部分 <code>body.night</code> 这一行上方再插入以下代码:</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+   // message.is-warning</span></span><br><span class="line"><span class="addition">+   article.message.message-immersive.is-warning</span></span><br><span class="line"><span class="addition">+       background-color: dark-primary-color-hover</span></span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+       .message-body</span></span><br><span class="line"><span class="addition">+           color: #ffdd57</span></span><br><span class="line"></span><br><span class="line">body.night</span><br><span class="line">    night()</span><br></pre></td></tr></table></figure>
+<p>同正常更新就完了。</p>
+<p>（PS：这里只是针对 is-warning 这个样式的。其他五种样式，包括：</p>
+<ul>
+<li>is-primary</li>
+<li>is-link</li>
+<li>is-info</li>
+<li>is-success</li>
+<li>is-danger</li>
+</ul>
+<p>只需要在此代码基础上继续添加即可。）</p>
+<h2 id="首次站内超链跳转后一切重新加载（待解决）"><a href="#首次站内超链跳转后一切重新加载（待解决）" class="headerlink" title="首次站内超链跳转后一切重新加载（待解决）"></a>首次站内超链跳转后一切重新加载（待解决）</h2><p>该问题表现为：在夜间模式下，首次点击指向站内其它页的超链（在文中单独列出的），则新跳转的页面会变成默认的日间模式而不是延续夜间模式。</p>
+<p>该问题还表现为：即便是在使用 cookie 的情况下，不只是夜间模式被重置，新跳转的页面会将一切页内元素重新加载而不读取已有缓存，甚至包括站点 icon 等初次访问本站即被加载过的固定元素。</p>
+<p>不过在此之后，点击任何超链，该问题都不会再次出现。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
+<p> （完）</p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" 
+  title="photo by Alex Andrews"><i class="fas fa-camera"></i><span>photo by Alex Andrews</span></a>]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新版本icarus主题下实现文章首页置顶</title>
+    <url>/2020/11/20/icarus_top/</url>
+    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
+<p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
+<p>2、打开个人站点在本地根目录下的 <code>node_modules\hexo-generator-index\lib\generator.js</code> 文件，将其修改为：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&#x27;use strict&#x27;;</span><br><span class="line"></span><br><span class="line">var pagination = require(&#x27;hexo-pagination&#x27;);</span><br><span class="line"></span><br><span class="line">module.exports = function(locals) &#123;</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts.sort(config.index_generator.order_by);</span><br><span class="line"><span class="addition">+</span></span><br><span class="line"><span class="addition">+ posts.data = posts.data.sort(function(a, b) &#123;</span></span><br><span class="line"><span class="addition">+     if(a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         if(a.top == b.top) return b.date - a.date;</span></span><br><span class="line"><span class="addition">+         else return b.top - a.top;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(a.top &amp;&amp; !b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return -1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="addition">+         return 1;</span></span><br><span class="line"><span class="addition">+     &#125;</span></span><br><span class="line"><span class="addition">+     else return b.date - a.date;</span></span><br><span class="line"><span class="addition">+ &#125;);</span></span><br><span class="line"></span><br><span class="line">  var paginationDir = config.pagination_dir || &#x27;page&#x27;;</span><br><span class="line">  var path = config.index_generator.path || &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">  return pagination(path, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#x27;index&#x27;, &#x27;archive&#x27;],</span><br><span class="line">    format: paginationDir + &#x27;/%d/&#x27;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>3、打开同一根目录下的 <code>themes\icarus\layout\common\article.jsx</code> 文件，进行如下修改：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&lt;article class=&#123;`card-content article$&#123;&#x27;direction&#x27; in page ? &#x27; &#x27; + page.direction : &#x27;&#x27;&#125;`&#125; role=&quot;article&quot;&gt;</span><br><span class="line">    &#123;page.layout !== &#x27;page&#x27; ? &lt;div class=&quot;article-meta is-size-7 is-uppercase level is-mobile&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;level-left&quot;&gt;</span><br><span class="line"><span class="addition">+           &#123;/* Top */&#125;</span></span><br><span class="line"><span class="addition">+           &#123;page.top ? &lt;span class=&quot;level-item tag is-danger&quot; style=&quot;background-color: #3273dc;&quot;&gt;</span></span><br><span class="line"><span class="addition">+               &#123;&#x27;TOP&#x27;&#125; </span></span><br><span class="line"><span class="addition">+           &lt;/span&gt; : null&#125;</span></span><br><span class="line">            &#123;/* Creation Date */&#125;</span><br><span class="line">            &#123;page.date &amp;&amp; &lt;span class=&quot;level-item&quot; dangerouslySetInnerHTML=&#123;&#123;</span><br><span class="line">                __html: _p(&#x27;article.created_at&#x27;, `&lt;time dateTime=&quot;$&#123;date_xml(page.date)&#125;&quot; title=&quot;$&#123;new Date(page.date).toLocaleString()&#125;&quot;&gt;$&#123;date(page.date)&#125;&lt;/time&gt;`)</span><br><span class="line">            &#125;&#125;&gt;&lt;/span&gt;&#125;</span><br></pre></td></tr></table></figure>
+<p>4、将以上修改按照 hexo 正常更新操作进行更新即可。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
+<p>（完）</p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" 
+  title="photo by Aleksandar Pasaric"><i class="fas fa-camera"></i><span>photo by Aleksandar Pasaric</span></a>]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>icarus主题下实现视频播放</title>
+    <url>/2021/01/26/icarus_video/</url>
+    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+<ul>
+<li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
+<li>在 Github 上存储视频切片文件</li>
+<li>借助免费 CDN（jsDelivr）加速 Github 文件</li>
+<li>引入 DPlayer 视频播放插件</li>
+</ul>
+<p>而实现的视频播放功能。</p>
+<p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。当然这其实和用哪个主题无关，只要是基于 hexo 搭建的网站都适用。具体实现过程可分为四个环节：</p>
+<h2 id="视频切片"><a href="#视频切片" class="headerlink" title="视频切片"></a>视频切片</h2><p>1、先下载切片工具 <a href="https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z">ffmpeg</a>（适用于 Windows）。</p>
+<p>2、将下载好的压缩包中 <code>bin</code> 目录下的 <code>ffmpeg.exe</code> 文件拖到和待切片视频文件同一个目录下。</p>
+<div class="note blue info modern"><p>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。</p>
+</div>
+
+<p>3、将原视频文件进行切片。先在当前目录下 <code>git bash</code> 后执行以下命令，其中开头的 <code>ffmpeg.exe</code> 文件前需带上其当前所处的文件夹位置：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -y -i xxx.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb xxx.ts</span><br></pre></td></tr></table></figure>
+<p>得到新的 <code>.ts</code> 文件后，再将执行命令，其中 <code>segment_time 5</code> 是指切割的每个片段的时长为五秒：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ /e/GitHub/site_vid/200812/ffmpeg.exe -i xxx.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 xxx%03d.ts</span><br></pre></td></tr></table></figure>
+<p>即得到切好的数个 <code>.ts</code> 小文件以及一个 <code>.m3u8</code> 文件。</p>
+<p>4、将当前目录下除切片得到的的数个 <code>.ts</code> 小文件和 <code>.m3u8</code> 文件外其他文件都删除。</p>
+<h2 id="上传至-Github"><a href="#上传至-Github" class="headerlink" title="上传至 Github"></a>上传至 Github</h2><p>将处理好的视频文件上传至自己指定 Github 仓库的新建文件夹中。</p>
+<h2 id="几个与-DPlayer-解析有关的文件"><a href="#几个与-DPlayer-解析有关的文件" class="headerlink" title="几个与 DPlayer 解析有关的文件"></a>几个与 DPlayer 解析有关的文件</h2><p>可以将  <code>hls.js</code>、<code>jquery-3.5.min.js</code>、<code>DP.js</code>、<code>DP.css</code> 等几个文件上传至自己的 Github 仓库内以方便调用，其地址可以与此前上传文件的仓库保持一致。在我的仓库中，这几个文件挂载 CDN 后的地址为：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;jquery-3.5.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;hls.min.js</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.css</span><br><span class="line">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;lpy716&#x2F;site_vid@0.1&#x2F;DP.js</span><br></pre></td></tr></table></figure>
+<h2 id="在文档中插入-DPlayer"><a href="#在文档中插入-DPlayer" class="headerlink" title="在文档中插入 DPlayer"></a>在文档中插入 DPlayer</h2><p>将下述 html 代码插入自己的 Markdown 文档中：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;dplayer&quot;</span> <span class="attr">class</span>=<span class="string">&quot;dplayer-video dplayer dplayer-no-danmaku dplayer-paused&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span></span><br><span class="line"><span class="javascript">    <span class="keyword">const</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span></span><br><span class="line"><span class="javascript">      container: <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dplayer&#x27;</span>),</span></span><br><span class="line"><span class="javascript">      autoplay:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      theme:<span class="string">&quot;#42b983&quot;</span>,</span></span><br><span class="line"><span class="javascript">      loop:<span class="literal">false</span>,</span></span><br><span class="line"><span class="javascript">      lang:<span class="string">&quot;zh-cn&quot;</span>,</span></span><br><span class="line"><span class="javascript">      preload:<span class="string">&quot;auto&quot;</span>,</span></span><br><span class="line">      volume: 0.8,</span><br><span class="line"><span class="javascript">      mutex: <span class="literal">true</span>,</span></span><br><span class="line">      video: &#123;</span><br><span class="line"><span class="javascript">          url: <span class="string">&#x27;输入挂载了CDN的.m3u8文件地址&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          type: <span class="string">&#x27;hls&#x27;</span>,</span></span><br><span class="line">          defaultQuality: 0,</span><br><span class="line"><span class="javascript">          pic: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line"><span class="javascript">          thumbnails: <span class="string">&#x27;&#x27;</span>,</span></span><br><span class="line">      &#125;,</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>将文档按照正常 hexo 更新操作，保存并上传即可。</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>本文的<a href="https://www.pyli.tk/2021/01/26/timelpase_cloud/">后一篇</a>就是，hhh。</p>
+<p>至于以上操作的原理，以下参考写的比较详细（虽然俺也没搞明白……）。</p>
+<hr style="background-color: #e8e8e880;">
+
+<p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
+<p>（完）</p>
+<a class="btn-beautify block black normal" href="https://peapix.com/bing/33653" 
+  title="photo by Tim Jones/Alam"><i class="fas fa-camera"></i><span>photo by Tim Jones/Alam</span></a>]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>icarus主题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳公交线路查询与概览</title>
+    <url>/2020/07/09/puyangbus/</url>
+    <content><![CDATA[<p>测试功能：</p>
+<ul>
+<li>查询单个线路</li>
+<li>查询所有日间线路</li>
+<li>查询所有夜间线路</li>
+</ul>
+<a id="more"></a>
+
+<p class="codepen" data-height="420" data-theme-id="dark" data-default-tab="result" data-user="lpy716" data-slug-hash="RwrqwpG" style="height: 420px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="RwrqwpG">
+  <span>See the Pen <a href="https://codepen.io/lpy716/pen/RwrqwpG">
+  RwrqwpG</a> by lpy (<a href="https://codepen.io/lpy716">@lpy716</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<hr style="background-color: #e8e8e880;">
+
+
+<p><img src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" 
+  title="photo by Will Mu"><i class="fas fa-camera"></i><span>photo by Will Mu</span></a>]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
+        <tag>公交</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>黎明已至</title>
+    <url>/2021/06/01/timelapse_sunrise/</url>
+    <content><![CDATA[<p>本稿件属于补档，素材录制于 2020 年 2 月 22 日。</p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer_sr" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp_sunrise = new DPlayer({
+      container: document.getElementById('dplayer_sr'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://fastly.jsdelivr.net/gh/lpy716/site_vid@0.1.6/210601/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+
+<a id="more"></a>
+
+<hr style="background-color: #e8e8e880;">
+
+
+
+<p>【清晰度】1080P/60FPS</p>
+<p>【BGM】 Against The World–Must Save Jane!</p>
+<p>【拍摄时间】2020 年 2 月 22 日，6:48-7:08</p>
+<p>【拍摄设备】HUAWEI P30</p>
+<p>【拍摄地点】濮阳市黄河路开州路口西</p>
+<p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，萌生记录日出的想法。</p>
+<p>当时疫情已有所好转但尚未完全解封，通常喧嚣的城市此刻是如此安静。</p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" 
+  title="photo by Simon Berger"><i class="fas fa-camera"></i><span>photo by Simon Berger</span></a>]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>略略略</tag>
+        <tag>濮阳</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云卷云舒</title>
+    <url>/2021/01/26/timelpase_cloud/</url>
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://fastly.jsdelivr.net/gh/lpy716/site_vid@0.1.1/200812/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+<a id="more"></a>
+
+<hr style="background-color: #e8e8e880;">
+
+
+
+<p>【清晰度】1080P/60FPS</p>
+<p>【BGM】 Receives–Keith Kenniff</p>
+<p>【拍摄时间】2020 年 8 月 12 日，17:00-19:30</p>
+<p>【拍摄设备】HUAWEI P30</p>
+<p>【拍摄地点】濮阳市黄河路开州路口西</p>
+<p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
+<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/531767/" 
+  title="photo by Pixabay"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a>]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>略略略</tag>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
@@ -2168,6 +2003,171 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>夏令营日报</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>濮阳冷知识</title>
+    <url>/2020/12/14/puyang_trivia/</url>
+    <content><![CDATA[<p>本文为自己日常观察、查阅资料之笔记汇总，将不定期更新。内容仅代表个人观点。</p>
+<h2 id="历史地理"><a href="#历史地理" class="headerlink" title="历史地理"></a>历史地理</h2><p>1、濮阳一带地势平坦，却留下了不少带“丘”的地名，据不完全统计有：<strong>帝丘</strong>/<strong>商丘</strong>、<strong>铁丘</strong>、<strong>顿丘</strong>、<strong>廪丘</strong>（在今范县）、<strong>桃丘</strong>（在今台前吴坝）、<strong>瑕丘</strong>（在今五星乡）、<strong>清丘</strong>（在今习城乡）、<strong>延丘</strong>（在今八公桥镇）、<strong>襄丘</strong>（在今渠村乡）、<strong>竹丘</strong>（在今八公桥镇）、<strong>白丘</strong>（在今八公桥镇）、<strong>展丘</strong>（在今八公桥镇）、<strong>黄丘</strong>（在今庆祖镇）、<strong>安丘</strong>（在今郎中乡）、<strong>姚丘</strong>（今濮城一带)、<strong>旄丘</strong>（念máo，大致在今濮阳县西南），等等。这些地名基本产生于先秦时期，现代人分析其形成原因，包括：</p>
+<ul>
+<li><p>战国以前，黄河下游河道尚未固定，河水漫流挟带泥沙四处堆积令地面不如今天这般平坦。古人见地势突起之处，皆命名X丘；</p>
+</li>
+<li><p>“丘”为废墟、坟墓之意，X丘是后人对先人群聚生活遗址的称呼；</p>
+</li>
+<li><p>参照西周时期《周礼·地官·小司徒》所载：“乃经土地而井牧其田野，九夫为井，四井为邑，<strong>四邑为丘，四丘为甸</strong>，四甸为县，四县为都，以任地事而令贡赋，凡税敛之事”，“丘”在一定历史时期的行政体制下是作为通名而存在，X丘更类似今天的单字地名。时过境迁，如今人们已将“丘”视作专名的一部分（其他相似情形举例：<strong>辉县</strong>市、<strong>沙县</strong>区、<strong>岳村</strong>镇）。</p>
+</li>
+</ul>
+<p>2、“治亭”是濮阳历史上使用时间最短、最没有传承的地名，仅通行于新莽时期。</p>
+<p>3、濮阳曾经也是个跨黄河发展的城市：公元918年，后唐庄宗李存勖击败后梁军，乘胜拔澶水，命李存审在德胜渡夹河筑德胜南北二城， 称夹寨，屯兵据守。此后，德胜寨成为晋梁争夺的焦点，至北宋亦成为澶渊郡治所，见证了宋辽之争、澶渊之盟。如今的濮阳县城由原来的德胜北城发展而来，隔黄河（大致对应今天的金堤河）而建的南城则在1077年圮于黄水。</p>
+<p>4、明清民初，直隶、四川、贵州皆有“开州/开县”，该名称被今天的<strong>重庆市开州区</strong>独占。之所以多地同名，或与当时政权分裂对峙或区域高度自治有一定关系——<strong>濮阳</strong>得名“开州”时正值金人统治；<strong>贵州开阳</strong>得名“开州”时属明朝贵州宣慰司（水西土司）管辖，非中央统筹之地；今重庆的“开州”始名于南北朝，自隋起沿用且一直处在“正统”政权的直接统治下；民初北洋政府清整全国县级重复地名后，这一现象依“<strong>相沿较古</strong>”（“开州”之名被川渝开州继承）、“<strong>仍还故称</strong>”（直隶开州被还旧称濮阳）、“<strong>协调变通</strong>”（今贵州开阳之名的由来）等原则而得到更正。</p>
+<p>5、1936年，国民政府曾计划当时的河南省将武安、涉县划给河北，河北省把濮阳、长垣、东明交换给河南<a href="#bib1" id="bib1ref"><sup>[1]</sup></a>。该计划最终未被落实，否则濮阳（县）将早16年（即1952年平原省撤销事件）投入河南的怀抱。</p>
+<p>6、不该被遗忘的另一个“四·一二”惨痛记忆：1941年4月12-20日，日伪军万余人在今濮清内滑一带发动三光扫荡，<strong>四千余同胞</strong>惨遭屠杀。</p>
+<p>7、1945年10月至1946年11月，冀鲁豫行署置濮阳县城关区为行署直辖市。此为“濮阳市”初次登上历史舞台。</p>
+<p>8、尽管1952年后，今天的地级濮阳市才陆续并入自明清沿袭而来的河南省版图，为现豫北六市里最晚，却是豫北六市里唯一通行“河南话”（指中原官话）的地方。</p>
+<h2 id="当代区划"><a href="#当代区划" class="headerlink" title="当代区划"></a>当代区划</h2><p>1、豫鲁两省在濮阳南侧并不是严格按照黄河划界的：濮范台三县均在黄河以南有村庄，而黄河以北也有山东的村庄。</p>
+<p>2、按照<a href="http://zyghj.puyang.gov.cn/sitesources/pyblr/page_pc/xqdt/articlee1fec6ea0a51472fbe883adfd18d4979.html">官方地图</a>及严格定义，范县的老县城并非范县的飞地而是属于突出部，因为连通新老城区的240国道及沿线归范县管辖。范县辖区里正经的飞地是位于黄河南岸的辛庄镇苏庄村，同样被山东地界“包围”。</p>
+<p><img src="https://s2.loli.net/2023/01/31/ABlpG9Jxw6IqULm.jpg" alt="注：苏庄在右图的最下边"></p>
+<p>3、接上一条，苏庄由濮阳县、范县和山东省的鄄城县三县共管，为“两省三县一个村”之奇观。</p>
+<p>4、东明县划入山东和范县划入河南并不是同时发生的，二者间隔了一年时间；在划入山东前，东明县是归开封专区管辖的。</p>
+<p>5、濮阳市辖区距郑州市辖区最近点超过80km，而距济南市辖区最近点不足15km。</p>
+<p>6、濮阳市的地理中心（此处算法为所有边界点坐标之和的平均）位于清丰县六塔乡主堡寨村东（115.278042, 35.806919）。</p>
+<p><img src="https://s2.loli.net/2023/01/31/cnjeOvPDiq3EpN2.jpg" alt="注：该结果由ArcMap自带工具计算生成"></p>
+<p>7、莘县差点就和濮清南范台五县全部接壤（与台前差不到两公里即接壤）。</p>
+<p>8、与濮阳到郑州、开封、德州、济南一样，濮阳和商丘、枣庄、临沂、<strong>淄博</strong>、<strong>徐州</strong>、<strong>宿州</strong>、<strong>晋中</strong>之间实际也分别<strong>只间隔了一个市</strong>（主要是菏泽、泰安、济宁、邯郸的功劳，感谢台前hhh）。</p>
+<p>9、（截至2021.4.1）濮阳的三个<a href="http://www.puyang.gov.cn/pygk/pygk_list.asp?class=576">国际友好城市</a>——新西兰阿什伯顿市、吉尔吉斯斯坦楚河地区、巴基斯坦瓜达尔市——的<strong>人口</strong>分别和濮阳市区人民路街道、长庆路街道、濮上路街道相当（据维基百科数据，新西兰阿什伯顿人口35k，吉尔吉斯斯坦楚河地区47k，巴基斯坦瓜达尔90k+）（注：关于吉尔吉斯楚河地区，濮阳市政府网站的介绍与维基百科资料有较大出入，116k的人口或指今楚河地区+托克马克市的总人口）</p>
+<p>10、两个与濮阳主城区纬度（35°45’N）相同的国家首都：东京、德黑兰。</p>
+<p>11、【对外界广泛错误认知的澄清】今天的濮阳市是从安阳（Anyang）分离出来的（❎）今天的濮阳市继承了大安阳（Greater Anyang）的衣钵（✅）——今天的安阳市是1983年以前原安阳市（Anyang municipality，仅指城四区。这里municipality用其本意，请勿套用其中文通名翻译）的延续拓展，今天的濮阳市则是1983年以前原安阳地区（Anyang prefecture）的转世重生。</p>
+<h2 id="自然地理"><a href="#自然地理" class="headerlink" title="自然地理"></a>自然地理</h2><p>1、中原油田在濮阳一带开采的油气田与三四千万年前这里的一个盐湖有很大关系。该盐湖为后来的油气生成和储集提供了有利条件。</p>
+<p>2、接上一条，从濮阳一带开采出的油气和恐龙没啥关系。 原因：</p>
+<ul>
+<li><p>东濮凹陷仅发现有早、中三叠世的地层，且基本缺失侏罗纪、白垩纪的地层；</p>
+</li>
+<li><p>就目前研究来看，恐龙最早现身于东亚一带基本是晚三叠世以后的事情；</p>
+</li>
+<li><p>这里的恐龙指一般公众认知的，生活在中生代（三叠纪、侏罗纪、白垩纪）的恐龙。</p>
+</li>
+</ul>
+<p>3、“东濮凹陷”这一名词中，“东”指的不是方位，而是“东明”。</p>
+<p>4、濮阳县西南的黄河滩区是濮阳市的自然海拔最高点（61.8m）。</p>
+<p>5、濮阳-梁山一带为全球同纬度（35°45’N）海拔最低的非沿海地区（指距海岸线大于100km），平均海拔约为40-50m。</p>
+<p>6、马颊河、徒骇河都是始于濮阳境内不起眼的小河沟，但它们却奔涌近千里入海，且有各自独立的入海口。</p>
+<p>7、濮阳市主城区纬度（35°45′N）比欧洲大陆最南端（36°00′N，西班牙塔里法角）还低，但冬季（12月和1月份）日常<strong>低温</strong>和欧洲大陆最北端（71°08′N，挪威北角）同期值大致相当。</p>
+<p>8、接上一条，濮阳有气象纪录以来最低气温曾达到过-21℃（1993年11月21日）。</p>
+<h2 id="交通建设"><a href="#交通建设" class="headerlink" title="交通建设"></a>交通建设</h2><p>1、如今路上行驶的1路始运行于1992年，但这并非1路首次开行——1984年年初1路车首次开行，当时线路从市郊区第一招待所开行至清丰县城东北角，次年即停运。</p>
+<p>2、（截至2021.4.1）排除2019和2020年新开通线路，全市目前开行的37条常规（日间）线路中，即便考虑站名变动的因素，也没有一条公交线路的首末站与其开线初期是完全一致的；只有7路行经街道与其开线初期完全一致。</p>
+<p>3、5路是濮阳市第一条无人售票公交线路。</p>
+<p>4、25路不仅是濮阳市有史以来第一条使用双层车辆的线路，也是最后一条使用非纯电动力车辆的线路，以及最后一条使用手动变速器车型的线路，更换新车后更成为首个使用一级踏步车辆的线路。退出运营的老25路车未被报废，而是在呼和浩特市78路重新上线运营。</p>
+<p>5、（截至2021.4.1）全市公交停靠线路数量并列第一的三个站点：飞龙车站、劳动市场、长途车站，均有14条线路停靠。全市公交并列最繁忙两个运行区间：胜利路京开道口至油田总站、飞龙车站至长途车站，均有11条线路通过。</p>
+<p>6、（截至2021.4.1）39路、18路为濮阳市第一、第二长的两条公交线路，二者同属于城乡公交线路，前者仅比后者长4公里（33km、29km），票价却贵3元（5元、2元）。</p>
+<p>7、（截至2021.4.1）与毗邻七市（安阳、新乡、菏泽、济宁、泰安、聊城、邯郸）相比，只有濮阳迟迟未推出公交学生卡；河南全省除信阳外，仅濮阳无公交学生卡（华中地区48个省辖市无公交学生卡的有：濮阳、信阳、天门、吉首（湘西）、邵阳）</p>
+<p>8、（截至2021.4.1）濮阳不仅是<strong>铁路黑洞</strong>，也是<strong>公交黑洞</strong>。毗邻七市均开行有城际公交（非一般的公路客运班线），<strong>实现跨地市的公交联乘出行</strong>。毗邻七市间已有的跨市联乘公交线路不限于：</p>
+<ul>
+<li><p>（起）河北高邑→邢台→<strong>邯郸</strong>→河南<strong>安阳</strong>→<strong>鹤壁</strong>→淇县（止）；</p>
+</li>
+<li><p>（起）卫辉→<strong>新乡</strong>→郑州→开封/许昌（止）；</p>
+</li>
+<li><p>（起）莘县→<strong>聊城</strong>→济南→淄博→潍坊（止）；</p>
+</li>
+<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→<strong>泰安</strong>→济南→淄博→东营（止）；</p>
+</li>
+<li><p>（起）东明→<strong>菏泽</strong>→<strong>济宁</strong>→枣庄→江苏徐州→安徽宿州（止）。</p>
+</li>
+</ul>
+<p>9、（截至2021.4.1）濮阳不仅是铁路、公交黑洞，还是<strong>航空黑洞</strong>。对比毗邻七市，仅濮阳境内没有任何机场设施（军用/民用，含正在施工的项目）</p>
+<p>10、（截至2021.4.1）正常情况下，在搭乘民航客机时，只可能从濮阳市区的西部向东俯望整个城区。</p>
+<p>11、濮清南范台五县建设<strong>火车站</strong>的顺序是<u>濮-清-台-范-南</u>。详情如下：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><center>建成年份</center></th>
+<th><center>经营状态<br>（截至2021.4.1）</center></th>
+<th><center>途径线路</center></th>
+<th><center>备注</center></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><center>濮阳站</center></td>
+<td><center>1965</center></td>
+<td><center>正常客货运</center></td>
+<td><center>汤台线、瓦日线</center></td>
+<td><center>1987年迁至现址重建</center></td>
+</tr>
+<tr>
+<td><center>清丰站</center></td>
+<td><center>1971</center></td>
+<td><center>关闭</center></td>
+<td><center>汤濮线清丰延伸段</center></td>
+<td><center>1985年后停止运营</center></td>
+</tr>
+<tr>
+<td><center>台前站</center></td>
+<td><center>1996</center></td>
+<td><center>正常客货运</center></td>
+<td><center>京九线、汤台线</center></td>
+<td><center>归济南铁路局管辖<br>2012年曾计划更名为“濮阳东站”<a href="#bib2" id="bib2ref"><sup>[2]</sup></a></center></td>
+</tr>
+<tr>
+<td><center>范县站</center></td>
+<td><center>1997</center></td>
+<td><center>仅货运</center></td>
+<td><center>汤台线、瓦日线</center></td>
+<td></td>
+</tr>
+<tr>
+<td><center>南乐站</center></td>
+<td><center>2023（预计）</center></td>
+<td><center>建设中</center></td>
+<td><center>郑济高速线</center></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>12、（截至2021.4.1）除开封黄河大桥外，河南境内大广高速仅有的非双向四车道路段在濮阳（豫冀界至南乐段），为双向六车道。</p>
+<p>13、濮聊高速是一条与濮鹤高速同期计划建设的线路，为濮阳市最早规划两个高速公路项目之一，然而在二十多年后的今天仍不见其踪影。【更新：2021年2月3日，濮阳至聊城（豫鲁界）高速公路发布勘察设计招标公告，该项目即濮阳-阳新高速项目的北延段。这意味着自濮聊两市1998年在郑州签订项目协议书后，时隔23年，濮聊高速又一次出现在公众视野】</p>
+<p>14、郑济高铁濮阳车站除在市域范围内有四个众所周知的走向与设站选项外，在确定设站濮东后亦有三个子方案<a href="#bib3" id="bib3ref"><sup>[3]</sup></a>。</p>
+<p><img src="https://s2.loli.net/2023/01/31/TDNBad4xgbscWH5.jpg" alt="众所周知，郑济高铁在濮阳市域范围有4种走向与设站选择：濮阳北（马庄桥方案）、濮阳北（范辉高速南侧方案）、濮阳东、与濮阳站并站。此图为确定设站濮东后的3个线位子选项"></p>
+<h2 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h2><p>1、“石油化工”作为濮阳的城市性质之一，其地位在历版城市总规中被不断后移，而在最新一版（2015-2030）城市总规中已经消失。</p>
+<ul>
+<li><strong>第一版城市总规（1986-1995）</strong>定义城市性质：<u>石油、化工业为主的工业城市</u>。</li>
+<li><strong>第二版城市总规（1996-2005）</strong>定义城市性质：豫东北地区中心城市，<u>以石油、化工工业为基础的综合型城市</u>，历史文化名城。</li>
+<li><strong>第三版城市总规（2005-2020）</strong>定义城市性质：生态园林特色突出的国家级历史文化名城，豫东北地区区域中心城市，<u>以石油化工工业为主导的综合性城市</u>。</li>
+<li><strong>第四版城市总规（2015-2030）</strong>定义城市性质：豫鲁冀三省交汇处的中心城市，以绿色精细化工为导向的资源转型创新示范区，生态园林特色突出的国家级历史文化名城。</li>
+</ul>
+<p>2、中原油田的探区（不含后来在四川内蒙等地新增探区）其实包括了一个很大的范围，跨豫北、豫东、鲁西和鲁西南约4万平方公里，截止目前只是在濮阳一带（东濮凹陷）的勘探取得了突破。</p>
+<p>3、2007年8月开业的濮阳首家麦当劳，是华中地区第一家得来速店。</p>
+<p>4、按照1994年开工时的计划，现在的大联华（京开道与胜利路东南角）地块是由一栋28层百米高的招商写字楼，以及星级酒店、娱乐美食总汇、商购中心、高层住宅等配套建筑构成。</p>
+<p>5、京开大道名字中的“开”不是开封，而是“开州”，尽管其前身京开公路中的“开”确实是指“开封”。</p>
+<p>6、如今的五一公社小区东侧有一段小路叫“大港路”，这个名称最早归今天的文明路所有。</p>
+<p><img src="https://s2.loli.net/2023/01/31/wHOkNpYyPBDxVGT.jpg" alt="左图截取自第一版濮阳城市总规，右图为今天大港路所在的位置"></p>
+<p>7、市三院是濮阳市区首家市立医院，1986年落成时名为市直公费医疗门诊部。</p>
+<p>8、“濮阳市第二人民医院”原本是濮阳市安阳地区医院（坐落于安阳市区）的名称，现被濮阳市眼科医院使用。</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>1、繁体字“僕”被简化为“仆”，但“濮”却没有被比照简化。有人将“洑”作为“濮”的简写，但这个字念fu而不是pu。</p>
+<hr style="background-color: #e8e8e880;">
+
+
+<p><strong>引注</strong></p>
+<span class="is-size-6">
+
+<ol>
+    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">（第11页）</a> - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/browseVolume.jsp?p=G79001163,025">政府公報資訊網</a>.</li>
+    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://www.hnxczx.cn/news_xx.asp?msg=1021">关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省扶贫办 (2012-07-26). </li>
+    <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝. 郑州至济南铁路濮阳站位方案研究[J]. 铁道勘察, 2019, 45(2):102-107. <a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
+</ol>
+</span>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>]]></content>
+      <categories>
+        <category>瞎鼓捣</category>
+      </categories>
+      <tags>
+        <tag>濮阳</tag>
       </tags>
   </entry>
   <entry>
