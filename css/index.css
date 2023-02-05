@@ -4281,6 +4281,7 @@ span.mathjax-overflow {
   background-color: var(--btn-beautify-color, #777);
   color: #fff;
   line-height: 2;
+  border-radius: 6px;
 }
 #article-container .btn-beautify.blue {
   --btn-beautify-color: #428bca;
