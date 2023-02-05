@@ -411,7 +411,7 @@
       </tags>
   </entry>
   <entry>
-    <title>2021年第一场雪，有  点  大</title>
+    <title>2021年的第一场雪，有  点  大</title>
     <url>/2021/02/24/20210224_snow/</url>
     <content><![CDATA[<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 <link type="text/css" href="https://cdn.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/justifiedGallery.min.css" rel="stylesheet"/>
@@ -607,7 +607,10 @@
   <entry>
     <title>为icarus主题添加背景图片</title>
     <url>/2021/02/07/icarus_bg_transparent/</url>
-    <content><![CDATA[<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
+    <content><![CDATA[<div class="note red warning modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+</div>
+
+<p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
 <p>1、先找到 <code>\themes\icarus\include\style\base.styl</code>，找到 <code>html</code> 并将其样式修改为（添加与背景图片有关的代码）：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">html</span><br><span class="line">    height: 100%</span><br><span class="line">    -webkit-text-size-adjust: 100%</span><br><span class="line">    -moz-text-size-adjust: 100%</span><br><span class="line">    -ms-text-size-adjust: 100%</span><br><span class="line">    text-size-adjust: 100%</span><br><span class="line"><span class="addition">+   background: url(https://www.pyli.tk/img/bg2.jpeg)</span></span><br><span class="line"><span class="addition">+   background-repeat: no-repeat</span></span><br><span class="line"><span class="addition">+   background-attachment:fixed</span></span><br><span class="line"><span class="addition">+   background-position:40% 40%</span></span><br><span class="line"><span class="addition">+   background-size: cover</span></span><br><span class="line"><span class="addition">+   -webkit-background-size: cover</span></span><br><span class="line"><span class="addition">+   -o-background-size: cover</span></span><br><span class="line"><span class="addition">+   -moz-background-size: cover</span></span><br><span class="line"><span class="addition">+   -ms-background-size: cover</span></span><br></pre></td></tr></table></figure>
 <p>2、其实上面一步就把背景图片添加好了。但页面看起来不太协调，大概是因为各模块那纯白的背景色。咋办？当然是将一些页面组件的透明度调整一下。</p>
@@ -640,7 +643,10 @@
   <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus_gallery/</url>
-    <content><![CDATA[<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
+    <content><![CDATA[<div class="note red warning modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+</div>
+
+<p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
 <p>在研究了 lightgallery 的说明文件后，发现问题原因很简单：就是在 lightgallery 里，涉及到的诸如图片缩放、旋转、自动放映等功能，都被单独拎出来作为子插件。若要使用则需额外引入相应的 <code>.js</code> 文件。现有集成于 inferno 模块下的 lightgallery 只是一个最基础的版本，并没有囊括这些额外功能。</p>
 <p>对此，只需找到个人站点在本地根目录下的 <code>node_modules\hexo-component-inferno\lib\view\plugin\gallery.js</code> 文件，并找到文件中的以下相关代码，修改如下（主要是引入有关图片缩放和全屏放映的子插件，其对应拟生成 <code>html</code> 文件中的 <code>body</code> 部分）：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">    var js = &quot;window.addEventListener(\&quot;load\&quot;, () =&gt; &#123;\n            if (typeof $.fn.lightGallery <span class="comment">=== &#x27;function&#x27;) &#123;\n                $(&#x27;.article&#x27;).lightGallery(&#123; selector: &#x27;.gallery-item&#x27; &#125;);\n            &#125;\n            if (typeof $.fn.justifiedGallery === &#x27;function&#x27;) &#123;\n                if ($(&#x27;.justified-gallery &gt; p &gt; .gallery-item&#x27;).length) &#123;\n                    $(&#x27;.justified-gallery &gt; p &gt; .gallery-item&#x27;).unwrap();\n                &#125;\n                $(&#x27;.justified-gallery&#x27;).justifiedGallery();\n            &#125;\n        &#125;);&quot;;</span></span><br><span class="line">    return (0, _inferno.createFragment)([(0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line">      &quot;src&quot;: lightGallery.jsUrl,</span><br><span class="line">      &quot;defer&quot;: true</span><br><span class="line">    &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line"><span class="addition">+     &quot;src&quot;: lightGallery.js_zoom_Url,</span></span><br><span class="line"><span class="addition">+     &quot;defer&quot;: true</span></span><br><span class="line"><span class="addition">+   &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span></span><br><span class="line"><span class="addition">+     &quot;src&quot;: lightGallery.js_fullscreen_Url,</span></span><br><span class="line"><span class="addition">+     &quot;defer&quot;: true</span></span><br><span class="line"><span class="addition">+   &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span></span><br><span class="line">      &quot;src&quot;: justifiedGallery.jsUrl,</span><br><span class="line">      &quot;defer&quot;: true</span><br><span class="line">    &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line">      &quot;dangerouslySetInnerHTML&quot;: &#123;</span><br><span class="line">        __html: js</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)], 4);</span><br></pre></td></tr></table></figure>
@@ -714,7 +720,6 @@ table th:nth-of-type(3) {
 <td><a href="https://cdn.jsdelivr.net/npm/lg-rotate@1.2.1/dist/lg-rotate.min.js">https://cdn.jsdelivr.net/npm/lg-rotate@1.2.1/dist/lg-rotate.min.js</a></td>
 </tr>
 </tbody></table>
-<p>以上操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
 <hr style="background-color: #e8e8e880;">
 
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
@@ -731,7 +736,11 @@ table th:nth-of-type(3) {
   <entry>
     <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus_night_mode/</url>
-    <content><![CDATA[<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
+    <content><![CDATA[<div class="note red warning modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+</div>
+
+
+<p>看到<a href="https://www.imaegoo.com/">这个网站</a>的夜晚模式很炫酷，也很实用（毕竟为革命保护视力，晚上最好还是别盯着个明晃晃的屏幕一直看）。该网站的作者还分享了他构建这个模式的代码和改动步骤（icarus 主题从 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/3112c084a68a49ce8ea065a8ab61658d29ed5d78">2</a> 到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/fc3d016ae1c999347bd9ecbf3cc656e1382db06d">3</a> 再到 <a href="https://github.com/imaegoo/hexo-theme-icarus/commit/ac92cdc5f87671e9ac67f4dbb85eb546b68d9bf4">4</a> 各版本的都有，tql），所以直接就能拿来用，hhh。</p>
 <p>照葫芦画瓢下来之后，夜景模式的雏形是有了，但一些细节很辣眼。对此自己通过一段时间的摸索，逐渐修改了其中的一部分。在此记录下这些问题和解决过程（持续更新），以免等主题更新了需再修改时自己给忘了。</p>
 <p>当前这些操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
 <h2 id="窄版模式下的导航栏白背景"><a href="#窄版模式下的导航栏白背景" class="headerlink" title="窄版模式下的导航栏白背景"></a>窄版模式下的导航栏白背景</h2><p>不论是在手机上浏览自己的网站，还是在电脑上当浏览器的宽度小于某一数值时，站点顶部的导航栏依旧是白色的，与大背景格格不入。对于这一问题，夜晚模式的作者表示 icarus4 系列版本下暂无解决方案。（所以作者大大宁的网站咋就没这个问题？？）</p>
@@ -777,7 +786,10 @@ table th:nth-of-type(3) {
   <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2020/11/20/icarus_top/</url>
-    <content><![CDATA[<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
+    <content><![CDATA[<div class="note red warning modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+</div>
+
+<p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
 <p>首先声明，以下操作是在 icarus 的 <code>4.1.1</code> 版本下进行的。具体而言，为添加一个置顶标识，可通过以下三个步骤完成：</p>
 <p>1、将需要置顶的文章的 front-matter 中添加 <code>top</code> 属性，并设置为 true：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 相聚北京，邂逅未知的自己</span><br><span class="line">author: pyli</span><br><span class="line">date: 2019-08-09 10:20:59</span><br><span class="line">tags: </span><br><span class="line">- 纪实</span><br><span class="line">categories: </span><br><span class="line">- 助学夏令营</span><br><span class="line">- 2019-夏令营</span><br><span class="line">excerpt: 2019 北京助学助教夏令营纪实</span><br><span class="line">cover: &quot;https:&#x2F;&#x2F;github.com&#x2F;lpy716&#x2F;hello-world&#x2F;blob&#x2F;2019-SC_foto&#x2F;cover_c.jpg?raw&#x3D;true&quot;</span><br><span class="line">top: true</span><br></pre></td></tr></table></figure>
@@ -802,7 +814,11 @@ table th:nth-of-type(3) {
   <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus_video/</url>
-    <content><![CDATA[<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
+    <content><![CDATA[<div class="note red warning modern"><p>视频文件的编码格式务必要保证是 <code>H264</code> 格式的，音频编码要保证是 <code>AAC</code> 格式的，否则在后续环节中可能会报错。</p>
+</div>
+
+
+<p>一直希望能在自己站点上播放视频，但是视频的存储和读取是个大问题。作为万年白嫖党，靠着网上的教程，跟着摸索出了：</p>
 <ul>
 <li>利用 HLS 技术和 ffmpeg 工具实现视频切片</li>
 <li>在 Github 上存储视频切片文件</li>
