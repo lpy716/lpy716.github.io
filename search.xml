@@ -607,7 +607,7 @@
   <entry>
     <title>为icarus主题添加背景图片</title>
     <url>/2021/02/07/icarus_bg_transparent/</url>
-    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 主题的 <code>4.1.1</code> 版本下完成的。</p>
 </div>
 
 <p>原版 icarus 主题实在有些单调……在 icarus 的 <code>4.1.1</code> 版本下，如果希望加入页面的背景图片，可以按照以下步骤操作：</p>
@@ -643,7 +643,7 @@
   <entry>
     <title>icarus主题下拓展图片展示模式</title>
     <url>/2021/01/03/icarus_gallery/</url>
-    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 主题的 <code>4.1.1</code> 版本下完成的。</p>
 </div>
 
 <p>更换 icarus 主题后，发现点开文章内的图片无法将其放大。这一很是蛋疼的问题在此前使用 NexT 主题时并未出现过。后来翻阅主题的总配置文件，发现默认使用的画廊插件为 lightgallery 并且是集成在 inferno 模块下的。难怪现有的一系列设置失效。</p>
@@ -736,7 +736,7 @@ table th:nth-of-type(3) {
   <entry>
     <title>为icarus主题添加夜间模式</title>
     <url>/2021/02/03/icarus_night_mode/</url>
-    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 主题的 <code>4.1.1</code> 版本下完成的。</p>
 </div>
 
 
@@ -786,7 +786,7 @@ table th:nth-of-type(3) {
   <entry>
     <title>新版本icarus主题下实现文章首页置顶</title>
     <url>/2020/11/20/icarus_top/</url>
-    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 主题的 <code>4.1.1</code> 版本下完成的。</p>
 </div>
 
 <p>因 icarus 主题的作者此前升级主题时，将源码从 ejs 语言变成了 jsx 的，所以现有网上关于文章首页置顶的教程代码都不太好使。自己在此记录下为实现置顶，新的操作是怎样的。</p>
@@ -814,7 +814,7 @@ table th:nth-of-type(3) {
   <entry>
     <title>icarus主题下实现视频播放</title>
     <url>/2021/01/26/icarus_video/</url>
-    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 的 <code>4.1.1</code> 版本下完成的。</p>
+    <content><![CDATA[<div class="note blue info modern"><p>以下操作是在 icarus 主题的 <code>4.1.1</code> 版本下完成的。</p>
 </div>
 
 
