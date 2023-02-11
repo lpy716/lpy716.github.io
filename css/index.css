@@ -3319,7 +3319,6 @@ h1.page-title + .tag-cloud-list {
   background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
-  backdrop-filter: blur(20px) saturate(1.5);
 }
 #page-header.not-top-img #nav a,
 #page-header.not-top-img #nav .site-name {
@@ -3338,6 +3337,7 @@ h1.page-title + .tag-cloud-list {
   -o-transition: -o-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  backdrop-filter: blur(20px) saturate(1.5);
 }
 #page-header.nav-fixed #nav #blog-info {
   color: var(--font-color);
