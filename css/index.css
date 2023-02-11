@@ -3197,7 +3197,7 @@ h1.page-title + .tag-cloud-list {
   content: '';
 }
 #page-header.full_page {
-  height: 100vh;
+  height: 66vh;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
@@ -3319,6 +3319,7 @@ h1.page-title + .tag-cloud-list {
   background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
+  backdrop-filter: blur(20px) saturate(1.5);
 }
 #page-header.not-top-img #nav a,
 #page-header.not-top-img #nav .site-name {
