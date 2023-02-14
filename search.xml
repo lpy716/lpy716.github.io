@@ -1578,54 +1578,69 @@ table th:nth-of-type(3) {
 
 <script type="text/javascript">
     const dp1 = new DPlayer({
-    container: document.getElementById('dplayer1'),
-    autoplay:false,
-    theme:"#42b983",
-    loop:false,
-    lang:"zh-cn",
-    preload:"none",
-    volume: 0.8,
-    mutex: true,
-    video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
-        type: 'hls',
-        defaultQuality: 0,
-        pic: '',
-        thumbnails: '',
+        container: document.getElementById('dplayer1'),
+        autoplay:false,
+        theme:"#42b983",
+        loop:false,
+        lang:"zh-cn",
+        preload:"none",
+        volume: 0.8,
+        mutex: true,
+        video: {
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
+            type: 'hls',
+            defaultQuality: 0,
+            pic: '',
+            thumbnails: '',
+        },
+        pluginOptions: {
+            hls: {
+              autoStartLoad: false
+            },
         },
     });
     const dp2 = new DPlayer({
-    container: document.getElementById('dplayer2'),
-    autoplay:false,
-    theme:"#42b983",
-    loop:false,
-    lang:"zh-cn",
-    preload:"none",
-    volume: 0.8,
-    mutex: true,
-    video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
-        type: 'hls',
-        defaultQuality: 0,
-        pic: '',
-        thumbnails: '',
+        container: document.getElementById('dplayer2'),
+        autoplay:false,
+        theme:"#42b983",
+        loop:false,
+        lang:"zh-cn",
+        preload:"none",
+        volume: 0.8,
+        mutex: true,
+        video: {
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
+            type: 'hls',
+            defaultQuality: 0,
+            pic: '',
+            thumbnails: '',
+        },
+        pluginOptions: {
+            hls: {
+              autoStartLoad: false
+            },
         },
     });
     const dp3 = new DPlayer({
-    container: document.getElementById('dplayer3'),
-    autoplay:false,
-    theme:"#42b983",
-    loop:false,
-    lang:"zh-cn",
-    preload:"none",
-    volume: 0.8,
-    mutex: true,
-    video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
-        type: 'hls',
-        defaultQuality: 0,
-        pic: '',
-        thumbnails: '',
+        container: document.getElementById('dplayer3'),
+        autoplay:false,
+        theme:"#42b983",
+        loop:false,
+        lang:"zh-cn",
+        preload:"none",
+        volume: 0.8,
+        mutex: true,
+        video: {
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
+            type: 'hls',
+            defaultQuality: 0,
+            pic: '',
+            thumbnails: '',
+        },
+        pluginOptions: {
+            hls: {
+              autoStartLoad: false
+            },
         },
     })
 </script>
