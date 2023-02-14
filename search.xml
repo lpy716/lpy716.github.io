@@ -1560,62 +1560,24 @@ table th:nth-of-type(3) {
   }
 </script>
 
-<input type="radio" id="panel-1" name="accordion-select">
-<input type="radio" id="panel-2" name="accordion-select">
-<input type="radio" id="panel-3" name="accordion-select">
-<div class="panel">
-  <label class="panel-heading" for="panel-1"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场1【视频大小 255MB】</label>
-  <div class="panel-block body-1" style="padding-top: 10px;">
-    <div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
-  </div>
-</div>
-<div class="panel">
-  <label class="panel-heading" for="panel-2"><span class="icon">
-    <i class="fas fa-video"></i></span>《情绪管理》课堂小剧场2【视频大小 207MB】
-  </label>
-  <div class="panel-block body-2" style="padding-top: 10px;">
-    <div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
-  </div>
-</div>
-<div class="panel">
-  <label class="panel-heading" for="panel-3"><span class="icon"><i class="fas fa-video"></i></span>《情绪管理》课堂小剧场3【视频大小 170MB】</label>
-  <div class="panel-block body-3" style="padding-top: 10px;">
-    <div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused" style="margin-bottom: 10px;"></div>
-  </div>
-</div>
-<style type="text/css">
-  input[name="accordion-select"], .panel-block {
-    display: none;
-  }
-  label.panel-heading {
-    cursor: pointer;
-    display: block;
-  }
-  .panel-heading {
-    background-color: #4a4a4a;
-    border-radius: 6px 6px 0 0;
-    color: #f5f5f5;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1.25;
-    padding: 0.75em 1em;
-  }
-  /* the magic */
-  #panel-1:checked ~ .panel > .body-1,
-  #panel-2:checked ~ .panel > .body-2,
-  #panel-3:checked ~ .panel > .body-3 {
-    display: flex;
-  }
-</style>
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场1</summary><div class="toggle-content"><div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+</div></details>
+
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场2</summary><div class="toggle-content"><div id="dplayer2" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+</div></details>
+
+<details class="toggle" ><summary class="toggle-button" style="">《情绪管理》课堂小剧场3</summary><div class="toggle-content"><div id="dplayer3" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+</div></details>
+
 <script type="text/javascript">
-  const p1 = document.getElementById('panel-1');
-  const p2 = document.getElementById('panel-2');
-  const p3 = document.getElementById('panel-3');
-  const dp1 = new DPlayer({
+    const dp1 = new DPlayer({
     container: document.getElementById('dplayer1'),
     autoplay:false,
     theme:"#42b983",
@@ -1625,14 +1587,14 @@ table th:nth-of-type(3) {
     volume: 0.8,
     mutex: true,
     video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
+        url: 'https://fastly.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
         type: 'hls',
         defaultQuality: 0,
         pic: '',
         thumbnails: '',
-    },
-  });
-  const dp2 = new DPlayer({
+        },
+    });
+    const dp2 = new DPlayer({
     container: document.getElementById('dplayer2'),
     autoplay:false,
     theme:"#42b983",
@@ -1642,14 +1604,14 @@ table th:nth-of-type(3) {
     volume: 0.8,
     mutex: true,
     video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
+        url: 'https://fastly.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
         type: 'hls',
         defaultQuality: 0,
         pic: '',
         thumbnails: '',
-    },
-  });
-  const dp3 = new DPlayer({
+        },
+    });
+    const dp3 = new DPlayer({
     container: document.getElementById('dplayer3'),
     autoplay:false,
     theme:"#42b983",
@@ -1659,14 +1621,15 @@ table th:nth-of-type(3) {
     volume: 0.8,
     mutex: true,
     video: {
-        url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
+        url: 'https://fastly.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
         type: 'hls',
         defaultQuality: 0,
         pic: '',
         thumbnails: '',
-    },
-  });
+        },
+    })
 </script>
+
 
 
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
