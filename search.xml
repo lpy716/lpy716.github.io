@@ -4659,7 +4659,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://fastly.jsdelivr.net/gh/lpy716/site_vid@1.6.0/220624/playlist.m3u8',
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@1.6.0/220624/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
