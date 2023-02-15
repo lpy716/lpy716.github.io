@@ -417,28 +417,28 @@
 <link type="text/css" href="https://gcore.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.css" rel="stylesheet"/>
 <div class="demo-gallery mrb20">
     <div id="aniimated-thumbnials1" class="list-unstyled justified-gallery">
-        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/4.jpg">
-            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_4.jpg">
+        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_4.jpg">
+            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_4.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/5.jpg">
-            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_5.jpg">
+        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_5.jpg">
+            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_5.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/2.JPG">
-            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_2.jpg">
+        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_2.JPG">
+            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_2.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/1.JPG">
-            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_1.jpg">
+        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_1.JPG">
+            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_1.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
-        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/3.JPG">
-            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_3.jpg">
+        <a class="jg-entry" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_3.JPG">
+            <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_3.jpg">
             <div class="demo-gallery-poster">
             </div>
         </a>
