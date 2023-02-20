@@ -3077,7 +3077,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
-      rowHeight: 180,
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -3096,7 +3096,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
-      rowHeight: 180,
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -3115,7 +3115,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
-      rowHeight: 180,
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5049,6 +5049,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5067,6 +5068,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5085,6 +5087,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5103,6 +5106,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5121,6 +5125,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5139,6 +5144,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5157,6 +5163,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5175,6 +5182,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
@@ -5193,6 +5201,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
+      rowHeight: 150,
       margins: 5,
     })
     .on("jg.complete", function () {
