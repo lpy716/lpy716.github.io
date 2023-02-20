@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/covers/2019sc_719.jpg">
 <meta property="article:published_time" content="2019-08-12T04:10:00.000Z">
-<meta property="article:modified_time" content="2023-02-20T08:30:04.000Z">
+<meta property="article:modified_time" content="2023-02-20T09:58:34.000Z">
 <meta property="article:author" content="Pengyuan Li">
 <meta property="article:tag" content="夏令营日报">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-02-20 16:30:04'
+  postUpdate: '2023-02-20 17:58:34'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -268,40 +268,56 @@
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
 <script src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript">
-  jQuery("#aniimated-thumbnials1")
-    .justifiedGallery({
-      captions: false,
-      lastRow: "nojustify",
-      rowHeight: 180,
-      margins: 5
-    })
+  var $animThumb1 = $("#aniimated-thumbnials1");
+  if ($animThumb1.length) {
+    $animThumb1
+      .justifiedGallery({
+        captions: false,
+        lastRow: "nojustify",
+        rowHeight: 180,
+        margins: 5
+      })
+      .on("jg.complete", function () {
+        $animThumb1.lightGallery({
+          plugins: [lgZoom, lgThumbnail],
+          mobileSettings: {
+            controls: false,
+            showCloseIcon: false,
+            download: false,
+            rotate: false }
+        });
+      });
+  }
+  var $animThumb2 = $("#aniimated-thumbnials2");
+  if ($animThumb2.length) {
+    $animThumb2
+      .justifiedGallery({
+        captions: false,
+        lastRow: "nojustify",
+        rowHeight: 180,
+        margins: 5
+      })
+      .on("jg.complete", function () {
+        $animThumb2.lightGallery({
+          mobileSettings: {
+            controls: false,
+            showCloseIcon: false,
+            download: false,
+            rotate: false }
+        });
+      });
+  }
+  // jQuery("#aniimated-thumbnials1")
+  //   .justifiedGallery({
+  //     captions: false,
+  //     lastRow: "nojustify",
+  //     rowHeight: 180,
+  //     margins: 5
+  //   })
 
-<pre><code>.on(&quot;jg.complete&quot;, function () &#123;
-  window.lightGallery(
-  document.getElementById(&quot;aniimated-thumbnials1&quot;),
-  &#123;
-    plugins: [lgZoom, lgThumbnail],
-    mobileSettings: &#123;
-      controls: false,
-      showCloseIcon: false,
-      download: false,
-      rotate: false &#125;
-  &#125;);
-&#125;);</code></pre>
-<p>  jQuery(“#aniimated-thumbnials2”)<br>    .justifiedGallery({<br>      captions: false,<br>      lastRow: “nojustify”,<br>      rowHeight: 180,<br>      margins: 5<br>    })</p>
-<pre><code>.on(&quot;jg.complete&quot;, function () &#123;
-  window.lightGallery(
-  document.getElementById(&quot;aniimated-thumbnials2&quot;),
-  &#123;
-    plugins: [lgZoom, lgThumbnail],
-    mobileSettings: &#123;
-      controls: false,
-      showCloseIcon: false,
-      download: false,
-      rotate: false &#125;
-  &#125;);
-&#125;);</code></pre>
-<p></script></p>
+<p>  //   .on(“jg.complete”, function () {<br>  //     window.lightGallery(<br>  //     document.getElementById(“aniimated-thumbnials1”),<br>  //     {<br>  //       plugins: [lgZoom, lgThumbnail],<br>  //       mobileSettings: {<br>  //         controls: false,<br>  //         showCloseIcon: false,<br>  //         download: false,<br>  //         rotate: false }<br>  //     });<br>  //   });</p>
+<p>  // jQuery(“#aniimated-thumbnials2”)<br>  //   .justifiedGallery({<br>  //     captions: false,<br>  //     lastRow: “nojustify”,<br>  //     rowHeight: 180,<br>  //     margins: 5<br>  //   })</p>
+<p>  //   .on(“jg.complete”, function () {<br>  //     window.lightGallery(<br>  //     document.getElementById(“aniimated-thumbnials2”),<br>  //     {<br>  //       plugins: [lgZoom, lgThumbnail],<br>  //       mobileSettings: {<br>  //         controls: false,<br>  //         showCloseIcon: false,<br>  //         download: false,<br>  //         rotate: false }<br>  //     });<br>  //   });<br></script></p>
 <p>晚上9点半，欢迎晚宴圆满结束。各位志愿者组织营员洗漱、就寝，为第二天观看广场升旗做准备。2019北京助学助教夏令营正式拉开帷幕。</p>
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
 <li><p><strong><em>董存霞–甘肃</em></strong></p>
