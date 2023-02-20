@@ -126,7 +126,7 @@
 
 <pre><code>.on(&quot;jg.complete&quot;, function () &#123;
   window.lightGallery(
-  document.getElementById(&quot;aniimated-thumbnials2&quot;),
+  document.getElementById(&quot;aniimated-thumbnials1&quot;),
   &#123;
     plugins: [lgZoom, lgThumbnail],
     mobileSettings: &#123;
