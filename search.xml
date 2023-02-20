@@ -451,10 +451,11 @@
   <entry>
     <title>2021年的第一场雪，有  点  大</title>
     <url>/2021/02/24/20210224_snow/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -488,24 +489,25 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
       rowHeight: 180,
-      margins: 5
+      margins: 5,
     })
 
     .on("jg.complete", function () {
       window.lightGallery(
       document.getElementById("animated-thumbnails-gallery-1"),
       {
-        plugins: [lgZoom, lgThumbnail],
+        plugins: [lgZoom, lgThumbnail, lgFullscreen],
         mobileSettings: {
           controls: false,
           showCloseIcon: false,
@@ -518,7 +520,7 @@
 
 <a id="more"></a>
 
-<p>👇1</p>
+<p>👇</p>
 <p>积雪过程（2021 年 2 月 24 日 20:10-22:50）：</p>
 <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
