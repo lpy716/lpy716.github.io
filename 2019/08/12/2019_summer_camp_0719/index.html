@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/covers/2019sc_719.jpg">
 <meta property="article:published_time" content="2019-08-12T04:10:00.000Z">
-<meta property="article:modified_time" content="2023-02-20T15:11:48.000Z">
+<meta property="article:modified_time" content="2023-02-20T15:57:04.000Z">
 <meta property="article:author" content="Pengyuan Li">
 <meta property="article:tag" content="夏令营日报">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-02-20 23:11:48'
+  postUpdate: '2023-02-20 23:57:04'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -280,33 +280,41 @@
       rowHeight: 180,
       margins: 5,
     })
+    .on("jg.complete", function () {
+      window.lightGallery(
+      document.getElementById("animated-thumbnails-gallery-1"),
+      {
+        plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: false,
+          download: false,
+          rotate: false }
+      });
+    });
+  jQuery("#animated-thumbnails-gallery-2")
+    .justifiedGallery({
+      captions: false,
+      lastRow: "nojustify",
+      rowHeight: 180,
+      margins: 5,
+    })
+    .on("jg.complete", function () {
+      window.lightGallery(
+      document.getElementById("animated-thumbnails-gallery-2"),
+      {
+        plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: false,
+          download: false,
+          rotate: false }
+      });
+    });
+</script>
 
-<pre><code>.on(&quot;jg.complete&quot;, function () &#123;
-  window.lightGallery(
-  document.getElementById(&quot;animated-thumbnails-gallery-1&quot;),
-  &#123;
-    plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
-    mobileSettings: &#123;
-      controls: false,
-      showCloseIcon: false,
-      download: false,
-      rotate: false &#125;
-  &#125;);
-&#125;);</code></pre>
-<p>  jQuery(“#animated-thumbnails-gallery-2”)<br>    .justifiedGallery({<br>      captions: false,<br>      lastRow: “nojustify”,<br>      rowHeight: 180,<br>      margins: 5,<br>    })</p>
-<pre><code>.on(&quot;jg.complete&quot;, function () &#123;
-  window.lightGallery(
-  document.getElementById(&quot;animated-thumbnails-gallery-2&quot;),
-  &#123;
-    plugins: [lgZoom, lgThumbnail, lgFullscreen, lgAutoplay],
-    mobileSettings: &#123;
-      controls: false,
-      showCloseIcon: false,
-      download: false,
-      rotate: false &#125;
-  &#125;);
-&#125;);</code></pre>
-<p></script></p>
+
+
 <p>上9点半，欢迎晚宴圆满结束。各位志愿者组织营员洗漱、就寝，为第二天观看广场升旗做准备。2019北京助学助教夏令营正式拉开帷幕。</p>
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
 <li><p><strong><em>董存霞–甘肃</em></strong></p>
