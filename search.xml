@@ -120,19 +120,11 @@
   if ($animThumb1.length) {
     $animThumb1
       .justifiedGallery({
-        captions: false,
-        lastRow: "nojustify",
-        rowHeight: 180,
-        margins: 5
+        border: 6,
       })
       .on("jg.complete", function () {
         $animThumb1.lightGallery({
-          plugins: [lgZoom, lgThumbnail],
-          mobileSettings: {
-            controls: false,
-            showCloseIcon: false,
-            download: false,
-            rotate: false }
+          thumbnail: true,
         });
       });
   }
@@ -140,33 +132,23 @@
   if ($animThumb2.length) {
     $animThumb2
       .justifiedGallery({
-        captions: false,
-        lastRow: "nojustify",
-        rowHeight: 180,
-        margins: 5
+        border: 6,
       })
       .on("jg.complete", function () {
         $animThumb2.lightGallery({
-          mobileSettings: {
-            controls: false,
-            showCloseIcon: false,
-            download: false,
-            rotate: false }
+          thumbnail: true,
         });
       });
   }
-  // jQuery("#aniimated-thumbnials1")
-  //   .justifiedGallery({
-  //     captions: false,
-  //     lastRow: "nojustify",
-  //     rowHeight: 180,
-  //     margins: 5
-  //   })
 
+
+
+<p>  // var $animThumb1 = $(“#aniimated-thumbnials1”);<br>  // if ($animThumb1.length) {<br>  //   $animThumb1<br>  //     .justifiedGallery({<br>  //       captions: false,<br>  //       lastRow: “nojustify”,<br>  //       rowHeight: 180,<br>  //       margins: 5<br>  //     })<br>  //     .on(“jg.complete”, function () {<br>  //       $animThumb1.lightGallery({<br>  //         plugins: [lgZoom, lgThumbnail],<br>  //         mobileSettings: {<br>  //           controls: false,<br>  //           showCloseIcon: false,<br>  //           download: false,<br>  //           rotate: false }<br>  //       });<br>  //     });<br>  // }<br>  // var $animThumb2 = $(“#aniimated-thumbnials2”);<br>  // if ($animThumb2.length) {<br>  //   $animThumb2<br>  //     .justifiedGallery({<br>  //       captions: false,<br>  //       lastRow: “nojustify”,<br>  //       rowHeight: 180,<br>  //       margins: 5<br>  //     })<br>  //     .on(“jg.complete”, function () {<br>  //       $animThumb2.lightGallery({<br>  //         mobileSettings: {<br>  //           controls: false,<br>  //           showCloseIcon: false,<br>  //           download: false,<br>  //           rotate: false }<br>  //       });<br>  //     });<br>  // }</p>
+<p>  // jQuery(“#aniimated-thumbnials1”)<br>  //   .justifiedGallery({<br>  //     captions: false,<br>  //     lastRow: “nojustify”,<br>  //     rowHeight: 180,<br>  //     margins: 5<br>  //   })</p>
 <p>  //   .on(“jg.complete”, function () {<br>  //     window.lightGallery(<br>  //     document.getElementById(“aniimated-thumbnials1”),<br>  //     {<br>  //       plugins: [lgZoom, lgThumbnail],<br>  //       mobileSettings: {<br>  //         controls: false,<br>  //         showCloseIcon: false,<br>  //         download: false,<br>  //         rotate: false }<br>  //     });<br>  //   });</p>
 <p>  // jQuery(“#aniimated-thumbnials2”)<br>  //   .justifiedGallery({<br>  //     captions: false,<br>  //     lastRow: “nojustify”,<br>  //     rowHeight: 180,<br>  //     margins: 5<br>  //   })</p>
 <p>  //   .on(“jg.complete”, function () {<br>  //     window.lightGallery(<br>  //     document.getElementById(“aniimated-thumbnials2”),<br>  //     {<br>  //       plugins: [lgZoom, lgThumbnail],<br>  //       mobileSettings: {<br>  //         controls: false,<br>  //         showCloseIcon: false,<br>  //         download: false,<br>  //         rotate: false }<br>  //     });<br>  //   });<br></script></p>
-<p>晚上9点半，欢迎晚宴圆满结束。各位志愿者组织营员洗漱、就寝，为第二天观看广场升旗做准备。2019北京助学助教夏令营正式拉开帷幕。</p>
+<p>上9点半，欢迎晚宴圆满结束。各位志愿者组织营员洗漱、就寝，为第二天观看广场升旗做准备。2019北京助学助教夏令营正式拉开帷幕。</p>
 <h2 id="营员感想摘录"><a href="#营员感想摘录" class="headerlink" title="营员感想摘录"></a>营员感想摘录</h2><h3 id="甘肃组"><a href="#甘肃组" class="headerlink" title="甘肃组"></a>甘肃组</h3><ul>
 <li><p><strong><em>董存霞–甘肃</em></strong></p>
 <blockquote>
