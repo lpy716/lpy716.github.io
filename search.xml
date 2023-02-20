@@ -3115,7 +3115,7 @@ table th:nth-of-type(3) {
     .justifiedGallery({
       captions: false,
       lastRow: "nojustify",
-      rowHeight: 150,
+      rowHeight: 180,
       margins: 5,
     })
     .on("jg.complete", function () {
