@@ -566,8 +566,8 @@
 <p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
 <p><img src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tianqi_cma.png"></p>
 <p><img src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tianqi_gfs.png"></p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/774531/" 
-  title="photo by Jeffrey Czum"><i class="fas fa-camera"></i><span>photo by Jeffrey Czum</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/photo/774531/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Jeffrey Czum/span&gt;</a></p>
+]]></content>
       <categories>
         <category>日常</category>
       </categories>
@@ -587,8 +587,7 @@
 
 <hr style="background-color: #e8e8e880;">
 
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" 
-  title="photo by Adrien Olichon"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -654,10 +653,7 @@
 
 
 <p> （完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/person-in-black-long-sleeve-shirt-holding-gold-and-silver-beaded-bracelet-3998389/" 
-  title="photo by cottonbro studio"><i class="fas fa-camera"></i><span>photo by cottonbro studio</span></a>
-
-<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" title="photo by Simon Berger" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Simon Berger</span></a></p>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/person-in-black-long-sleeve-shirt-holding-gold-and-silver-beaded-bracelet-3998389/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by cottonbro studio</span></a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
@@ -693,8 +689,8 @@
 <p>（9）首页各文章“阅读更多”按钮的背景色调整，可修改 <code>\themes\icarus\include\style\article.styl</code> 文件中的以下代码：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">.article-more</span><br><span class="line">    @extend .button.is-light</span><br><span class="line"><span class="addition">+   background-color: #e8e8e8</span></span><br></pre></td></tr></table></figure>
 <p>（完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" 
-  title="photo by Tirachard Kumtanom"><i class="fas fa-camera"></i><span>photo by Tirachard Kumtanom</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/pexels-tirachard-kumtanom-574283" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Tirachard Kumtanom</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -786,8 +782,8 @@ table th:nth-of-type(3) {
 
 <p><strong>参考：</strong><a href="http://sachinchoolur.github.io/lightGallery/docs/api.html">lightgallery 的说明文档</a></p>
 <p>（完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" 
-  title="photo by Anastasia Shuraeva"><i class="fas fa-camera"></i><span>photo by Anastasia Shuraeva</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/woman-in-blue-dress-sitting-on-the-shore-4210037/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Anastasia Shuraeva</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -836,8 +832,8 @@ table th:nth-of-type(3) {
 
 <p><strong>参考</strong>：<a href="https://www.imaegoo.com/">https://www.imaegoo.com/</a></p>
 <p> （完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" 
-  title="photo by Alex Andrews"><i class="fas fa-camera"></i><span>photo by Alex Andrews</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/photo-of-supernova-in-galaxy-3805983/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Alex Andrews</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -864,8 +860,8 @@ table th:nth-of-type(3) {
 
 <p><strong>参考：</strong><a href="https://lmkp.ink/2020/03/16/200316/">https://lmkp.ink/2020/03/16/200316/</a></p>
 <p>（完）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/view-of-cityscape-325185/" 
-  title="photo by Aleksandar Pasaric"><i class="fas fa-camera"></i><span>photo by Aleksandar Pasaric</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/view-of-cityscape-325185/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Aleksandar Pasaric</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -913,8 +909,8 @@ table th:nth-of-type(3) {
 
 <p><strong>参考：</strong><a href="https://www.cz5h.com/article/9cb3.html">https://www.cz5h.com/article/9cb3.html</a></p>
 <p>（完）</p>
-<a class="btn-beautify block black normal" href="https://peapix.com/bing/33653" 
-  title="photo by Tim Jones/Alam"><i class="fas fa-camera"></i><span>photo by Tim Jones/Alam</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://peapix.com/bing/33653" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Tim Jones/Alam</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -946,8 +942,8 @@ table th:nth-of-type(3) {
 
 
 <p><img src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@1.0/xgd_pybus_cover.jpg"></p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" 
-  title="photo by Will Mu"><i class="fas fa-camera"></i><span>photo by Will Mu</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/interior-of-contemporary-public-transport-on-sunny-day-3802736/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Will Mu</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -1001,8 +997,8 @@ table th:nth-of-type(3) {
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
 <p>拍此视频前自己通宵了一晚，眼见窗外天色渐亮，萌生记录日出的想法。</p>
 <p>当时疫情已有所好转但尚未完全解封，通常喧嚣的城市此刻是如此安静。</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" 
-  title="photo by Simon Berger"><i class="fas fa-camera"></i><span>photo by Simon Berger</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/silhouette-of-mountains-1323550/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Simon Berger</span></a></p>
+]]></content>
       <categories>
         <category>日常</category>
       </categories>
@@ -1054,8 +1050,8 @@ table th:nth-of-type(3) {
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
 <p>（观看时若觉得屏幕脏就对了，其实那是我拍摄时隔着的窗户玻璃脏 2333）</p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/zh-cn/photo/531767/" 
-  title="photo by Pixabay"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/photo/531767/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a></p>
+]]></content>
       <categories>
         <category>日常</category>
       </categories>
@@ -2326,14 +2322,7 @@ table th:nth-of-type(3) {
     <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝、郑州至济南铁路濮阳站位方案研究[J]、铁道勘察, 2019, 45(2):102-107、<a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
 </ol>
 </span>
-
-
-
-
-
-
-
-<script src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/js/jquery.mousewheel.min.js"></script>]]></content>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -4473,8 +4462,8 @@ table th:nth-of-type(3) {
 <li>【可能原因】家族遗传抗新冠病毒基因（直系亲属症状也相对较弱）。</li>
 </ul>
 <p>（完）</p>
-<a class="btn-beautify block black normal" href="https://imgix.bustle.com/uploads/image/2020/4/17/36b30bdf-bfab-4de8-be48-ef782a9ed907-covidhand.jpg?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg" 
-  title="photo by inverse.com"><i class="fas fa-camera"></i><span>photo by inverse.com</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://imgix.bustle.com/uploads/image/2020/4/17/36b30bdf-bfab-4de8-be48-ef782a9ed907-covidhand.jpg?w=1200&h=630&q=70&fit=crop&crop=faces&fm=jpg" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by inverse.com</span></a></p>
+]]></content>
       <categories>
         <category>瞎鼓捣</category>
       </categories>
@@ -5512,8 +5501,8 @@ table th:nth-of-type(3) {
 <p><code>v1.1 手写版第一次修订于 2013 年 4 月 24 日</code></p>
 <p><code>v2.0 初次整理电子版于 2014 年 1 月 25 日</code></p>
 <p><code>v2.1 二次修订电子版于 2019 年 7 月 10 日</code></p>
-<a class="btn-beautify block black normal" href="https://www.pexels.com/photo/close-up-of-wheat-plant-during-sunset-256643/" 
-  title="photo by Pixabay"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a>]]></content>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/close-up-of-wheat-plant-during-sunset-256643/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a></p>
+]]></content>
       <categories>
         <category>家族记忆</category>
       </categories>
