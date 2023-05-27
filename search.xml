@@ -991,7 +991,7 @@ table th:nth-of-type(3) {
 
 
 <p>【清晰度】1080P/60FPS</p>
-<p>【BGM】 Against The World–Must Save Jane!</p>
+<p>【BGM】 Against The World – Must Save Jane!</p>
 <p>【拍摄时间】2020 年 2 月 22 日，6:48-7:08</p>
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
@@ -1045,7 +1045,7 @@ table th:nth-of-type(3) {
 
 
 <p>【清晰度】1080P/60FPS</p>
-<p>【BGM】 Receives–Keith Kenniff</p>
+<p>【BGM】 Receives – Keith Kenniff</p>
 <p>【拍摄时间】2020 年 8 月 12 日，17:00-19:30</p>
 <p>【拍摄设备】HUAWEI P30</p>
 <p>【拍摄地点】濮阳市黄河路开州路口西</p>
@@ -5543,6 +5543,60 @@ table th:nth-of-type(3) {
       </categories>
       <tags>
         <tag>回忆录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AWWWW</title>
+    <url>/2021/01/26/ccps_cat/</url>
+    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+<a id="more"></a>
+
+<hr style="background-color: #e8e8e880;">
+
+
+
+<p>【清晰度】1080P/60FPS</p>
+<p>【BGM】 Wondrous – Thomas Greenberg</p>
+<p>【拍摄时间】2023 年 5 月 25-26 日</p>
+<p>【剪辑时间】2023 年 5 月 27 日</p>
+<p>【拍摄设备】VIVO X70 Pro+</p>
+<p>【拍摄地点】北京市海淀区自得园</p>
+<p>自得园老宠马克思猫与新宠小白猫，贴贴 &amp; 贴贴 &amp; 不停地贴贴……</p>
+<p>头一次尝试用手机自带的视频剪辑工具，能 AI 辅助作业，能套预制主题，剪起来比 Premier 快多了。效果还算可以。</p>
+<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/photo/531767/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Pixabay</span></a></p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>略略略</tag>
       </tags>
   </entry>
 </search>
