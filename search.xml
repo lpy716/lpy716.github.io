@@ -5619,11 +5619,21 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist.m3u8',
-          type: 'hls',
           defaultQuality: 0,
           pic: '',
           thumbnails: '',
+          quality: [
+            {
+                name: '1080P',
+                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist_1080p.m3u8',
+                type: 'hls',
+            },
+            {
+                name: '4K',
+                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist.m3u8',
+                type: 'hls',
+            },
+          ],
       },
   });
 })
