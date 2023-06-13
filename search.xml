@@ -5588,7 +5588,7 @@ table th:nth-of-type(3) {
 <p>【拍摄设备】VIVO X70 Pro+</p>
 <p>【拍摄地点】北京市海淀区自得园</p>
 <p>自得园老宠马克思猫与新宠小白猫，贴贴 &amp; 贴贴 &amp; 不停地贴贴……</p>
-<p>头一次尝试用手机自带的视频剪辑工具，能 AI 辅助作业，能套预制主题，剪起来比 Premier 快多了。效果还算可以。</p>
+<p>头一次尝试用手机自带的视频剪辑工具，能 AI 辅助作业，能套预制主题，剪起来比 Premiere 快多了。效果还算可以。</p>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -5630,7 +5630,7 @@ table th:nth-of-type(3) {
             },
             {
                 name: '4K',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist.m3u8',
+                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist_4k.m3u8',
                 type: 'hls',
             },
           ],
@@ -5644,7 +5644,7 @@ table th:nth-of-type(3) {
 
 
 
-<p>【清晰度】4K/60FPS</p>
+<p>【清晰度】1080P/60FPS，4K/60FPS</p>
 <p>【BGM】 喵趣（vivo剪辑预设主题bgm）</p>
 <p>【拍摄时间】2023 年 6 月 12 日</p>
 <p>【剪辑时间】2023 年 6 月 12 日</p>
