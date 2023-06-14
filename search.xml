@@ -5618,7 +5618,7 @@ table th:nth-of-type(3) {
       preload:"none",
       volume: 0.8,
       mutex: true,
-      logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
+      // logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
       video: {
           defaultQuality: 0,
           pic: '',
@@ -5639,11 +5639,11 @@ table th:nth-of-type(3) {
   });
 })
 </script>
-<style type="text/css">
+<!-- <style type="text/css">
   .dplayer-logo{left: 20px; top: 20px;}
   .dplayer-logo img{width: 500px;}
 </style>
-
+ -->
 
 <hr style="background-color: #e8e8e880;">
 
