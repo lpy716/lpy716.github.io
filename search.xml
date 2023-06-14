@@ -5618,6 +5618,7 @@ table th:nth-of-type(3) {
       preload:"none",
       volume: 0.8,
       mutex: true,
+      logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png'
       video: {
           defaultQuality: 0,
           pic: '',
@@ -5638,13 +5639,17 @@ table th:nth-of-type(3) {
   });
 })
 </script>
-<a id="more"></a>
+<style type="text/css">
+  .dplayer-logo{left: 5px; top: 12px;}
+  .dplayer-logo img{width: 28px;}
+</style>
+
 
 <hr style="background-color: #e8e8e880;">
 
 
 
-<p>【清晰度】1080P/60FPS，4K/60FPS</p>
+<p>【清晰度】1080P/60FPS；4K/60FPS</p>
 <p>【BGM】 喵趣（vivo剪辑预设主题bgm）</p>
 <p>【拍摄时间】2023 年 6 月 12 日</p>
 <p>【剪辑时间】2023 年 6 月 12 日</p>
