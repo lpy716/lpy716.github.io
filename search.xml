@@ -5640,8 +5640,8 @@ table th:nth-of-type(3) {
 })
 </script>
 <style type="text/css">
-  .dplayer-logo{left: 5px; top: 12px;}
-  .dplayer-logo img{width: 28px;}
+  .dplayer-logo{left: 50px; top: 50px;}
+  .dplayer-logo img{width: 280px;}
 </style>
 
 
