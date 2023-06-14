@@ -5625,12 +5625,12 @@ table th:nth-of-type(3) {
           quality: [
             {
                 name: '1080P',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist_1080p.m3u8',
+                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2a/playlist_1080p.m3u8',
                 type: 'hls',
             },
             {
                 name: '4K',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2/playlist_4k.m3u8',
+                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2b/playlist_4k.m3u8',
                 type: 'hls',
             },
           ],
@@ -5644,7 +5644,7 @@ table th:nth-of-type(3) {
 
 
 
-<p>【清晰度】1080P/60FPS，4K/60FPS</p>
+<p>【清晰度】1080P/60FPS；4K/60FPS</p>
 <p>【BGM】 喵趣（vivo剪辑预设主题bgm）</p>
 <p>【拍摄时间】2023 年 6 月 12 日</p>
 <p>【剪辑时间】2023 年 6 月 12 日</p>
