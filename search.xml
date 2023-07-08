@@ -1186,6 +1186,7 @@ table th:nth-of-type(3) {
 
 
 <p>上午的《国画》讲座让人难忘，下午营员们继续参观活动，前往人民大会堂和国家博物馆参观，下午1点半，以小组为单位，在组长的带领下，开始参观人民大会堂，作为召开全国人民代表大会和重要会议的会场，人民大会堂庄严肃穆又颇感亲切；结束了大会堂的参观，接下来去往天安门广场东侧的国家博物馆，在这里，有祖国悠久的历史和灿烂的文化，营员们深受鼓舞，获益匪浅。</p>
+<p>短暂的晚餐过后，大家到国家大剧院欣赏“音乐会”，音乐会现场座无虚席，悠扬的乐声回荡在音乐厅，平静愉悦，沁人心脾，令人陶醉。音乐缓解了大家的疲惫，音乐会结束后，大家又焕发活力，辞别延寿楼，收拾行李，乘坐大巴到玉泉路校区，晚上 10 点到达校园，简单收拾后大家开始休息，紧张而充实的一天结束了。</p>
 <div class="demo-gallery mrb20">
   <div class="gallery-container justified-gallery" id="animated-thumbnails-gallery-3">
     <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_19sc_p1@0.0.1/19sc0720/gb.jpg" data-sub-html="游览国家博物馆_合影">
@@ -1321,7 +1322,6 @@ table th:nth-of-type(3) {
       });
     });
 </script>
-
 
 
 
