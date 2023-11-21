@@ -13,12 +13,12 @@
 <h2 id="今日足迹"><a href="#今日足迹" class="headerlink" title="今日足迹"></a>今日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
 <p>不到早上7点，负责湖南组接站的志愿者李朋远便已出发前往北京西站，而负责检查报到营员证件和发放营员卡证的志愿者赵翔鹏、穆建超也已准备动身前往延寿楼。2019年助学助教夏令营拉开序幕。</p>
 <p>按照日程安排，7月19日全天围绕接站这一项任务展开。全天从早上8点到晚上10点，在6名志愿者的带领下，34名营员分7批次陆续安全地抵达延寿楼。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -113,13 +113,13 @@
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -214,12 +214,12 @@
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
 <p>上午八点三十分，所有营员都已坐好，等待着上张嘉民老师的《音乐基础知识普及》课程，每位营员都紧跟老师的思路一步一步走，先学节拍，在学发声，最后连贯成一首歌。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -339,13 +339,13 @@
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -457,12 +457,12 @@
   <entry>
     <title>2021年的第一场雪，有  点  大</title>
     <url>/2021/02/24/20210224_snow/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -495,13 +495,13 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -1073,12 +1073,12 @@ table th:nth-of-type(3) {
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
 <p>7 月 20 日凌晨 2 点半，夜已深且伴有小雨，为了观看升国旗仪式，夏令营营员全体依然按计划集合，在志愿者杨雨欣和穆建超的带领下，从延寿楼出发前往天安门广场。这个时候的前门大街安静无声，大家轻声细语迅速赶往天安门东，3点钟就到达了天安门附近，此时观看仪式的观众已排起长队，大家耐心等候。5点钟，升国旗仪式正式开始，在大家的注目下，国旗冉冉升起，天色渐明，淅沥沥的小雨掩盖不了大家激动的心情。升国旗仪式结束后，大家在人民英雄纪念碑前合影留念，随即返回延寿楼修整，准备上午的学习活动。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -1263,13 +1263,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -1411,12 +1411,12 @@ table th:nth-of-type(3) {
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：穆建超</em></strong></p>
 <p>7月23日是夏令营的第五天，夏令营日程将过半，上午和晚上为营员安排了讲座，下午是到鲁迅博物馆参观，全体的学习任务和参观安排相对较为宽松。</p>
 <p>在西北风味食堂用过早餐后，学员在提前赶到综合楼305教室准备课程的学习。胡志强老师为大家带来《哲学浅谈》的课程，胡老师平易近人，循循善诱，思维敏捷，知识渊博，把晦涩难懂的哲学问题简单化，把哲学思想放在日常生活中，将研究哲学与“讲道理”结合起来，指出研究哲学就是要“讲道理”，这个“道理”不以人的意志为前提，它讲究客观证据和客观规律，启发和升华了大家对哲学思想的认识和理解；接下来王昭琪老师为大家带来了《礼仪培训》，良好的形象、高雅的举止和合适的礼仪在待人接物中颇具感染力，营员们认真学习，积极与老师互动，课堂气氛活跃。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -1569,13 +1569,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -1872,12 +1872,12 @@ table th:nth-of-type(3) {
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
 <p>早上大家都起的特别早，在司机师傅的建议下六点就发车了，但大家都没有表露出一丝疲倦感，都对这座古老而神秘的墙充满了兴趣。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -2015,13 +2015,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -2392,12 +2392,12 @@ table th:nth-of-type(3) {
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：李朋远</em></strong></p>
 <p>不到上午8点半，中科院原党组副书记、中科大原党委书记郭传杰教授便已来到玉泉路校区教学楼305教室。在随后的近三个小时里，75岁高龄的他坚持站立，为大家带来了一场精彩的讲座。郭老师结合自身见闻，并引用诸多科学家投身科研事业的故事，向大家传授了成为科学大家应具备的种种品质，鼓励各位营员踏上科研之路，成为创新人才。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -2605,13 +2605,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -2843,12 +2843,12 @@ table th:nth-of-type(3) {
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：杨雨欣</em></strong></p>
 <p>今天从早上九点到下午三点都在李老师心理俱乐部进行体验，这一天的活动非常丰富、精彩。李继祖老师是国家二级心理咨询师。在那里，全体成员被分成了六个小组，每次都有两个小组分别在两个小房间内进行沙盘体验，老师们根据营员们所摆放的物件来了解大家的内心世界。</p>
 <p>而剩下的营员则在大厅内通过画画的方式让老师对他们进行心理分析。一开始的相互画手的轮廓让营员们彼此拉近了距离，接着大家画出了自己眼中的自己和别人眼中的自己，然后是每桌从一个同学开始在一张纸上进行创作，画完传给下一位同学，每人十五秒，看看大家最后的创作结果是否和第一位同学所想的内容相同。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -3107,13 +3107,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -3343,12 +3343,12 @@ table th:nth-of-type(3) {
 
 <h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：杨雨欣</em></strong></p>
 <p>今天早上的课是李伯聪教授的《古代文化漫谈》，课堂上李教授主要讲了中国文化和西方文化的区别，中国文化从秦代讲到清代，以耳熟能详的历史人物李白、杜甫和王维为例，从他们的人生经历和诗词中反映出了道家、儒家和佛家的思想。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -3692,13 +3692,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -4556,12 +4556,12 @@ table th:nth-of-type(3) {
 <p>记录一下收看 2022 年 6 月 20 日济郑高铁濮郑段开通活动的精彩瞬间。（图片均来自濮阳新闻网直播信号的截屏）</p>
 <p>上午 9 点，濮阳新闻网开始对首发仪式进行现场直播。放送画面为濮阳分会场，地点位于濮阳东站 1 站台。</p>
 <p>9 点 15 分，分会场领导嘉宾就绪。出席活动的省市领导致辞。</p>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
 <link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
@@ -4926,13 +4926,13 @@ table th:nth-of-type(3) {
     </a>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
