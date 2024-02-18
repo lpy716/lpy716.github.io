@@ -5780,4 +5780,56 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
         <tag>回忆录</tag>
       </tags>
   </entry>
+  <entry>
+    <title>AWWWW</title>
+    <url>/2024/02/13/ccps_cat3/</url>
+    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script>
+  $(function(){ 
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
+      autoplay:false,
+      theme:"#42b983",
+      loop:false,
+      lang:"zh-cn",
+      preload:"none",
+      volume: 0.8,
+      mutex: true,
+      video: {
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/playlist.m3u8',
+          type: 'hls',
+          defaultQuality: 0,
+          pic: '',
+          thumbnails: '',
+      },
+  });
+})
+</script>
+<a id="more"></a>
+
+<hr style="background-color: #e8e8e880;">
+
+
+
+<p>【清晰度】1080P/60FPS</p>
+<p>【BGM】 No Logic – ジミーサムP, ろん</p>
+<p>【拍摄时间】2023 年 5 月至 2024 年 1 月</p>
+<p>【剪辑时间】2023 年 2 月 12 日</p>
+<p>【拍摄设备】VIVO X70 Pro+</p>
+<p>【拍摄地点】北京市海淀区自得园</p>
+<p>谁家的小猫这么可爱？哦，原来是自得园的小猫233</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
+      <tags>
+        <tag>🎥</tag>
+        <tag>略略略</tag>
+      </tags>
+  </entry>
 </search>
