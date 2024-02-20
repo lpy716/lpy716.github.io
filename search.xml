@@ -5812,7 +5812,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
           type: 'webvtt',
           fontSize: '25px',
           bottom: '10%',
-          color: '#4cb4f4',
+          color: '#ffe8cf',
       },
     });
   })
