@@ -5808,7 +5808,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
           thumbnails: '',
       },
       subtitle: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/nologic.vtt',
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/no_logic.vtt',
           type: 'webvtt',
           fontSize: '25px',
           bottom: '10%',
