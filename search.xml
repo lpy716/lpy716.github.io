@@ -1852,12 +1852,10 @@ table th:nth-of-type(3) {
 <a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
   title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>]]></content>
       <categories>
-        <category>助学夏令营</category>
-        <category>2019-夏令营</category>
+        <category>阅读</category>
       </categories>
       <tags>
-        <tag>夏令营日报</tag>
-        <tag>🎥</tag>
+        <tag>学与思</tag>
       </tags>
   </entry>
   <entry>
@@ -5838,5 +5836,164 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
         <tag>🎥</tag>
         <tag>略略略</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>【读书笔记】 Localized Bargaining -- The Political Economy of China&#39;s High-Speed Railway Program</title>
+    <url>/2024/04/21/reading240421/</url>
+    <content><![CDATA[<p>此书改编自作者的博士论文。作为个人研究和博士论文写作的参考，主要学习其中的研究思维和方法，同时摘录一些令人印象深刻的文字。</p>
+<h2 id="总体思路"><a href="#总体思路" class="headerlink" title="总体思路"></a>总体思路</h2><p><strong>核心研究对象：地方政府间的博弈问题</strong></p>
+<p>以地方高铁争夺战作为切入点，探讨高铁争夺战背后，地方政府围绕行政项目资源的博弈问题。</p>
+<p><strong>论证过程：</strong></p>
+<ol>
+<li>何谓官僚机构和地方化博弈？建构起核心概念及理论框架。首先将高铁博弈抽象为一种“Localized Bargaining 地方化博弈”概念，这一现象及概念何以存在？从博弈的内容看，或许在于资源的向上集中，但其分配由存在一定程度的自主权；从博弈的目的性看，还在于争取资源对于地方负责人的有利性，其争取结果又受限于地方权力配置非均等。此外，体制外力量的运用也可能会对其形成产生干预。</li>
+<li>凸显所提出理论较现有理论解释的改进之处。针对地方资源配置的议题，现有解释理论主要包括自上而下的忠实度购买和技术官僚解决法，以及自下而上的游说。作者选择透过<u>信息获取</u>、<u>承诺约束</u>这两个方面，指出既有的自上而下理论的解释力缺陷，透过研究领域、运作方式指出既有自下而上理论的解释力缺陷。</li>
+<li>论证地方化博弈之存在。作者以虹桥火车站案例切入，指出中国行政体制内存在碎片化威权主义的事实。随后，基于完整的高铁建设规划审批流程，借以工程建设为代表的项目资源规划中存在着的碎片化威权，引出地方如何通过设立联络办同这些碎片威权打交道。从“各地都在设联络办，为何只有其中一部分顺利争取到想要的项目资源”的现象puzzle出发，尝试指出其背后可能的原因，包括领导承诺、地方政治地位、包括私人关系，以及外生的环境类影响在内的特殊干预因素。至于这些分析是否正确？作者设计两个问题并面向党政领导学员发放问卷，借这些体制内干部之口，得出“利益分配在于讨价还价”、“讨价还价能力在于地方地位”这两个有机联系的结果，从而证成地方化博弈议题之存在。【基于问卷数据的实验方法：<mark class="hl-label orange">组间差异t检验</mark> 】</li>
+<li>既然存在地方化博弈，那么促成博弈占优的体制机制是什么？作者直接在章节标题中点出——“Cardinals 枢机主教”与“Clerics （一般）神职人员”，以此作为作者地方核心领导政治地位的形象概括。对此，作者首先根据前人研究成果说明了向上双重任命对地区发展的影响，即抓住了双重任命作为体制机制分析的核心。随后，通过展开说明双重任命是什么、机制形成背景、可能产生的决策影响，引出本章puzzle即拟研究问题：“在省级领导层中拥有代表权的地市是否在政策谈判中占据上风”。作者针对这一问题设计实验，首先明确了其实验是基于省级五年规划展开，具体通过测定五年规划中地市项目占比，说明领导政治地位之于项目资源争取的重要性。【实验方法：<mark class="hl-label default">政策分布情况-非参数检验（核密度分析）</mark> ；<mark class="hl-label default">验证可能干扰双重任命解释力的变量-非参数检验（核密度分析）</mark> ；<mark class="hl-label red">检验双重任命之核心解释变量-多元回归分析（OLS）</mark> ；<mark class="hl-label blue">检验双重任命之省内分权假设-简单的占比分析</mark> 】</li>
+<li>既然领导是否被双重任命对于能否在地方化博弈中占优有显著影响，那么，是什么支撑着这种占优博弈的能力？作者在说明将高铁建设作为考察地方化博弈能力的优势后，提出假设：这种能力在于<u>向上可接触</u>以及<u>对上级官僚碎片的整合</u>。作者围绕省一级高铁建设开展事件史研究，选择高铁建设获批的周期（批建用时、完工时间）刻画这种能力，设置的关键解释变量为双重任命与否，其他解释变量包括私交、任职年龄、社会经济指标、既有铁路条件。具体实验中，分别从开建、完建两个角度论证了能力的构成要素，并出于严谨，考虑线路沿途地区可能的搭便车行为，特别对线路端点地区的开建、完建开展验证。在考察省级建设的基础上，作者还验证了地市一级这方面能力如何，从批建用时、连接高铁线路、站点数量分别设计实验进行测量。【实验方法：<mark class="hl-label default">省级实验-生存分析（Cox比例风险模型、分段逻辑模型）green</mark> ；<mark class="hl-label default">市级实验之批建测度-生存分析（Cox比例风险模型）green</mark> ；<mark class="hl-label red">市级实验之高铁线路/站点数量-多元回归分析（OLS、负二项回归）</mark> 】</li>
+<li>群众动员也可能构成一种在地方化博弈中成为赢家的能力。作者提出“Consent Instability”概念来抽象地方官员战略性容忍群众性事件的举动，并论述了此概念背后的形成机理与制度约束。由于无法拿到高铁相关的案例数据，作者选择从一个撤县设区案例入手，分析这种对不稳定的战略性容忍机制如何构成一种地方化博弈能力，并借助类似案例将其普适化（在此过程中，指出其中的关键组成因素及可能的风险）。为加强说服力，作者再做问卷调查，汇总政府领导对此现象机制的观点，证实地方官员的确会视之为工具并会在面对实质性群众压力时考虑将其用于博弈。【实验方法：<mark class="hl-label pink">案例分析</mark> ；<mark class="hl-label orange">调查问卷数据-组间差异t检验</mark> 】</li>
+</ol>
+<h2 id="论证过程中的精彩及必要环节提要"><a href="#论证过程中的精彩及必要环节提要" class="headerlink" title="论证过程中的精彩及必要环节提要"></a>论证过程中的精彩及必要环节提要</h2><h3 id="Chap-1：Intro"><a href="#Chap-1：Intro" class="headerlink" title="Chap. 1：Intro"></a>Chap. 1：Intro</h3><p>从高铁争夺战这个小切口，先直观地提出puzzle：（pp.19）</p>
+<blockquote>
+<p>What is the political process that governs the rollout of high-speed railways? What accounts for the significant geographical and temporal variations in rail investments? Why have Yancheng officials, as well as many others, spent more than a decade advocating for railway service while others with similar needs achieved the same in a much shorter time?</p>
+<p>管理高铁建设的政治程序是什么？铁路投资存在显着地域和时间差异，原因何在？为什么盐城官员乃至其他类似的地方花了十多年的时间来争取铁路，而另一些有类似需求的地方却用更短的时间实现了同样的目标？</p>
+</blockquote>
+<p>将现有对“威权主义下的分配政治”的研究分为两类：忠实度购买、技术官僚解决方案。（pp.22-23）这两类研究思路分别聚焦权力斗争和政策有效性，但都不足以解释以高铁为代表的分配政治，因为：</p>
+<ol>
+<li>两种理论都假设那些控制资源的人和有权做出决定的人有目的地计划观察到的分配模式。（pp.23）但事实上，由于工程浩大，他们的计划可能受到体制内复杂体系纵、横向的多重干预和制约。</li>
+<li>分配政治并不是在真空中发生的。在分配政治中塑造政策行为者激励的制度可能是宏观层面制度安排的副产品。（pp.25）假如统治者买不到忠诚，他有哪些机制保证其可处罚力度？被收买忠实者如何保障其被许诺的利益？另一方面，什么原因阻止了技术官僚胆敢挑战统治者？毕竟，中国制度并非西方式选举。此外，存在统治者向官僚授权的情况。</li>
+</ol>
+<blockquote>
+<p>First, both theories assume that those who control resources and those who have the power to make decisions purposefully plan the observed distributive patterns. </p>
+<p>Second, distributive politics does not take place in a vacuum. Institutions that shape the incentives of policy actors in distributive politics might be byproducts of macro-level institutional arrangements.</p>
+</blockquote>
+<p>提出Localized Bargaining即地方化博弈理论。开篇旗帜鲜明指出，这一理论聚焦中间接收者的行为。（pp.26-27）作为参照，地方化博弈从形式上和西方工会的集体谈判（collective bargaining）类似，但两个概念除了来源领域不同外，其博弈的标的属性和行动路径也不同。至于怎样展开提出的理论？两个维度——何以能、何以有：</p>
+<div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>地方化博弈</p>
+</div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>博弈何以能？Differential Bargaining Power（pp.27）</p>
+</div></div><div class='timeline-item-content'><ol>
+<li>地方在党国等级制度中的地位；<span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;">吐槽<br></button><span class="hide-content">通篇的party-state可还行，作者你不愧是用外文写拿到国外出版，赌你现在在北大一万个胆子不敢23333</span></span></li>
+<li>地方将体制外力量纳入与上级当局讨价还价的能力。</li>
+</ol>
+</div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>博弈何以有？What Allows Localized Bargaining to Take Place?（pp.29）</p>
+</div></div><div class='timeline-item-content'><ol>
+<li>政府层级之间的资源和责任之间的不匹配。</li>
+<li>上级政治领导人不干预基础设施投资等政策资源的配置。</li>
+</ol>
+</div></div></div>
+
+<p>提出理论的贡献（pp.35）：有助于理解分配政治（Distributive Politics）、威权政治制度（Authoritarian Political Institutions）</p>
+<p><strong>官僚机构也可以限制独裁统治者的权力</strong>。历史上的一些专制统治者在试图加强对权力的控制时会寻求削弱或摧毁官僚机构，而专制者的威权持久性亦可归因于一些机构在让威权统治者分享权力方面所扮演的角色。（pp.45）</p>
+<blockquote>
+<p>While bureaucracies are often perceived as politicians’ impersonal policy tools, the findings in this book point out that <u><strong>bureaucracy can also limit the power of authoritarian rulers</strong></u>. Social scientists have long been interested in theorizing how particular characteristics associated with bureaucracy, such as expertise, professionalism, and “organizational coherence” (Evans, 1995), create autonomous power among bureaucrats and curb the dictatorial tendencies of their political masters (e.g., Rosenberg, 1968; Weber, 2013). Scholars have indeed found empirical evidence that bureaucracy constrains executive power and preserves policy independence in various contexts, including imperial China (e.g., Qian, 1982), developmental autocracies (e.g., Campos &amp; Root, 2001; Cheng et al., 1998; Haggard, 1990), and developed democracies (e.g., Knight &amp; Miller, 2007; Miller, 2000; Miller &amp; Whitford, 2016). Campos and Root (2001), for example, argue that autocrats in Taiwan and South Korea made their commitments to protecting property rights more credible by delegating parts of their decision-making powers to a technocratic bureaucracy. The intuition of this argument also helps to explain <strong>why, historically, certain despotic rulers sought to weaken or destroy bureaucratic institutions when they attempted to tighten their grip on power</strong> (e.g., Huang, 2000; Lewis, 2002; MacFarquhar &amp; Schoenhals, 2009). This book thus joins a growing list of research that attributes <strong>authoritarian durability to the roles of various institutions in committing authoritarian rulers to share power</strong> (e.g., Boix &amp; Svolik, 2013; Gehlbach &amp; Keefer, 2011; Kokkonen &amp; Sundell, 2014; Ma, 2016; Magaloni, 2006, 2008; Menaldo, 2012; Moustafa, 2007; Myerson, 2008; Svolik, 2012). Most extant studies associate the credibility of bureaucratic institutions with the costs of reversing bureaucratic delegation—in other words, the ruler cannot govern without the help of professional bureaucrats. This book argues that bureaucratic constraints also stem from the fragmentation of authorities within the bureaucracy, and such arrangements generate a distinctive pattern of distribution that cuts against predictions by conventional understandings of authoritarianism.</p>
+</blockquote>
+<h3 id="Chap-2：理论框架建构——官僚与地方化博弈"><a href="#Chap-2：理论框架建构——官僚与地方化博弈" class="headerlink" title="Chap. 2：理论框架建构——官僚与地方化博弈"></a>Chap. 2：理论框架建构——官僚与地方化博弈</h3><p>应然层面基于理论的论述。出发点：重点关注<strong>政策接受者们官僚式的讨价还价在塑造政策利益分配中的作用</strong>。（pp.53）</p>
+<blockquote>
+<p>In this chapter, I develop an argument focusing on <strong>the role of bureaucratic bargaining by policy recipients in shaping the allocation of policy benefits.</strong></p>
+</blockquote>
+<p><strong>论证地方化的博弈/讨价还价：</strong></p>
+<ol>
+<li>首先亮出对象特殊性：政策接收者在于地方领导而非既有类似研究着眼于民众，博弈点在于能够影响分配后果的政策决策。</li>
+<li>阐明理论（地方化博弈）的土壤：资源被集中在政策制定者手中，而中国政府体制集权分权并置为就资源博弈营造空间。结果是，资源能够且愿意被其所有者分散。</li>
+<li>土壤为何能孕育处理论（地方化博弈）？剖析“土壤养分”：（pp.60）其一，官僚制的基本属性之制度理性（专业度依仗，从韦伯理论一脉相承）。其二，官僚制内的权力分散（有其历史背景，意在以协调成本促成制衡）。由此二点，统治者得以通过依赖分散的官僚机构中获益。<blockquote>
+<p>why does the ruler allow the recipients to compete for these resources? …Two<br>features of the bureaucracy increase its autonomy and make intervention from the ruler difficult. The first is that, like most Weberian bureaucracies, <strong>it includes rational-legal institutions and professional expertise possessed by bureaucrats</strong>. The second feature is <strong>the fragmented authority within the bureaucracy.</strong></p>
+</blockquote>
+</li>
+<li>初步编制起框架：总结关键论点。（pp.72 &amp; fig 2.1）</li>
+<li>为框架打补丁：其一，来自政策接受者积极性。（pp.73）其二，博弈基础非均等。（pp.75、77）其三，将群众作为盘外招。（pp.80）</li>
+<li>在<strong>同既有理论中巩固所建构的框架</strong>：与现有理论的比较，（pp.83）从自上而下、自下而上两个视角充分论证。</li>
+<li>最终提炼出论证的核心内容：五点。（pp.95）</li>
+</ol>
+<h3 id="Chap-3：理论的提出并非空穴来风——中央决策中的地方野心"><a href="#Chap-3：理论的提出并非空穴来风——中央决策中的地方野心" class="headerlink" title="Chap. 3：理论的提出并非空穴来风——中央决策中的地方野心"></a>Chap. 3：理论的提出并非空穴来风——中央决策中的地方野心</h3><p>开启实然层面。抛出拟讨论核心子问题：</p>
+<blockquote>
+<p>What roles do central and local governments each play in building high-speed rails? What kind of tensions arise from the process? How does the structure of central decision-making in infrastructure investments affect the interactions between central government and territorial administrations, and in particular, how does that shape the spatial allocation of central policy benefits across different parts of the country? </p>
+<p>中央和地方政府在高铁建设中各自扮演什么角色？这个过程会产生什么样的紧张气氛？中央基础设施投资决策结构如何影响中央政府与地方行政部门之间的互动，特别是如何影响中央政策利益在全国不同地区的空间分配？</p>
+</blockquote>
+<p><strong>论证过程：</strong></p>
+<ol>
+<li>引子的引子——虹桥火车站建设：复杂的高铁设施建设在一些地方能性，但另一些地方停留在纸上。</li>
+<li>引子——工程建设的流程：复杂流程背后的运作逻辑。</li>
+<li>引子向理论靠拢的桥梁——联络办的存在及其运作。</li>
+<li>初步点题——联络办背后的puzzle：各地都有联络办并依靠其开展博弈，为何还是有地方会脱颖而出？分析出可能的原因。（三方面因素：上级领导承诺、地方政治地位、非常规体制性因素）</li>
+<li>深入点题——验证应然分析：调查问卷、实验验证，从中证实了在资源配置中向上级讨价还价的必要性，而是否积极地参与和推动讨价划价很大程度上取决于地方领导的态度。</li>
+</ol>
+<p>问卷设计的小心思：用一种在选项上做手脚的分组实验，侧敲出受访者的“难言之隐”。（pp.142）</p>
+<blockquote>
+<p>To deal with such social desirability bias, I use an unmatched count technique (also known as the “list experiment”) (Ahart &amp; Sackett, 2004) to solicit genuine responses from the officials.</p>
+</blockquote>
+<h3 id="Chap-4：理论中的制度背景——“红衣主教”和“神职人员”"><a href="#Chap-4：理论中的制度背景——“红衣主教”和“神职人员”" class="headerlink" title="Chap. 4：理论中的制度背景——“红衣主教”和“神职人员”"></a>Chap. 4：理论中的制度背景——“红衣主教”和“神职人员”</h3><p>基于前一章已证明的“地方化博弈源于一种主动的地方利益诉求，而一些因素可能影响博弈成效”，其中起主导作用的因素（机制）是什么？本章借用天主教森严的等级体系，形容官僚体制内分地域的权力不均等，以及相应作用机制。（pp.152）</p>
+<blockquote>
+<p>As Chapter 3 indicated, this includes easier access to decision-makers and bureaucrats at the top. This chapter explores another advantage: they have the institutionalized abilities to influence and even control upper-level policy agendas that directly affect resource allocation among themselves and their competitors. <t>The cardinal localities are thus not only better connected than the cleric localities, but also better able to use their empowered positions to get resources. It is as if the cardinal localities were both player and referee in the same game, and cleric localities, who are only players, suffer the consequences.</t></p>
+</blockquote>
+<p><strong>论证过程：</strong></p>
+<ol>
+<li>引子（源于实践及理论应然）——“枢机主教”的产生即双重任命的路径与影响：地方官员兼任上一级领导职务，这么做既有其历史演进逻辑，也出于现实发展考量，其成效直观体现在省级五年规划中的地市项目数量。</li>
+<li>提出假设：<blockquote>
+<p>（假设 1 / 主假设，pp.165）</p>
+<p>Policies related to a city will be disproportionally represented in the provincial five-year plan when the city’s leader is concurrently a member of the provincial leadership.</p>
+<p>当城市的领导同时是省级领导成员时，与城市有关的政策在省级五年规划中将被不成比例地呈现。</p>
+<p>（假设 2 / 主假设的延伸，pp.168）</p>
+<p>In provinces where cities other than the provincial capital have leaders with dual appointments, provincial capitals receive less advantage than in provinces where the provincial capital is the only one.</p>
+<p>那些存在省会外双重任命城市的省份中，省会的优势不如只有省会被双重任命的省份。</p>
+</blockquote>
+</li>
+<li>实验1——衡量省级五年规划中政策关注的分布。方法：<code>计算城市在五年规划中被提及次数占比-以核密度分布呈现结果并验证分析-确认双重任命之显著性</code></li>
+<li>实验2——双重任命和城市规模是否相关。方法类似实验1。</li>
+<li>实验3——验证假设1之规划中城市政策占比缘何不同。方法：<code>OLS多元回归，七组实验（pp.176）</code></li>
+<li>实验4——验证假设2。方法：<code>直接对比两类省份中，省会在规划中的平均占比情况</code></li>
+<li>结论：双重任命解释了地方化博弈能力的差异。</li>
+</ol>
+<h3 id="Chap-5：理论中的动力机制——关于高铁的政治地理学"><a href="#Chap-5：理论中的动力机制——关于高铁的政治地理学" class="headerlink" title="Chap. 5：理论中的动力机制——关于高铁的政治地理学"></a>Chap. 5：理论中的动力机制——关于高铁的政治地理学</h3><p>双重任命是地方化博弈成败的制度关键，但仅有制度支撑不够，毕竟事在人为。作者用了大量篇幅陈述高铁建设中央与地方互动，作为后续实验的铺垫。其中，又大篇幅说明了铁道部/铁总/国铁集团的实力地位，以及高铁建设对地方的意义、负债和既有博弈。从中突出了选择高铁建设作为考察地方化博弈能力的对象是合适的。</p>
+<p><strong>论证过程：</strong></p>
+<ol>
+<li>引子：高铁建设中央与地方互动——铁路主管部门的设置、运行，特别是其中各地在向上争取铁路的努力及结果，在此过程中形成puzzle：为什么有的地方能拿到建设许可，有的地方却没有？为什么有些地方，比如引言章节提到的盐城，必须比其他人等待更长的时间？（毕竟，）各地并不缺乏建设高铁的动力和财务杠杆。<blockquote>
+<p>Why do some localities get permissions for construction while others do not? Why do some localities, such as Yancheng, as noted in the introduction chapter, have to wait much longer than others? Localities do not lack motivation or financial leverage to build high-speed rails. （pp.197-198）</p>
+</blockquote>
+</li>
+<li>提出假设：<blockquote>
+<p>This bargaining power lies in access to superiors and the ability to coordinate policy consensus among numerous specialized bureaucracies at higher levels. （pp.199）</p>
+<p>… localities whose leaders hold concurrent appointments at a higher level have an advantage. （pp.200）</p>
+<p>这种讨价还价的能力在于与上级的接触以及在高层众多专门官僚机构之间协调政策共识的能力。</p>
+<p>……领导人兼任上级职务的地方有优势。</p>
+<p>【构成以上假设的其他可能解释：】（pp.205）省级领导与现任市委总书记之间的联系（the connection between the provincial leader and the incumbent general party secretary.）、“太子党”（“princelings”）、任职年龄（age limits for promotion and mandatory retirement）、社会经济指标。</p>
+</blockquote>
+</li>
+<li>实验1——省级建设。方法：<code>生存分析，开工、完工双重视角下四个模型检验（pp.208 &amp; 211）</code></li>
+<li>实验2——考虑“搭便车”可能的省级建设。方法：类似实验1。</li>
+<li>实验3——市级建设。方法：除了建设开工、完工外，加入车站数测度<code>OLS、负二项回归</code>。</li>
+<li>结论：制度化的双重任命是更关键的影响因素。（其中对开工有效，但对完工有限）</li>
+</ol>
+<h3 id="Chap-6：理论中的动力机制（支线）——群众的力量"><a href="#Chap-6：理论中的动力机制（支线）——群众的力量" class="headerlink" title="Chap. 6：理论中的动力机制（支线）——群众的力量"></a>Chap. 6：理论中的动力机制（支线）——群众的力量</h3><p>那些没有强大影响的地方如何获取博弈力量？</p>
+<p><strong>论证过程：</strong></p>
+<ol>
+<li>引子：地方高铁万人抗争</li>
+<li>抛出概念以解释——定义Consent instability。官方会战略性地与公民之间的非正式联盟。对此作制度解释（应然）。</li>
+<li>单案例研究——撤县设区。过程：<code>陈述经过-分析更广泛背景下的情形-指出关键点（中介、风险）-评估（启下）</code></li>
+<li>作为案例分析的评估——借官员之口开展问卷调查，以其结果支撑案例分析出的群众力量。方法：（pp.250）<code>分三组实验</code></li>
+<li>结论：中国政治体制下维稳之多面性；威权政治中精英与大众的联系。</li>
+</ol>
+<h3 id="Chap-7：结论"><a href="#Chap-7：结论" class="headerlink" title="Chap. 7：结论"></a>Chap. 7：结论</h3><p>流程：</p>
+<ol>
+<li>主要发现</li>
+<li>这些发现对学界既有研究关切的回应<ul>
+<li>利益表达、权力下放和政权弹性（pp.265）</li>
+<li>不同类型的权力共享（pp.268）</li>
+<li>精英地方主义到大众地方主义（pp.274）</li>
+</ul>
+</li>
+</ol>
+<p>再次指出本研究的出发点之新颖：（pp.264）</p>
+<blockquote>
+<p>Few studies, however, have asked the question of what kind of arrangements allow the articulation of interests and facilitate information exchanges among the regime’s elites and organized interests. </p>
+<p>很少有研究提出这样的问题：什么样的安排可以允许政权精英和组织利益之间表达利益并促进信息交流。</p>
+</blockquote>
+<p>研究的一个重要发现：（pp.266）<strong>精细而广泛的官僚体系可以取代代议制立法机构的功能，减少统治者与选民之间的信息不对称。</strong></p>
+<blockquote>
+<p>…an elaborative and extensive bureaucratic system can substitute the function of a representative legislature in reducing information asymmetry between the ruler and the constituents. </p>
+</blockquote>
+<h2 id="题外bb"><a href="#题外bb" class="headerlink" title="题外bb"></a>题外bb</h2><p>本论文的架构完整性、逻辑顺畅性、实验方法丰富性均可称得上典范，非常值得学习，是自身研究及论文写作的灵感及参考。特别是从高铁争夺这个事件入手，给了我极强的代入感。不过读完之后忍不住想吐槽，其论证过程及结论分析有些地方难以苟同。考虑论文到作者是在美国受老外指导下完成的，通篇的党国体制、威权政治……可以理解，但这些概念被作者默认为其研究前提，不知作者是否考虑过它们果真能准确刻画当下的中国政治体制？不是说为共产党背书，但出于学术严谨性，人大、政协的确只是橡皮图章么？应该说，至少在支撑博弈能力的实验中，作者该去验证这些要素。倘若证成，那就说明“全过程人民民主”非空话，暗中助力外宣了属于是；即便证伪，反正也是写成外文刊在国外，大可以更加无情地嘲讽（不考虑北大教职的前提下233）。现在结论中扯一句“精细而广泛的官僚体系可以取代代议制立法机构的功能，减少统治者与选民之间的信息不对称”，我猛一看觉得，我去好像有点道理，但再一想就觉得，啊？（huh猫.gif）</p>
+<p>看来，“向世界传递中国声音”，绝不是靠一味迎合老外的口味，如此不但会给人以治学不严之感，甚至其行为也显得窝囊。</p>
+]]></content>
+      <categories>
+        <category>阅读</category>
+      </categories>
   </entry>
 </search>
