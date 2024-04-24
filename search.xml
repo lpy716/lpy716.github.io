@@ -5895,7 +5895,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <li>首先亮出对象特殊性：政策接收者在于地方领导而非既有类似研究着眼于民众，博弈点在于能够影响分配后果的政策决策。</li>
 <li>阐明理论（地方化博弈）的土壤：资源被集中在政策制定者手中，而中国政府体制集权分权并置为就资源博弈营造空间。结果是，资源能够且愿意被其所有者分散。</li>
 <li>土壤为何能孕育处理论（地方化博弈）？剖析“土壤养分”：（pp.60）其一，官僚制的基本属性之制度理性（专业度依仗，从韦伯理论一脉相承）。其二，官僚制内的权力分散（有其历史背景，意在以协调成本促成制衡）。由此二点，统治者得以通过依赖分散的官僚机构中获益。<blockquote>
-<p>why does the ruler allow the recipients to compete for these resources? …Two<br>features of the bureaucracy increase its autonomy and make intervention from the ruler difficult. The first is that, like most Weberian bureaucracies, <strong>it includes rational-legal institutions and professional expertise possessed by bureaucrats</strong>. The second feature is <strong>the fragmented authority within the bureaucracy.</strong></p>
+<p>why does the ruler allow the recipients to compete for these resources? …Two features of the bureaucracy increase its autonomy and make intervention from the ruler difficult. The first is that, like most Weberian bureaucracies, <strong>it includes rational-legal institutions and professional expertise possessed by bureaucrats</strong>. The second feature is <strong>the fragmented authority within the bureaucracy.</strong></p>
 </blockquote>
 </li>
 <li>初步编制起框架：总结关键论点。（pp.72 &amp; fig 2.1）</li>
@@ -5960,7 +5960,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <li>实验1——省级建设。方法：<code>生存分析，开工、完工双重视角下四个模型检验（pp.208 &amp; 211）</code></li>
 <li>实验2——考虑“搭便车”可能的省级建设。方法：类似实验1。</li>
 <li>实验3——市级建设。方法：除了建设开工、完工外，加入车站数测度<code>OLS、负二项回归</code>。</li>
-<li>结论：制度化的双重任命是更关键的影响因素。（其中对开工有效，但对完工有限）</li>
+<li>结论：制度化的双重任命是更关键的影响因素。（其作用对开工有效，但对完工有限）</li>
 </ol>
 <h3 id="Chap-6：理论中的动力机制（支线）——群众的力量"><a href="#Chap-6：理论中的动力机制（支线）——群众的力量" class="headerlink" title="Chap. 6：理论中的动力机制（支线）——群众的力量"></a>Chap. 6：理论中的动力机制（支线）——群众的力量</h3><p>那些没有强大影响的地方如何获取博弈力量？</p>
 <p><strong>论证过程：</strong></p>
@@ -5974,7 +5974,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <h3 id="Chap-7：结论"><a href="#Chap-7：结论" class="headerlink" title="Chap. 7：结论"></a>Chap. 7：结论</h3><p>流程：</p>
 <ol>
 <li>主要发现</li>
-<li>这些发现对学界既有研究关切的回应<ul>
+<li>这些发现对学界既有研究关切的回应——<ul>
 <li>利益表达、权力下放和政权弹性（pp.265）</li>
 <li>不同类型的权力共享（pp.268）</li>
 <li>精英地方主义到大众地方主义（pp.274）</li>
@@ -5991,7 +5991,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p>…an elaborative and extensive bureaucratic system can substitute the function of a representative legislature in reducing information asymmetry between the ruler and the constituents. </p>
 </blockquote>
 <h2 id="题外bb"><a href="#题外bb" class="headerlink" title="题外bb"></a>题外bb</h2><p>本论文的架构完整性、逻辑顺畅性、实验方法丰富性均可称得上典范，非常值得学习，是自身研究及论文写作的灵感及参考。特别是从高铁争夺这个事件入手，给了我极强的代入感。不过读完之后忍不住想吐槽，其论证过程及结论分析有些地方难以苟同。考虑论文到作者是在美国受老外指导下完成的，通篇的党国体制、威权政治……可以理解，但这些概念被作者默认为其研究前提，不知作者是否考虑过它们果真能准确刻画当下的中国政治体制？不是说为共产党背书，但出于学术严谨性，人大、政协的确只是橡皮图章么？应该说，至少在支撑博弈能力的实验中，作者该去验证这些要素。倘若证成，那就说明“全过程人民民主”非空话，暗中助力外宣了属于是；即便证伪，反正也是写成外文刊在国外，大可以更加无情地嘲讽（不考虑北大教职的前提下233）。现在结论中扯一句“精细而广泛的官僚体系可以取代代议制立法机构的功能，减少统治者与选民之间的信息不对称”，我猛一看觉得，我去好像有点道理，但再一想就觉得，啊？（huh猫.gif）</p>
-<p>看来，“向世界传递中国声音”不可一味迎合老外的口味，如此不但会给人以治学不严之感，甚至其行为也显得窝囊。</p>
+<p>（看来，“向世界传递中国声音”不可一味迎合老外的口味，如此不但会给人以治学不严之感，甚至其行为也显得窝囊。）</p>
 ]]></content>
       <categories>
         <category>阅读</category>
