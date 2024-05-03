@@ -5193,6 +5193,7 @@ table th:nth-of-type(3) {
 <p>【拍摄地点】北京市海淀区自得园</p>
 <p>自得园老宠马克思猫与新宠小白猫，贴贴 &amp; 贴贴 &amp; 不停地贴贴……</p>
 <p>头一次尝试用手机自带的视频剪辑工具，能 AI 辅助作业，能套预制主题，剪起来比 Premiere 快多了。效果还算可以。</p>
+<hr>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -5200,6 +5201,7 @@ table th:nth-of-type(3) {
       <tags>
         <tag>🎥</tag>
         <tag>略略略</tag>
+        <tag>自得喵</tag>
       </tags>
   </entry>
   <entry>
@@ -5268,6 +5270,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p>本视频上传后，默认 1080P 播放正常，但切换成 4K 就瞎了。我一度以为是 DPlayer 不支持 4K 分辨率，后来尝试调低比特率发现无济于事。最终认识到问题出在把两个 <code>.m3u8</code> 放在同一个文件夹下，修正后播放恢复正常。<br></strike></p>
 </blockquote>
 <p>邪门了，4K 就上传当天可以看，之后就再也播不了了。应该是 CDN 有带宽限制。</p>
+<hr>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -5829,6 +5832,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p>【拍摄设备】VIVO X70 Pro+</p>
 <p>【拍摄地点】北京市海淀区自得园</p>
 <p>谁家的小猫这么可爱？</p>
+<hr>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -5836,6 +5840,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       <tags>
         <tag>🎥</tag>
         <tag>略略略</tag>
+        <tag>自得喵</tag>
       </tags>
   </entry>
   <entry>
@@ -5886,7 +5891,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <blockquote>
 <p>While bureaucracies are often perceived as politicians’ impersonal policy tools, the findings in this book point out that <u><strong>bureaucracy can also limit the power of authoritarian rulers</strong></u>. Social scientists have long been interested in theorizing how particular characteristics associated with bureaucracy, such as expertise, professionalism, and “organizational coherence” (Evans, 1995), create autonomous power among bureaucrats and curb the dictatorial tendencies of their political masters (e.g., Rosenberg, 1968; Weber, 2013). Scholars have indeed found empirical evidence that bureaucracy constrains executive power and preserves policy independence in various contexts, including imperial China (e.g., Qian, 1982), developmental autocracies (e.g., Campos &amp; Root, 2001; Cheng et al., 1998; Haggard, 1990), and developed democracies (e.g., Knight &amp; Miller, 2007; Miller, 2000; Miller &amp; Whitford, 2016). Campos and Root (2001), for example, argue that autocrats in Taiwan and South Korea made their commitments to protecting property rights more credible by delegating parts of their decision-making powers to a technocratic bureaucracy. The intuition of this argument also helps to explain <strong>why, historically, certain despotic rulers sought to weaken or destroy bureaucratic institutions when they attempted to tighten their grip on power</strong> (e.g., Huang, 2000; Lewis, 2002; MacFarquhar &amp; Schoenhals, 2009). This book thus joins a growing list of research that attributes <strong>authoritarian durability to the roles of various institutions in committing authoritarian rulers to share power</strong> (e.g., Boix &amp; Svolik, 2013; Gehlbach &amp; Keefer, 2011; Kokkonen &amp; Sundell, 2014; Ma, 2016; Magaloni, 2006, 2008; Menaldo, 2012; Moustafa, 2007; Myerson, 2008; Svolik, 2012). Most extant studies associate the credibility of bureaucratic institutions with the costs of reversing bureaucratic delegation—in other words, the ruler cannot govern without the help of professional bureaucrats. This book argues that bureaucratic constraints also stem from the fragmentation of authorities within the bureaucracy, and such arrangements generate a distinctive pattern of distribution that cuts against predictions by conventional understandings of authoritarianism.</p>
 </blockquote>
-<h3 id="Chap-2：理论框架建构——官僚与地方化博弈"><a href="#Chap-2：理论框架建构——官僚与地方化博弈" class="headerlink" title="Chap. 2：理论框架建构——官僚与地方化博弈"></a>Chap. 2：理论框架建构——官僚与地方化博弈</h3><p>应然层面基于理论的论述。出发点：重点关注<strong>政策接受者们官僚式的讨价还价在塑造政策利益分配中的作用</strong>。（pp.53）</p>
+<h3 id="Chap-2：理论框架建构——官僚与地方化博弈"><a href="#Chap-2：理论框架建构——官僚与地方化博弈" class="headerlink" title="Chap. 2：理论框架建构——官僚与地方化博弈"></a>Chap. 2：理论框架建构——官僚与地方化博弈</h3><p>应然层面基于理论的论述。出发点：关注<strong>政策接受者们官僚式的讨价还价在塑造政策利益分配中的作用</strong>。（pp.53）</p>
 <blockquote>
 <p>In this chapter, I develop an argument focusing on <strong>the role of bureaucratic bargaining by policy recipients in shaping the allocation of policy benefits.</strong></p>
 </blockquote>
@@ -5917,7 +5922,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <ol>
 <li>引子的引子——虹桥火车站建设：复杂的高铁设施建设在一些地方能性，但另一些地方停留在纸上。</li>
 <li>引子——工程建设的流程：复杂流程背后的运作逻辑。</li>
-<li>引子向理论靠拢的桥梁——联络办的存在及其运作。</li>
+<li>引子通往理论的桥梁——联络办的存在及其运作。</li>
 <li>初步点题——联络办背后的puzzle：各地都有联络办并依靠其开展博弈，为何还是有地方会脱颖而出？分析出可能的原因。（三方面因素：上级领导承诺、地方政治地位、非常规体制性因素）</li>
 <li>深入点题——验证应然分析：调查问卷、实验验证，从中证实了在资源配置中向上级讨价还价的必要性，而是否积极地参与和推动讨价划价很大程度上取决于地方领导的态度。</li>
 </ol>
@@ -5932,14 +5937,16 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p><strong>论证过程：</strong></p>
 <ol>
 <li>引子（源于实践及理论应然）——“枢机主教”的产生即双重任命的路径与影响：地方官员兼任上一级领导职务，这么做既有其历史演进逻辑，也出于现实发展考量，其成效直观体现在省级五年规划中的地市项目数量。</li>
-<li>提出假设：<blockquote>
-<p>（假设 1 / 主假设，pp.165）</p>
+<li>提出假设：<ul>
+<li>假设 1（主假设，pp.165）：当城市的领导同时是省级领导成员时，与城市有关的政策在省级五年规划中将被不成比例地呈现。<blockquote>
 <p>Policies related to a city will be disproportionally represented in the provincial five-year plan when the city’s leader is concurrently a member of the provincial leadership.</p>
-<p>当城市的领导同时是省级领导成员时，与城市有关的政策在省级五年规划中将被不成比例地呈现。</p>
-<p>（假设 2 / 主假设的延伸，pp.168）</p>
-<p>In provinces where cities other than the provincial capital have leaders with dual appointments, provincial capitals receive less advantage than in provinces where the provincial capital is the only one.</p>
-<p>那些存在省会外双重任命城市的省份中，省会的优势不如只有省会被双重任命的省份。</p>
 </blockquote>
+</li>
+<li>假设 2（主假设的补丁，pp.168）：那些存在省会外双重任命城市的省份中，省会的优势不如只有省会被双重任命的省份。<blockquote>
+<p>In provinces where cities other than the provincial capital have leaders with dual appointments, provincial capitals receive less advantage than in provinces where the provincial capital is the only one.</p>
+</blockquote>
+</li>
+</ul>
 </li>
 <li>实验1——衡量省级五年规划中政策关注的分布。方法：<code>计算城市在五年规划中被提及次数占比-以核密度分布呈现结果并验证分析-确认双重任命之显著性</code></li>
 <li>实验2——双重任命和城市规模是否相关。方法类似实验1。</li>
@@ -5971,14 +5978,14 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p><strong>论证过程：</strong></p>
 <ol>
 <li>引子：地方高铁万人抗争</li>
-<li>抛出概念以解释——定义Consent instability。官方会战略性地与公民之间的非正式联盟。对此作制度解释（应然）。</li>
-<li>单案例研究——撤县设区。过程：<code>陈述经过-分析更广泛背景下的情形-指出关键点（中介、风险）-评估（启下）</code></li>
+<li>抛出概念以解释——定义Consent instability，一种对社会不稳定性的许可：官方会战略性地与公民之间的非正式联盟。对此，首先作制度解释（应然）。</li>
+<li>单案例研究——撤县设区（高铁事例难以获得，选择一个性质类似的案例）。过程：<code>陈述经过-分析更广泛背景下的情形-指出关键点（中介、风险）-评估（启下）</code></li>
 <li>作为案例分析的评估——借官员之口开展问卷调查，以其结果支撑案例分析出的群众力量。方法：（pp.250）<code>分三组实验</code></li>
 <li>结论：中国政治体制下维稳之多面性；威权政治中精英与大众的联系。</li>
 </ol>
-<h3 id="Chap-7：结论"><a href="#Chap-7：结论" class="headerlink" title="Chap. 7：结论"></a>Chap. 7：结论</h3><p>流程：</p>
+<h3 id="Chap-7：结论"><a href="#Chap-7：结论" class="headerlink" title="Chap. 7：结论"></a>Chap. 7：结论</h3><p><strong>流程</strong>：</p>
 <ol>
-<li>主要发现</li>
+<li>阐述主要发现</li>
 <li>这些发现对学界既有研究关切的回应——<ul>
 <li>利益表达、权力下放和政权弹性（pp.265）</li>
 <li>不同类型的权力共享（pp.268）</li>
@@ -6028,7 +6035,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       // logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
       video: {
           defaultQuality: 0,
-          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4b/cover.jpg',
+          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4a/cover.jpg',
           thumbnails: '',
           quality: [
             {
@@ -6070,6 +6077,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p>【拍摄设备】VIVO X70 Pro+</p>
 <p>【拍摄地点】北京市海淀区自得园</p>
 <p>在自得园的最后一个春天邂逅四只亲人的小奶猫，记录下它们可爱的瞬间~~</p>
+<hr>
 ]]></content>
       <categories>
         <category>日常</category>
@@ -6077,6 +6085,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       <tags>
         <tag>🎥</tag>
         <tag>略略略</tag>
+        <tag>自得喵</tag>
       </tags>
   </entry>
 </search>
