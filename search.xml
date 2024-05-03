@@ -5803,7 +5803,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
           url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/playlist3.m3u8',
           type: 'hls',
           defaultQuality: 0,
-          pic: '',
+          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cover.jpg',
           thumbnails: '',
       },
       subtitle: {
