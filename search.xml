@@ -6028,7 +6028,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       // logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
       video: {
           defaultQuality: 0,
-          pic: '',
+          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4b/cover.jpg',
           thumbnails: '',
           quality: [
             {
@@ -6066,7 +6066,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <p>【清晰度】1080P/60FPS；4K/60FPS</p>
 <p>【BGM】 もう少しだけ - YOASOBI</p>
 <p>【拍摄时间】2024 年 4 月 6 日至 2024 年 5 月 2 日</p>
-<p>【剪辑时间】2023 年 5 月 2 日</p>
+<p>【剪辑时间】2024 年 5 月 2 日</p>
 <p>【拍摄设备】VIVO X70 Pro+</p>
 <p>【拍摄地点】北京市海淀区自得园</p>
 <p>在自得园的最后一个春天邂逅四只亲人的小奶猫，记录下它们可爱的瞬间~~</p>
