@@ -583,7 +583,36 @@
     <content><![CDATA[<p>素材来源：CCPS英语课Lesson 14（2021.11.11）作业。</p>
 <a id="more"></a>
 
-<iframe src="https://1drv.ms/p/c/086dc32fc7b13896/IQSWOLHHL8NtIIAITcMAAAAAAZKIUpyX71R6uyc8tBg3AoE?em=2&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">这是嵌入 <a target="_blank" href="https://office.com">Microsoft Office</a> 演示文稿，由 <a target="_blank" href="https://office.com/webapps">Office</a> 提供支持。</iframe>
+<div class="responsive-iframe-container">
+  <iframe 
+    src="https://1drv.ms/p/c/086dc32fc7b13896/IQSWOLHHL8NtIIAITcMAAAAAAZKIUpyX71R6uyc8tBg3AoE?em=2&amp;wdAr=1.7777777777777777" 
+    frameborder="0" 
+    allowfullscreen>
+    您的浏览器不支持 iframe，请 <a href="https://1drv.ms/p/c/086dc32fc7b13896/IQSWOLHHL8NtIIAITcMAAAAAAZKIUpyX71R6uyc8tBg3AoE?em=2&amp;wdAr=1.7777777777777777" target="_blank">点击这里查看演示文稿</a>。
+  </iframe>
+</div>
+
+<style>
+    .responsive-iframe-container {
+        position: relative; /* 设定相对定位，作为内部 iframe 绝对定位的参照物 */
+        overflow: hidden;   /* 隐藏可能溢出的内容 */
+        width: 100%;      /* 宽度占满父容器 */
+        padding-top: 56.25%; /* 关键：维持 16:9 的宽高比 (9 / 16 = 0.5625) */
+        /* 如果你需要其他宽高比，例如 4:3，则计算 3 / 4 = 0.75，即 padding-top: 75%; */
+        height: 0;        /* 容器本身高度为0，高度由 padding 撑开 */
+    }
+
+    .responsive-iframe-container iframe {
+        position: absolute; /* 绝对定位，相对于父容器 */
+        top: 0;
+        left: 0;
+        width: 100%;      /* 宽度充满父容器 */
+        height: 100%;     /* 高度充满父容器 (父容器的高度由 padding 决定) */
+        border: 0;        /* 移除边框 */
+    }
+</style>
+
+
 <hr style="background-color: #e8e8e880;">
 
 <p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/man-sitting-in-front-of-turned-on-screen-2736135/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Adrien Olichon</span></a></p>
