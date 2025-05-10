@@ -2430,52 +2430,60 @@ table th:nth-of-type(3) {
     scroll-margin-top: 60px; /* 与导航栏高度一致 */
   }
 
-  /* 高亮颜色定义 */
-  :root {
-    --highlight-color: rgba(73, 177, 245, 0.3); /* 你的主题色浅化 */
+  /* 高亮动画 - 使用你指定的颜色 */
+  @keyframes entry-highlight {
+    from { background: rgba(73, 177, 245, 0.3); }
+    to { background: transparent; }
   }
 
-  /* 整条脚注高亮动画 */
-  .footnote-item:target {
-    animation: footnote-highlight 3s ease-out;
-  }
-
-  @keyframes footnote-highlight {
-    0% { background: var(--highlight-color); }
-    100% { background: transparent; }
+  /* 条目高亮样式 */
+  .highlight-entry {
+    animation: entry-highlight 1.5s !important;
   }
 
   /* 正文引用标记高亮 */
-  a.citation.highlight-source {
-    animation: citation-highlight 3s ease-out;
-  }
-
-  @keyframes citation-highlight {
-    0% { background: var(--highlight-color); }
-    100% { background: transparent; }
+  .highlight-ref {
+    animation: entry-highlight 1.5s !important;
   }
 </style>
 
 <script>
-  // 监听 hash 变化
-  function handleHash() {
+  function handleHashHighlight() {
+    // 清除旧高亮
+    document.querySelectorAll('.highlight-entry, .highlight-ref').forEach(el => {
+      el.classList.remove('highlight-entry', 'highlight-ref');
+    });
+
     const targetId = window.location.hash.substring(1);
     if (!targetId) return;
 
-    // 高亮脚注（通过 :target 自动触发）
+    // 处理参考文献条目高亮
+    if (targetId.startsWith('bib')) {
+      const anchor = document.getElementById(targetId);
+      if (anchor) {
+        // 获取父级<li>条目
+        const listItem = anchor.closest('li');
+        if (listItem) {
+          listItem.classList.add('highlight-entry');
+          setTimeout(() => listItem.classList.remove('highlight-entry'), 1500);
+        }
+      }
+    }
 
-    // 高亮正文引用标记
-    document.querySelectorAll(`a.citation[href="#${targetId}"]`).forEach(link => {
-      link.classList.remove('highlight-source');
-      void link.offsetWidth; // 强制重绘以重置动画
-      link.classList.add('highlight-source');
-    });
+    // 处理正文引用高亮
+    if (targetId.endsWith('ref')) {
+      const refElement = document.getElementById(targetId);
+      if (refElement) {
+        refElement.classList.add('highlight-ref');
+        setTimeout(() => refElement.classList.remove('highlight-ref'), 1500);
+      }
+    }
   }
 
-  window.addEventListener('hashchange', handleHash);
-  window.addEventListener('load', handleHash);
+  // 保持原有的事件监听
+  window.addEventListener('hashchange', handleHashHighlight);
+  window.addEventListener('load', handleHashHighlight);
 </script>
-
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
