@@ -5194,7 +5194,13 @@ table th:nth-of-type(3) {
 
 </span>
 
-]]></content>
+
+<style>
+    /* 替换为你的导航栏实际高度 */
+    [id^="bib"] {
+        scroll-margin-top: 60px; 
+    }
+</style>]]></content>
       <categories>
         <category>日常</category>
       </categories>
