@@ -2418,7 +2418,7 @@ table th:nth-of-type(3) {
 
 <ol>
     <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">（第11页）</a> - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/browseVolume.jsp?p=G79001163,025">政府公報資訊網</a>.</li>
-    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://www.hnxczx.cn/news_xx.asp?msg=1021">关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省扶贫办 (2012-07-26)、</li>
+    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://www.hnxczx.cn/news_xx.asp?msg=1021">关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省扶贫办 (2012-07-26).</li>
     <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝、郑州至济南铁路濮阳站位方案研究[J]、铁道勘察, 2019, 45(2):102-107、<a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
 </ol>
 </span>
@@ -5258,11 +5258,66 @@ table th:nth-of-type(3) {
 
 
 <style>
-    /* 替换为你的导航栏实际高度 */
-    [id^="bib"] {
-        scroll-margin-top: 60px; 
+  /* 调整导航栏遮挡问题 */
+  [id^="bib"] {
+    scroll-margin-top: 60px; /* 与导航栏高度一致 */
+  }
+
+  /* 高亮动画 - 使用你指定的颜色 */
+  @keyframes entry-highlight {
+    from { background: rgba(73, 177, 245, 0.3); }
+    to { background: transparent; }
+  }
+
+  /* 条目高亮样式 */
+  .highlight-entry {
+    animation: entry-highlight 1.5s !important;
+  }
+
+  /* 正文引用标记高亮 */
+  .highlight-ref {
+    animation: entry-highlight 1.5s !important;
+  }
+</style>
+
+<script>
+  function handleHashHighlight() {
+    // 清除旧高亮
+    document.querySelectorAll('.highlight-entry, .highlight-ref').forEach(el => {
+      el.classList.remove('highlight-entry', 'highlight-ref');
+    });
+
+    const targetId = window.location.hash.substring(1);
+    if (!targetId) return;
+
+    // 处理参考文献条目高亮
+    if (targetId.startsWith('bib')) {
+      const anchor = document.getElementById(targetId);
+      if (anchor) {
+        // 获取父级<li>条目
+        const listItem = anchor.closest('li');
+        if (listItem) {
+          listItem.classList.add('highlight-entry');
+          setTimeout(() => listItem.classList.remove('highlight-entry'), 1500);
+        }
+      }
     }
-</style>]]></content>
+
+    // 处理正文引用高亮
+    if (targetId.endsWith('ref')) {
+      const refElement = document.getElementById(targetId);
+      if (refElement) {
+        refElement.classList.add('highlight-ref');
+        setTimeout(() => refElement.classList.remove('highlight-ref'), 1500);
+      }
+    }
+  }
+
+  // 保持原有的事件监听
+  window.addEventListener('hashchange', handleHashHighlight);
+  window.addEventListener('load', handleHashHighlight);
+</script>
+]]></content>
       <categories>
         <category>日常</category>
       </categories>
