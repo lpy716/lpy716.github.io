@@ -2422,6 +2422,61 @@ table th:nth-of-type(3) {
     <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝、郑州至济南铁路濮阳站位方案研究[J]、铁道勘察, 2019, 45(2):102-107、<a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
 </ol>
 </span>
+
+
+<style>
+  /* 替换为你的导航栏实际高度 */
+  [id^="bib"] {
+      scroll-margin-top: 60px; 
+  }
+
+  /* 高亮动画效果 */
+  @keyframes highlight {
+    from { background: rgba(255, 255, 0, 0.5); }
+    to { background: transparent; }
+  }
+
+  /* 被点击的目标元素高亮 */
+  :target {
+    animation: highlight 2s;
+  }
+
+  /* 被点击的「来源链接」高亮 */
+  a.citation:focus,
+  a.footnote-return:focus {
+    animation: highlight 2s;
+    outline: none;
+  }
+</style>
+
+<script>
+  // 监听 URL hash 变化（兼容旧浏览器）
+  function handleHashHighlight() {
+    // 获取当前 hash（如 #bib10）
+    const targetId = window.location.hash.substring(1);
+    if (!targetId) return;
+
+    // 高亮目标元素
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.classList.add('highlight-target');
+      setTimeout(() => targetElement.classList.remove('highlight-target'), 2000);
+    }
+
+    // 高亮所有指向该 hash 的「来源链接」
+    document.querySelectorAll(`a[href="#${targetId}"]`).forEach(link => {
+      link.classList.add('highlight-source');
+      setTimeout(() => link.classList.remove('highlight-source'), 2000);
+    });
+  }
+
+  // 监听 hash 变化
+  window.addEventListener('hashchange', handleHashHighlight);
+
+  // 页面加载时检查初始 hash
+  window.addEventListener('load', handleHashHighlight);
+</script>
+
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
