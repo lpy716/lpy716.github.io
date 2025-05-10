@@ -2430,50 +2430,44 @@ table th:nth-of-type(3) {
       scroll-margin-top: 60px; 
   }
 
-  /* 高亮动画效果 */
-  @keyframes highlight {
-    from { background: rgba(255, 255, 0, 0.5); }
+  /* 自定义浅蓝色高亮（基于你的主题色 #49b1f5） */
+  :root {
+    --highlight-color: rgba(73, 177, 245, 0.2); /* 半透明浅蓝 */
+  }
+
+  /* 脚注条目高亮动画 */
+  @keyframes footnote-highlight {
+    from { background: var(--highlight-color); }
     to { background: transparent; }
   }
 
-  /* 被点击的目标元素高亮 */
-  :target {
-    animation: highlight 2s;
+  /* 被点击的脚注整条高亮 */
+  .footnote-entry:target {
+    animation: footnote-highlight 2s;
   }
 
-  /* 被点击的「来源链接」高亮 */
-  a.citation:focus,
-  a.footnote-return:focus {
-    animation: highlight 2s;
-    outline: none;
+  /* 正文引用标记高亮 */
+  a.citation.highlight-source {
+    animation: footnote-highlight 2s;
   }
 </style>
 
 <script>
-  // 监听 URL hash 变化（兼容旧浏览器）
+  // 监听 hash 变化并触发高亮
   function handleHashHighlight() {
-    // 获取当前 hash（如 #bib10）
     const targetId = window.location.hash.substring(1);
     if (!targetId) return;
 
-    // 高亮目标元素
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.classList.add('highlight-target');
-      setTimeout(() => targetElement.classList.remove('highlight-target'), 2000);
-    }
+    // 高亮脚注条目（通过 :target 伪类自动处理）
 
-    // 高亮所有指向该 hash 的「来源链接」
-    document.querySelectorAll(`a[href="#${targetId}"]`).forEach(link => {
+    // 高亮正文引用标记
+    document.querySelectorAll(`a.citation[href="#${targetId}"]`).forEach(link => {
       link.classList.add('highlight-source');
       setTimeout(() => link.classList.remove('highlight-source'), 2000);
     });
   }
 
-  // 监听 hash 变化
   window.addEventListener('hashchange', handleHashHighlight);
-
-  // 页面加载时检查初始 hash
   window.addEventListener('load', handleHashHighlight);
 </script>
 
