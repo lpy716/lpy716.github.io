@@ -2425,50 +2425,53 @@ table th:nth-of-type(3) {
 
 
 <style>
-  /* 替换为你的导航栏实际高度 */
+  /* 调整导航栏遮挡问题 */
   [id^="bib"] {
-      scroll-margin-top: 60px; 
+    scroll-margin-top: 60px; /* 与导航栏高度一致 */
   }
 
-  /* 自定义浅蓝色高亮（基于你的主题色 #49b1f5） */
+  /* 高亮颜色定义 */
   :root {
-    --highlight-color: rgba(73, 177, 245, 0.2); /* 半透明浅蓝 */
+    --highlight-color: rgba(73, 177, 245, 0.3); /* 基于你的主题色 30% 透明度 */
   }
 
-  /* 脚注条目高亮动画 */
-  @keyframes footnote-highlight {
-    from { background: var(--highlight-color); }
-    to { background: transparent; }
-  }
-
-  /* 被点击的脚注整条高亮 */
-  .footnote-entry:target {
-    animation: footnote-highlight 2s;
+  /* 整条脚注高亮 */
+  [id^="bib"]:target {
+    background: var(--highlight-color);
+    animation: highlight-fade 2s ease-out;
   }
 
   /* 正文引用标记高亮 */
-  a.citation.highlight-source {
-    animation: footnote-highlight 2s;
+  a[href^="#bib"]:focus {
+    background: var(--highlight-color);
+    animation: highlight-fade 2s ease-out;
+  }
+
+  /* 渐隐动画 */
+  @keyframes highlight-fade {
+    from { background: var(--highlight-color); }
+    to { background: transparent; }
   }
 </style>
 
 <script>
-  // 监听 hash 变化并触发高亮
-  function handleHashHighlight() {
-    const targetId = window.location.hash.substring(1);
+  // 监听 hash 变化触发高亮
+  function highlightElements() {
+    const targetId = window.location.hash.replace('#', '');
     if (!targetId) return;
 
-    // 高亮脚注条目（通过 :target 伪类自动处理）
+    // 自动触发脚注区域的 :target 高亮（CSS 已处理）
 
-    // 高亮正文引用标记
-    document.querySelectorAll(`a.citation[href="#${targetId}"]`).forEach(link => {
-      link.classList.add('highlight-source');
-      setTimeout(() => link.classList.remove('highlight-source'), 2000);
+    // 触发正文引用标记的高亮
+    document.querySelectorAll(`a[href="#${targetId}"]`).forEach(link => {
+      link.style.animation = 'none'; // 重置动画
+      void link.offsetWidth; // 触发回流
+      link.style.animation = 'highlight-fade 2s ease-out';
     });
   }
 
-  window.addEventListener('hashchange', handleHashHighlight);
-  window.addEventListener('load', handleHashHighlight);
+  window.addEventListener('hashchange', highlightElements);
+  window.addEventListener('load', highlightElements);
 </script>
 
 ]]></content>
