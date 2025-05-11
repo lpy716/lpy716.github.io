@@ -2438,12 +2438,12 @@ table th:nth-of-type(3) {
 
   /* 条目高亮样式 */
   .highlight-entry {
-    animation: entry-highlight 1.5s !important;
+    animation: entry-highlight 3s !important;
   }
 
   /* 正文引用标记高亮 */
   .highlight-ref {
-    animation: entry-highlight 1.5s !important;
+    animation: entry-highlight 3s !important;
   }
 </style>
 
@@ -5243,8 +5243,8 @@ table th:nth-of-type(3) {
     <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://www.pydc.gov.cn/pc/news_view.asp?id=2839">为实现濮阳梦插上强健的翅膀――我市两年多来办成的20件大事要事</a> - 中共濮阳市委濮阳市人民政府督查局 (2013-05-06，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250510233831/https://www.pydc.gov.cn/pc/news_view.asp?id=2839">内容</a>存档于 2025-05-10).</li>
     <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://www.gov.cn/govweb/gzdt/2011-04/23/content_1850988.htm">盛光祖:推动铁路事业发展 为建设小康社会作贡献</a> - 中华人民共和国中央人民政府 (2011-04-23，已失效).</li>
     <li><a id="bib4" href="#bib4ref"><sup>^</sup></a> 
-中国新闻周刊, "<a target="_blank" rel="noopener" href="https://www.sohu.com/a/532845486_220095">末任铁道部长盛光祖落马，曾被戏称“高阻”，配合调查说明了什么</a>" - 百家号 (2022-03-26，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250510234553/https://www.sohu.com/a/532845486_220095">内容</a>存档于 2025-05-10).</li>
-    <li><a id="bib5" href="#bib5ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://rail.ally.net.cn/html/2010/economy_0121/2058.html">河南省提出打造“四纵五横四辐射”铁路网</a> - 开封日报 (2010-01-21，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250510233524/http://rail.ally.net.cn/html/2010/economy_0121/2058.html">内容</a>存档于 2025-05-10).</li>
+中国新闻周刊, "<a target="_blank" rel="noopener" href="https://www.sohu.com/a/532845486_220095">末任铁道部长盛光祖落马，曾被戏称“高阻”，配合调查说明了什么</a>" - 搜狐网 (2022-03-26，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250510234553/https://www.sohu.com/a/532845486_220095">内容</a>存档于 2025-05-10).</li>
+    <li><a id="bib5" href="#bib5ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="http://rail.ally.net.cn/html/2010/economy_0121/2058.html">开封日报, 河南省提出打造“四纵五横四辐射”铁路网</a> - 世界轨道交通资讯网 (2010-01-21，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250510233524/http://rail.ally.net.cn/html/2010/economy_0121/2058.html">内容</a>存档于 2025-05-10).</li>
     <li><a id="bib6" href="#bib6ref"><sup>^</sup></a> "第六篇 加强基础设施建设,增强支撑保障能力", 出自<a target="_blank" rel="noopener" href="https://www.henan.gov.cn/2011/04-29/237845.html">河南省国民经济和社会发展第十二个五年规划纲要</a> - 河南省人民政府 (2011-04-29，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20231129080114/https://www.henan.gov.cn/2011/04-29/237845.html">内容</a>存档于 2023-11-29).</li>
     <li><a id="bib7" href="#bib7ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://pydc.gov.cn/pc/news_view.asp?id=3036">濮阳市争取郑济快速铁路过境濮阳工作纪实
 </a> - 中共濮阳市委濮阳市人民政府督查局 (2013-06-20，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250506015014/https%3A%2F%2Fpydc.gov.cn%2Fpc%2Fnews_view.asp%3Fid%3D3036">内容</a>存档于 2025-05-06).</li>
@@ -5272,12 +5272,12 @@ table th:nth-of-type(3) {
 
   /* 条目高亮样式 */
   .highlight-entry {
-    animation: entry-highlight 1.5s !important;
+    animation: entry-highlight 3s !important;
   }
 
   /* 正文引用标记高亮 */
   .highlight-ref {
-    animation: entry-highlight 1.5s !important;
+    animation: entry-highlight 3s !important;
   }
 </style>
 
