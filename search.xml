@@ -2289,219 +2289,211 @@ table th:nth-of-type(3) {
 <p>16、截至 2025 年 2 月 8 日，河南 17 个地级行政区中，仅濮阳所辖的<strong>非市区县级行政区</strong>（即县、县级市）无一下辖街道。</p>
 <blockquote>
 <p>这种所辖全部县和县级市内一个街道也不设的地级行政区，在 2025 年我国中东部地区已不多见。目前发现除濮阳外，类似的地级行政区还有：</p>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-</blockquote>
-<table class="tg"><thead>
+<table><thead>
   <tr>
-    <th class="tg-0pky">省份</th>
-    <th class="tg-0pky">地级行政区<br>（下辖非市区县级行政区无一设街道）</th>
-    <th class="tg-0pky">相应的县级行政区</th>
-    <th class="tg-0pky">数目统计</th>
-    <th class="tg-0pky">备注</th>
+    <th>省份</th>
+    <th>地级行政区<br>（下辖非市区县级行政区无一设街道）</th>
+    <th>相应的县级行政区</th>
+    <th>数目统计</th>
+    <th>备注</th>
   </tr></thead>
+</blockquote>
 <tbody>
   <tr>
-    <td class="tg-0pky">北京</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>北京</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">天津</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>天津</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="2">河北<br>（2/11）</td>
-    <td class="tg-0pky">张家口</td>
-    <td class="tg-0pky">张北县、康保县、沽源县、尚义县、蔚县、阳原县、怀安县、怀来县、涿鹿县、赤城县</td>
-    <td class="tg-0pky">10县</td>
-    <td class="tg-0pky"></td>
+    <td rowspan="2">河北<br>（2/11）</td>
+    <td>张家口</td>
+    <td>张北县、康保县、沽源县、尚义县、蔚县、阳原县、怀安县、怀来县、涿鹿县、赤城县</td>
+    <td>10县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">衡水</td>
-    <td class="tg-0pky">深州市、枣强县、武邑县、武强县、饶阳县、安平县、故城县、景县、阜城县</td>
-    <td class="tg-0pky">1市8县</td>
-    <td class="tg-0pky"></td>
+    <td>衡水</td>
+    <td>深州市、枣强县、武邑县、武强县、饶阳县、安平县、故城县、景县、阜城县</td>
+    <td>1市8县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="3">山西<br>（3/11）</td>
-    <td class="tg-0pky">大同</td>
-    <td class="tg-0pky">阳高县、天镇县、广灵县、灵丘县、浑源县、左云县</td>
-    <td class="tg-0pky">6县</td>
-    <td class="tg-0pky"></td>
+    <td rowspan="3">山西<br>（3/11）</td>
+    <td>大同</td>
+    <td>阳高县、天镇县、广灵县、灵丘县、浑源县、左云县</td>
+    <td>6县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">阳泉</td>
-    <td class="tg-0pky">平定县、盂县</td>
-    <td class="tg-0pky">2县</td>
-    <td class="tg-0pky"></td>
+    <td>阳泉</td>
+    <td>平定县、盂县</td>
+    <td>2县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">长治</td>
-    <td class="tg-0pky">襄垣县、平顺县、黎城县、壶关县、长子县、武乡县、沁县、沁源县</td>
-    <td class="tg-0pky">8县</td>
-    <td class="tg-0pky"></td>
+    <td>长治</td>
+    <td>襄垣县、平顺县、黎城县、壶关县、长子县、武乡县、沁县、沁源县</td>
+    <td>8县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">上海</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>上海</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">江苏<br>（0/13）</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>江苏<br>（0/13）</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">浙江<br>（1/11）</td>
-    <td class="tg-0pky">舟山</td>
-    <td class="tg-0pky">岱山县、嵊泗县</td>
-    <td class="tg-0pky">2县</td>
-    <td class="tg-0pky">均为海岛县</td>
+    <td>浙江<br>（1/11）</td>
+    <td>舟山</td>
+    <td>岱山县、嵊泗县</td>
+    <td>2县</td>
+    <td>均为海岛县</td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="8">安徽<br>（8/16）</td>
-    <td class="tg-0pky">芜湖</td>
-    <td class="tg-0pky">无为市、南陵县</td>
-    <td class="tg-0pky">1市1县</td>
-    <td class="tg-0pky"></td>
+    <td rowspan="8">安徽<br>（8/16）</td>
+    <td>芜湖</td>
+    <td>无为市、南陵县</td>
+    <td>1市1县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">淮南</td>
-    <td class="tg-0pky">凤台县、寿县</td>
-    <td class="tg-0pky">2县</td>
-    <td class="tg-0pky"></td>
+    <td>淮南</td>
+    <td>凤台县、寿县</td>
+    <td>2县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">马鞍山</td>
-    <td class="tg-0pky">当涂县、含山县、和县</td>
-    <td class="tg-0pky">3县</td>
-    <td class="tg-0pky"></td>
+    <td>马鞍山</td>
+    <td>当涂县、含山县、和县</td>
+    <td>3县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">淮北市</td>
-    <td class="tg-0pky">濉溪县</td>
-    <td class="tg-0pky">1县</td>
-    <td class="tg-0pky"></td>
+    <td>淮北市</td>
+    <td>濉溪县</td>
+    <td>1县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">铜陵</td>
-    <td class="tg-0pky">枞阳县</td>
-    <td class="tg-0pky">1县</td>
-    <td class="tg-0pky"></td>
+    <td>铜陵</td>
+    <td>枞阳县</td>
+    <td>1县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">黄山</td>
-    <td class="tg-0pky">歙县、休宁县、黟县、祁门县</td>
-    <td class="tg-0pky">4县</td>
-    <td class="tg-0pky"></td>
+    <td>黄山</td>
+    <td>歙县、休宁县、黟县、祁门县</td>
+    <td>4县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">六安</td>
-    <td class="tg-0pky">霍邱县、金寨县、霍山县、舒城县</td>
-    <td class="tg-0pky">4县</td>
-    <td class="tg-0pky"></td>
+    <td>六安</td>
+    <td>霍邱县、金寨县、霍山县、舒城县</td>
+    <td>4县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">池州</td>
-    <td class="tg-0pky">东至县、石台县、青阳县</td>
-    <td class="tg-0pky">3县</td>
-    <td class="tg-0pky"></td>
+    <td>池州</td>
+    <td>东至县、石台县、青阳县</td>
+    <td>3县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">福建<br>（1/9）</td>
-    <td class="tg-0pky">漳州</td>
-    <td class="tg-0pky">漳浦县、云霄县、诏安县、东山县、平和县、南靖县、华安县</td>
-    <td class="tg-0pky">7县</td>
-    <td class="tg-0pky"></td>
+    <td>福建<br>（1/9）</td>
+    <td>漳州</td>
+    <td>漳浦县、云霄县、诏安县、东山县、平和县、南靖县、华安县</td>
+    <td>7县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="3">江西<br>（3/11）</td>
-    <td class="tg-0pky">萍乡</td>
-    <td class="tg-0pky">芦溪县、上栗县、莲花县</td>
-    <td class="tg-0pky">3县</td>
-    <td class="tg-0pky"></td>
+    <td rowspan="3">江西<br>（3/11）</td>
+    <td>萍乡</td>
+    <td>芦溪县、上栗县、莲花县</td>
+    <td>3县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">赣州</td>
-    <td class="tg-0pky">瑞金市、龙南市、信丰县、大余县、上犹县、崇义县、安远县、定南县、全南县、宁都县、于都县、兴国县、会昌县、寻乌县、石城县</td>
-    <td class="tg-0pky">2市13县</td>
-    <td class="tg-0pky"></td>
+    <td>赣州</td>
+    <td>瑞金市、龙南市、信丰县、大余县、上犹县、崇义县、安远县、定南县、全南县、宁都县、于都县、兴国县、会昌县、寻乌县、石城县</td>
+    <td>2市13县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">抚州</td>
-    <td class="tg-0pky">南城县、黎川县、南丰县、崇仁县、乐安县、宜黄县、金溪县、资溪县、广昌县</td>
-    <td class="tg-0pky">9县</td>
-    <td class="tg-0pky"></td>
+    <td>抚州</td>
+    <td>南城县、黎川县、南丰县、崇仁县、乐安县、宜黄县、金溪县、资溪县、广昌县</td>
+    <td>9县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">山东<br>（0/16）</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>山东<br>（0/16）</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">河南<br>（1/17）</td>
-    <td class="tg-0pky">濮阳</td>
-    <td class="tg-0pky">濮阳县、清丰县、南乐县、范县、台前县</td>
-    <td class="tg-0pky">5县</td>
-    <td class="tg-0pky"></td>
+    <td>河南<br>（1/17）</td>
+    <td>濮阳</td>
+    <td>濮阳县、清丰县、南乐县、范县、台前县</td>
+    <td>5县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">湖北<br>（0/13）</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>湖北<br>（0/13）</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">湖南<br>（0/14）</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky"></td>
+    <td>湖南<br>（0/14）</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="3">广东<br>（3/21）</td>
-    <td class="tg-0pky">汕头</td>
-    <td class="tg-0pky">南澳县</td>
-    <td class="tg-0pky">1县</td>
-    <td class="tg-0pky">海岛县</td>
+    <td rowspan="3">广东<br>（3/21）</td>
+    <td>汕头</td>
+    <td>南澳县</td>
+    <td>1县</td>
+    <td>海岛县</td>
   </tr>
   <tr>
-    <td class="tg-0pky">潮州</td>
-    <td class="tg-0pky">饶平县</td>
-    <td class="tg-0pky">1县</td>
-    <td class="tg-0pky"></td>
+    <td>潮州</td>
+    <td>饶平县</td>
+    <td>1县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">河源</td>
-    <td class="tg-0pky">东源县、和平县、龙川县、紫金县、连平县</td>
-    <td class="tg-0pky">5县</td>
-    <td class="tg-0pky"></td>
+    <td>河源</td>
+    <td>东源县、和平县、龙川县、紫金县、连平县</td>
+    <td>5县</td>
+    <td></td>
   </tr>
   <tr>
-    <td class="tg-0pky">海南<br>（0/4）</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">-</td>
-    <td class="tg-0pky">15个省直辖县级行政区（县、县级市、民族自治县）无一设街道</td>
+    <td>海南<br>（0/4）</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>15个省直辖县级行政区（县、县级市、民族自治县）无一设街道</td>
   </tr>
 </tbody></table>
 
