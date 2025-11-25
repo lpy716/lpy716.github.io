@@ -548,7 +548,7 @@
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1.4/210224/playlist.m3u8',
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/210224/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -1002,7 +1002,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1.6/210601/playlist.m3u8',
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/210601/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -1057,7 +1057,7 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1.1/200812/playlist.m3u8',
+          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/200812/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
@@ -1693,7 +1693,7 @@ table th:nth-of-type(3) {
         volume: 0.8,
         mutex: true,
         video: {
-            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/1/playlist.m3u8',
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@master/0723/1/playlist.m3u8',
             type: 'hls',
             defaultQuality: 0,
             pic: '',
@@ -1715,7 +1715,7 @@ table th:nth-of-type(3) {
         volume: 0.8,
         mutex: true,
         video: {
-            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/2/playlist.m3u8',
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@master/0723/2/playlist.m3u8',
             type: 'hls',
             defaultQuality: 0,
             pic: '',
@@ -1737,7 +1737,7 @@ table th:nth-of-type(3) {
         volume: 0.8,
         mutex: true,
         video: {
-            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@0.2/0723/3/playlist.m3u8',
+            url: 'https://gcore.jsdelivr.net/gh/lpy716/2019sc_vid@master/0723/3/playlist.m3u8',
             type: 'hls',
             defaultQuality: 0,
             pic: '',
