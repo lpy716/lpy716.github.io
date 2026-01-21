@@ -5666,12 +5666,12 @@ table th:nth-of-type(3) {
   <entry>
     <title>AWWWW第二弹</title>
     <url>/2023/06/13/ccps_cat2/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -5683,7 +5683,7 @@ table th:nth-of-type(3) {
       preload:"none",
       volume: 0.8,
       mutex: true,
-      // logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
+      // logo: 'https://cdn.jsdmirror.com/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
       video: {
           defaultQuality: 0,
           pic: '',
@@ -5691,12 +5691,12 @@ table th:nth-of-type(3) {
           quality: [
             {
                 name: '1080P',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2a/playlist_1080p.m3u8',
+                url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat2a/playlist_1080p.m3u8',
                 type: 'hls',
             },
             {
                 name: '4K',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat2b/playlist_4k.m3u8',
+                url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat2b/playlist_4k.m3u8',
                 type: 'hls',
             },
           ],
@@ -6263,12 +6263,12 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   <entry>
     <title>AWWWW第四弹</title>
     <url>/2024/05/02/ccps_cat4/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -6280,26 +6280,26 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       preload:"none",
       volume: 0.8,
       mutex: true,
-      // logo: 'https://gcore.jsdelivr.net/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
+      // logo: 'https://cdn.jsdmirror.com/gh/lpy716/lpy716.github.io/img/pyli-transparent_0.25.png',
       video: {
           defaultQuality: 0,
-          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4a/cover.jpg',
+          pic: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat4a/cover.jpg',
           thumbnails: '',
           quality: [
             {
                 name: '1080P',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4b/playlist.m3u8',
+                url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat4b/playlist.m3u8',
                 type: 'hls',
             },
             {
                 name: '4K',
-                url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4a/playlist.m3u8',
+                url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat4a/playlist.m3u8',
                 type: 'hls',
             },
           ],
       },
       subtitle: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat4a/cn.vtt',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat4a/cn.vtt',
           type: 'webvtt',
           fontSize: '25px',
           bottom: '10%',
