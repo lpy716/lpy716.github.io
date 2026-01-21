@@ -5610,12 +5610,12 @@ table th:nth-of-type(3) {
   <entry>
     <title>AWWWW</title>
     <url>/2023/05/27/ccps_cat/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -5628,14 +5628,16 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat/playlist.m3u8',
+          url: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
           thumbnails: '',
       },
-  });
-})
+      subtitle: {
+      },
+    });
+  })
 </script>
 <a id="more"></a>
 
@@ -6019,12 +6021,12 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   <entry>
     <title>AWWWW第三弹</title>
     <url>/2024/02/13/ccps_cat3/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -6037,14 +6039,14 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/playlist3.m3u8',
+          url: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/playlist3.m3u8',
           type: 'hls',
           defaultQuality: 0,
-          pic: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cover.jpg',
+          pic: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cover.jpg',
           thumbnails: '',
       },
       subtitle: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cn_No_Logic.vtt',
+          url: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cn_No_Logic.vtt',
           type: 'webvtt',
           fontSize: '25px',
           bottom: '10%',
