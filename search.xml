@@ -457,51 +457,51 @@
   <entry>
     <title>2021年的第一场雪，有  点  大</title>
     <url>/2021/02/24/20210224_snow/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.css">
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-zoom.css">
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-autoplay.css">
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
-<link type="text/css" rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lightgallery.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lg-zoom.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lg-fullscreen.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lg-thumbnail.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lg-autoplay.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@0.1.8/tools/css/main.css"/>
 
 <div class="demo-gallery mrb20">
   <div class="gallery-container justified-gallery" id="animated-thumbnails-gallery-1">
-    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_4.jpg">
-        <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_4.jpg">
+    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/snow_4.jpg">
+        <img class="img-responsive" src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_4.jpg">
         <div class="demo-gallery-poster">
         </div>
     </a>
-    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_5.jpg">
-        <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_5.jpg">
+    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/snow_5.jpg">
+        <img class="img-responsive" src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_5.jpg">
         <div class="demo-gallery-poster">
         </div>
     </a>
-    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_2.JPG">
-        <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_2.jpg">
+    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/snow_2.JPG">
+        <img class="img-responsive" src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_2.jpg">
         <div class="demo-gallery-poster">
         </div>
     </a>
-    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_1.JPG">
-        <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_1.jpg">
+    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/snow_1.JPG">
+        <img class="img-responsive" src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_1.jpg">
         <div class="demo-gallery-poster">
         </div>
     </a>
-    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/snow_3.JPG">
-        <img class="img-responsive" src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_3.jpg">
+    <a class="gallery-item jg-entry jg-entry-visible" data-src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/snow_3.JPG">
+        <img class="img-responsive" src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tn/0_snow_3.jpg">
         <div class="demo-gallery-poster">
         </div>
     </a>
   </div>
 </div>
 
-<script src="https://gcore.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
-<script src="https://gcore.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/jquery@3.6.0/dist/jquery.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/lightgallery.umd.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.umd.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.umd.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/plugins/autoplay/lg-autoplay.umd.js"></script>
+<script src="https://cdn.jsdmirror.com/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
 <script id="rendered-js">
   jQuery("#animated-thumbnails-gallery-1")
     .justifiedGallery({
@@ -530,16 +530,16 @@
 
 <p>👇</p>
 <p>积雪过程（2021 年 2 月 24 日 20:10-22:50）：</p>
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer1" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
-    const dp = new DPlayer({
-      container: document.getElementById('dplayer1'),
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
@@ -548,14 +548,21 @@
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/210224/playlist.m3u8',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/210224/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
           thumbnails: '',
       },
-  });
-})
+      subtitle: {
+          url: '',
+          type: 'webvtt',
+          fontSize: '25px',
+          bottom: '10%',
+          color: '#ffe8cf',
+      },
+    });
+  })
 </script>
 
 
@@ -564,8 +571,8 @@
 
 <p><strong>2.25 更新：</strong>由于气温较高积雪消融较快，本次积雪深度未达预期，最终停留在 12cm 左右，远不及个人记忆里最大的一场雪： 2009 年 11 月 11 日的那场雪（当时尚未供暖，下了整一宿并叠加前日降雪，到 12 日白天积雪深达 35 cm，能没过半个轮胎，致使虽面临中考但依旧停课一天，真是令人难忘）</p>
 <p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tianqi_cma.png"></p>
-<p><img src="https://gcore.jsdelivr.net/gh/lpy716/pic_CDN@master/20210225/tianqi_gfs.png"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tianqi_cma.png"></p>
+<p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tianqi_gfs.png"></p>
 <p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/photo/774531/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by Jeffrey Czum</a></p>
 ]]></content>
       <categories>
@@ -984,16 +991,16 @@ table th:nth-of-type(3) {
     <title>黎明已至</title>
     <url>/2021/06/01/timelapse_sunrise/</url>
     <content><![CDATA[<p>本稿件属于补档，素材录制于 2020 年 2 月 22 日。</p>
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
-<div id="dplayer_sr" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
-    const dp_sunrise = new DPlayer({
-      container: document.getElementById('dplayer_sr'),
+    const dp_cloud = new DPlayer({
+      container: document.getElementById('dplayer_cloud'),
       autoplay:false,
       theme:"#42b983",
       loop:false,
@@ -1002,14 +1009,21 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/210601/playlist.m3u8',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/210601/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
           thumbnails: '',
       },
-  });
-})
+      subtitle: {
+          url: '',
+          type: 'webvtt',
+          fontSize: '25px',
+          bottom: '10%',
+          color: '#ffe8cf',
+      },
+    });
+  })
 </script>
 
 <a id="more"></a>
@@ -1039,12 +1053,12 @@ table th:nth-of-type(3) {
   <entry>
     <title>云卷云舒</title>
     <url>/2021/01/26/timelpase_cloud/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://gcore.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -1057,14 +1071,21 @@ table th:nth-of-type(3) {
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://gcore.jsdelivr.net/gh/lpy716/site_vid@master/200812/playlist.m3u8',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/200812/playlist.m3u8',
           type: 'hls',
           defaultQuality: 0,
           pic: '',
           thumbnails: '',
       },
-  });
-})
+      subtitle: {
+          url: '',
+          type: 'webvtt',
+          fontSize: '25px',
+          bottom: '10%',
+          color: '#ffe8cf',
+      },
+    });
+  })
 </script>
 <a id="more"></a>
 
@@ -6033,12 +6054,12 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   <entry>
     <title>AWWWW第三弹</title>
     <url>/2024/02/13/ccps_cat3/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
-<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
-<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/hls.min.js"></script>
-<script src="https://testingcf.jsdelivr.net/gh/lpy716/site_vid@0.1/DP.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/hls.min.js"></script>
+<script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.js"></script>
 <script>
   $(function(){ 
     const dp_cloud = new DPlayer({
@@ -6051,14 +6072,14 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       volume: 0.8,
       mutex: true,
       video: {
-          url: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/playlist3.m3u8',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat3/playlist3.m3u8',
           type: 'hls',
           defaultQuality: 0,
-          pic: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cover.jpg',
+          pic: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat3/cover.jpg',
           thumbnails: '',
       },
       subtitle: {
-          url: 'https://testingcf.jsdelivr.net/gh/lpy716/site_vid@master/ccps_cat3/cn_No_Logic.vtt',
+          url: 'https://cdn.jsdmirror.com/gh/lpy716/site_vid@master/ccps_cat3/cn_No_Logic.vtt',
           type: 'webvtt',
           fontSize: '25px',
           bottom: '10%',
