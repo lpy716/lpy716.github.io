@@ -5706,8 +5706,15 @@ table th:nth-of-type(3) {
             },
           ],
       },
-  });
-})
+      subtitle: {
+          url: '',
+          type: 'webvtt',
+          fontSize: '25px',
+          bottom: '10%',
+          color: '#ffe8cf',
+      },
+    });
+  })
 </script>
 <!-- <style type="text/css">
   .dplayer-logo{left: 20px; top: 20px;}
@@ -6310,8 +6317,8 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
           bottom: '10%',
           color: '#ffe8cf',
       },
-  });
-})
+    });
+  })
 </script>
 <!-- <style type="text/css">
   .dplayer-logo{left: 20px; top: 20px;}
