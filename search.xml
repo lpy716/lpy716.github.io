@@ -193,8 +193,8 @@
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@1.0/2019sc_719cover.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -417,8 +417,8 @@
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/6xdgt3FmZXeCzQL.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -446,8 +446,8 @@
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@1.0/2019sc_727cover.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -572,7 +572,7 @@
 <hr style="background-color: #e8e8e880;">
 
 
-<p>**2.25 更新:**由于气温较高积雪消融较快，本次积雪深度未达预期，最终停留在 12cm 左右，远不及个人记忆里最大的一场雪：2009 年 11 月 11 日的那场雪（当时尚未供暖，下了整一宿并叠加前日降雪，到 12 日白天积雪深达 35 cm，能没过半个轮胎，致使虽面临中考但依旧停课一天，真是令人难忘。</p>
+<p><strong>2 月 25 日更新：</strong>由于气温较高积雪消融较快，本次积雪深度未达预期，最终停留在 12cm 左右，远不及个人记忆里最大的一场雪：2009 年 11 月 11 日的那场雪（当时尚未供暖，下了整一宿并叠加前日降雪，到 12 日白天积雪深达 35 cm，能没过半个轮胎，致使虽面临中考但依旧停课一天，真是令人难忘。</p>
 <p><strong>附：</strong>气象预报界之屑与鉴（对号入座罢……</p>
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tianqi_cma.png"></p>
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/20210225/tianqi_gfs.png"></p>
@@ -748,7 +748,7 @@
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">    var js = &quot;window.addEventListener(\&quot;load\&quot;, () =&gt; &#123;\n            if (typeof $.fn.lightGallery <span class="comment">=== &#x27;function&#x27;) &#123;\n                $(&#x27;.article&#x27;).lightGallery(&#123; selector: &#x27;.gallery-item&#x27; &#125;);\n            &#125;\n            if (typeof $.fn.justifiedGallery === &#x27;function&#x27;) &#123;\n                if ($(&#x27;.justified-gallery &gt; p &gt; .gallery-item&#x27;).length) &#123;\n                    $(&#x27;.justified-gallery &gt; p &gt; .gallery-item&#x27;).unwrap();\n                &#125;\n                $(&#x27;.justified-gallery&#x27;).justifiedGallery();\n            &#125;\n        &#125;);&quot;;</span></span><br><span class="line">    return (0, _inferno.createFragment)([(0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line">      &quot;src&quot;: lightGallery.jsUrl,</span><br><span class="line">      &quot;defer&quot;: true</span><br><span class="line">    &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line"><span class="addition">+     &quot;src&quot;: lightGallery.js_zoom_Url,</span></span><br><span class="line"><span class="addition">+     &quot;defer&quot;: true</span></span><br><span class="line"><span class="addition">+   &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span></span><br><span class="line"><span class="addition">+     &quot;src&quot;: lightGallery.js_fullscreen_Url,</span></span><br><span class="line"><span class="addition">+     &quot;defer&quot;: true</span></span><br><span class="line"><span class="addition">+   &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span></span><br><span class="line">      &quot;src&quot;: justifiedGallery.jsUrl,</span><br><span class="line">      &quot;defer&quot;: true</span><br><span class="line">    &#125;), (0, _inferno.createVNode)(1, &quot;script&quot;, null, null, 1, &#123;</span><br><span class="line">      &quot;dangerouslySetInnerHTML&quot;: &#123;</span><br><span class="line">        __html: js</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)], 4);</span><br></pre></td></tr></table></figure>
 <p>除此之外，在同一文件的最后部分找到相关代码，引入两项功能所对应的 <code>.js</code> 文件，将上述代码修改如下：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">return &#123;</span><br><span class="line">    head: head,</span><br><span class="line">    lightGallery: &#123;</span><br><span class="line"><span class="deletion">-     jsUrl: helper.cdn(&#x27;lightgallery&#x27;, &#x27;1.6.8&#x27;, &#x27;dist/js/lightgallery.min.js&#x27;),</span></span><br><span class="line"><span class="deletion">-     cssUrl: helper.cdn(&#x27;lightgallery&#x27;, &#x27;1.6.8&#x27;, &#x27;dist/css/lightgallery.min.css&#x27;)</span></span><br><span class="line"><span class="addition">+     jsUrl: helper.cdn(&#x27;lightgallery&#x27;, &#x27;1.10.0&#x27;, &#x27;dist/js/lightgallery.min.js&#x27;),</span></span><br><span class="line"><span class="addition">+     cssUrl: helper.cdn(&#x27;lightgallery&#x27;, &#x27;1.10.0&#x27;, &#x27;dist/css/lightgallery.min.css&#x27;),</span></span><br><span class="line"><span class="addition">+     js_zoom_Url: helper.cdn(&#x27;lg-zoom&#x27;, &#x27;1.3.0&#x27;, &#x27;dist/lg-zoom.min.js&#x27;),</span></span><br><span class="line"><span class="addition">+     js_fullscreen_Url: helper.cdn(&#x27;lg-fullscreen&#x27;, &#x27;1.2.1&#x27;, &#x27;dist/lg-fullscreen.min.js&#x27;)</span></span><br><span class="line">    &#125;,</span><br><span class="line">    justifiedGallery: &#123;</span><br><span class="line"><span class="deletion">-     jsUrl: helper.cdn(&#x27;justifiedGallery&#x27;, &#x27;3.7.0&#x27;, &#x27;dist/js/jquery.justifiedGallery.min.js&#x27;),</span></span><br><span class="line"><span class="deletion">-     cssUrl: helper.cdn(&#x27;justifiedGallery&#x27;, &#x27;3.7.0&#x27;, &#x27;dist/css/justifiedGallery.min.css&#x27;)</span></span><br><span class="line"><span class="addition">+     jsUrl: helper.cdn(&#x27;justifiedGallery&#x27;, &#x27;3.8.0&#x27;, &#x27;dist/js/jquery.justifiedGallery.min.js&#x27;),</span></span><br><span class="line"><span class="addition">+     cssUrl: helper.cdn(&#x27;justifiedGallery&#x27;, &#x27;3.8.0&#x27;, &#x27;dist/css/justifiedGallery.min.css&#x27;)</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>此操作引入了zoom 和 fullscreen 两项功能所对应的 <code>.js</code> 文件，顺便更新了一下 lightgallery 至最新版本，从 <code>1.6.8</code> 到 <code>1.10.0</code>，以及 justifiedGallery 的最新版本从 <code>3.7.0</code> 到 <code>3.8.0</code>。（最新版本截止 2021 年 2 月 1 日）</p>
+<p>此操作引入了 zoom 和 fullscreen 两项功能所对应的 <code>.js</code> 文件，顺便更新了一下 lightgallery 至最新版本，从 <code>1.6.8</code> 到 <code>1.10.0</code>，以及 justifiedGallery 的最新版本从 <code>3.7.0</code> 到 <code>3.8.0</code>。（最新版本截止 2021 年 2 月 1 日）</p>
 <p>保存并执行常规的更新操作。这样就实现了站点的图片缩放和全屏播放功能。用类似的方法还可实现其他一系列功能，如图片旋转、自动播放，乃至图片分享、视频放映，等等。下表为对应的子插件名和 <code>.js</code> 文件地址。更多操作可参考 lightgallery 说明文档。</p>
 <style>
 table th:first-of-type {
@@ -1440,8 +1440,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/9TwAovlyVMJsDRH.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -1923,8 +1923,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/uekqoTLm83s6lZI.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实际 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实际 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -1945,7 +1945,7 @@ table th:nth-of-type(3) {
 </ul>
 <a id="more"></a>
 
-<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong>*记录人：王国权 *</strong></p>
+<h2 id="每日足迹"><a href="#每日足迹" class="headerlink" title="每日足迹"></a>每日足迹</h2><p><strong><em>记录人：王国权</em></strong></p>
 <p>早上大家都起的特别早，在司机师傅的建议下六点就发车了，但大家都没有表露出一丝疲倦感，都对这座古老而神秘的墙充满了兴趣。</p>
 <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lightgallery.css">
 <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/lightgallery@2.7.1/css/lg-zoom.css">
@@ -2263,8 +2263,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@1.0/2019sc_724cover.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -2364,7 +2364,7 @@ table th:nth-of-type(3) {
 <p>3、接上一条，苏庄由濮阳县、范县和山东省的鄄城县三县共管，为“两省三县一个村”之奇观。</p>
 <p>4、范县划入河南和东明县划入山东皆源于 1963 年黄河水患治理事件，但二者并非同时发生，后者比前者早一年时间。</p>
 <blockquote>
-<p>顺带提一下，在被划入山东前，东明县既不归安阳专区也不归新乡专区，而是归开封专区管辖；更奇葩的是，东明县曾在 14 年间（1949-1963）隶属过四个不同的省份——河北省（1949年之前）、平原省（1949-1952）、河南省（1952-1963）、山东省（1963年至今）。</p>
+<p>顺带提一下，在被划入山东前，东明县既不归安阳专区也不归新乡专区，而是归开封专区管辖；更奇葩的是，东明县曾在 14 年间（1949-1963）隶属过四个不同的省份——河北省（1949 年之前）、平原省（1949-1952）、河南省（1952-1963）、山东省（1963 年至今）。</p>
 </blockquote>
 <p>5、濮阳市域距河南省省会郑州市域最近点超过 80 km（濮阳县西南角-中牟县东北角），而距山东省省会济南市域最近点不足 15 km（台前县东北角-平阴县西南角）。</p>
 <p>6、濮阳市的地理中心（此处算法为所有边界点坐标之和的平均）位于清丰县六塔乡主堡寨村东（115°16’40.95”E, 35°48’24.91”N）。</p>
@@ -2711,7 +2711,7 @@ table th:nth-of-type(3) {
 <h2 id="工商城建"><a href="#工商城建" class="headerlink" title="工商城建"></a>工商城建</h2><p>1、“石油化工”作为濮阳市的立市之本，其地位在历版城市总规中被不断后移，在最新一版（2015-2030）城市总规中已经消失。</p>
 <ul>
 <li><strong>第一版城市总规（1986-1995）</strong>定义城市性质：<u>石油、化工业为主的工业城市</u>。</li>
-<li><strong>第二版城市总规（1996-2005）</strong>定义城市性质：豫东北地区中心城市<u>以石油、化工工业为基础的综合型城市</u>，历史文化名城。</li>
+<li><strong>第二版城市总规（1996-2005）</strong>定义城市性质：豫东北地区中心城市，<u>以石油、化工工业为基础的综合型城市</u>，历史文化名城。</li>
 <li><strong>第三版城市总规（2005-2020）</strong>定义城市性质：生态园林特色突出的国家级历史文化名城，豫东北地区区域中心城市，<u>以石油化工工业为主导的综合性城市</u>。</li>
 <li><strong>第四版城市总规（2015-2030）</strong>定义城市性质：豫鲁冀三省交汇处的中心城市，以绿色精细化工为导向的资源转型创新示范区，生态园林特色突出的国家级历史文化名城。</li>
 </ul>
@@ -2744,7 +2744,7 @@ table th:nth-of-type(3) {
 <span class="is-size-6">
 
 <ol>
-    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日(<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">第11页/a>，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511102030/https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">内容</a>存档于 2025-05-11) - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/gazbrowse.jsp">政府公報資訊網</a>. </li>
+    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日(<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">第11页</a>)，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511102030/https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">内容</a>存档于 2025-05-11) - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/gazbrowse.jsp">政府公報資訊網</a>. </li>
     <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://www.henan.gov.cn/2012/08-09/238296.html">河南省人民政府关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省人民政府(2012-07-27，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511100641/https://www.henan.gov.cn/2012/08-09/238296.html">内容</a>存档于 2025-05-11).</li>
     <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> 涂跃彬, 孙宝. 郑州至济南铁路濮阳站位方案研究[J]. 铁道勘察, 2019, 45(2):102-107. <a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
 </ol>
@@ -3258,8 +3258,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/vbDrpjC7xuFyOoe.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -3760,8 +3760,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@1.0/2019sc_722cover.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -4269,8 +4269,8 @@ table th:nth-of-type(3) {
 <hr style="background-color: #e8e8e880;">
 
 <p><img src="https://s2.loli.net/2023/01/27/BVmU6kHdA2NXb9c.jpg"></p>
-<a class="btn-beautify " href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
-  title="2019 北京助学助教夏令营纪实 far fa-hand-point-right"><i class="block blue"></i><span>2019 北京助学助教夏令营纪实 far fa-hand-point-right</span></a>
+<a class="btn-beautify block blue" href="https://www.pyli.tk/2019/08/09/2019_summer_camp_docu/" 
+  title="2019 北京助学助教夏令营纪实"><i class="far fa-hand-point-right"></i><span>2019 北京助学助教夏令营纪实</span></a>
 ]]></content>
       <categories>
         <category>助学夏令营</category>
@@ -4843,9 +4843,9 @@ table th:nth-of-type(3) {
 
 <p>但这归根结底是我身为一名濮阳人作出的主观且轻率的论断。至于当时官方是否原本就在主推这个线位？我搜了搜当时的新闻，发现并非如此——</p>
 <ul>
-<li><a href="https://news.sina.com.cn/c/2008-07-02/113014105736s.shtml"><strong>铁道部与重庆市政府签署合作会议纪要</strong></a>2008 年 7 月 2 日，原始内容<a href="https://web.archive.org/web/20250511014717/https://news.sina.com.cn/c/2008-07-02/113014105736s.shtml">存档</a>于 2025-05-11。</li>
-<li><a href="http://jdwt.dahe.cn/2008/07-08/100008447.html"><strong>渝郑铁路纳入发改委规划 或将走开封</strong></a>2008 年 7 月 8 日，原始内容<a href="https://web.archive.org/web/20100618101948/http://jdwt.dahe.cn/2008/07-08/100008447.html">存档</a>于 2010-06-18。</li>
-<li><a href="http://newpaper.dahe.cn/hnrb/html/2008-07/10/content_84313.htm"><strong>渝郑铁路如何跨越蜀道北出中原？</strong></a>2008 年 7 月 10 日，原始内容<a href="https://web.archive.org/web/20080713052739/http://newpaper.dahe.cn/hnrb/html/2008-07/10/content_84313.htm">存档</a>于 2008-07-13。</li>
+<li><a href="https://news.sina.com.cn/c/2008-07-02/113014105736s.shtml"><strong>铁道部与重庆市政府签署合作会议纪要</strong></a>（2008 年 7 月 2 日，原始内容<a href="https://web.archive.org/web/20250511014717/https://news.sina.com.cn/c/2008-07-02/113014105736s.shtml">存档</a>于 2025-05-11）</li>
+<li><a href="http://jdwt.dahe.cn/2008/07-08/100008447.html"><strong>渝郑铁路纳入发改委规划 或将走开封</strong></a>（2008 年 7 月 8 日，原始内容<a href="https://web.archive.org/web/20100618101948/http://jdwt.dahe.cn/2008/07-08/100008447.html">存档</a>于 2010-06-18）</li>
+<li><a href="http://newpaper.dahe.cn/hnrb/html/2008-07/10/content_84313.htm"><strong>渝郑铁路如何跨越蜀道北出中原？</strong></a>（2008 年 7 月 10 日，原始内容<a href="https://web.archive.org/web/20080713052739/http://newpaper.dahe.cn/hnrb/html/2008-07/10/content_84313.htm">存档</a>于 2008-07-13）</li>
 </ul>
 <p>可见，“渝郑铁路”为官方真实意向，“渝鲁铁路”乃民间一厢情愿。当时，重庆方面率先抛出修建重庆至郑州铁路的构想，民间闻讯反应激烈。有网友建议将北端终点延伸至济南——这大概就是 “渝鲁铁路”概念的出处。不过，由于重庆提出修建的主要目的是为解决其自身北上（特别是进京）问题，将郑州这一铁路心脏设为线路终点尚可理解，延伸至济南的必要性似乎就没有那么迫切。所以重庆这边消息一出，地处郑渝之间的网友打得不亦乐乎，郑济虽有波澜但未激起足够的浪花。</p>
 <p>好在群众们的呼声及时传到了政府的耳朵里。2009 年 6 月，河南省人民政府与铁道部在京举行会议纪要签字仪式。根据当时会议纪要，“双方在加快实施中原城市群城际轨道交通、郑州至南阳铁路、晋中南铁路通道、石武客运专线新郑州站以及郑州至合肥、<strong>郑州至济南</strong>、商丘至周口的铁路规划建设等方面将进一步加强合作，积极推动相关工作，巩固提升河南铁路枢纽地位。”<a href="#bib1" id="bib1ref" title="省政府与铁道部加快河南铁路建设 会议纪要签字仪式在京举行 郭庚茂刘志军出席 - 河南省人民政府 (2009-06-11)."><sup>[1]</sup></a>这意味着官方层面开始注意到河南山东两省之间缺少铁路直连的问题，修建郑济铁路不再是网友们的一厢情愿。而且，能够从这份纪要中看到“郑米”的雏形。</p>
@@ -4871,7 +4871,7 @@ table th:nth-of-type(3) {
 </blockquote>
 <p>简言之，刘秃子大体上是个对待铁路事业有理想和情怀的人，然而即便不讨论网传他与郑州铁路局的恩怨是非，透过其部长任内一系列事实上削弱郑州铁路地位的举措，我察觉不到丝毫孕育郑济铁路的空间。盛高阻抱着多一事不如少一事的心态收拾 7·23 事故后的烂摊子，尽管看不出他为郑济铁路设坎的私人动机，但面对郑济这种既无深厚客流基础、又无突出政治地位的线路，自然是“冷处理”——想降标建设都得靠边站。</p>
 <p>我想以上假设推断应该能够引起铁路爱好者们的共鸣。</p>
-<p>言归正题。尽管河南方面已主导了郑济铁路走向的话语权，但毕竟正值高阻时代，按什么形式建设始终是一团迷雾。在我看来，当时有关郑济铁路的工作似乎在原地打转。其中，官方围绕 <strong>建设标准</strong>（时速 350/250 的高铁？时速 250/200 的城铁 / 客货混铁？）和<strong>沿途枢纽</strong>（从开封引出<a href="#bib5" id="bib5ref" title="河南省提出打造“四纵五横四辐射”铁路网 - 世界轨道交通资讯网 (2010-01-21)."><sup>[5]</sup></a>？从鹤壁引出<a href="#bib6" id="bib6ref" title="河南省国民经济和社会发展第十二个五年规划纲要 - 河南省人民政府 (2011-04-29)."><sup>[6]</sup></a>？从新乡引出<a href="#bib7" id="bib7ref" title="濮阳市争取郑济快速铁路过境濮阳工作纪实 - 中共濮阳市委濮阳市人民政府督查局 (2013-06-20)."><sup>[7]</sup></a>？从聊城接轨济南轨交 R1 线路<a href="#bib8" id="bib8ref" title="济南城轨R1线正式开建 4站走地下5站上高架 - 大众网 (2012-12-31)."><sup>[8]</sup></a>/ 济聊城铁<a href="#bib9" id="bib9ref" title="济聊城际铁路有望明年开工 车程缩短至半小时 - 大众网 (2013-07-31)."><sup>[9]</sup></a>？）两个问题，基本每隔一段时间就会换一种说法。虽然从客观上讲，这为贴吧辩论提供了源源不断的素材，但是当大家“口嗨”完后，却发现建设曙光仍未到来。</p>
+<p>言归正题。尽管河南方面已主导了郑济铁路走向的话语权，但毕竟正值高阻时代，按什么形式建设始终是一团迷雾。在我看来，当时有关郑济铁路的工作似乎在原地打转。其中，官方围绕 <strong>建设标准</strong>（时速 350/250 的高铁？时速 250/200 的城铁 / 客货混铁？）和 <strong>沿途枢纽</strong>（从开封引出<a href="#bib5" id="bib5ref" title="河南省提出打造“四纵五横四辐射”铁路网 - 世界轨道交通资讯网 (2010-01-21)."><sup>[5]</sup></a>？从鹤壁引出<a href="#bib6" id="bib6ref" title="河南省国民经济和社会发展第十二个五年规划纲要 - 河南省人民政府 (2011-04-29)."><sup>[6]</sup></a>？从新乡引出<a href="#bib7" id="bib7ref" title="濮阳市争取郑济快速铁路过境濮阳工作纪实 - 中共濮阳市委濮阳市人民政府督查局 (2013-06-20)."><sup>[7]</sup></a>？从聊城接轨济南轨交 R1 线路<a href="#bib8" id="bib8ref" title="济南城轨R1线正式开建 4站走地下5站上高架 - 大众网 (2012-12-31)."><sup>[8]</sup></a>/ 济聊城铁<a href="#bib9" id="bib9ref" title="济聊城际铁路有望明年开工 车程缩短至半小时 - 大众网 (2013-07-31)."><sup>[9]</sup></a>？）两个问题，基本每隔一段时间就会换一种说法。虽然从客观上讲，这为贴吧辩论提供了源源不断的素材，但是当大家“口嗨”完后，却发现建设曙光仍未到来。</p>
 <p>日思夜想开通铁路客运希望依旧飘渺，远处的“大饼”却一个接着一个出现。那段时间，“盼车心切”的广大濮阳人民和官方除了期望晋中南铁路开通客运、对着郑济铁路一顿“乱拳输出”之外，还关注到了京九高铁、邯郸（安阳）-濮阳-菏泽铁路、濮阳（衡水）-潢川铁路等其他可能涉濮的项目，希望“多头下注”“多点开花”。然而许多人其实都清楚，这些“大饼”还不如晋中南和郑济更容易吃到嘴里面。</p>
 <h2 id="《策划》"><a href="#《策划》" class="headerlink" title="《策划》"></a>《策划》</h2><p>虽知大家都在 “画饼”，但那一切对于身处高中阶段的我来说，却是能舒缓学习压力的 “食粮”。2013 年的五一节前夕，还差一个月就要高考的我耐不住寂寞，用 iPad 上的涂鸦软件绘制了自己心目中濮阳未来的铁路交通布局，并分享至濮北新区吧。当时郑济已定北线，濮阳官方自信地宣布即将启动“郑濮济快速铁路”项目<a href="#bib10" id="bib10ref" title="2013年濮阳市政府工作报告
  (2013-02-01)."><sup>[10]</sup></a>，而线路走向上原本有较大可能的 “途径开封”也基本确定改为“途径新乡”——前者一度被认为既可用作郑济铁路的一部分，又可拿来组成濮潢铁路（至于变卦缘由我不得而知，自己当时忙于学习没有认真跟踪）。在涂鸦上，我特别<strong>突出了自己对郑济设站不同于寻常的观点——设在濮东而不是濮北</strong>。我翻出了当时的帖子，里面记录了我与一些吧友的思维碰撞。</p>
@@ -4971,8 +4971,15 @@ table th:nth-of-type(3) {
           pic: '',
           thumbnails: '',
       },
-  });
-})
+      subtitle: {
+          url: '',
+          type: 'webvtt',
+          fontSize: '25px',
+          bottom: '10%',
+          color: '#ffe8cf',
+      },
+    });
+  })
 </script>
 <center><div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
