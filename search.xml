@@ -2300,59 +2300,59 @@ table th:nth-of-type(3) {
 <p>5、接上一条，自金朝设开州，至明清时开州为散州，期间“濮阳”一直是“开州”的下一级或同级行政单位。时至今日，“开州”作为街道，反而成了“濮阳”的下两级行政单位（濮阳市-华龙区（示范区）-开州街道）。</p>
 <blockquote>
 <details class="toggle" ><summary class="toggle-button" style="">“开州”与“濮阳”的区划关系大致沿革</summary><div class="toggle-content"><blockquote>
-<table><thead>
-    <tr>
-      <th>朝代</th>
-      <th>行政区划等级</th>
-      <th>建置</th>
-      <th>辖</th>
-      <th>备注</th>
-    </tr></thead>
-  <tbody>
-    <tr>
-      <td>金</td>
-      <td>二级<br>（属大名府路）</td>
-      <td>开州</td>
-      <td>濮阳（治所）、清丰、观城、临河</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>元</td>
-      <td>二级<br>（属大名路）</td>
-      <td>开州</td>
-      <td>濮阳（治所）、清丰、东明、长垣</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>明</td>
-      <td>三级<br>（属直隶大名府）</td>
-      <td>开州</td>
-      <td>（濮阳）、清丰、南乐、长垣、东明</td>
-      <td>明初废县入州，原濮阳县辖区由开州（散州）直辖。（开州至明中后期才不再领县，且始终与县同级）</td>
-    </tr>
-    <tr>
-      <td>清</td>
-      <td>三级<br>（属直隶大名府）</td>
-      <td>开州</td>
-      <td>（濮阳）</td>
-      <td>“濮阳”仅为州治所在的地名，不再作为县级行政区存在。</td>
-    </tr>
-    <tr>
-      <td>民国</td>
-      <td>二级/三级</td>
-      <td>濮阳</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>共和国</td>
-      <td>二级/三级</td>
-      <td>濮阳</td>
-      <td></td>
-      <td>开州街道于2011年6月由华龙区胡村乡析出，名义上属华龙区，实际上由城乡一体化示范区代管。</td>
-    </tr>
-  </tbody>
-  </table>
+  <table><thead>
+      <tr>
+        <th>朝代</th>
+        <th>行政区划等级</th>
+        <th>建置</th>
+        <th>辖</th>
+        <th>备注</th>
+      </tr></thead>
+    <tbody>
+      <tr>
+        <td>金</td>
+        <td>二级<br>（属大名府路）</td>
+        <td>开州</td>
+        <td>濮阳（治所）、清丰、观城、临河</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>元</td>
+        <td>二级<br>（属大名路）</td>
+        <td>开州</td>
+        <td>濮阳（治所）、清丰、东明、长垣</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>明</td>
+        <td>三级<br>（属直隶大名府）</td>
+        <td>开州</td>
+        <td>（濮阳）、清丰、南乐、长垣、东明</td>
+        <td>明初废县入州，原濮阳县辖区由开州（散州）直辖。（开州至明中后期才不再领县，且始终与县同级）</td>
+      </tr>
+      <tr>
+        <td>清</td>
+        <td>三级<br>（属直隶大名府）</td>
+        <td>开州</td>
+        <td>（濮阳）</td>
+        <td>“濮阳”仅为州治所在的地名，不再作为县级行政区存在。</td>
+      </tr>
+      <tr>
+        <td>民国</td>
+        <td>二级/三级</td>
+        <td>濮阳</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>共和国</td>
+        <td>二级/三级</td>
+        <td>濮阳</td>
+        <td></td>
+        <td>开州街道于2011年6月由华龙区胡村乡析出，名义上属华龙区，实际上由城乡一体化示范区代管。</td>
+      </tr>
+    </tbody>
+    </table>
 </blockquote>
 </div></details>
 </blockquote>
@@ -2390,76 +2390,7 @@ table th:nth-of-type(3) {
 <blockquote>
 <p>GB/T 2260 县以上行政区数字代码编码规则：第二层（第三、四位）表示地级行政区，其中 01−20、51−70 为地级市，21−50 为地区、自治州、盟。</p>
 <details class="toggle" ><summary class="toggle-button" style="">1983 年初，河南省地级行政区代码</summary><div class="toggle-content"><blockquote>
-<table>
-<thead>
-<tr>
-<th align="center">省辖市</th>
-<th></th>
-<th align="center">地区</th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">郑州市</td>
-<td>41<strong>01</strong>00</td>
-<td align="center">安阳地区</td>
-<td align="center">41<strong>21</strong>00</td>
-</tr>
-<tr>
-<td align="center">开封市</td>
-<td>41<strong>02</strong>00</td>
-<td align="center">新乡地区</td>
-<td align="center">41<strong>22</strong>00</td>
-</tr>
-<tr>
-<td align="center">洛阳市</td>
-<td>41<strong>03</strong>00</td>
-<td align="center">商丘地区</td>
-<td align="center">41<strong>23</strong>00</td>
-</tr>
-<tr>
-<td align="center">平顶山市</td>
-<td>41<strong>04</strong>00</td>
-<td align="center">开封地区</td>
-<td align="center">41<strong>24</strong>00</td>
-</tr>
-<tr>
-<td align="center">安阳市</td>
-<td>41<strong>05</strong>00</td>
-<td align="center">洛阳地区</td>
-<td align="center">41<strong>25</strong>00</td>
-</tr>
-<tr>
-<td align="center">鹤壁市</td>
-<td>41<strong>06</strong>00</td>
-<td align="center">许昌地区</td>
-<td align="center">41<strong>26</strong>00</td>
-</tr>
-<tr>
-<td align="center">新乡市</td>
-<td>41<strong>07</strong>00</td>
-<td align="center">周口地区</td>
-<td align="center">41<strong>27</strong>00</td>
-</tr>
-<tr>
-<td align="center">焦作市</td>
-<td>41<strong>08</strong>00</td>
-<td align="center">驻马店地区</td>
-<td align="center">41<strong>28</strong>00</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td align="center">南阳地区</td>
-<td align="center">41<strong>29</strong>00</td>
-</tr>
-<tr>
-<td align="center"></td>
-<td></td>
-<td align="center">信阳地区</td>
-<td align="center">41<strong>30</strong>00</td>
-</tr>
-</tbody></table>
+<p>  |  省辖市  |        |    地区    |        |<br>    |:——–:|——–|:———-:|:——:|<br>    | 郑州市   | 41<strong>01</strong>00 | 安阳地区   | 41<strong>21</strong>00 |<br>    | 开封市   | 41<strong>02</strong>00 | 新乡地区   | 41<strong>22</strong>00 |<br>    | 洛阳市   | 41<strong>03</strong>00 | 商丘地区   | 41<strong>23</strong>00 |<br>    | 平顶山市 | 41<strong>04</strong>00 | 开封地区   | 41<strong>24</strong>00 |<br>    | 安阳市   | 41<strong>05</strong>00 | 洛阳地区   | 41<strong>25</strong>00 |<br>    | 鹤壁市   | 41<strong>06</strong>00 | 许昌地区   | 41<strong>26</strong>00 |<br>    | 新乡市   | 41<strong>07</strong>00 | 周口地区   | 41<strong>27</strong>00 |<br>    | 焦作市   | 41<strong>08</strong>00 | 驻马店地区 | 41<strong>28</strong>00 |<br>    |          |        | 南阳地区   | 41<strong>29</strong>00 |<br>    |          |        | 信阳地区   | 41<strong>30</strong>00 |</p>
 </blockquote>
 </div></details>
 </blockquote>
