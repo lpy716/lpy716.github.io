@@ -5749,7 +5749,10 @@ table th:nth-of-type(3) {
   <entry>
     <title>AWWWW</title>
     <url>/2023/05/27/ccps_cat/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<div class="note blue info modern"><p>建议在 100M 宽带或更佳的环境下播放，以确保观看流畅度。</p>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -5790,6 +5793,8 @@ table th:nth-of-type(3) {
 
 
 <p>【清晰度】1080P/60FPS</p>
+<p>【平均码率】16Mbps</p>
+<p>【文件大小】350MB</p>
 <p>【BGM】 Wondrous – Thomas Greenberg</p>
 <p>【拍摄时间】2023 年 5 月 25-26 日</p>
 <p>【剪辑时间】2023 年 5 月 27 日</p>
@@ -5810,7 +5815,10 @@ table th:nth-of-type(3) {
   <entry>
     <title>AWWWW第二弹</title>
     <url>/2023/06/13/ccps_cat2/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<div class="note blue info modern"><p>建议在 100M 宽带或更佳的环境下播放 1080P 版本，300M 宽带或更佳的环境下播放 4K 版本，以确保观看流畅度。</p>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -5866,6 +5874,8 @@ table th:nth-of-type(3) {
 
 
 <p>【清晰度】1080P/60FPS；4K/60FPS</p>
+<p>【平均码率】17Mbps；51Mbps</p>
+<p>【文件大小】114MB；328MB</p>
 <p>【BGM】 喵趣（vivo剪辑预设主题bgm）</p>
 <p>【拍摄时间】2023 年 6 月 12 日</p>
 <p>【剪辑时间】2023 年 6 月 12 日</p>
@@ -6172,7 +6182,10 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   <entry>
     <title>AWWWW第三弹</title>
     <url>/2024/02/13/ccps_cat3/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<div class="note blue info modern"><p>建议在 100M 宽带或更佳的环境下播放，以确保观看流畅度。</p>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -6213,6 +6226,8 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 
 
 <p>【清晰度】1080P/60FPS</p>
+<p>【平均码率】17Mbps</p>
+<p>【文件大小】518MB</p>
 <p>【BGM】 No Logic – ジミーサムP, ろん</p>
 <p>【拍摄时间】2023 年 5 月至 2024 年 1 月</p>
 <p>【剪辑时间】2024 年 2 月 12 日</p>
@@ -6413,7 +6428,10 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   <entry>
     <title>AWWWW第四弹</title>
     <url>/2024/05/02/ccps_cat4/</url>
-    <content><![CDATA[<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
+    <content><![CDATA[<div class="note blue info modern"><p>建议在 100M 宽带或更佳的环境下播放 1080P 版本，300M 宽带或更佳的环境下播放 4K 版本，以确保观看流畅度。</p>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/DP.css">
 
 <div id="dplayer_cloud" class="dplayer-video dplayer dplayer-no-danmaku dplayer-paused"></div>
 <script src="https://cdn.jsdmirror.com/gh/lpy716/site_vid@0.1/jquery-3.5.min.js"></script>
@@ -6469,6 +6487,8 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 
 
 <p>【清晰度】1080P/60FPS；4K/60FPS</p>
+<p>【平均码率】20Mbps；54Mbps</p>
+<p>【文件大小】510MB；1.32GB</p>
 <p>【BGM】 もう少しだけ - YOASOBI</p>
 <p>【拍摄时间】2024 年 4 月 6 日至 2024 年 5 月 2 日</p>
 <p>【剪辑时间】2024 年 5 月 2 日</p>
