@@ -635,7 +635,7 @@
       </tags>
   </entry>
   <entry>
-    <title>温故知新：停机问题与理发师悖论</title>
+    <title>【温故知新#1】停机问题与理发师悖论</title>
     <url>/2022/11/20/halting_problem/</url>
     <content><![CDATA[<p>头发长了。11 月后疫情反复，许诺已久的自得园管控放松计划不出意外地泡汤，只好再找到鑫鑫这位好邻居帮我理个发。得知他也为自己理发，和他开玩笑说自古以来的理发师悖论在他这里终结。</p>
 <p>今天在看《信息简史》时恰好翻到哥德尔、图灵和停机问题。回想起以前学习这块内容都把理发师悖论当作引子，突然意识到自己一直以来对停机问题的理解非但不深，甚至还对理发师悖论的认识有严重误区。</p>
@@ -2705,7 +2705,7 @@ table th:nth-of-type(3) {
 </li>
 <li><p>今天济南章丘一带有名为漯（tà）河的河流，位于黄河以南，仅数十公里长；象征着漯河正统的徒骇河与之隔黄河相望。</p>
 </li>
-<li><p>结合现有观点，隰、濕（湿的繁体，异体字为溼）、漯这三个字在古时会被混用：“隰”通过“低洼潮湿”的含义与“溼”（表阴暗潮湿之意）字相通；“溼”在后世使用中因与“濕”（专指漯水）字形相近，彼此通假；“濕”又因为字形简写演变出了“漯”字（也就是说，漯水本名是濕水）<a href="#bib2" id="bib2ref" title="「濕」與「溼」"><sup>[2]</sup></a>。例如《诗经·卫风·氓》“淇则有岸，隰则有泮”，其中“隰”当作“湿（濕）”，一个与淇水对仗的水名，即漯。</p>
+<li><p>漯和隰、濕（湿的繁体，异体字为溼）这两个字在古时会被混用：“隰”通过“低洼潮湿”的含义与“溼”（表阴暗潮湿之意）字相通；“溼”在后世使用中因与“濕”（专指漯水）字形相近，彼此通假；“濕”又因为字形简写演变出了“漯”字（也就是说，漯水本名是濕水）<a href="#bib2" id="bib2ref" title="「濕」與「溼」 - 陳凱文研究室"><sup>[2]</sup></a>。例如《诗经·卫风·氓》“淇则有岸，隰则有泮”，其中“隰”当作“湿（濕）”，一个与淇水对仗的水名，即漯。</p>
 </li>
 </ul>
 <p>至于漯为何发 tà 音，与隰、湿的读音有较大差异，是因为这一读音实则在“漯”字成型后方才逐渐形成。简言之，古人也是“认字认半边”：当“漯”作为“湿”的错体被普遍使用后，人们把这个新字当作形声字，自然而然地根据其右半边的“累”（古同“疉”，即“叠”（dié）的本字）的读音去念它。根据<a href="https://zi.tools/zi/%E6%BC%AF#:~:text=%E5%9F%BA%E7%9B%A4%E6%95%B4%E5%82%99%E4%BA%8B%E6%A5%AD-,%E9%9F%BB%E6%9B%B8%20Rime%20Books,-%E8%81%B2%E6%AF%8D">古代声韵书籍</a>，在中古音里，“疉”和“榻”、“錔”等字的声调和韵母非常接近，均带有 -p 入声韵尾（读音类似于 dæp 或 thap）。自此，tà 的读音在历史地理语境中被流传了下来。</p>
@@ -2771,7 +2771,7 @@ table th:nth-of-type(3) {
 <td><center>1996</center></td>
 <td><center>正常客货运</center></td>
 <td><center>京九线、汤台线</center></td>
-<td><center>归济南铁路局管辖<br>2012年曾计划更名为“濮阳东站”<a href="#bib3" id="bib3ref" title="河南省人民政府关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知"><sup>[3]</sup></a></center></td>
+<td><center>归济南铁路局管辖<br>2012年曾计划更名为“濮阳东站”<a href="#bib3" id="bib3ref" title="河南省人民政府关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知 - 河南省人民政府"><sup>[3]</sup></a></center></td>
 </tr>
 <tr>
 <td><center>范县站</center></td>
@@ -2834,8 +2834,8 @@ table th:nth-of-type(3) {
 
 <ol>
     <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 《國民政府公報》第1983號，民國25年2月28日 (<a target="_blank" rel="noopener" href="https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">第11页</a>，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511102030/https://twinfo.ncl.edu.tw/tiqry/hypage.cgi?HYPAGE=search/show_pdfpage.hpg&type=g&jid=79001163&vol=25022800&cd=gd0027&page=00000011.pdf">内容</a>存档于 2025-05-11) - 来自<a target="_blank" rel="noopener" href="https://gaz.ncl.edu.tw/gazbrowse.jsp">政府公報資訊網</a>. </li>
-    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://jonathanovsky.wordpress.com/2016/09/30/%E3%80%8C%E6%BF%95%E3%80%8D%E8%88%87%E3%80%8C%E6%BA%BC%E3%80%8D/">「濕」與「溼」</a> - 陳凱文研究室(2016-09-30，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20161018105924/https://jonathanovsky.wordpress.com/2016/09/30/%E3%80%8C%E6%BF%95%E3%80%8D%E8%88%87%E3%80%8C%E6%BA%BC%E3%80%8D/">内容</a>存档于 2016-10-18).</li>
-    <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://www.henan.gov.cn/2012/08-09/238296.html">河南省人民政府关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省人民政府(2012-07-27，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511100641/https://www.henan.gov.cn/2012/08-09/238296.html">内容</a>存档于 2025-05-11).</li>
+    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://jonathanovsky.wordpress.com/2016/09/30/%E3%80%8C%E6%BF%95%E3%80%8D%E8%88%87%E3%80%8C%E6%BA%BC%E3%80%8D/">「濕」與「溼」</a> - 陳凱文研究室 (2016-09-30，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20161018105924/https://jonathanovsky.wordpress.com/2016/09/30/%E3%80%8C%E6%BF%95%E3%80%8D%E8%88%87%E3%80%8C%E6%BA%BC%E3%80%8D/">内容</a>存档于 2016-10-18).</li>
+    <li><a id="bib3" href="#bib3ref"><sup>^</sup></a> <a target="_blank" rel="noopener" href="https://www.henan.gov.cn/2012/08-09/238296.html">河南省人民政府关于印发濮阳市建设中原经济区濮范台扶贫开发综合试验区总体方案的通知</a> - 河南省人民政府 (2012-07-27，原始<a target="_blank" rel="noopener" href="https://web.archive.org/web/20250511100641/https://www.henan.gov.cn/2012/08-09/238296.html">内容</a>存档于 2025-05-11).</li>
     <li><a id="bib4" href="#bib4ref"><sup>^</sup></a> 涂跃彬, 孙宝. 郑州至济南铁路濮阳站位方案研究[J]. 铁道勘察, 2019, 45(2):102-107. <a target="_blank" rel="noopener" href="https://www.cnki.net/kcms/doi/10.19630/j.cnki.tdkc.201901020001.html">doi: 10.19630/j.cnki.tdkc.201901020001.</a></li>
 </ol>
 </span>
@@ -6589,60 +6589,55 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
       </tags>
   </entry>
   <entry>
-    <title>温故知新：机制设计理论的精髓</title>
+    <title>【温故知新#2】机制设计理论的精髓</title>
     <url>/2026/08/02/mech_design/</url>
-    <content><![CDATA[<h2 id="停机问题诞生之前"><a href="#停机问题诞生之前" class="headerlink" title="停机问题诞生之前"></a>停机问题诞生之前</h2><p>既然打算更深入理解停机问题，自然要扒一扒问题产生的源头。翻看了研一运筹学课胡旭东老师的讲义，发现其实里面有几十张 slides 都在讲停机问题形成背后的计算理论。至于为何自己印象不深，应该是当时受课时限制老师没在课上细讲，自己课后又没认真学习理解。</p>
-<p>（也不知 5 年后自己哪来的动力，还有心思给自己补这一课……）</p>
-<p>停机问题由图灵于 1936 年提出并证明。该问题起源于图灵对<u>“机器能否思考”</u>的探索，最终他用一台自己构想出的机器实现论证。论证得以顺利开展的关键在于图灵对“计算”概念的把握。在那个年代，人仍然是从事各类运算工作的主体，除了大量纸上作业，更多时候靠的只是灵光一闪。总之，当时人们对于什么是 “计算”其实没有一个清晰的概念——这也使基于机器的自动计算乃至思考难以成行。对此，图灵指出，计算应该是一个机械的过程，或是一种<strong>算法</strong>，其本质是人在实际求解问题时所要经历的步骤。鉴于图灵对计算、算法的界定贡献，后人将图灵的停机提问与探索作为计算 / 算法理论开端。</p>
-<p>图灵受到的影响可以从源头、直接这两个角度来观察。</p>
-<p>影响图灵探索之源头可上溯至在他一个世纪之前由巴比奇发明的差分机，以及那之后逻辑学、信息学领域的研究进展。值得一提的是，图灵对于用机器实现思考的想法与巴比奇“<u>将蒸汽应用到思考和算数上（数可代表万事万物）</u>”的想法不谋而合，他们都致力于用机器实现数学计算。然而，图灵并未和巴比奇一样将思考付诸工程实践，仅将自己心中所想、被后人称为 “图灵机”的机器构造进行了描述，其中停机是该机器可实现的基本运行操作之一——停机问题之 “停机”即来源于此。</p>
-<p>图灵所受直接影响来自于希尔伯特 1928 年提出的<strong>判定问题</strong>（Entscheidungs problem）：</p>
-<blockquote>
-<p>是否存在一种有效的程序，以预先确定某个结论能不能从一组给定的假设用逻辑推演出来。</p>
-</blockquote>
-<p>希尔伯特提出这一问题的目的是希望为全部数学奠定一个坚实的逻辑基础。这位整理出 “新世纪数学家应当努力解决的 23 个数学问题”的数学家当时在纠结：数学真理是否无论时间早晚都能够被证实？他曾宣称：在数学里没有 “我们将来也不知道”。换言之，若希尔伯特提出的判定问题为真，则人们可以通过一套严格、分步的算法，用一种演绎推理的形式语言表示有效的推理过程，实现对（数学）问题的自动化证明。</p>
-<p>希尔伯特的提问并非空穴来风。早在他之前，便已经有数学家为构筑牢固的数学体系根基而努力，期望以形式化符号语言证得每一个数学命题的真伪，比如《数学原理》的作者之一罗素。在这本由他和怀特海共同于 1910 至 1913 年间完成的巨著前言，罗素提到在打造完美数学的过程中，他为处理一些矛盾和悖论耗费了大量精力，理发师悖论便是其中之一。</p>
-<h2 id="理发师悖论与哥德尔不完备"><a href="#理发师悖论与哥德尔不完备" class="headerlink" title="理发师悖论与哥德尔不完备"></a>理发师悖论与哥德尔不完备</h2><p>以下引用部分来自<a href="https://www.zhihu.com/question/20081359/answer/162329455">知乎回答</a>——</p>
-<blockquote>
-<p>一座小城里有位理发师，有一天他做出一项规定：</p>
-<p> <strong>他给并且只给那些不给自己理发的人理发</strong>。</p>
-<p>理发师的这个规定似乎很有道理：既然有人自己给自己理发了，那么我就不用“多此一举”，我再给这个人理发。</p>
-<p>最初，这个规定并没什么问题后来，随着这个理发师自己的头发越来越长，他发现他陷入了一个两难的境地：<strong>他该不该给自己理发</strong>？</p>
+    <content><![CDATA[<p>午餐时间到，然而<a href="https://www.zhihu.com/question/1982481655810773228/answer/2027886202049577562">这个问题下面的讨论</a>，勾起了我对四年多前上宋世明老师课时的记忆——由 Maskin 提出的机制设计理论。彼时自己虽按照课程要求做了展示汇报，但并未完全理解其内容与实际意义。</p>
+<h2 id="场景设定：分班点外卖"><a href="#场景设定：分班点外卖" class="headerlink" title="场景设定：分班点外卖"></a>场景设定：分班点外卖</h2><p>一个班级 30 个人投票决定中午吃什么。摆在他们面前的，有这么三个选择：</p>
 <ul>
-<li>如果他为自己理发，那么他就成为了他规定中那个“<strong>自己给自己理发的人</strong>”，那么他就不应该为自己理发。</li>
-<li>如果他不为自己理发，那么他就规定中那个“<strong>不给自己理发的人</strong>”，那么他就应该为自己理发。</li>
+<li>汉堡王（B）</li>
+<li>达美乐（D）</li>
+<li>螺蛳粉（L）</li>
 </ul>
-<p>综合以上两种情况，“<strong>他为自己理发当且仅当他不为自己理发</strong>”，这成为了一个悖论。</p>
-</blockquote>
-<p>简言之，<u>理发师悖论并不是说简单说理发师因为一些技术原因（比如看不到自己脑后）不给自己理发，而是因为理发师自己先立了个 flag——“给且只给那些不给自己理发的人理发”</u>，正是这个套娃 flag 使得其纠结于到底该不该给自己理发。</p>
-<p>（之前自己的确错用、滥用这一经典悖论了，今后可得注意，呵呵）</p>
-<p>需要指出的是，包括埃庇米尼德斯悖论（克里特人说克里特人都说谎，那么克里特人到底说没说谎？——“<strong>这句话是假话</strong>”）在内，从古至今与理发师悖论类似的悖论还流传着很多。这些悖论平日里大多只停留于纸面，毕竟这个世界根本做不到始终如一、是非清白（克里特人不可能真的全部撒谎，而且就算是骗子嘴里也不可能全是假话；理发师也不会永远纠结于给不给自己理发，该理理就完了）。但对于一些人而言，这些悖论成了挡在其追求学术真理路上的一堵墙，因为他们企图构建的正是一个严丝合缝的逻辑体系，代表人物便是罗素——他尝试构建的符号主义力求借助完美严谨的符号与规则以实现精确表达，最终机械地为每一个数学事实作出证明。因此，不难理解为何此类悖论令他“如鲠在喉”——还被后人一并归作“<a href="https://baike.baidu.com/item/%E7%BD%97%E7%B4%A0%E6%82%96%E8%AE%BA/633604?fr=aladdin"><strong>罗素悖论</strong></a>”。</p>
-<p>围绕罗素悖论，哥德尔最终证明了<strong>一<u>自洽</u>（一致、相容，即不存在前后矛盾）的形式体系必定是<u>不完全</u>（不完备，即存在难辨是非之处）的，亦即不可能存在完全且自洽的形式体系</strong>。哥德尔于 1931 年公开了他这项被后人称为“<strong>哥德尔不完备定理</strong>”的研究，世人从此明白<strong>数学是无法既完备又一致的</strong>。然而，即便是知道了对某个特定、封闭的形式逻辑体系（比如罗素心目中的数学体系）而言，其中必有一些命题无法从该体系内部得到证实或证伪，那么这些命题能否通过体系外的逻辑或规则得到判定？这便是希尔伯特关心的判定问题，亦成为了图灵思考停机问题的切入点。</p>
-<h2 id="脱胎于图灵机的停机问题"><a href="#脱胎于图灵机的停机问题" class="headerlink" title="脱胎于图灵机的停机问题"></a>脱胎于图灵机的停机问题</h2><p>图灵在判定问题的基础上，提出了一个更具体的问题：“<strong>所有的数都是可计算的吗？</strong>”他的思考是：也许有些数虽可被命名和定义，但不可被计算。图灵进一步提出：如果一个数的小数表达式可以被机器写出来，它就是可计算的，比如$\frac{a}{b}$（有理数/代数数）、$\sqrt{2}$（无理数/代数数）、$\pi$（超越数）。因此，对于那些不可被计算的数，意味着无法在有限步骤内用机器得出其小数表达式。不过，这样一台机器长什么样？运行方式如何？当时并无实例可供参考。图灵脑洞大开，认为一台能写出小数表达式的机器——这就是传说中的“<strong>图灵机</strong>”——基本组成应包括纸带、符号和状态，可实现停机、移动、打印、擦除等基本操作，并可由此实现更复杂的过程。</p>
-<p>图灵最终证明了<u>凡是人可计算的工作，图灵机也一样能做，且一台图灵机可连同输入其中的数据一起被代码化</u>。在此基础上，图灵进一步在大脑中构思出一台名为“<strong>通用图灵机</strong>”的机器，简称$U$。$U$不仅能接受一般意义上的图灵机所能接受的寻常数据作为输入，还能接受任何被编码的机器作为输入，即对机器的代码化描述。这意味着，倘若一个问题可以被一台机器解决，那么该问题也可以拿到$U$上通过模拟该机器（的运行）而得到解决。</p>
-<p>图灵进一步延伸其思考：既然$U$能够同时接受一组数据$I$和一台模拟出来的图灵机$P$作为输入，那么它能不能判断$P$在以$I$为输入的情况下是否经有限步停机并输出“停机”，或是本身为死循环并输出为“死循环”？这便是所谓的“<strong>停机问题</strong>”。</p>
-<p>以下对于停机问题的精炼描述引用自<a href="https://www.zhihu.com/question/20081359/answer/275107187">知乎回答</a>——</p>
-<blockquote>
-<p>「停机问题」研究的是：是否存在一个「程序」，能够判断另外一个「程序」在特定的「输入」下，是会给出结果（停机），还是会无限执行下去（不停机）。</p>
-</blockquote>
-<p>（该回答的作者还以伪代码的形式清晰阐述了停机问题，这里不做复制，但接下来会被我拿来参考，用于写我对于停机问题和理发师悖论的理解）</p>
-<p>能够实现停机判断的机器是不存在的。图灵运用反证法得出了这一结论：</p>
+<p>投票规则是：<strong>第一轮看第一志愿，淘汰得票最少的；第二轮剩下的两个单挑</strong>。具体到每个人，经统计得到大伙对这三种选择共有以下三组偏好：</p>
 <ul>
-<li><p>STEP 1：假设存在这样一个图灵机$TM(P,I)$，能判断$P$输入$I$时停机并输出“停机”，反之输出“死循环”。考虑到图灵机能够被代码化，这样的机器本身其实也可被视作程序$P_{TM}$，亦可作为输入$I_{TM}$，因此$TM$同样可以判断将$I_{TM}$输入$P_{TM}$时$P_{TM}$是否停机。</p>
-</li>
-<li><p>STEP 2：比照$TM$可以设计出另一个图灵机$\overline{TM}(P,I)$，它的运行逻辑是先调用$TM(P,I)$并获取其结果，后据此输出一个相反的结果。</p>
-</li>
-<li><p>STEP 3：考虑将$I_{\overline{TM}}$和$P_{\overline{TM}}$作为$TM(P,I)$的输入：若$TM(P_{\overline{TM}},I_{\overline{TM}})$输出为“停机”，则依据$TM(P,I)$的运行规则，$I_{\overline{TM}}$在作为$P_{\overline{TM}}$的输入时后者输出为“停机”；然而根据$\overline{TM}(P,I)$的运行规则，既然$\overline{TM}$输出为“停机”，此时被它调用的$TM$应该是“死循环”的输出结果才对，这显然和$TM$真正的输出结果相矛盾。类似的，当$TM(P_{\overline{TM}},I_{\overline{TM}})$输出为“死循环”，则一样会出现“$TM$理论上应该是‘停机’却实际输出‘死循环’”的矛盾场景。</p>
-</li>
+<li>第 Ⅰ 组（11人）：B ＞ L ＞ D（最爱汉堡王）</li>
+<li>第 Ⅱ 组（9人）：L ＞ D ＞ B（最爱螺蛳粉）</li>
+<li>第 Ⅲ 组（10人）：D ＞ L ＞ B（最爱达美乐)</li>
 </ul>
-<p>所以说，一个能够判断“任一图灵机程序在给定输入下停机与否”的$U$并不存在，即判定问题的答案是否定的。</p>
-<p>很显然，上述这样的矛盾场景再现了“罗素悖论”，它存在那种能让罗素血压飙升的<strong>循环自指</strong>。鉴于哥德尔已经给出了“一致与完备无法兼得”的论证，图灵的研究成果似乎是对哥德尔工作的重复，不过他更进一步指出当数被拿来编码机器的行为时，悖论就会现身——<u>任何形式体系中都必然存在不可判定的命题</u>。这样看来，图灵的工作最终证明了：<strong>数学是不可判定的，其不完全性源于其不可计算性</strong>。</p>
-<h2 id="用停机问题伪代码写理发师悖论"><a href="#用停机问题伪代码写理发师悖论" class="headerlink" title="用停机问题伪代码写理发师悖论"></a>用停机问题伪代码写理发师悖论</h2><p>就用 Python 格式的伪代码写吧——</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 判断程序：一个人头发长了，理发师该不该去干活（是否停机）【停机判定程序】</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">toufa_gai_li_le</span>(<span class="params">lifashi, changmaoguai</span>)</span></span><br><span class="line">  result = lifashi(changmaoguai)</span><br><span class="line">  <span class="keyword">if</span> result ！= <span class="literal">None</span>:  <span class="comment"># 理发师有活干，也就是没停机</span></span><br><span class="line">    lifa = <span class="literal">True</span> <span class="comment"># （得知）ta不自我理发，判断理发师有活干，也就是没停机</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    lifa = <span class="literal">False</span> <span class="comment"># （得知）ta自我理发，判断理发师没活干，也就是停机</span></span><br><span class="line">  <span class="keyword">return</span> lifa</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发（行动）程序：一个人给不给自己理发【本质是一个循环函数、循环机】</span></span><br><span class="line"><span class="comment"># 在预设前提下（给自己理发的人）对应True，即程序会一直运行下去</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">self_can_lifa</span>():</span></span><br><span class="line">  <span class="keyword">while</span>(<span class="literal">True</span>):</span><br><span class="line">    <span class="keyword">pass</span>  <span class="comment"># 既然这个人给自己理发，那就一直让ta自个理去吧（不断循环……）</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 理发师（工作）程序：开工or收工？【本质是一个测试机】</span></span><br><span class="line"><span class="comment"># 函数输入变量changmaoguai即长毛怪，是我对需要理发者的定义，哈哈</span></span><br><span class="line"><span class="comment"># changmaoguai取值按照是否为0作区分，其中0代表不给自己理发，反之给自己理发。</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lifashi</span>(<span class="params">changmaoguai</span>):</span></span><br><span class="line">  <span class="keyword">if</span> changmaoguai == <span class="number">0</span>:</span><br><span class="line">    result = <span class="string">&#x27;理发师去给这个人理发！&#x27;</span></span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    self_can_lifa() <span class="comment"># 不管ta，让其自个回去理（自我循环）</span></span><br><span class="line">  <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">  <span class="comment"># 在自得园里，鑫鑫练就了理发的手艺，即可以触发理发师程序</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">0</span>)  <span class="comment"># -&gt; True，比如当我去找鑫鑫</span></span><br><span class="line">  toufa_gai_li_le(lifashi, <span class="number">1</span>)  <span class="comment"># -&gt; False，比如当北院来的理发师去找鑫鑫（虽然不可能）</span></span><br><span class="line">  <span class="comment">#（当然，以鑫鑫的性格，搞不好也会去给师傅理，呵呵）</span></span><br><span class="line">  <span class="comment">#（话说，北院理发师一次收费30但其技术受到同学们诸多差评，好奇这手艺何以伺候北院大领导们……）</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 当鑫鑫也头发也便长了，即changmaoguai=lifashi……</span></span><br><span class="line">  toufa_gai_li_le(lifashi, lifashi) <span class="comment"># =======悖论出现=======</span></span><br><span class="line">  <span class="comment"># 鑫鑫：作为长毛怪，我到底是（该说）我给自己理发呢，还是不给自己理发呢……</span></span><br></pre></td></tr></table></figure>
-
-
+<p>接下来大家开始投票。</p>
+<p>第一轮，数第一志愿：</p>
+<ul>
+<li>汉堡王：11 票</li>
+<li>螺蛳粉：9 票</li>
+<li>达美乐：10 票</li>
+</ul>
+<p>淘汰环节：螺蛳粉（9票）最少，被淘汰。（<em>正常人谁 tm 爱吔屎！</em>）</p>
+<p>紧接着开始第二轮投票，也就是汉堡王 vs 达美乐：</p>
+<p>此时，原来支持螺蛳粉的 9 个人（第 2 组） 需要在汉堡王和达美乐里挑。看他们的偏好（<del>螺蛳粉</del> ＞ 达美乐 ＞ 汉堡王），他们更喜欢达美乐。所以这 9 票全给了达美乐（<em>咸蛋黄、薯角培根，yyds！</em>）。于是乎，最终计票结果：</p>
+<ul>
+<li>达美乐：10 票 + 9 票 = 19 票。</li>
+<li>汉堡王：11 票。</li>
+</ul>
+<p>众人决定吃披萨~（<em>一票 BK 的死忠粉忍痛放弃皇堡……</em>）</p>
+<p>且慢！在正式投票前，组Ⅲ里面有两个同学心想相比打卤馕，还是双层皇堡啃着更得劲。于是乎，这俩人把自己的偏好改成了：<strong>B &gt; D &gt; L</strong>。（换言之，汉堡王票数增加了，没有任何人变得讨厌汉堡王）</p>
+<p>重新按规则数票：</p>
+<p>第一轮，数第一志愿：</p>
+<ul>
+<li>汉堡王：11 票 + 变心的 2 票 = 13 票。</li>
+<li>螺蛳粉：没变，还是 9 票。</li>
+<li>达美乐：跑了 2 人，只剩 8 票。</li>
+</ul>
+<p>淘汰环节：这次最少的是达美乐（8票），披萨选项先被淘汰了！（和咸蛋黄披萨、薯角培根披萨说 bye bye）</p>
+<p>第二轮决赛（汉堡王 vs 螺蛳粉）：</p>
+<p>没了达美乐，原来的披萨爱好者（8 个人）被迫重新做选择，按照偏好，他们会投给螺蛳粉。最终计票：</p>
+<ul>
+<li>螺蛳粉：原有的 9 票 + 投过来的 8 票 = 17 票。</li>
+<li>汉堡王：只有原有的 13 票（11 + 变心的2人）。</li>
+</ul>
+<p>结果：<strong>螺蛳粉逆袭胜出！</strong>汉堡王落选了！</p>
+<p>想吃汉堡王的人十分奔溃：我们爱堡的队伍明明壮大了啊，最终结果居然是要陪那些螺蛳粉爱好者吔屎？<strong>“越支持，死得越快”</strong>岂有此理？</p>
+<p>这就要把目光回归到机制设定上……</p>
 <p> （完）</p>
-<p><a class="btn-beautify block black normal" target="_blank" rel="noopener" href="https://www.pexels.com/photo/person-in-black-long-sleeve-shirt-holding-gold-and-silver-beaded-bracelet-3998389/" style="font-size: 13px;"><i class="fas fa-camera"></i><span>photo by cottonbro studio</span></a></p>
 ]]></content>
       <categories>
         <category>瞎鼓捣</category>
