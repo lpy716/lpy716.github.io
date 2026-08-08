@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdmirror.com/gh/lpy716/pic_CDN@master/covers/mech_design_cover.jpg">
 <meta property="article:published_time" content="2026-08-02T04:23:53.000Z">
-<meta property="article:modified_time" content="2026-08-08T01:16:50.000Z">
+<meta property="article:modified_time" content="2026-08-08T01:21:50.000Z">
 <meta property="article:author" content="Pengyuan Li">
 <meta property="article:tag" content="学与思">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2026-08-08 09:16:50'
+  postUpdate: '2026-08-08 09:21:50'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -243,12 +243,12 @@
 <ul>
 <li>选民集合：$N = {1, 2, …, 30}$。其中王五记作选民 $w$。</li>
 <li>备选项集：$A = {B, D, L}$（汉堡王、达美乐、螺蛳粉）。</li>
-<li>个人偏好：每个人对这三个选项都有一个严格的全序排列 $\succ <em>{j}$。所有人的偏好组合在一起，叫做偏好轮廓（Preference Profile），记为 $\mathcal{P} = (\succ_1, \succ_2, …, \succ</em>{30})$。</li>
-<li>社会选择函数（机制）：记为 $f: \mathcal{L}(A)^{30} \to A$。它输入全班的偏好轮廓 $\mathcal{P}$，输出最终大家吃什么（属于 $A$ 中的某一个选项）。</li>
+<li>个人偏好：每个人对这三个选项都有一个严格的全序排列 $\succ_{j}$。所有人的偏好组合在一起，即偏好轮廓（Preference Profile），记为 $\mathcal{P} = (\succ_1, \succ_2, …, \succ_{30})$。</li>
+<li>社会选择函数（机制）：记为 $f: \mathcal{L}(A)^{30} \to A$。它输入全班的偏好轮廓 $\mathcal{P}$，也就是$f(\mathcal{P})$，输出最终大家吃什么（属于 $A$ 中的某一个选项）。</li>
 </ul>
 <p>先将<strong>独裁</strong>概念写成严格的数学公式【记作公理 1】：对于任意的社会偏好轮廓 $\mathcal{P}$，最终的决策永远是王五（选民 $w$）心中最喜欢的那个选项。那么王五独裁机制：</p>
-<p>$f_{独裁}(\mathcal{P})=\arg \max <em>{x\in A}(\succ</em>{w})$</p>
-<p>这意味着其他 29 名选民的偏好 $\succ _{j\ne w}$ 在函数映射中被完全降维，对输出结果的边际贡献率为 0。</p>
+<p>$f_{独裁}(\mathcal{P})=\arg \max_{x\in A}(\succ_{w})$</p>
+<p>这意味着其他 29 名选民的偏好 $\succ_{j\ne w}$ 在函数映射中被完全降维，对输出结果的边际贡献率为 0。</p>
 <blockquote>
 <p>在社会福利函数的矩阵表达中，如果把所有人对选项的偏好变化量列为一个向量：</p>
 <p>$\Delta \vec{P}=[\Delta P_{1},\Delta P_{2},…,\Delta P_{王五},…,\Delta P_{30}]^{T}$</p>
