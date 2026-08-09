@@ -6740,7 +6740,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
 <span class="is-size-6">
 
 <ol>
-    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a>先计算成对对比矩阵 N[X, Y]：
+    <li><a id="bib1" href="#bib1ref"><sup>^</sup></a> 先计算成对对比矩阵 N[X, Y]：
       <ul>
         <li>汉堡（A） vs 披萨（B） = 11 : 19
         <li>汉堡（A） vs 螺蛳粉（C） = 21 : 9
@@ -6759,7 +6759,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
         <li>A vs C：p[A, C] = 21，p[C, A] = 19。因为 21 > 19，所以 A 战胜 C。</li>
         <li>B vs C：p[B, C] = 19，p[C, B] = 20。因为 20 > 19，所以 C 战胜 B。</li>
       </ul>显然，最终决出的绝对排序是：A（汉堡）> C（螺蛳粉）> B（披萨）。
-    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a>先看每一个食物面对的所有对手时，对方拿到的最高票数（即最大反对量）：
+    <li><a id="bib2" href="#bib2ref"><sup>^</sup></a> 先看每一个食物面对的所有对手时，<strong>对方</strong>拿到的最高票数（即最大反对量）：
       <ul>
         <li>A（汉堡）：对上 B 拿到了 19 票，对上 C 拿到了 9 票。A 的最大受反对量 = 19。</li>
         <li>B（披萨）：对上 A 拿到了 11 票，对上 C 拿到了 20 票。B 的最大受反对量 = 20。</li>
