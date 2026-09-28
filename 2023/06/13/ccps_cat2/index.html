@@ -236,7 +236,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-api-lyart.vercel.app/',
+      envId: 'https://twikoo-pyli.netlify.app/',
       region: 'ap-beijing',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -248,7 +248,7 @@ ps: 欲实现 DPlayer 多分辨率播放，务必将各个分辨率对应的 `.m
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-api-lyart.vercel.app/',
+      envId: 'https://twikoo-pyli.netlify.app/',
       region: 'ap-beijing',
       urls: [window.location.pathname],
       includeReply: false
